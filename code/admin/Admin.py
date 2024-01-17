@@ -26,13 +26,14 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 llm = AzureChatOpenAI(
-    azure_endpoint="https://mtcmilanoaiswe.openai.azure.com/", 
-    api_key="c0761999a40748df99cd2f2959b52c2f", 
-    api_version="2023-07-01-preview",
+    
+    azure_endpoint=os.getenv("AZURE_OPENAI_BASE"), 
+    api_key=os.getenv("AZURE_OPENAI_KEY"), 
+    api_version=os.getenv("AZURE_OPENAI_VERSION"),
     max_tokens=1000, 
     temperature=0,
-    deployment_name="gpt-4",
-    model_name="gpt-4",
+    deployment_name=os.getenv("AZURE_OPENAI_MODEL"),
+    model_name=os.getenv("AZURE_OPENAI_MODEL_NAME"),
     streaming=False
 )
 
@@ -44,7 +45,7 @@ prompt = ChatPromptTemplate.from_messages([
 output_parser = StrOutputParser()
 
 chain = prompt | llm | output_parser
-response = llm.invoke("Hello, how are you?")
+response = llm.invoke("Hello world...")
 
 st.write(response.content)
 
