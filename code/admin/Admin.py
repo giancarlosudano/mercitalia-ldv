@@ -23,7 +23,7 @@ st.set_page_config(page_title="Admin", page_icon=os.path.join('images','favicon.
 
 llm = AzureChatOpenAI(
     azure_endpoint=os.getenv("AZURE_OPENAI_BASE"), 
-    api_key="", # ???
+    api_key=os.getenv("AZURE_OPENAI_KEY"),
     api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
     max_tokens=1000, 
     temperature=0,
@@ -52,12 +52,11 @@ endpoint = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
 key = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_KEY")
 
 model_id = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_MODEL_ID")
-formUrl = "YOUR_DOCUMENT"
+model_id = "ldv03"
 
 st.write(endpoint)
 st.write(key)
-st.write(endpoint)
-
+st.write(model_id)
 
 document_analysis_client = DocumentAnalysisClient(
     endpoint=endpoint, credential=AzureKeyCredential(key)
@@ -71,41 +70,40 @@ with open("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercita
 result = poller.result()
 
 for idx, document in enumerate(result.documents):
-    print("--------Analyzing document #{}--------".format(idx + 1))
-    print("Document has type {}".format(document.doc_type))
-    print("Document has confidence {}".format(document.confidence))
-    print("Document was analyzed by model with ID {}".format(result.model_id))
+    st.write("Analyzing document #{}".format(idx + 1))
+    st.write("Document has type {}".format(document.doc_type))
+    st.write("Document has confidence {}".format(document.confidence))
+    st.write("Document was analyzed by model with ID {}".format(result.model_id))
     for name, field in document.fields.items():
         field_value = field.value if field.value else field.content
-        print("......found field of type '{}' with value '{}' and with confidence {}".format(field.value_type, field_value, field.confidence))
+        st.write("......found field {} of type '{}' with value '{}' and with confidence {}".format(name, field.value_type, field_value, field.confidence))
 
 # iterate over tables, lines, and selection marks on each page
 for page in result.pages:
-    print("\nLines found on page {}".format(page.page_number))
+    st.write("\nLines found on page {}".format(page.page_number))
     for line in page.lines:
-        print("...Line '{}'".format(line.content.encode('utf-8')))
+        st.write("...Line '{}'".format(line.content.encode('utf-8')))
     for word in page.words:
-        print(
+        st.write(
             "...Word '{}' has a confidence of {}".format(
                 word.content.encode('utf-8'), word.confidence
             )
         )
     for selection_mark in page.selection_marks:
-        print(
+        st.write(
             "...Selection mark is '{}' and has a confidence of {}".format(
                 selection_mark.state, selection_mark.confidence
             )
         )
 
 for i, table in enumerate(result.tables):
-    print("\nTable {} can be found on page:".format(i + 1))
+    st.write("\nTable {} can be found on page:".format(i + 1))
     for region in table.bounding_regions:
-        print("...{}".format(i + 1, region.page_number))
+        st.write("...{}".format(i + 1, region.page_number))
     for cell in table.cells:
-        print(
+        st.write(
             "...Cell[{}][{}] has content '{}'".format(
                 cell.row_index, cell.column_index, cell.content.encode('utf-8')
             )
         )
-print("-----------------------------------")
 
