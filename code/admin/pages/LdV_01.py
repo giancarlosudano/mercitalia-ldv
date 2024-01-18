@@ -158,7 +158,7 @@ try:
  
 	llm = AzureChatOpenAI(
 			azure_endpoint=os.getenv("AZURE_OPENAI_BASE"), 
-			api_key=os.getenv("AZURE_OPENAI_BASE"),
+			api_key=os.getenv("AZURE_OPENAI_KEY"),
 			api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
 			max_tokens=1000, 
 			temperature=0,
