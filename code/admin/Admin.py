@@ -24,7 +24,7 @@ st.markdown(mod_page_style, unsafe_allow_html=True)
 
 llm = AzureChatOpenAI(
     azure_endpoint=os.getenv("AZURE_OPENAI_BASE"), 
-    api_key="a0e0c1c0906d431e8c781af81d89e3a7",
+    api_key=os.getenv("AZURE_OPENAI_KEY")",
     api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
     max_tokens=1000, 
     temperature=0,
