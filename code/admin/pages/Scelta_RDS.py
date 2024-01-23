@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from langchain_openai import AzureChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from langchain_community.callbacks import StreamlitCallbackHandler
 
 load_dotenv()
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -22,6 +23,8 @@ mod_page_style = """
             """
 st.markdown(mod_page_style, unsafe_allow_html=True)
 
+container_stream = st.container()
+
 llm = AzureChatOpenAI(
     azure_endpoint=os.getenv("AZURE_OPENAI_BASE"), 
     api_key=os.getenv("AZURE_OPENAI_KEY"),
@@ -30,7 +33,7 @@ llm = AzureChatOpenAI(
     temperature=0,
     deployment_name=os.getenv("AZURE_OPENAI_MODEL"),
     model_name=os.getenv("AZURE_OPENAI_MODEL_NAME"),
-    streaming=False
+    streaming=True, callbacks=[StreamlitCallbackHandler(container_stream)]
 )
 
 prompt = ChatPromptTemplate.from_messages([
@@ -71,5 +74,5 @@ scegli tutte le righe che rispettano questi requisiti:
 
 chain = prompt | llm | output_parser
 response = chain.invoke({"input": input})
-
-st.write(response)
+container_stream.empty()
+# st.write(response)
