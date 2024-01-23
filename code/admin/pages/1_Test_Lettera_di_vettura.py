@@ -83,7 +83,7 @@ def conversione_click():
 	
 	return
 
-def orpheus_click():
+def orfeus_click():
 	folder_path = os.path.join('orpheus')
 	# Elencare tutti i file nella cartella
 	for file_name in os.listdir(folder_path):
@@ -152,10 +152,10 @@ def orpheus_click():
 			if "80" == uic_country_codes[0] and "637702" == station_codes[0] and "3239" == carrier_codes[0] and "678649" == consignment_numbers[0] and "20231106" == data_ora_formattata:
 				st.success("Trovato XML Orpheus: {}".format(file_name))
 
-try:
+def elaborazione_ldv():
 	
-	st.title("Lettere di Vettura")
- 
+	st.toast("Elaborazione effettuata per la lettera di vettura {}".format(st.session_state["ldv"]))
+	
 	llm = AzureChatOpenAI(
 			azure_endpoint=os.getenv("AZURE_OPENAI_BASE"), 
 			api_key=os.getenv("AZURE_OPENAI_KEY"),
@@ -166,9 +166,9 @@ try:
 			model_name=os.getenv("AZURE_OPENAI_MODEL_NAME"),
 			streaming=False
 	)
-	
+
 	fields = get_field_from_cim()
-	
+	return
 	st.info("Info da Email")
 	st.text_input("From:", value="")
 	st.text_input("Oggetto Email:", value="")
@@ -340,13 +340,58 @@ try:
 	st.info("Dettagli Vagoni")
 	st.text_area("Informazioni di testata", height=200, value="")
 	st.text_area("Dettaglio vagoni", height=500, value="")
+	st.toast("Elaborazione effettuata per la lettera di vettura {}".format(st.session_state["ldv"]))
+	return
+def prova1():
+	container_cim = st.session_state["container_cim"]
+	container_cim.write("ciao")
+	return
 
-	st.success("Estrazione completata")
+def prova2():
+	container_cim = st.session_state["container_cim"]
+	container_cim.empty()
+	return
 
-	st.button("Ricerca su Orpheus...", on_click=orpheus_click, key="button_orpheus")	
-	st.button("Conversione codici...", on_click=conversione_click, key="button_conversione")
+try:
+	
+	# mod_page_style = """
+	#         <style>
+	#         #MainMenu {visibility: hidden;}
+	#         footer {visibility: hidden;}
+	#         header {visibility: hidden;}
+	#         </style>
+	#         """
+	# st.markdown(mod_page_style, unsafe_allow_html=True)
+	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
+	st.title("Lettere di Vettura")
+ 
+	ldv_folders = []
+	for root, dirs, files in os.walk(os.path.join('ldv')):
+		for name in dirs:
+			ldv_folders.append(os.path.join(name))
+ 
+	with st.sidebar:
+		st.subheader('seleziona la lettera di vettura')
+		st.session_state["ldv"] = st.selectbox('Lettera di Vettura', ldv_folders)
+		st.button("01 Estrai informazioni (mail+ldv)", on_click=elaborazione_ldv, key="button_elaborazione")
+		st.button("02 Controlla presenza Orfeus", on_click=elaborazione_ldv, key="button_orfeus")
+		st.button("03 Conversione codici", on_click=elaborazione_ldv, key="button_codici")
+		st.button("04 Associazione LdV <=> RDS", on_click=elaborazione_ldv, key="button_scelta_rds")
 
-
+	container_immagini = st.expander("Email e Allegati")
+	container_immagini.empty()
+	container_cim = st.expander("CIM")
+	container_cim.empty()
+	container_wagons = st.expander("Dettaglio Vagoni")
+	container_wagons.empty()
+	container_orfeus = st.expander("Orfeus")
+	container_orfeus.empty()
+	container_rds = st.expander("Selezione RDS")
+	container_rds.empty()
+	
+	st.session_state["container_cim"] = container_cim
+	st.button("prova1", on_click=prova1, key="button_prova1")
+	st.button("prova2", on_click=prova2, key="button_prova2")
 
 except Exception as e:
 	st.error(traceback.format_exc())

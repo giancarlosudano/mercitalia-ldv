@@ -21,127 +21,135 @@ from io import BytesIO
 from PIL import Image
 
 def plus_one():
-    if st.session_state["slider"] < 10:
-        st.session_state.slider += 1
-    else:
-        pass
-    return
+	if st.session_state["slider"] < 10:
+		st.session_state.slider += 1
+	else:
+		pass
+	return
 
 def check_openai_version():
-    """
-    Check Azure Open AI version
-    """
-    installed_version = openai.__version__
+	"""
+	Check Azure Open AI version
+	"""
+	installed_version = openai.__version__
 
-    try:
-        version_number = float(installed_version[:3])
-    except ValueError:
-        print("Invalid OpenAI version format")
-        return
+	try:
+		version_number = float(installed_version[:3])
+	except ValueError:
+		print("Invalid OpenAI version format")
+		return
 
-    print(f"Installed OpenAI version: {installed_version}")
+	print(f"Installed OpenAI version: {installed_version}")
 
-    if version_number < 1.0:
-        print("[Warning] You should upgrade OpenAI to have version >= 1.0.0")
-        print("To upgrade, run: %pip install openai --upgrade")
-    else:
-        print(f"[OK] OpenAI version {installed_version} is >= 1.0.0")
-        
+	if version_number < 1.0:
+		print("[Warning] You should upgrade OpenAI to have version >= 1.0.0")
+		print("To upgrade, run: %pip install openai --upgrade")
+	else:
+		print(f"[OK] OpenAI version {installed_version} is >= 1.0.0")
+		
 def GPT4V_with_AzureAIVision(image_file, prompt):
 
-    if not os.path.exists(image_file):
-        print(f"[Error] Image file {image_file} does not exist.")
+	openai.api_type: str = "azure"
+	openai.api_key = "5f91d8fa2896471e98ba92d5ca83dade"
+	openai.api_base = "https://mtcmilanoaiswi.openai.azure.com/"
+	azure_aivision_endpoint = "https://aivision-demo-mtc.cognitiveservices.azure.com/"
+	azure_aivision_key = "0c798c9c6de3498ba7939c2c9a4d8dc6"
+	model = "GPT4Vision"
+	
+	if not os.path.exists(image_file):
+		print(f"[Error] Image file {image_file} does not exist.")
 
-    base_url = f"{openai.api_base}/openai/deployments/gpt-4-vision-preview"
-    gpt4vision_endpoint = (
-        f"{base_url}/extensions/chat/completions?api-version=2023-12-01-preview"
-    )
+	base_url = f"https://mtcmilanoaiswi.openai.azure.com/openai/deployments/gpt-4-vision-preview"
+	gpt4vision_endpoint = (
+		f"{base_url}/extensions/chat/completions?api-version=2023-12-01-preview"
+	)
 
-    # Header
-    headers = {"Content-Type": "application/json", "api-key": openai.api_key}
+	# Header
+	headers = {"Content-Type": "application/json", "api-key": openai.api_key}
 
-    # Encoded image
-    base_64_encoded_image = base64.b64encode(open(image_file, "rb").read()).decode(
-        "ascii"
-    )
+	# Encoded image
+	base_64_encoded_image = base64.b64encode(open(image_file, "rb").read()).decode("ascii")
 
-    # Context
-    context = "You are an insurance AI expert. You will analyse a car report document. Always reply in English."
+	# Context
+	context = "You are an insurance AI expert. You will analyse a car report document. Always reply in English."
 
-    # Payload
-    json_data = {
-        "model": "gpt-4-vision-preview",
-        "enhancements": {"ocr": {"enabled": True}, "grounding": {"enabled": True}},
-        "dataSources": [
-            {
-                "type": "AzureComputerVision",
-                "endpoint": azure_aivision_endpoint,
-                "key": azure_aivision_key,
-                "indexName": indexname,
-            }
-        ],
-        "messages": [
-            {"role": "system", "content": context},
-            {"role": "user", "content": [prompt, {"image": base_64_encoded_image}]},
-        ],
-        "max_tokens": 4000,
-        "temperature": 0.7,
-        "top_p": 1,
-    }
+	# Payload
+	json_data = {
+		"model": "gpt-4-vision-preview",
+		"enhancements": {"ocr": {"enabled": True}, "grounding": {"enabled": True}},
+		"dataSources": [
+			{
+				"type": "AzureComputerVision",
+				"endpoint": "<>",
+				"key": "<>",
+				"indexName": "ldv-index",
+			}
+		],
+		"messages": [
+			{"role": "system", "content": context},
+			{"role": "user", "content": [prompt, {"image": base_64_encoded_image}]},
+		],
+		"max_tokens": 4000,
+		"temperature": 0.7,
+		"top_p": 1,
+	}
 
-    # Response
-    response = requests.post(
-        gpt4vision_endpoint, headers=headers, data=json.dumps(json_data)
-    )
+	# Response
+	response = requests.post(
+		gpt4vision_endpoint, headers=headers, data=json.dumps(json_data)
+	)
 
-    # Testing the status code from the model response
-    if response.status_code == 200:
-        now = str(datetime.datetime.today().strftime("%d-%b-%Y %H:%M:%S"))
-        print(f"Analysis of image: {image_file}")
-        results = json.loads(response.text)
-        print("\033[1;31;34m")
-        print(results["choices"][0]["message"]["content"])
-        
-        prompt_tokens = results["usage"]["prompt_tokens"]
-        completion_tokens = results["usage"]["completion_tokens"]
-        total_tokens = results["usage"]["total_tokens"]
+	# Testing the status code from the model response
+	if response.status_code == 200:
+		now = str(datetime.datetime.today().strftime("%d-%b-%Y %H:%M:%S"))
+		st.write(f"Analysis of image: {image_file}")
+		results = json.loads(response.text)
+		st.write("\033[1;31;34m")
+		st.write(results["choices"][0]["message"]["content"])
+		
+		prompt_tokens = results["usage"]["prompt_tokens"]
+		completion_tokens = results["usage"]["completion_tokens"]
+		total_tokens = results["usage"]["total_tokens"]
 
-        print("\n\033[1;31;32mDone:", now)
-        print(f"Prompt tokens = {prompt_tokens} | Completion tokens = {completion_tokens} | Total tokens = {total_tokens}")
-        print("\n[Note] These results are generated by an AI")
-        print("\033[0m")
-        
-        return results
-    
-    elif response.status_code == 429:
-        print(
-            "[429 Error] Too many requests. Please wait a couple of seconds and try again.\n"
-        )
-        print(json.loads(response.text))
+		st.write("\n\033[1;31;32mDone:", now)
+		st.write(f"Prompt tokens = {prompt_tokens} | Completion tokens = {completion_tokens} | Total tokens = {total_tokens}")
+		st.write("\n[Note] These results are generated by an AI")
+		st.write("\033[0m")
+		
+		return results
+	
+	elif response.status_code == 429:
+		st.write("[429 Error] Too many requests. Please wait a couple of seconds and try again.\n")
+		st.write(json.loads(response.text))
 
-    else:
-        print(f"[Error] Error code: {response.status_code}\n")
-        print(json.loads(response.text))
+	else:
+		st.write(f"[Error] Error code: {response.status_code}\n")
+		st.write(json.loads(response.text))
 
 try:
-    load_dotenv("azure.env")
+	st.title("Lettere di Vettura")
+	
+	from streamlit_selectable_image_gallery import image_gallery
 
-    # Azure Open AI
-    openai.api_type: str = "azure"
-    openai.api_key = "5f91d8fa2896471e98ba92d5ca83dade"
-    openai.api_base = os.getenv("OPENAI_API_BASE")
-    azure_aivision_endpoint = os.getenv("azure_aivision_endpoint")
-    azure_aivision_key = os.getenv("azure_aivision_key")
-    model = "GPT4Vision"
-    image_path = Image.open("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231107 202142 OK/w01.jpg")
+	images = []
+	images_path = []
+	
+	images_path.append("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231107 131436 OK/w01.jpg")
+	images_path.append("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231107 202142 OK/w01.jpg")
+	images_path.append("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231107 204644 OK/w01.jpg")
+	images_path.append("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231108 000032 OK/w01.jpg")
+	images_path.append("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231108 085517 OK/w01.jpg")
+	
+	for file in images_path:
+		with open(file, "rb") as image:
+			encoded = base64.b64encode(image.read()).decode()
+			images.append(f"data:image/jpeg;base64,{encoded}")
 
-    st.title("Lettere di Vettura")
-    add_one = st.button("Add one to the slider", on_click=plus_one, key="add_one")
-    slide_val = st.slider("Pick a number", 0, 10, key="slider")
-    
-    prompt = "Classify this document into 'Driver licence', 'Passport', 'European Accident form', 'Others'"
-
-    GPT4V_with_AzureAIVision(image_path, prompt)    
+	selected_index = image_gallery(images, 300)
+		
+	image_path = "C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231107 204644 OK/w01.jpg"
+	# prompt = "Extract all the information from this document into a markdown table with this columns: Wagon Number, NHM, Brutto"
+	# GPT4V_with_AzureAIVision(image_path, prompt)
 
 except Exception as e:
 	st.error(traceback.format_exc())
