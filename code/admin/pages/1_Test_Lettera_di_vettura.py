@@ -7,8 +7,10 @@ from langchain_openai import AzureChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 import xml.etree.ElementTree as ET
+from dotenv import load_dotenv
 
 def get_field_from_cim():
+    
 	from azure.core.credentials import AzureKeyCredential
 	from azure.ai.formrecognizer import DocumentAnalysisClient
 	endpoint = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
@@ -54,6 +56,7 @@ def conversione_click():
 	
 	import pandas as pd
 	from fuzzywuzzy import process
+	from dotenv import load_dotenv
 
 	# Carica i dati da un file Excel
 	df = pd.read_excel(os.path.join('orpheus', "clienti.xslx"))
@@ -352,19 +355,23 @@ def prova2():
 	container_cim.empty()
 	return
 
+def disable_header_footer():
+	mod_page_style = """
+	        <style>
+	        #MainMenu {visibility: hidden;}
+	        footer {visibility: hidden;}
+	        header {visibility: hidden;}
+	        </style>
+	        """
+	st.markdown(mod_page_style, unsafe_allow_html=True)
+	return
+
 try:
-	
-	# mod_page_style = """
-	#         <style>
-	#         #MainMenu {visibility: hidden;}
-	#         footer {visibility: hidden;}
-	#         header {visibility: hidden;}
-	#         </style>
-	#         """
-	# st.markdown(mod_page_style, unsafe_allow_html=True)
+	disable_header_footer()	
+	load_dotenv()
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
 	st.title("Lettere di Vettura")
- 
+
 	ldv_folders = []
 	for root, dirs, files in os.walk(os.path.join('ldv')):
 		for name in dirs:

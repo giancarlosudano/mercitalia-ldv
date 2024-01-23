@@ -50,19 +50,17 @@ def check_openai_version():
 def GPT4V_with_AzureAIVision(image_file, prompt):
 
 	openai.api_type: str = "azure"
-	openai.api_key = "5f91d8fa2896471e98ba92d5ca83dade"
-	openai.api_base = "https://mtcmilanoaiswi.openai.azure.com/"
-	azure_aivision_endpoint = "https://aivision-demo-mtc.cognitiveservices.azure.com/"
-	azure_aivision_key = "0c798c9c6de3498ba7939c2c9a4d8dc6"
+	openai.api_key = os.getenv("AZURE_OPENAI_KEY")
+	openai.api_base = os.getenv("AZURE_OPENAI_BASE")
+	azure_aivision_endpoint = os.getenv("AZURE_AI_VISION_URL")
+	azure_aivision_key = os.getenv("AZURE_AI_VISION_KEY")
 	model = "GPT4Vision"
 	
 	if not os.path.exists(image_file):
 		print(f"[Error] Image file {image_file} does not exist.")
 
 	base_url = f"https://mtcmilanoaiswi.openai.azure.com/openai/deployments/gpt-4-vision-preview"
-	gpt4vision_endpoint = (
-		f"{base_url}/extensions/chat/completions?api-version=2023-12-01-preview"
-	)
+	gpt4vision_endpoint = (f"{base_url}/extensions/chat/completions?api-version=2023-12-01-preview")
 
 	# Header
 	headers = {"Content-Type": "application/json", "api-key": openai.api_key}
@@ -71,7 +69,7 @@ def GPT4V_with_AzureAIVision(image_file, prompt):
 	base_64_encoded_image = base64.b64encode(open(image_file, "rb").read()).decode("ascii")
 
 	# Context
-	context = "You are an insurance AI expert. You will analyse a car report document. Always reply in English."
+	context = "You are an OCR AI expert. You will help to extarct information from tables in images."
 
 	# Payload
 	json_data = {
@@ -80,8 +78,8 @@ def GPT4V_with_AzureAIVision(image_file, prompt):
 		"dataSources": [
 			{
 				"type": "AzureComputerVision",
-				"endpoint": "<>",
-				"key": "<>",
+				"endpoint": azure_aivision_endpoint,
+				"key": azure_aivision_key,
 				"indexName": "ldv-index",
 			}
 		],
@@ -146,7 +144,7 @@ try:
 			images.append(f"data:image/jpeg;base64,{encoded}")
 
 	selected_index = image_gallery(images, 300)
-		
+
 	image_path = "C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231107 204644 OK/w01.jpg"
 	# prompt = "Extract all the information from this document into a markdown table with this columns: Wagon Number, NHM, Brutto"
 	# GPT4V_with_AzureAIVision(image_path, prompt)
