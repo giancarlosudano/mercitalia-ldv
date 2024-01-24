@@ -3,9 +3,7 @@ import streamlit as st
 import os
 import logging
 from dotenv import load_dotenv
-from langchain_openai import AzureChatOpenAI
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import StrOutputParser
+import streamlit_authenticator as stauth
 
 load_dotenv()
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -13,17 +11,51 @@ logger = logging.getLogger('azure.core.pipeline.policies.http_logging_policy').s
 
 st.set_page_config(page_title="Automazione Lettere di Vettura <=> RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
 
-mod_page_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(mod_page_style, unsafe_allow_html=True)
+# mod_page_style = """
+#             <style>
+#             #MainMenu {visibility: hidden;}
+#             footer {visibility: hidden;}
+#             header {visibility: hidden;}
+#             </style>
+#             """
+# st.markdown(mod_page_style, unsafe_allow_html=True)
 
 st.title("Automazione Lettere di Vettura / RDS")
-st.subheader("Utilizzo di generative AI per l'automazione del processo di assegnazione delle lettere di vettura alle RDS")
+# st.subheader("Utilizzo di generative AI per l'automazione del processo di assegnazione delle lettere di vettura alle RDS")
+
+import yaml
+from yaml.loader import SafeLoader
+
+with open('config.yaml') as file:
+    config = yaml.load(file, Loader=SafeLoader)
+
+authenticator = stauth.Authenticate(
+    config['credentials'],
+    config['cookie']['name'],
+    config['cookie']['key'],
+    config['cookie']['expiry_days'],
+    config['preauthorized']
+)
+
+name, authentication_status, username = authenticator.login(location='main')
+
+if username == 'smith@mercitalia.com':
+    st.session_state["authentication_status"] = True
+    st.session_state["name"] = "John Smith"
+
+# st.write(name)
+# st.write(authentication_status)
+# st.write(username)
+
+# hashed_passwords = stauth.Hasher(['abc']).generate()
+# st.write(hashed_passwords[0])
+
+if st.session_state["authentication_status"]:
+    st.write(f'Welcome *{st.session_state["name"]}*, you are an **admin**.')
+elif st.session_state["authentication_status"] == False:
+    st.error('Username/password is incorrect')
+elif st.session_state["authentication_status"] == None:
+    st.warning('Please enter your username and password')
 
 # llm = AzureChatOpenAI(
 #     azure_endpoint=os.getenv("AZURE_OPENAI_BASE"), 
