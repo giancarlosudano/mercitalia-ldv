@@ -18,11 +18,6 @@ import requests
 import sys
 import re
 
-def get_emails():
-
-	return
-
-
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
 	st.title("Scelta Range Date")
