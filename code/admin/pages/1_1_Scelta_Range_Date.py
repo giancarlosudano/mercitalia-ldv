@@ -98,6 +98,7 @@ try:
 			st.write('**Data**: {}'.format(selected_rows[0]['Data email']))
 			st.write('**Soggetto**: {}'.format(selected_rows[0]['Oggetto']))
 			st.write('**Da**: {}'.format(selected_rows[0]['Da']))
+			st.session_state["ldv"] = selected_rows[0]['Data email']
     
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
