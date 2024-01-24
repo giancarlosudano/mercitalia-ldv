@@ -40,6 +40,7 @@ def get_field_from_cim():
 	return fields
 
 def prompt_for_box(numero_casella: str, descrizione_estrazione: str, box: str, llm: AzureChatOpenAI):
+	return ""
 	prompt_base = """il testo delimitato da ### deriva da una scansione OCR di un modulo di trasporto ferroviario. 
 Il testo deriva da una casella che ha come numero iniziale {numero_casella} e che può contenere la descrizione della casella stessa.
 ###
@@ -59,8 +60,6 @@ Risposta:
 	response = chain.invoke({"input": prompt_base.format(numero_casella=numero_casella, descrizione_estrazione=descrizione_estrazione, box=box)})
 	
 	return response
-
-def conversione_click():
 	
 	import pandas as pd
 	from fuzzywuzzy import process
@@ -93,75 +92,6 @@ def conversione_click():
 	st.session_state["codice_mittente_scelto"] = options
 	
 	return
-
-def orfeus_click():
-	folder_path = os.path.join('orpheus')
-	# Elencare tutti i file nella cartella
-	for file_name in os.listdir(folder_path):
-		print(file_name)
-		# Costruisci il percorso completo del file
-		file_path = os.path.join(folder_path, file_name)
-
-		# Verifica che sia un file e non una cartella
-		if os.path.isfile(file_path):
-			# Chiama la funzione per il file
-			tree = ET.parse(file_path)
-			root = tree.getroot()
-
-			uic_country_codes = []
-			station_codes = []
-			carrier_codes = []
-			consignment_numbers = []
-			acceptance_dates = []
-
-			# Iterate through the ECN nodes
-			for ecn in root.findall(".//ECN"):
-				uic_country_code_node = ecn.find(".//AcceptancePoint/Point/Country/UICCountryCode")
-				if uic_country_code_node is not None:
-					uic_country_codes.append(uic_country_code_node.text)
-
-			# Iterate through the ECN nodes
-			for ecn in root.findall(".//ECN"):
-				station_code = ecn.find(".//AcceptancePoint/Station/Code")
-				if station_code is not None:
-					station_codes.append(station_code.text)
-
-			# Iterate through the ECN nodes
-			for ecn in root.findall(".//ECN"):
-				carrier_code = ecn.find(".//AcceptancePoint/CarrierCode")
-				if carrier_codes is not None:
-					carrier_codes.append(carrier_code.text)
-
-			# Iterate through the ECN nodes
-			for ecn in root.findall(".//ECN"):
-				consignment_number = ecn.find(".//AcceptancePoint/ConsignmentNumber")
-				if consignment_numbers is not None:
-					consignment_numbers.append(consignment_number.text)
-
-			# Iterate through the ECN nodes
-			for ecn in root.findall(".//ECN"):
-				acceptance_date = ecn.find(".//AcceptancePoint/AcceptanceDate")
-				if acceptance_date is not None:
-					acceptance_dates.append(acceptance_date.text)
-			
-			data_ora_originale = acceptance_dates[0]
-
-			# Analizzare la stringa nel formato originale
-			# '%Y-%m-%dT%H:%M:%S%z' è il formato di analisi
-			# '%Y' sta per anno, '%m' per mese, '%d' per giorno, '%H' per ore, '%M' per minuti, '%S' per secondi, '%z' per il fuso orario
-			data_ora_obj = datetime.strptime(data_ora_originale, '%Y-%m-%dT%H:%M:%S%z')
-
-			# Formattare l'oggetto datetime nel nuovo formato
-			# '%Y%m%d-%H%M%S' è il formato di output
-			data_ora_formattata = data_ora_obj.strftime('%Y%m%d')
-			
-			# Confronto
-			# if st.session.state.ident_paese_2 == uic_country_codes[0] and st.session.state.ident_stazione_2 == station_codes[0] and st.session.state.ident_impresa_2 == carrier_codes[0] and st.session.state.ident_spedizione_2 == consignment_numbers[0] and st.session.state.ident_data_2 == data_ora_formattata:
-			# 	st.success("Trovato XML Orpheus: {}".format(file_name))
-	
-			# Confronto
-			if "80" == uic_country_codes[0] and "637702" == station_codes[0] and "3239" == carrier_codes[0] and "678649" == consignment_numbers[0] and "20231106" == data_ora_formattata:
-				st.success("Trovato XML Orpheus: {}".format(file_name))
 
 def elaborazione_ldv():
 	
@@ -342,26 +272,6 @@ def elaborazione_ldv():
 	st.text_area("Dettaglio vagoni", height=500, value="")
 	st.toast("Elaborazione effettuata per la lettera di vettura {}".format(st.session_state["ldv"]))
 	return
-def prova1():
-	container_cim = st.session_state["container_cim"]
-	container_cim.write("ciao")
-	return
-
-def prova2():
-	container_cim = st.session_state["container_cim"]
-	container_cim.empty()
-	return
-
-def disable_header_footer():
-	mod_page_style = """
-			<style>
-			#MainMenu {visibility: hidden;}
-			footer {visibility: hidden;}
-			header {visibility: hidden;}
-			</style>
-			"""
-	st.markdown(mod_page_style, unsafe_allow_html=True)
-	return
 
 def carica_ldv():
 	container_email = st.session_state["container_email"]
@@ -389,8 +299,7 @@ def carica_ldv():
 
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
-	#disable_header_footer()
-	st.title("Lettere di Vettura")
+	st.title("Estrazione dati da email e allegati")
  
 	import streamlit_authenticator as stauth	
 	import yaml
@@ -409,18 +318,8 @@ try:
 
 	if st.session_state["authentication_status"]:		
 		load_dotenv()
-		ldv_folders = []
-		for root, dirs, files in os.walk(os.path.join('ldv')):
-			for name in dirs:
-				ldv_folders.append(os.path.join(name))
-		with st.sidebar:
-			st.subheader('seleziona la lettera di vettura')
-			st.session_state["ldv"] = st.selectbox('Lettera di Vettura', ldv_folders)
-			st.button("01 Estrai informazioni (mail+ldv)", on_click=carica_ldv, key="button_elaborazione")
-			st.button("02 Controlla presenza Orfeus", on_click=elaborazione_ldv, key="button_orfeus")
-			st.button("03 Conversione codici", on_click=elaborazione_ldv, key="button_codici")
-			st.button("04 Associazione LdV <=> RDS", on_click=elaborazione_ldv, key="button_scelta_rds")
-
+		st.image(os.path.join('images','Slide2.JPG'), use_column_width=True)
+		st.markdown('Descrizione della fase con eventuali note e inserimento di diagramma architetturale con tecnologie e stub AI utilizzati')
 		# container_email = st.container()
 		# container_email.empty()
 		# st.session_state["container_email"] = container_email
@@ -455,7 +354,31 @@ try:
 		)
   
 		colbox1, colbox2, colbox3 = st.columns([1,1,1])
-		
+
+		# import base64
+		# import streamlit as st
+		# from st_clickable_images import clickable_images
+
+		# images = []
+		# for file in ["image1.jpeg", "image2.jpeg"]:
+		# 	with open(file, "rb") as image:
+		# 		encoded = base64.b64encode(image.read()).decode()
+		# 		images.append(f"data:image/jpeg;base64,{encoded}")
+
+		# clicked = clickable_images(
+		# 	images,
+		# 	titles=[f"Image #{str(i)}" for i in range(len(images))],
+		# 	div_style={"display": "flex", "justify-content": "center", "flex-wrap": "wrap"},
+		# 	img_style={"margin": "5px", "height": "200px"},
+		# )
+		# st.markdown(f"Image #{clicked} clicked" if clicked > -1 else "No image clicked")
+		# clickable_images(paths, titles=[], div_style={}, img_style={}, key=None )
+		# paths (list): the list of URLs of the images
+		# titles (list): the (optional) titles of the images
+		# div_style (dict): a dictionary with the CSS property/value pairs for the div container
+		# img_style (dict): a dictionary with the CSS property/value pairs for the images
+		# key (str or None): an optional key that uniquely identifies this component. If this is None, and the component's arguments are changed, the component will be re-mounted in the Streamlit frontend and lose its current state
+				
 		with colbox1:
 			st.text_area("(1) Mittente (OCR)", value="", height=150, key="box1_1")
 		with colbox2:
