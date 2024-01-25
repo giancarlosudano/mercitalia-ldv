@@ -49,6 +49,16 @@ Viene utilizzato GPT4 per sviluppare un algoritmo di ricerca che imposta le cond
 - **Azure App Service**: Web Container che ospita una applicazione Python che organizza tutta la logica applicativa. La ricerca tra i file di Orfeus è effettuata mediante tradizionale ricerca XML di libreria
 - **Azure OpenAI**: Servizio di LLM in modalità GPT4-Turbo per l'automazione del processo di "ragionamento" per la ricerca della RDS più appropriata
 """)
+
+		st.write("### Dati Attuali recuperati")
+
+		st.write("Origine: " + st.session_state["box-01-orfeus"])
+		st.write("Destinazione: " + st.session_state["box-01-orfeus"])
+		st.write("Codice Mittente: " + st.session_state["box-01-orfeus"])
+		st.write("Codice Destinatario: " + st.session_state["box-01-orfeus"])
+		st.write("Punti frontiera: " + st.session_state["box-01-orfeus"])
+		st.write("Massa: " + st.session_state["box-01-orfeus"])
+		st.write("Lunghezza: " + st.session_state["box-01-orfeus"])
 	
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
