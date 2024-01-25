@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>6071517509272</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-06T07:15:07+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2187</SendingCarrier>
+      <MessageReferenceNumber>5296764</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <MadeAvailable>2023-12-06T04:52:00+01:00</MadeAvailable>
+      <ECNPreparationDatetime>2023-12-06T07:08:49+01:00</ECNPreparationDatetime>
+      <DossierNumber>2187202312062541788</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>75343</Code>
+          <Name>FOS-COUSSOUL</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>753434</Code>
+          <Name>FOS-COUSSOUL</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-12-06T07:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2187</CarrierCode>
+        <ConsignmentNumber>636365</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02664</Code>
+          <Name>SAN STINO DI LIVENZA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>026641</Code>
+          <Name>SAN STINO DI LIVENZA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>026641</Code>
+          <Name>SAN STINO DI LIVENZA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>3009719</CustomerCode>
+          <Name>ARCELORMITTAL MEDIT</Name>
+          <VAT>FR29421174038</VAT>
+          <Street>FOS SUR MER - Cedex</Street>
+          <Country>FR</Country>
+          <ZIPCode>13776</ZIPCode>
+          <City>FOS SUR MER - Cedex</City>
+          <Signature>-</Signature>
+          <Contacts>
+            <PhoneNumber>0033442473197</PhoneNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <Name>MVO MAGAZZINI DEL VENETO ORIENTALE</Name>
+          <VAT>FR29421174038</VAT>
+          <Street>VIA INTERPORTO S.N.</Street>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <City>SANTO STINO DI LIVENZA    IT</City>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>3009719 14</CustomerCode>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+      </Customers>
+      <AdditionalInformation>
+        <ConsignorReference>TC 548            C5531A</ConsignorReference>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>16</Type>
+          <Quantity>1</Quantity>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>VIA VINTIMILLE FRE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>VIA</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>VIA</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>10</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>574510</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>87400</RouteCode>
+          <RouteText>VINTIMILLE</RouteText>
+          <BorderpointCode>240</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-12-06T00:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>1</Status>
+          <CarrierCode>2187</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>87</UICCountryCode>
+            <Station>
+              <StationCode>753434</StationCode>
+              <StationName>FOS-COUSSOUL</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>87</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0240</PointCode>
+              <PointName>VINTIMILLE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2187</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0240</PointCode>
+              <PointName>VENTIMIGLIA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>2287</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>2</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>026641</StationCode>
+              <StationName>SAN STINO DI LIVENZA</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2187</CarrierCode>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>ARCELORMITTAL MEDIT</Place>
+        <Date>2023-12-06+01:00</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>87</UICCountryCode>
+            <StationCode>753434</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>026641</StationCode>
+          </End>
+          <CommercialRouteCode>101</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720826</NHMCode>
+            <TariffNumber>574510</TariffNumber>
+            <ChargedMass value="70588" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338746682735">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21700</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>70588</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>48888</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746683550">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21700</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>86903</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>65203</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746684053">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>70612</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>47612</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746685183">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>86226</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>63226</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746685399">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>75748</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>53948</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746685571">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>71359</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>49559</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746685910">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88800</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>65800</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746687064">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>69046</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>47246</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046684676">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>73688</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>51888</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378047774500">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>69332</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>47532</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446683328">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21900</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>75464</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>53564</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446685315">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>18900</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>81712</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>62812</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446686677">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>18900</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>60182</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>41282</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446686776">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>18900</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>84767</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>65867</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446687030">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>70148</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>2</NumberOfPackages>
+              </Packing>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>LARGES BANDES TOLES ACIER LAM.CHAUD</GoodDescription>
+              <GrossMass>48348</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

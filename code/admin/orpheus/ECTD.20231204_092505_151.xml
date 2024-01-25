@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>4092517499151</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-04T09:25:05+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2187</SendingCarrier>
+      <MessageReferenceNumber>5295719</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <MadeAvailable>2023-12-04T00:00:00+01:00</MadeAvailable>
+      <ECNPreparationDatetime>2023-12-04T09:17:23+01:00</ECNPreparationDatetime>
+      <DossierNumber>2187202312042991576</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>21063</Code>
+          <Name>SOLLAC</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>753434</Code>
+          <Name>SOLLAC</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-12-04T08:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2187</CarrierCode>
+        <ConsignmentNumber>636233</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>00000</Code>
+          <Name>Cittadella</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>025353</Code>
+          <Name>Cittadella</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>025353</Code>
+          <Name>Cittadella</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>3009719</CustomerCode>
+          <Name>ArcelorMittal MEDITERRANEE</Name>
+          <VAT>FR29421174038</VAT>
+          <Street>USINE DE FOS SUR MER</Street>
+          <Country>FR</Country>
+          <ZIPCode>13776</ZIPCode>
+          <City>FOS SUR MER CEDEX</City>
+          <Signature>-</Signature>
+          <Contacts>
+            <PhoneNumber>0033442473197</PhoneNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <Name>GABRIELLI SPA</Name>
+          <Street>Via Giuseppe Mazzini 58</Street>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <City>Cittadella (IT_35)</City>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>3009719 14</CustomerCode>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCE">
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+      </Customers>
+      <AdditionalInformation>
+        <ConsignorReference>9000351312791542</ConsignorReference>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>240 VENTIMIGLIA (IT) / VINTIMILLE (FR)</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>10</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>574510</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>87400</RouteCode>
+          <RouteText>VINTIMILLE</RouteText>
+          <BorderpointCode>240</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-12-04T00:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>1</Status>
+          <CarrierCode>2187</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>87</UICCountryCode>
+            <Station>
+              <StationCode>753434</StationCode>
+              <StationName>FOS-COUSSOUL</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>87</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0240</PointCode>
+              <PointName>VINTIMILLE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2187</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0240</PointCode>
+              <PointName>VENTIMIGLIA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>2287</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>2</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>025353</StationCode>
+              <StationName>Cittadella</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2187</CarrierCode>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Fos-sur-Mer (FR_13)</Place>
+        <Date>2023-12-04+01:00</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>87</UICCountryCode>
+            <StationCode>753434</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>025353</StationCode>
+          </End>
+          <CommercialRouteCode>101</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720826</NHMCode>
+            <TariffNumber>574510</TariffNumber>
+            <ChargedMass value="89699" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338046707653">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21100</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89699</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>68599</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446685794">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>19000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>75916</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>56916</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046681904">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22400</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>71114</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>48714</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338046707539">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21100</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>69827</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>48727</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446683864">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88033</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>66033</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446691743">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>19000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>73184</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>54184</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446695488">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>71136</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>49336</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378047772967">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21700</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76594</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>54894</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378246790059">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>64225</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>40225</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046685269">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87660</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>66160</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378047774427">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76124</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>53624</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446683609">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21900</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>63540</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>Larg band, tôles lam à chaud, en bobines</GoodDescription>
+              <GrossMass>41640</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046681466">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21900</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>74787</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>52887</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046682563">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>73051</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>51251</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338046707182">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21100</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>83828</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>62728</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046683934">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79475</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>57675</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446690927">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>74984</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>53184</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046680666">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21900</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>71195</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>49295</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446680597">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21900</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88720</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>66820</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046681623">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21900</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>73624</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720826</NHMCode>
+              <GoodDescription>BOBINE DECAPEE, DERIVEE, HUILEE</GoodDescription>
+              <GrossMass>51724</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>6165117513120</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-06T16:51:07+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2180</SendingCarrier>
+      <MessageReferenceNumber>31744542</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-06T16:47:13+01:00</ECNPreparationDatetime>
+      <DossierNumber>2180202312067092200</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+      <ORFIMO>1</ORFIMO>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>63770</Code>
+          <Name>LUDWIGSHAFEN (RHEIN) BASF UBF</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>637702</Code>
+          <Name>LUDWIGSHAFEN (RHEIN) BASF UBF</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-12-03T01:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3239</CarrierCode>
+        <ConsignmentNumber>679779</ConsignmentNumber>
+        <ForwardingTrainNumber>50195</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02432</Code>
+          <Name>VERONA QUADRANTE  EUROPA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>024323</Code>
+          <Name>VERONA QUADRANTE  EUROPA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>024323</Code>
+          <Name>VERONA QUADRANTE  EUROPA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>6783</CustomerCode>
+          <Name>KVI KOMBIVERKEHR INT. VERKEHR</Name>
+          <VAT>DE 112 012 727</VAT>
+          <Street>ZUM LAURENBURGER HOF 76</Street>
+          <Country>DE</Country>
+          <ZIPCode>60594</ZIPCode>
+          <City>FRANKFURT/M</City>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>73643</CustomerCode>
+          <Name>MERCITALIA INTERMODAL S.P.A.</Name>
+          <VAT>IT 00857491005</VAT>
+          <Street>VIA ANTONIO CECHOV 50/2</Street>
+          <Country>IT</Country>
+          <ZIPCode>20151</ZIPCode>
+          <City>MILANO</City>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>6783</CustomerCode>
+          <Name>KVI KOMBIVERKEHR INT. VERKEHR</Name>
+          <VAT>DE 112 012 727</VAT>
+          <Street>ZUM LAURENBURGER HOF 76</Street>
+          <Country>DE</Country>
+          <ZIPCode>60594</ZIPCode>
+          <City>FRANKFURT/M</City>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Absender bleibt generell verfügungsberechtigt.</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Absender alleine verfuegungsberechtigt, bis die Sendung das Versandland gemaess Feld 16 bzw. Feld 56 des CIM-Frachtbriefs verlassen hat.</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>5658313272</ConsignorReference>
+      </AdditionalInformation>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>903417</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>80630</RouteCode>
+          <BorderpointCode>463</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81320</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <PrincipalCode>2180</PrincipalCode>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>3239</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>RBH LOGISTICS GMBH</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>637702</StationCode>
+              <StationName>LUDWIGSHAFEN (RHEIN) BASF UBF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>202366</StationCode>
+              <StationName>MUENCHEN OST RBF</StationName>
+            </Station>
+          </SectionTo>
+          <SubContractNumber>181985</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>2</Status>
+          <CarrierCode>2183</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>MERCITALIA RAIL SRL</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>022699</StationCode>
+              <StationName>BRENNERO/BRENNER</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>024323</StationCode>
+              <StationName>VERONA QUADRANTE  EUROPA</StationName>
+            </Station>
+          </SectionTo>
+          <SubContractNumber>165091</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>3157</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>LOKOM LOKOMOTION GES. F SCHIENENTRA</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>204990</StationCode>
+              <StationName>MUENCHEN NORD RBF BF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>022699</StationCode>
+              <StationName>BRENNERO/BRENNER</StationName>
+            </Station>
+          </SectionTo>
+          <SubContractNumber>165152</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>0</Status>
+          <CarrierCode>2180</CarrierCode>
+          <CarrierName>DB CARGO AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>202366</StationCode>
+              <StationName>MUENCHEN OST RBF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>204990</StationCode>
+              <StationName>MUENCHEN NORD RBF BF</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2180</CarrierCode>
+        <CarrierName>DB CARGO AG</CarrierName>
+        <Street>VOLLHÖFNER WEIDEN 26</Street>
+        <ZIPCode>21129</ZIPCode>
+        <City>HAMBURG</City>
+        <CountryCode>DE</CountryCode>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>LUDWIGSHAFEN (RHEIN) BASF UBF</Place>
+        <Date>2023-12-06</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>80</UICCountryCode>
+            <StationCode>637702</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>024323</StationCode>
+          </End>
+          <CommercialRouteCode>065</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>993100</NHMCode>
+            <TariffNumber>903417</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338549565590">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34300.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072620</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001773" LoadingStatus="empty">
+              <Prefix> TICU</Prefix>
+              <Checkdigit>1</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="23" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3300</TareWeight>
+              <DeliveryReference>9718006481380501</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993100</NHMCode>
+                <GoodDescription>Grosscontainer,leer gebraucht und vor oder nach Lastlauf per Bahn</GoodDescription>
+                <GrossMass>.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="490534" LoadingStatus="loaded">
+              <Prefix> BIDU</Prefix>
+              <Checkdigit>1</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3750</TareWeight>
+              <DeliveryReference>9718006481387301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>22000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="496249" LoadingStatus="loaded">
+              <Prefix> BIDU</Prefix>
+              <Checkdigit>1</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+              <DeliveryReference>9718006481387701</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>21980.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001608" LoadingStatus="empty">
+              <Prefix> TICU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="23" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3340</TareWeight>
+              <DeliveryReference>9718006481392201</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993100</NHMCode>
+                <GoodDescription>Grosscontainer,leer gebraucht und vor oder nach Lastlauf per Bahn</GoodDescription>
+                <GrossMass>.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549566283">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072625</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="735014" LoadingStatus="loaded">
+              <Prefix> RICU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="25" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4520</TareWeight>
+              <DeliveryReference>9718006481386801</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <DangerLabel>6.1</DangerLabel>
+                  <TechnicalDescription>enth. Methanol, Methylacetat</TechnicalDescription>
+                  <LongTextDescription>ENTZÜNDBARER FLÜSSIGER STOFF, GIFTIG, N.A.G.</LongTextDescription>
+                  <Weight>26120</Weight>
+                  <HazardNumber>336</HazardNumber>
+                  <UNNumber>1992</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>II</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>001,null,-,,</AdditionalGoodInformation>
+                <GrossMass>26120</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="773151" LoadingStatus="loaded">
+              <Prefix> WABU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="23" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3450</TareWeight>
+              <DeliveryReference>9718006481394001</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>29320.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045589405">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>19.6</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072648</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="309052" LoadingStatus="loaded">
+              <Prefix> HLMU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="23" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3400</TareWeight>
+              <DeliveryReference>9718006481386901</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>25000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001506" LoadingStatus="loaded">
+              <Prefix> TICU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="23" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3330</TareWeight>
+              <DeliveryReference>9718006481388001</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>29000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338049610110">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29640.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>33.5</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072644</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="258131" LoadingStatus="loaded">
+              <Prefix> PCVU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+              <DeliveryReference>9718006481387101</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>24000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001543" LoadingStatus="loaded">
+              <Prefix> TICU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="23" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3330</TareWeight>
+              <DeliveryReference>9718006481390001</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>23770.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045644564">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>19.6</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072646</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="342669" LoadingStatus="loaded">
+              <Prefix> BTEU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3300</TareWeight>
+              <DeliveryReference>9718006481388201</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="081384" LoadingStatus="loaded">
+              <Prefix> SHNU</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2880</TareWeight>
+              <DeliveryReference>9718006481388401</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>25040.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378549560753">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072619</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="225308" LoadingStatus="loaded">
+              <Prefix> RICU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4880</TareWeight>
+              <DeliveryReference>9718006481388501</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <LongTextDescription>HARZLÖSUNG</LongTextDescription>
+                  <Weight>10000</Weight>
+                  <HazardNumber>30</HazardNumber>
+                  <UNNumber>1866</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>001,null,-,,</AdditionalGoodInformation>
+                <GrossMass>10000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="350496" LoadingStatus="loaded">
+              <Prefix> CEXU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="25" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4300</TareWeight>
+              <DeliveryReference>9718006481388801</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <LongTextDescription>VINYLACETAT, STABILISIERT</LongTextDescription>
+                  <Weight>25080</Weight>
+                  <HazardNumber>339</HazardNumber>
+                  <UNNumber>1301</UNNumber>
+                  <Class>3</Class>
+                  <ClassificationCode>F1</ClassificationCode>
+                  <PackingGroup>II</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>001,null,-,,,heiss</AdditionalGoodInformation>
+                <GrossMass>25080</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="241866" LoadingStatus="loaded">
+              <Prefix> HOYU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3800</TareWeight>
+              <DeliveryReference>9718006481389601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>19140.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049546803">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>30900.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>33.9</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072650</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="0720007" LoadingStatus="loaded">
+              <Prefix> WABU</Prefix>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="25" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4770</TareWeight>
+              <DeliveryReference>9718006481388601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>8</DangerLabel>
+                  <TechnicalDescription>TRIETHYLENETETRAMINE, TETA</TechnicalDescription>
+                  <LongTextDescription>TRIETHYLENTETRAMIN</LongTextDescription>
+                  <Weight>24000</Weight>
+                  <HazardNumber>80</HazardNumber>
+                  <UNNumber>2259</UNNumber>
+                  <Class>8</Class>
+                  <ClassificationCode>C7</ClassificationCode>
+                  <PackingGroup>II</PackingGroup>
+                </RID>
+                <NHMCode>994200</NHMCode>
+                <GoodDescription>Wechselbehaelter, beladen im Grosscontainerverkehr</GoodDescription>
+                <AdditionalGoodInformation>001,null,-,,null</AdditionalGoodInformation>
+                <GrossMass>24000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="7731889" LoadingStatus="loaded">
+              <Prefix> WABU</Prefix>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="25" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2460</TareWeight>
+              <DeliveryReference>9718006481389301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994200</NHMCode>
+                <GoodDescription>Wechselbehaelter, beladen im Grosscontainerverkehr</GoodDescription>
+                <GrossMass>29660.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318045561525">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>19900.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>19.7</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072652</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="271660" LoadingStatus="loaded">
+              <Prefix> WABU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="23" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3990</TareWeight>
+              <DeliveryReference>9718006481388901</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>24000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="733002" LoadingStatus="loaded">
+              <Prefix> RICU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="25" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4500</TareWeight>
+              <DeliveryReference>9718006481389901</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <LongTextDescription>BUTYLACETATE</LongTextDescription>
+                  <Weight>25000</Weight>
+                  <HazardNumber>30</HazardNumber>
+                  <UNNumber>1123</UNNumber>
+                  <Class>3</Class>
+                  <ClassificationCode>F1</ClassificationCode>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>001,null,-,,null</AdditionalGoodInformation>
+                <GrossMass>25000</GrossMass>
+              </Good>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>001,null,-,,null</AdditionalGoodInformation>
+                <GrossMass>380.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338345757870">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>18000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>19.7</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072649</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="203504" LoadingStatus="loaded">
+              <Prefix> BWCU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="25" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3920</TareWeight>
+              <DeliveryReference>9718006481389501</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <DangerLabel>8</DangerLabel>
+                  <LongTextDescription>NATRIUMMETHYLAT, LÖSUNG</LongTextDescription>
+                  <Weight>23960</Weight>
+                  <HazardNumber>38</HazardNumber>
+                  <UNNumber>1289</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>001,null,-,,</AdditionalGoodInformation>
+                <GrossMass>23960</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="300047" LoadingStatus="loaded">
+              <Prefix> HLMU</Prefix>
+              <Checkdigit>1</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="25" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4410</TareWeight>
+              <DeliveryReference>9718006482446101</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>27960.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349620868">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072651</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="424073" LoadingStatus="loaded">
+              <Prefix> GPLU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+              <DeliveryReference>9718006481389701</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>24000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="493853" LoadingStatus="loaded">
+              <Prefix> BIDU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="25" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4520</TareWeight>
+              <DeliveryReference>9718006481390301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <LongTextDescription>BUTYLACRYLATE, STABILISIERT</LongTextDescription>
+                  <Weight>27020</Weight>
+                  <HazardNumber>39</HazardNumber>
+                  <UNNumber>2348</UNNumber>
+                  <Class>3</Class>
+                  <ClassificationCode>F1</ClassificationCode>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>001,null,-,,</AdditionalGoodInformation>
+                <GrossMass>27020</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549565970">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34300.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072621</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2820306" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7169</TareWeight>
+              <DeliveryReference>9718006481390401</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28500.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="3419937" LoadingStatus="loaded">
+              <Prefix> DETB</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6880</TareWeight>
+              <DeliveryReference>9718006481392301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>25000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378549560373">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34300.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072624</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001575" LoadingStatus="loaded">
+              <Prefix> TICU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>25</LengthCode>
+                <Length measure="ft" value="23" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3330</TareWeight>
+              <DeliveryReference>9718006481390601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>29000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="1002446" LoadingStatus="loaded">
+              <Prefix> DISE</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>9718006481395601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>1</NumberOfSeals>
+                <SealsDescription>1137094,Pl</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>17000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549566226">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34300.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072622</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="1009306" LoadingStatus="loaded">
+              <Prefix> DISE</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>9718006481392901</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>1</NumberOfSeals>
+                <SealsDescription>5000907,Pl</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>9000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2038473" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>9718006481395401</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>13387.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336845575651">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>19.6</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072643</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="361311" LoadingStatus="loaded">
+              <Prefix> SAIU</Prefix>
+              <Checkdigit>1</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <DeliveryReference>9718006481393501</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>29040.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="961083" LoadingStatus="loaded">
+              <Prefix> HOYU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3820</TareWeight>
+              <DeliveryReference>9718006481394401</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>24000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045655271">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>19.6</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072647</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="463713" LoadingStatus="loaded">
+              <Prefix> BUKU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2880</TareWeight>
+              <DeliveryReference>9718006481393801</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="3300486" LoadingStatus="loaded">
+              <Prefix> LOEB</Prefix>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2440</TareWeight>
+              <DeliveryReference>9718006482447901</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>26500.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549569360">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34300.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027072623</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0041182" LoadingStatus="loaded">
+              <Prefix> EWAK</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7495</TareWeight>
+              <DeliveryReference>9718006481398601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>25501.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="1002868" LoadingStatus="loaded">
+              <Prefix> DISE</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>9718006481400501</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27500.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045564275">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>17730.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>19.6</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312057087850</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="0013509" LoadingStatus="loaded">
+              <Prefix> KEID</Prefix>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2460</TareWeight>
+              <DeliveryReference>9718006482447301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>29480.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="3104307" LoadingStatus="loaded">
+              <Prefix> LOEB</Prefix>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <DeliveryReference>9718006482448001</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318045121262">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20800.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>18.3</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312057087849</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="241764" LoadingStatus="loaded">
+              <Prefix> HOYU</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3650</TareWeight>
+              <DeliveryReference>9718006482776801</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>21900.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="496164" LoadingStatus="loaded">
+              <Prefix> BIDU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3715</TareWeight>
+              <DeliveryReference>9718006482815001</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <GrossMass>23020.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318045120389">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>21000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>18.3</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312057087855</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Befoerderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318045120611">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>21000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>18.3</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312057087856</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5658353165</CustomerReference>
+              <CustomerReference>5658333239</CustomerReference>
+              <CustomerReference>5658343218</CustomerReference>
+              <CustomerReference>5658343216</CustomerReference>
+              <CustomerReference>5658313272</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Befoerderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>7160417518140</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-07T16:04:26+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131242151</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-07T16:01:44+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202312071242151</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>KLV</Code>
+          <Name>Villach Süd CCT</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>019901</Code>
+          <Name>Villach Süd CCT</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>019901</Code>
+          <Name>Villach Süd CCT</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-12-07T18:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2181</CarrierCode>
+        <ConsignmentNumber>598698</ConsignmentNumber>
+        <ForwardingTrainNumber>42201</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>BARI</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>111179</Code>
+          <Name>Bari Lamasinata</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>111179</Code>
+          <Name>Bari Lamasinata</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>8022659</CustomerCode>
+          <Name>Lotras srl</Name>
+          <VAT>IT02339200715</VAT>
+          <Street>Terminal Ferroviario</Street>
+          <Country>IT</Country>
+          <ZIPCode>71100</ZIPCode>
+          <City>Foggia (FG)</City>
+          <Signature>Villach Süd CCT i.A.d.Abs.</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>8022659</CustomerCode>
+          <Name>Lotras srl</Name>
+          <VAT>IT02339200715</VAT>
+          <Street>Terminal Ferroviario</Street>
+          <Country>IT</Country>
+          <ZIPCode>71100</ZIPCode>
+          <City>Foggia (FG)</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>8022659</CustomerCode>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>8022659</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Genehmigung TES. 1400P/19-0690</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>11</Code>
+          <Text>Pr 170;Pr 172;</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>Lotras</ConsignorReference>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>Abkommensnummer: 839496 / Zug 42201 ab 12.01.18</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>EXW</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>839496</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>REYU_450095-7 Türverriegelung Unten verbogen; ECBU_600033-6 Türverriegelung Hinten verbogen, Längsträger Rundherum verbogen, Wand Innen eingedellt, Wand Rundher</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>9-8 Wand Vorne zerkratzt, Tür (en) Hinten zerkratzt, Querträger Rundherum verformt, Längsträger Rundherum verformt, Plane/Verschlüsse Rundherum abgeschürft; _00</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>n abgerissen, Greifkante / Greifkantenblech Ganze rechte Seite fehlend, Greifkante / Greifkantenblech Ganze linke Seite fehlend; RCDU_330045-3 Dach Hinten durch</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>onstiges Rechts Mitte fehlend, Plane/Verschlüsse Links Vorne OFFEN, Unterfahrschutz Rechts Mitte verbogen, Plane/Verschlüsse Links Vorne gerissen, Plane/Verschl</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>rissen, Schaniere Links Hinten gebrochen; RCDU_500249-0 Wand Rechts Vorne ausgebeult, Längsträger Rundherum verformt, Wand Rundherum zerkratzt, Wand Rundherum e</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>Stützbein Rechts Hinten verbogen, Unterfahrschutz Links Mitte verbogen, Unterfahrschutz Rechts Mitte verbogen; _002651-0 Greifkante / Greifkantenblech Rechts V</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>orne eingedellt, Tür (en) Hinten eingedellt, Plane/Verschlüsse Rundherum abgeschürft, Greifkante / Greifkantenblech Rechts Hinten verbogen, Wand Vorne zerkratzt</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>Sonstiges zerkratzt, Tür (en) Hinten zerkratzt; _002767-1 Rahmen Rundherum zerkratzt, Längsträger Rundherum verbogen, Wand Vorne eingedellt, Tür (en) Hinten zer</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>lüsse Rundherum zerkratzt; _002342-3 Querträger Vorne verformt, Längsträger Ganze linke Seite verformt, Längsträger Ganze rechte Seite verformt, Tür (en) Hinten</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>rne zerkratzt, Plane/Verschlüsse Ganze linke Seite abgeschürft, Plane/Verschlüsse Ganze rechte Seite abgeschürft, Rahmen Rundherum zerkratzt, Plane/Verschlüsse</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>Tür (en) Links Hinten eingedellt</DeclarationText>
+        </CarriersDeclaration>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>2181</CarrierCode>
+          <ResponsibleCarrierCode>2183</ResponsibleCarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>019901</StationCode>
+              <StationName>Villach Süd CCT</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+          <SubContractNumber>218333</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>111179</StationCode>
+              <StationName>Bari Lamasinata</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2183</CarrierCode>
+        <Signature>2023-12-07 16:01 1131242151</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Villach Süd CCT</Place>
+        <Date>2023-12-07</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <StationCode>019901</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>111179</StationCode>
+          </End>
+          <CommercialRouteCode>041</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>994200</NHMCode>
+            <TariffNumber>839496</TariffNumber>
+            <ChargedMass value="535185" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318349611695">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>339.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>91100</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+            <BookingNumber>2181:20231207160128606:16077954</BookingNumber>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="500679" LoadingStatus="loaded" UTITypeDetail="HC">
+              <Prefix>RCDU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>3820</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets, Siegel:558294</AdditionalGoodInformation>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="450095" LoadingStatus="loaded" UTITypeDetail="HC">
+              <Prefix>REYU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>4280</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets, Siegel:558288</AdditionalGoodInformation>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336849642382">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89325</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="600033" LoadingStatus="loaded" UTITypeDetail="HC">
+              <Prefix>ECBU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>4280</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets, Siegel:558295</AdditionalGoodInformation>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002789" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Papier 511185</AdditionalGoodInformation>
+                <GrossMass>25000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318349612867">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>339.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>81945</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002511" LoadingStatus="loaded">
+              <Prefix>CHPA</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>4900</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Handelsware 511026</AdditionalGoodInformation>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002036" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Handelsware 511236</AdditionalGoodInformation>
+                <GrossMass>15000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049523111">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29500</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>86315</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="330045" LoadingStatus="loaded" UTITypeDetail="RF">
+              <Prefix>RCDU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>40</LengthCode>
+                <Length value="40" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>6995</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets, Siegel:558292</AdditionalGoodInformation>
+                <GrossMass>20000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="500122" LoadingStatus="loaded" UTITypeDetail="HC">
+              <Prefix>RCDU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>3820</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets, Siegel:558293</AdditionalGoodInformation>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318449558119">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35500</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>340.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>100100</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>172</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="004322" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>44</LengthCode>
+                <Length value="44" measure="ft" />
+                <Width value="8.6" measure="ft" />
+                <Height value="13.1" measure="ft" />
+              </Dimensions>
+              <TareWeight>7300</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets 510878</AdditionalGoodInformation>
+                <GrossMass>24000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="004216" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>44</LengthCode>
+                <Length value="44" measure="ft" />
+                <Width value="8.6" measure="ft" />
+                <Height value="13.1" measure="ft" />
+              </Dimensions>
+              <TareWeight>7300</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets 511054</AdditionalGoodInformation>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378449933332">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35500</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>340.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>91120</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="500249" LoadingStatus="loaded" UTITypeDetail="HC">
+              <Prefix>RCDU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>3820</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets, Siegel:511239</AdditionalGoodInformation>
+                <GrossMass>24000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="450197" LoadingStatus="loaded" UTITypeDetail="HC">
+              <Prefix>REYU</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>3800</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets Siegel:511240</AdditionalGoodInformation>
+                <GrossMass>24000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378449920644">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35500</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>340.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>100100</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>172</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="004255" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>44</LengthCode>
+                <Length value="44" measure="ft" />
+                <Width value="8.6" measure="ft" />
+                <Height value="13.1" measure="ft" />
+              </Dimensions>
+              <TareWeight>7300</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Schnittholz 560109</AdditionalGoodInformation>
+                <GrossMass>24000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="004244" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>44</LengthCode>
+                <Length value="44" measure="ft" />
+                <Width value="8.6" measure="ft" />
+                <Height value="12.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>7300</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Handelsware 511027</AdditionalGoodInformation>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318349612503">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>339.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>93090</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002651" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Papier 558291</AdditionalGoodInformation>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002767" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>1</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Handelsware 511048</AdditionalGoodInformation>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336849540974">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89090</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002342" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Folie 511233</AdditionalGoodInformation>
+                <GrossMass>24000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002341" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Papier/Siegel:: 511136</AdditionalGoodInformation>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

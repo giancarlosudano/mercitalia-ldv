@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230011287</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-06T17:48:11+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110132458</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-06T17:47:03+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202312060132458</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Radinac</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>136036</Code>
+          <Name>Radinac</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>136036</Code>
+          <Name>Radinac</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-30T15:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2172</CarrierCode>
+        <ConsignmentNumber>909499</ConsignmentNumber>
+        <ForwardingTrainNumber>46928</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Castelguelfo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>050120</Code>
+          <Name>Castelguelfo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>050120</Code>
+          <Name>Castelguelfo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>HBIS GROUP SERBIA IRON &amp; STEEL D.O</Name>
+          <Street>BULEVARA PUPINA 6</Street>
+          <Country>RS</Country>
+          <ZIPCode>11000</ZIPCode>
+          <City>BEOGRAD novi</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>I METALS SPA</Name>
+          <Street>STRADA DELLA CEBROSA 86</Street>
+          <Country>IT</Country>
+          <ZIPCode>10156</ZIPCode>
+          <City>TORINO</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>10</Code>
+          <Text>FERSPED SAZANA</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: TCL</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>PLOCEVINA</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>380</Type>
+          <DocumentTypeDescription>Komercialna faktura</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>821</Type>
+          <DocumentTypeDescription>Odpremnica, model T1</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>ENNA2020-1-1 SZTP9553.36</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>72</UICCountryCode>
+            <PointCode>501</PointCode>
+            <PointName>SID</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>079101</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>72010</RouteCode>
+          <RouteText>SID/TOVARNIK</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>78540</RouteCode>
+          <RouteText>SAVSKI MAROF/DOBOVA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>true</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+        <CustomsEndorsements>23RS017353CH774M39</CustomsEndorsements>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2172</CarrierCode>
+          <CarrierName>SK</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>72</UICCountryCode>
+            <Station>
+              <StationCode>136036</StationCode>
+              <StationName>Radinac</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>72</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>501</PointCode>
+              <PointName>SID</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>3655</CarrierCode>
+          <CarrierName>ENNA</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>501</PointCode>
+              <PointName>TOVARNIK</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>SAVSKI MAROF</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>DOBOVA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>050120</StationCode>
+              <StationName>Castelguelfo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2172</CarrierCode>
+        <CarrierName>SK</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Radinac</Place>
+        <Date>2023-11-30</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>72</UICCountryCode>
+            <StationCode>136036</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>050120</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338746688997">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>72780.0</TotalMass>
+            <LoadLimit>216</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23RS017353CH774M39</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>4</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>720836</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl mit einer Breite von 600 mm in Rollen Coils nur warmgewalzt weder plattiert noch uberzogen mit einer Dicke von 10 mm ungebeizt ohne Oberflachenmuster Oberflachenmuster</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>51140.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

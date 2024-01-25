@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>1092817491728</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-01T09:28:34+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2180</SendingCarrier>
+      <MessageReferenceNumber>31617955</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-01T09:25:49+01:00</ECNPreparationDatetime>
+      <DossierNumber>2180202312017066898</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+      <ORFIMO>1</ORFIMO>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>27299</Code>
+          <Name>ROSTOCK SEEHAFEN UBF</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>272997</Code>
+          <Name>ROSTOCK SEEHAFEN UBF</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-12-01T09:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2180</CarrierCode>
+        <ConsignmentNumber>671396</ConsignmentNumber>
+        <ForwardingTrainNumber>76179</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02432</Code>
+          <Name>VERONA QUADRANTE  EUROPA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>024323</Code>
+          <Name>VERONA QUADRANTE  EUROPA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>024323</Code>
+          <Name>VERONA QUADRANTE  EUROPA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>355446</CustomerCode>
+          <Name>KVLO KOMBIVERKEHR KG</Name>
+          <VAT>DE112012727</VAT>
+          <Street>ZUM LAURENBURGER HOF 76</Street>
+          <Country>DE</Country>
+          <ZIPCode>60594</ZIPCode>
+          <City>FRANKFURT/MAIN</City>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>355446</CustomerCode>
+          <Name>KVLO KOMBIVERKEHR KG</Name>
+          <VAT>DE112012727</VAT>
+          <Street>ZUM LAURENBURGER HOF 76</Street>
+          <Country>DE</Country>
+          <ZIPCode>60594</ZIPCode>
+          <City>FRANKFURT/MAIN</City>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>6783</CustomerCode>
+          <Name>KVI KOMBIVERKEHR INT. VERKEHR</Name>
+          <VAT>DE 112 012 727</VAT>
+          <Street>ZUM LAURENBURGER HOF 76</Street>
+          <Country>DE</Country>
+          <ZIPCode>60594</ZIPCode>
+          <City>FRANKFURT/M</City>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Absender bleibt generell verfügungsberechtigt.</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Absender alleine verfuegungsberechtigt, bis die Sendung das Versandland gemaess Feld 16 bzw. Feld 56 des CIM-Frachtbriefs verlassen hat.</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>5148323022</ConsignorReference>
+      </AdditionalInformation>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>931207</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>80630</RouteCode>
+          <BorderpointCode>463</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81320</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <PrincipalCode>2180</PrincipalCode>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2180</CarrierCode>
+          <CarrierName>DB CARGO AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>272997</StationCode>
+              <StationName>ROSTOCK SEEHAFEN UBF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>202366</StationCode>
+              <StationName>MUENCHEN OST RBF</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>2</Status>
+          <CarrierCode>2183</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>MERCITALIA RAIL SRL</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>022699</StationCode>
+              <StationName>BRENNERO/BRENNER</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>024323</StationCode>
+              <StationName>VERONA QUADRANTE  EUROPA</StationName>
+            </Station>
+          </SectionTo>
+          <SubContractNumber>165093</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>3157</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>LOKOM LOKOMOTION GES. F SCHIENENTRA</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>202366</StationCode>
+              <StationName>MUENCHEN OST RBF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>022699</StationCode>
+              <StationName>BRENNERO/BRENNER</StationName>
+            </Station>
+          </SectionTo>
+          <SubContractNumber>165167</SubContractNumber>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2180</CarrierCode>
+        <CarrierName>DB CARGO AG</CarrierName>
+        <Street>VOLLHÖFNER WEIDEN 26</Street>
+        <ZIPCode>21129</ZIPCode>
+        <City>HAMBURG</City>
+        <CountryCode>DE</CountryCode>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>ROSTOCK SEEHAFEN UBF</Place>
+        <Date>2023-12-01</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>80</UICCountryCode>
+            <StationCode>272997</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>024323</StationCode>
+          </End>
+          <CommercialRouteCode>065</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>994300</NHMCode>
+            <TariffNumber>931207</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318049933910">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.0</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066672</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2713355" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480734201</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2712359" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480736701</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27918.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049931914">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066673</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2821128" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480734301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="3707259" LoadingStatus="loaded">
+              <Prefix> DSVA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480734401</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049930890">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.9</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066670</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2821703" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480734501</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>19000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2712451" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480734601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>25689.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049930494">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066669</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2712744" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480734701</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>22080.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2713566" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480738001</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>26629.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049920511">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066675</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="4710946" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480734801</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27634.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="3048769" LoadingStatus="loaded">
+              <Prefix> HTLA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>1188006480738601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>5000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049920420">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066674</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0009635" LoadingStatus="loaded">
+              <Prefix> TEUA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480734901</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>25950.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="4710400" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480735001</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>2430.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049554898">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066680</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="4810009" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480735101</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27948.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0008592" LoadingStatus="loaded">
+              <Prefix> GTLA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6530</TareWeight>
+              <DeliveryReference>9718006480735301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>12000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049554252">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066679</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="4317193" LoadingStatus="loaded">
+              <Prefix> SCTE</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480735201</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28286.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0025612" LoadingStatus="loaded">
+              <Prefix> PNOB</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480736801</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27580.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049553437">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066678</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0008958" LoadingStatus="loaded">
+              <Prefix> TEUA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6970</TareWeight>
+              <DeliveryReference>9718006480735401</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="4710416" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480735601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049553320">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066677</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="4814128" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480735501</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27888.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="3767292" LoadingStatus="loaded">
+              <Prefix> PNOD</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480735701</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>20000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049552959">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066676</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0008503" LoadingStatus="loaded">
+              <Prefix> GTLA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6530</TareWeight>
+              <DeliveryReference>9718006480735801</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>24500.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0500941" LoadingStatus="loaded">
+              <Prefix> FIXE</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480738101</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549922684">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066682</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="4712039" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480735901</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27440.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="4317249" LoadingStatus="loaded">
+              <Prefix> SCTE</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480736001</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>12588.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318449557970">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.0</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066671</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2014686" LoadingStatus="loaded">
+              <Prefix> SCTE</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480736101</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>23040.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0009990" LoadingStatus="loaded">
+              <Prefix> GTLA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6450</TareWeight>
+              <DeliveryReference>9718006480736201</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>6000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049938596">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066681</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0009804" LoadingStatus="loaded">
+              <Prefix> TEUA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480736301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>24100.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="8078527" LoadingStatus="loaded">
+              <Prefix> PNOA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>9718006480736401</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>24000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049936301">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066683</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0009656" LoadingStatus="loaded">
+              <Prefix> TEUA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480736501</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>25900.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="4710988" LoadingStatus="loaded">
+              <Prefix> SEQA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006480736601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>24046.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049936012">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312017066668</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148323022</CustomerReference>
+              <CustomerReference>5148323020</CustomerReference>
+              <CustomerReference>5148343038</CustomerReference>
+              <CustomerReference>5148323017</CustomerReference>
+              <CustomerReference>5148323021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Befoerderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

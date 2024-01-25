@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230011246</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-06T11:21:21+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110132428</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-12-06T11:19:41+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202312060132428</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Leopoldov</Name>
+          <Country>
+            <UICCountryCode>56</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>137166</Code>
+          <Name>Leopoldov</Name>
+          <Country>
+            <UICCountryCode>56</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>137166</Code>
+          <Name>Leopoldov</Name>
+          <Country>
+            <UICCountryCode>56</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-12-05T12:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3281</CarrierCode>
+        <ConsignmentNumber>002956</ConsignmentNumber>
+        <ForwardingTrainNumber>49783</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>053082</Code>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>053082</Code>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>ENVIEN MAGYARORSZAG KFT</Name>
+          <Street>DOZSA GYORGY TER 7</Street>
+          <Country>SK</Country>
+          <ZIPCode>9163</ZIPCode>
+          <City>FEHERTO</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>Borsari E. &amp; C. SRL</Name>
+          <Street>Via Di Mezo 114/E</Street>
+          <Country>IT</Country>
+          <ZIPCode>41015</ZIPCode>
+          <City>NONANTOLA</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: MIR</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>OSTANKI PESE TRSA</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>SZTP8931.38</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>999999</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>56890</RouteCode>
+          <RouteText>RUSOVCE/RAJKA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>55740</RouteCode>
+          <RouteText>ORISZENTPETER HATAR/HODOS MEJA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>3281</CarrierCode>
+          <CarrierName>RTI</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>56</UICCountryCode>
+            <Station>
+              <StationCode>137166</StationCode>
+              <StationName>LEOPOLDOV</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>56</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>888</PointCode>
+              <PointName>KOMARNO</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>3024</CarrierCode>
+          <CarrierName>MMV</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>888</PointCode>
+              <PointName>KOMAROM</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>774</PointCode>
+              <PointName>ORISZENTPETER HATAR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>774</PointCode>
+              <PointName>HODOS MEJA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>053082</StationCode>
+              <StationName>Poggio Rusco</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>3281</CarrierCode>
+        <CarrierName>RTI</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Leopoldov</Place>
+        <Date>2023-12-05</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>56</UICCountryCode>
+            <StationCode>137166</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>053082</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318308251574">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69100.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43600.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308251350">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69200.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43700.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308258421">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>66520.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>41020.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250568">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>67200.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>41700.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250881">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68740.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43240.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308251343">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>67940.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>42440.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250139">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>70960.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45460.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308253117">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68240.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>42740.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308252069">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69680.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>44180.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308252366">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69240.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43740.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250394">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69620.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>44120.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250089">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>70480.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>44980.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308253497">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68240.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>42740.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308251202">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68240.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>42740.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250295">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69180.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43680.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308251459">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68660.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43160.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308258355">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68160.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>42660.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250832">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69180.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43680.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308251921">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>70460.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>44960.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308251509">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69720.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>44220.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250485">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68280.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>42780.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250105">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68760.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43260.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250550">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>70620.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230330</NHMCode>
+              <GoodDescription>Treber Schlempen und Abfalle aus Brauereien oder Brennereien</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45120.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

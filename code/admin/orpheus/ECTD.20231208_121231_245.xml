@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>8121217521245</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-08T12:12:31+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131243283</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-08T12:11:42+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202312081243283</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>12157</Code>
+          <Name>Polanka Nad Odrou, Tsr Polanka</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+            <Name>TSCHECHIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>344549</Code>
+          <Name>Polanka Nad Odrou</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+            <Name>TSCHECHIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>121574</Code>
+          <Name>Polanka Nad Odrou, Tsr Polanka</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+            <Name>TSCHECHIEN</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-12-08T10:00:00+01:00</AcceptanceDate>
+        <CarrierCode>5481</CarrierCode>
+        <ConsignmentNumber>600957</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>8027435</CustomerCode>
+          <Name>TSR Czech Republic s.r.o.</Name>
+          <VAT>CZ40614875</VAT>
+          <Street>Sokolovská 192/79, Karlín</Street>
+          <Country>CZ</Country>
+          <ZIPCode>180 00</ZIPCode>
+          <City>Praha 8</City>
+          <Signature>47631 i. A. d. Abs.</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <Name>FERRIERE NORD S.p.A</Name>
+          <VAT>IT00163780307</VAT>
+          <Street>Zona Industriale Rivoli</Street>
+          <Country>IT</Country>
+          <ZIPCode>33010</ZIPCode>
+          <City>Osoppo</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>8032278</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtzahler DC,Rail Cargo Logistics Czech Republic s.r.o. Míkova 64, 614 00 Brno</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>CZ60755351, ZF 783212-4, Vertrage RCA und MIR: IN902845</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Auf der italierischer Strecke von Tarvisio nach Osoppo: Mercitalia PD 84.01</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Zulaufnr: 54/OS/08.12.23/036-045</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Gruppe von 10 Wagons</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>3225108</ConsignorReference>
+        <InformationConsignee>Auftragsnr.: 23072//110 Im Auftrag TSR Czech Republic Kenwort: SICILIE//11</InformationConsignee>
+        <WagonGroupInfo>NHM: 72044110 Drehspäne, Frässpäne, Hobelspäne, Sägespäne und Feilspäne, aus Eisen oder Stahl, auch paketiertNHM: 72044110 Odpad, rot ze eleza, oceli nelegovan ze soustruen, hoblovn, frzovn, ezn, pilovn10 Wg, Eisenschrott, Stahlschrott SORTE: DAF750-005-E5H//M eDAF700, druh 51, 52 TOP Kenwort SICILIE//11</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Annex VII</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Radioaktivitätskontrolle</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>BECLAV ST. HR; TARVISIO BOSCOVERDE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>CZ - 5481 RCC CZ; AT  2181 RCA; IT  2183 MIR</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>11</PrepaidcodeCarrier>
+        <AdditionalCharges>
+          <AdditionalCharge>
+            <Code>02</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>03</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>04</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>05</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>06</Code>
+          </AdditionalCharge>
+        </AdditionalCharges>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>874719</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>54130</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>5481</CarrierCode>
+          <ResponsibleCarrierCode>2181</ResponsibleCarrierCode>
+          <SectionFrom>
+            <UICCountryCode>54</UICCountryCode>
+            <Station>
+              <StationCode>344549</StationCode>
+              <StationName>Polanka Nad Odrou</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0613</PointCode>
+              <PointName>Bernhardsthal Grenze/Beclav st.hr.</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+          <SubContractNumber>35423</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0613</PointCode>
+              <PointName>Bernhardsthal Grenze/Beclav st.hr.</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>Osoppo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2181</CarrierCode>
+        <Signature>2023-12-08 12:11 1131243283</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Brno</Place>
+        <Date>2023-12-08</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>54</UICCountryCode>
+            <StationCode>344549</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>030502</StationCode>
+          </End>
+          <CommercialRouteCode>023</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720441</NHMCode>
+            <TariffNumber>874719</TariffNumber>
+            <ChargedMass value="509600" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318153771452">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24450</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>72300</TotalMass>
+            <BookingNumber>2181:20231208121116527:16079743</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720441</NHMCode>
+              <GoodDescription>Drehspäne, Frässpäne, Hobelspäne, Schleifspäne, Sägespäne, Feilspäne und Stanzabfälle oder Schneidabfälle, aus Eisen oder Stahl, auch paketiert (ausg. aus Gusseisen, aus legiertem Stahl oder aus verzinntem Eisen oder Stahl)</GoodDescription>
+              <GrossMass>47850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315353755269">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24650</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76350</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720441</NHMCode>
+              <GoodDescription>Drehspäne, Frässpäne, Hobelspäne, Schleifspäne, Sägespäne, Feilspäne und Stanzabfälle oder Schneidabfälle, aus Eisen oder Stahl, auch paketiert (ausg. aus Gusseisen, aus legiertem Stahl oder aus verzinntem Eisen oder Stahl)</GoodDescription>
+              <GrossMass>51700</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318153753609">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24450</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76050</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720441</NHMCode>
+              <GoodDescription>Drehspäne, Frässpäne, Hobelspäne, Schleifspäne, Sägespäne, Feilspäne und Stanzabfälle oder Schneidabfälle, aus Eisen oder Stahl, auch paketiert (ausg. aus Gusseisen, aus legiertem Stahl oder aus verzinntem Eisen oder Stahl)</GoodDescription>
+              <GrossMass>51600</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318153766080">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24150</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>75600</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720441</NHMCode>
+              <GoodDescription>Drehspäne, Frässpäne, Hobelspäne, Schleifspäne, Sägespäne, Feilspäne und Stanzabfälle oder Schneidabfälle, aus Eisen oder Stahl, auch paketiert (ausg. aus Gusseisen, aus legiertem Stahl oder aus verzinntem Eisen oder Stahl)</GoodDescription>
+              <GrossMass>51450</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318153760356">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25250</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>74800</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720441</NHMCode>
+              <GoodDescription>Drehspäne, Frässpäne, Hobelspäne, Schleifspäne, Sägespäne, Feilspäne und Stanzabfälle oder Schneidabfälle, aus Eisen oder Stahl, auch paketiert (ausg. aus Gusseisen, aus legiertem Stahl oder aus verzinntem Eisen oder Stahl)</GoodDescription>
+              <GrossMass>49550</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318153753419">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>74600</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720441</NHMCode>
+              <GoodDescription>Drehspäne, Frässpäne, Hobelspäne, Schleifspäne, Sägespäne, Feilspäne und Stanzabfälle oder Schneidabfälle, aus Eisen oder Stahl, auch paketiert (ausg. aus Gusseisen, aus legiertem Stahl oder aus verzinntem Eisen oder Stahl)</GoodDescription>
+              <GrossMass>50600</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318153765322">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24650</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78550</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720441</NHMCode>
+              <GoodDescription>Drehspäne, Frässpäne, Hobelspäne, Schleifspäne, Sägespäne, Feilspäne und Stanzabfälle oder Schneidabfälle, aus Eisen oder Stahl, auch paketiert (ausg. aus Gusseisen, aus legiertem Stahl oder aus verzinntem Eisen oder Stahl)</GoodDescription>
+              <GrossMass>53900</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378059320416">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27400</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76650</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720441</NHMCode>
+              <GoodDescription>Drehspäne, Frässpäne, Hobelspäne, Schleifspäne, Sägespäne, Feilspäne und Stanzabfälle oder Schneidabfälle, aus Eisen oder Stahl, auch paketiert (ausg. aus Gusseisen, aus legiertem Stahl oder aus verzinntem Eisen oder Stahl)</GoodDescription>
+              <GrossMass>49250</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318153771551">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78150</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720441</NHMCode>
+              <GoodDescription>Drehspäne, Frässpäne, Hobelspäne, Schleifspäne, Sägespäne, Feilspäne und Stanzabfälle oder Schneidabfälle, aus Eisen oder Stahl, auch paketiert (ausg. aus Gusseisen, aus legiertem Stahl oder aus verzinntem Eisen oder Stahl)</GoodDescription>
+              <GrossMass>53450</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318153771965">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24850</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>75100</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720441</NHMCode>
+              <GoodDescription>Drehspäne, Frässpäne, Hobelspäne, Schleifspäne, Sägespäne, Feilspäne und Stanzabfälle oder Schneidabfälle, aus Eisen oder Stahl, auch paketiert (ausg. aus Gusseisen, aus legiertem Stahl oder aus verzinntem Eisen oder Stahl)</GoodDescription>
+              <GrossMass>50250</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

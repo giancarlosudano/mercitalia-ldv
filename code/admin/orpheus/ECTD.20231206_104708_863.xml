@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>6104717510863</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-06T10:47:08+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2154</SendingCarrier>
+      <MessageReferenceNumber>17775463</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-06T10:46:43+01:00</ECNPreparationDatetime>
+      <DossierNumber>2154202312060875482</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>52421</Code>
+          <Name>Vlecka OLEO CHEMICAL Liberec</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>542225</Code>
+          <Name>Liberec-Rochlice</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-12-06T10:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2154</CarrierCode>
+        <ConsignmentNumber>500686</ConsignmentNumber>
+        <ForwardingTrainNumber>0</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>04806</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>048066</Code>
+          <Name>SAVONA PARCO DORIA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>048066</Code>
+          <Name>SAVONA PARCO DORIA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>27881369</CustomerCode>
+          <Name>TEMPERATIOR s.r.o.</Name>
+          <VAT>CZ27881369</VAT>
+          <Street>Kocianova 453/11, Liberec VI-Rochli</Street>
+          <Country>CZ</Country>
+          <ZIPCode>460 06</ZIPCode>
+          <City>Liberec</City>
+          <Signature>54-542225-50068-2154-20231206</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>19547</CustomerCode>
+          <Name>CD Cargo Logistics, a.s.</Name>
+          <VAT>CZ27906931</VAT>
+          <Street>Opletalova 1284/37</Street>
+          <Country>CZ</Country>
+          <ZIPCode>110 00</ZIPCode>
+          <City>Praha 1 - Nove Mesto</City>
+        </Customer>
+        <Customer Type="CE">
+          <Name>Depositi Costieri Savona S.p.A.</Name>
+          <AdditionalInformation>Alpha Trading S.p.A.</AdditionalInformation>
+          <Street>Molo delle Casse - Porto commercial</Street>
+          <Country>IT</Country>
+          <ZIPCode>17100</ZIPCode>
+          <City>Savona</City>
+          <Signature>not specified</Signature>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>047565</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>CDC-Frachtzahler: CD Cargo Logistics, a.s., Opletalova 1284/37, Praha 1 - Nove Mesto, MWSt.Nr.CZ27906931 ; OPT: 91319547 ; Uceleny vlak na jeden NL CDC V 25/2023, 092/22 (RCA), MIR/2023 Beforderer</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>CZ: CDC (UIC 2154), Beforderer AT: RCA (UIC 2181), Beforder IT: MIR (UIC 2183), Frachtzahler RCA+MIR: SZ Tovorni promet, Ljubljana</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>23001541</ConsignorReference>
+        <InformationConsignee>Buyer: Alpha Trading S.p.A., Piazza della Repubblica n. 26, 20124 Milano (VAT: IT11879090154)
+Consignee: Depositi Costrieri Savona S.p.A., Molo delle Casse - Porto commerciale, IT 17100 Savona</InformationConsignee>
+        <WagonGroupInfo>20 waggons Privat KWG Za - Wagenliste
+NHM 382600010 MONOALKYLESTERY MASNYCH KYSELIN OBSAHUJICI 96,5 % OBJ. NEBO VICE ESTERU (FAME)
+KESSELWAGEN, BELADEN MIT BIODIESEL</WagonGroupInfo>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>HORNI DVORISTE ST.HR ; TARVISIO BOSCOVERDE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>CZ - 2154 CDC ; AT - 2181 RCA ; IT - 2183 MIR</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>CDC:D334101 ; RCA 4159.01 Kdnr 8022774, MIR IN415901</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>10</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0610</PointCode>
+            <PointName>HORNI DVORISTE ST.HR</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>334101</ContractNumber>
+      </Tariff>
+      <SectionalInvoicing>
+        <Section>
+          <InvoicingCarrierCode>2154</InvoicingCarrierCode>
+          <InvoicedSection>
+            <UICCountryCode>54</UICCountryCode>
+          </InvoicedSection>
+        </Section>
+        <Section>
+          <InvoicingCarrierCode>2181</InvoicingCarrierCode>
+          <InvoicedSection>
+            <UICCountryCode>81</UICCountryCode>
+          </InvoicedSection>
+        </Section>
+        <Section>
+          <InvoicingCarrierCode>2183</InvoicingCarrierCode>
+          <InvoicedSection>
+            <UICCountryCode>83</UICCountryCode>
+          </InvoicedSection>
+        </Section>
+      </SectionalInvoicing>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>54100</RouteCode>
+          <RouteText>HORNI DVORISTE ST.HR ; TARVISIO BOSCOVERDE</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2154</DeclaratingCarrier>
+          <DeclarationCode>12</DeclarationCode>
+          <DeclarationText>obj.c. 21415485 ; DROP 5480498</DeclarationText>
+        </CarriersDeclaration>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2154</CarrierCode>
+          <CarrierName>CD Cargo, a.s.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>54</UICCountryCode>
+            <Station>
+              <StationCode>542225</StationCode>
+              <StationName>Liberec-Rochlice</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0610</PointCode>
+              <PointName>HORNI DVORISTE ST.HR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <CarrierName>Rail Cargo Austria AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0610</PointCode>
+              <PointName>SUMMERAU GRENZE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>048066</StationCode>
+              <StationName>SAVONA PARCO DORIA</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2154</CarrierCode>
+        <CarrierName>CD Cargo, a.s.</CarrierName>
+        <Signature>54-542225-50068-2154-20231206</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Liberec-Rochlice</Place>
+        <Date>2023-12-06</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>54</UICCountryCode>
+            <StationCode>542225</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0610</PointCode>
+          </End>
+          <CurrencyCode>CZK</CurrencyCode>
+          <Tariff>
+            <NHMCode>382600</NHMCode>
+            <TariffNumber>334101</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0610</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>382600</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>83</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>048066</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>382600</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="335178809034">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25060</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50004</TotalMass>
+            <LoadLimit>54.9</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>50004</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378078870011">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25105</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50054</TotalMass>
+            <LoadLimit>54.8</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>50054</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378078870219">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25025</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>49458</TotalMass>
+            <LoadLimit>54.9</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>49458</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="335178811808">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24725</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>49221</TotalMass>
+            <LoadLimit>55.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>49221</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479325813">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25610</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>54029</TotalMass>
+            <LoadLimit>56.3</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>54029</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="335178809307">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24600</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50070</TotalMass>
+            <LoadLimit>55.7</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>50070</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="335178809414">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24615</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50044</TotalMass>
+            <LoadLimit>55.3</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>50044</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479310542">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25940</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>53050</TotalMass>
+            <LoadLimit>56</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>53050</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479329195">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25750</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>54029</TotalMass>
+            <LoadLimit>56.2</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>54029</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378078794369">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25600</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>54051</TotalMass>
+            <LoadLimit>54.4</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>54051</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479310302">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26200</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>52997</TotalMass>
+            <LoadLimit>55.8</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>52997</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479329179">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25650</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>53990</TotalMass>
+            <LoadLimit>56.3</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>53990</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479325607">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>54033</TotalMass>
+            <LoadLimit>56.2</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>54033</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="335178808465">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24830</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50000</TotalMass>
+            <LoadLimit>55.1</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>50000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="335178810990">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24750</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50010</TotalMass>
+            <LoadLimit>55.2</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>50010</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338579310883">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>53014</TotalMass>
+            <LoadLimit>55.7</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>53014</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479325375">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>54008</TotalMass>
+            <LoadLimit>56.1</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>54008</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378078794781">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>54008</TotalMass>
+            <LoadLimit>54.6</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>54008</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="335178809190">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25200</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>49755</TotalMass>
+            <LoadLimit>54.8</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>49755</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="335178811659">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>49491</TotalMass>
+            <LoadLimit>55</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>382600</NHMCode>
+              <GoodDescription>Fettsauremonoalkylester, mit einem Gehalt an Estern von &gt;= 96,5 % vol oder mehr FAMAE</GoodDescription>
+              <GrossMass>49491</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

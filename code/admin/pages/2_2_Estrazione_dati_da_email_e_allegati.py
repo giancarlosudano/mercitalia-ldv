@@ -41,7 +41,6 @@ def get_field_from_cim():
 	return fields
 
 def prompt_for_box(numero_casella: str, descrizione_estrazione: str, box: str, llm: AzureChatOpenAI):
-	return ""
 	prompt_base = """il testo delimitato da ### deriva da una scansione OCR di un modulo di trasporto ferroviario. 
 Il testo deriva da una casella che ha come numero iniziale {numero_casella} e che può contenere la descrizione della casella stessa.
 ###
@@ -50,49 +49,19 @@ Il testo deriva da una casella che ha come numero iniziale {numero_casella} e ch
 
 {descrizione_estrazione}
 Non aggiungere altro alla risposta
+Se non trovi nessun codice o nessuna informazione, scrivi "Non trovato"
 
 Risposta:
 """
 	
 	output_parser = StrOutputParser()
-	system_message = "Sei un assistente virtuale che aiuta ad estrarre informazioni da testo analizzato con OCR da documenti di trasporto e lettere di vettura."
+	system_message = "Sei un assistente virtuale che aiuta ad estrarre informazioni da una testo analizzato con OCR da documenti CIM utilizzati nel trasporto ferroviario internazionale di merci."
 	prompt = ChatPromptTemplate.from_messages([("system", system_message),("user", "{input}")])
 	chain = prompt | llm | output_parser
 	response = chain.invoke({"input": prompt_base.format(numero_casella=numero_casella, descrizione_estrazione=descrizione_estrazione, box=box)})
 	
 	return response
-	
-	import pandas as pd
-	from fuzzywuzzy import process
-	from dotenv import load_dotenv
 
-	# Carica i dati da un file Excel
-	df = pd.read_excel(os.path.join('orpheus', "clienti.xslx"))
-
-	# La ragione sociale che stai cercando
-	ragione_sociale_da_cercare = st.session_state.box1_2
-
-	# Trova la corrispondenza più simile nel DataFrame
-	corrispondenze = process.extract(ragione_sociale_da_cercare, df['ragione sociale'], limit=5)
-
-	# Stampa le corrispondenze trovate e i relativi codici
-	for corrispondenza in corrispondenze:
-		match = corrispondenza[0]  # La ragione sociale corrispondente
-		score = corrispondenza[1]  # Il punteggio di similarità
-
-		# Trova l'indice (o gli indici) nel DataFrame dove c'è questa corrispondenza
-		indici = df.index[df['ragione sociale'] == match].tolist()
-
-		# Stampa i dettagli delle corrispondenze trovate
-		options = []
-
-		for indice in indici:
-			codice_corrispondente = df.loc[indice, 'codice']
-			options.append(f"{match} - Codice: {codice_corrispondente}, Similarità: {score}")
-	
-	st.session_state["codice_mittente_scelto"] = options
-	
-	return
 
 def elaborazione_ldv():
 	
@@ -354,7 +323,6 @@ try:
 			st.text_area("(2) Mittente Codice", value=fields["box-02"], disabled=True, height=100, key="box2_1")
 		with colbox2_2:
 			st.text_area("(2) Mittente Codice (Clean)", value=box_02_clean, height=100, key="box2_2")
-		st.selectbox("Ragioni sociali simili", options=[], placeholder="Seleziona la corrispondenza più simile", key="codice_mittente_scelto")
 		st.divider()
 
 		box_04_clean = "" if not fields["box-04"] else prompt_for_box("4", "Estrai solo le informazioni della ragione sociale del destinatario", fields["box-04"], llm)
@@ -371,7 +339,6 @@ try:
 			st.text_area("(5) Destinatario Codice", value=fields["box-05"], disabled=True, height=100, key="box5_1")
 		with colbox5_2:
 			st.text_area("(5) Destinatario Codice (Clean)", height=100, key="box5_2", value=box_05_clean)
-		st.selectbox("Ragioni sociali simili", options=[], placeholder="Seleziona la corrispondenza più simile", key="codice_destinatario_scelto")
 
 		st.divider()
 
@@ -381,7 +348,6 @@ try:
 			st.text_area("(10) Raccordo Consegna", value=fields["box-10"], disabled=True, height=100, key="box10_1")
 		with colbox10_2:
 			st.text_area("(10) Raccordo Consegna (Clean)", height=100, key="box10_2", value=box_10_clean)
-
 		st.divider()
 
 		box_12_clean = "" if not fields["box-12"] else prompt_for_box("12", "Estrai solo le informazioni del codice stazione destinatario. Il codice è solitamente un numero intero.", fields["box-12"], llm)
@@ -390,7 +356,6 @@ try:
 			st.text_area("(12) Codice Stazione Destinatario", value=fields["box-12"], disabled=True, height=100, key="box12_1")
 		with colbox12_2:
 			st.text_area("(12) Codice Stazione Destinatario (Clean)", height=100, key="box12_2", value=box_12_clean)
-
 		st.divider()
 
 		box_13_clean = "" if not fields["box-13"] else prompt_for_box("13", "Estrai solo le informazioni delle condizioni commerciali.", fields["box-13"], llm)
@@ -469,10 +434,31 @@ try:
   
 		# Recupero dati Wagon Lists
 		st.info("Dettagli Vagoni")
-		st.text_area("Informazioni di testata", height=200, value="")
-		st.text_area("Dettaglio vagoni", height=500, value="")
+		st.text_area("Dettaglio vagoni", height=500, value="", key="wagon_list")
 		# -------
 
+		if st.button("Elabora"):
+			st.session_state["box-01"] = st.session_state.box1_2
+			st.session_state["box-02"] = st.session_state.box2_2
+			st.session_state["box-04"] = st.session_state.box4_2
+			st.session_state["box-05"] = st.session_state.box5_2
+			st.session_state["box-10"] = st.session_state.box10_2
+			st.session_state["box-12"] = st.session_state.box12_2
+			st.session_state["box-13"] = st.session_state.box13_2
+			st.session_state["box-14"] = st.session_state.box14_2
+			st.session_state["box-16"] = st.session_state.box16_2
+			st.session_state["box-18"] = st.session_state.box18_2
+			st.session_state["box-49"] = st.session_state.box49_2
+			st.session_state["box-57"] = st.session_state.box57_2
+			st.session_state["box-62-paese"] = st.session_state.ident_paese_2
+			st.session_state["box-62-stazione"] = st.session_state.ident_stazione_2
+			st.session_state["box-62-impresa"] = st.session_state.ident_impresa_2
+			st.session_state["box-62-spedizione"] = st.session_state.ident_spedizione_2
+			st.session_state["box-62-luogo"] = st.session_state.ident_luogo_2
+			st.session_state["box-62-data"] = st.session_state.ident_data_2
+			st.session_state["box-wagon-list"] = st.session_state.wagon_list
+			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
+   
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
 	elif st.session_state["authentication_status"] is None:

@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230011366</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-07T14:44:43+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110132511</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-07T14:43:11+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202312070132511</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Fuezesabony</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>112961</Code>
+          <Name>Fuezesabony</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>112961</Code>
+          <Name>Fuezesabony</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-12-06T10:00:00+01:00</AcceptanceDate>
+        <CarrierCode>5162</CarrierCode>
+        <ConsignmentNumber>002360</ConsignmentNumber>
+        <ForwardingTrainNumber>47949</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>053082</Code>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>053082</Code>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>VIRESOL KFT</Name>
+          <Street>0158/5 HRSZ</Street>
+          <Country>HU</Country>
+          <ZIPCode>3271</ZIPCode>
+          <City>VISONTA</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>BORSARI E &amp; C. S.R.L.</Name>
+          <Street>VIA DI MEZZO,  114/E</Street>
+          <Country>IT</Country>
+          <ZIPCode>41015</ZIPCode>
+          <City>NONANTOLA</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <AdditionalInformation>
+        <WagonGroupInfo>OTROBI</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>SZTP9028.81</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>999999</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>55300</RouteCode>
+          <RouteText>MURAKERESZTUR/KOTORIBA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>78510</RouteCode>
+          <RouteText>CAKOVEC/SREDISCE</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>5162</CarrierCode>
+          <CarrierName>V-Hid Cargo Zrt</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <Station>
+              <StationCode>112961</StationCode>
+              <StationName>FUEZESABONY</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>730</PointCode>
+              <PointName>MURAKERESZTUR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>730</PointCode>
+              <PointName>KOTORIBA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>551</PointCode>
+              <PointName>CAKOVEC</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>551</PointCode>
+              <PointName>SREDISCE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>053082</StationCode>
+              <StationName>Poggio Rusco</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>5162</CarrierCode>
+        <CarrierName>V-Hid Cargo Zrt</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Fuezesabony</Place>
+        <Date>2023-12-06</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>112961</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>053082</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318308252531">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>70980.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45480.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308253059">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>70960.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45460.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308251582">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68500.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250626">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68500.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308253372">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68500.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250121">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69220.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>43720.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308252317">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>70980.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45480.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308252770">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>71220.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45720.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250378">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>71060.0</TotalMass>
+            <LoadLimit>253</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45740.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308251442">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>71240.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45740.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308252820">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>71240.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45740.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308252929">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>71240.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45740.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308251251">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>71240.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45740.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308258066">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>70200.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>44700.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308252804">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>70200.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>44700.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308252895">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>71980.0</TotalMass>
+            <LoadLimit>253</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>46700.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308251624">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>71090.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45590.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308250790">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>71090.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45590.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308258231">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>71100.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>45600.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308251947">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>72420.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>46920.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308252911">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>72420.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>46920.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308252259">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>72420.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>46920.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308258215">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>72200.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>46700.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308253034">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>72200.0</TotalMass>
+            <LoadLimit>255</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230230</NHMCode>
+              <GoodDescription>Kleie und andere Ruckstande auch in Form von Pellets vom Sichten Mahlen oder von anderen Bearbeitungen von Weizen</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>46700.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

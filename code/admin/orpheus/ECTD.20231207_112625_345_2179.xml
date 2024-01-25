@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230011345</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-07T11:26:25+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110132479</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-12-07T11:25:16+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202312070132479</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Prestranek-tir 12</Name>
+          <Country>
+            <UICCountryCode>79</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>440107</Code>
+          <Name>Prestranek</Name>
+          <Country>
+            <UICCountryCode>79</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>440107</Code>
+          <Name>Prestranek</Name>
+          <Country>
+            <UICCountryCode>79</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-12-06T06:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2179</CarrierCode>
+        <ConsignmentNumber>120246</ConsignmentNumber>
+        <ForwardingTrainNumber>92544</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>7943181</CustomerCode>
+          <Name>ODPAD D.O.O. PIVKA</Name>
+          <VAT>SI32700237</VAT>
+          <Street>VELIKA PRISTAVA 23</Street>
+          <Country>SI</Country>
+          <ZIPCode>6257</ZIPCode>
+          <City>PIVKA</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>RIERE NORD OSOPPO</Name>
+          <Street>ZONA INDUSTRIALE RIVOLI DI OSOPPO</Street>
+          <Country>IT</Country>
+          <ZIPCode>8243</ZIPCode>
+          <City>OSOPPO</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: IZJAVLJAM DA MASA BLAGA NE PRESEGA MEJNE NAKL. MASE</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>ZELEZO ODPADNO E1 RAC</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>978</Type>
+          <DocumentTypeDescription>Odobritev cezmejne posiljke odpadko</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>979</Type>
+          <DocumentTypeDescription>Dokument za cezmejni prevoz posiljk</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>999</Type>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>SZTP6401.57</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>640157</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>79120</RouteCode>
+          <RouteText>NOVA GORICA/GORIZIA CENTRALE</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <Station>
+              <StationCode>440107</StationCode>
+              <StationName>Prestranek</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>312</PointCode>
+              <PointName>NOVA GORICA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>312</PointCode>
+              <PointName>GORIZIA CENTRALE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>Osoppo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2179</CarrierCode>
+        <CarrierName>SZ - TP, d.o.o.</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Prestranek</Place>
+        <Date>2023-12-06</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>79</UICCountryCode>
+            <StationCode>440107</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>030502</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="317853010278">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>70080.0</TotalMass>
+            <LoadLimit>201</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NG</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>Z</AdditionalGoodInformation>
+              <GrossMass>50000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

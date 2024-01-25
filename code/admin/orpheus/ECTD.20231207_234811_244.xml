@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>7234817519244</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-07T23:48:11+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131242763</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-07T23:45:57+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202312071242763</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>21028</Code>
+          <Name>Vintu de Jos</Name>
+          <Country>
+            <UICCountryCode>53</UICCountryCode>
+            <Name>RUMAENIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>210286</Code>
+          <Name>Vinu De Jos</Name>
+          <Country>
+            <UICCountryCode>53</UICCountryCode>
+            <Name>RUMAENIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>210286</Code>
+          <Name>Vinu De Jos</Name>
+          <Country>
+            <UICCountryCode>53</UICCountryCode>
+            <Name>RUMAENIEN</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-12-07T20:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3653</CarrierCode>
+        <ConsignmentNumber>013730</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02830</Code>
+          <Name>Casarsa</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>028308</Code>
+          <Name>Casarsa</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>028308</Code>
+          <Name>Casarsa</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>8027195</CustomerCode>
+          <Name>Kronospan Trading S.r.l.</Name>
+          <VAT>RO11894313</VAT>
+          <Street>Mihail Kogalniceanu, Et 1, Cam 1/12</Street>
+          <Country>RO</Country>
+          <ZIPCode>515800</ZIPCode>
+          <City>SEBES</City>
+          <Signature>RCA i. A. d. Abs.</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>7422223</CustomerCode>
+          <Name>Kronospan Italia SRL</Name>
+          <Street>Via Bordano 10</Street>
+          <Country>IT</Country>
+          <ZIPCode>33078</ZIPCode>
+          <City>San Vito Tagliamento</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>0590281</CustomerCode>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>0590281</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>RO, HU. AT Tarif 7378.01 ZF 059028-1, Tarvis-Casarsa Tarif 9236.84 ZF 767675-2</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>VN_N_33</ConsignorReference>
+        <WagonGroupInfo>Placi MDF NHM 441000MDF Platten NHM 441000Marfa este asigurata cuaccesorii metalice si chingiTotal chingi   400 buc.Avize de insotire: 180769,770,771,772,773,774,776,777,778,779,784,785,786,787,788,805,806,810,811,813,815,818,819,825,828,837,838,842,845,846,180854</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentInformation>Wagenliste</DocumentInformation>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>Curtici/Lökösháza-Hegyeshalom/Nickelsdorf- Tarvisio Grenze</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>CFR:RCC RO, MAV:RCH, ÖBB: RCA, FS: MIR Tarif 7378.01 ZF 059028-1</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>FCA</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>42</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>737801</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>53460</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>55010</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>3653</CarrierCode>
+          <ResponsibleCarrierCode>3303</ResponsibleCarrierCode>
+          <SectionFrom>
+            <UICCountryCode>53</UICCountryCode>
+            <Station>
+              <StationCode>210286</StationCode>
+              <StationName>Vinu De Jos</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>53</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0946</PointCode>
+              <PointName>Lkösháza/Curtici (Gr.)</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+          <SubContractNumber>null</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>2</Status>
+          <CarrierCode>2155</CarrierCode>
+          <ResponsibleCarrierCode>3303</ResponsibleCarrierCode>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0946</PointCode>
+              <PointName>Lkösháza/Curtici (Gr.)</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0601</PointCode>
+              <PointName>Nickelsdorf (Gr)/Hegyeshalom</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+          <SubContractNumber>null</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>0</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0601</PointCode>
+              <PointName>Nickelsdorf (Gr)/Hegyeshalom</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>2</Status>
+          <CarrierCode>2183</CarrierCode>
+          <ResponsibleCarrierCode>2181</ResponsibleCarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>028308</StationCode>
+              <StationName>Casarsa</StationName>
+            </Station>
+          </SectionTo>
+          <SubContractNumber>218308</SubContractNumber>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2181</CarrierCode>
+        <Signature>2023-12-07 23:45 1131242763</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Vintu De Jos,07.12.2023.</Place>
+        <Date>2023-12-07</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <PointCode>0946</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>55</UICCountryCode>
+            <PointCode>0601</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>441000</NHMCode>
+            <TariffNumber>737801</TariffNumber>
+            <ChargedMass value="1016900" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0601</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>441000</NHMCode>
+            <TariffNumber>737801</TariffNumber>
+            <ChargedMass value="1016900" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>53</UICCountryCode>
+            <StationCode>210286</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>53</UICCountryCode>
+            <PointCode>0946</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>441000</NHMCode>
+            <TariffNumber>737801</TariffNumber>
+            <ChargedMass value="1016900" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>83</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>028308</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>441000</NHMCode>
+            <TariffNumber>923684</TariffNumber>
+            <ChargedMass value="1016900" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318127394175">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77300</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>017</SealsDescription>
+              <SealsDescription>018</SealsDescription>
+              <SealsDescription>019</SealsDescription>
+              <SealsDescription>020</SealsDescription>
+            </Seals>
+            <BookingNumber>2181:20231207234505537:16078716</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, "oriented strand board"-Platten "OSB" und ähnliche Platten [z.B. "wafer-board"-Platten] aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt (ausg. Faserplatten, furnierte Spanplatten, Verbundplatten mit Hohlraummittelagen sowie Platten aus holzartigen Stoffen, mit Zement, Gips oder an</GoodDescription>
+              <GrossMass>50800</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127421556">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76200</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>013</SealsDescription>
+              <SealsDescription>014</SealsDescription>
+              <SealsDescription>015</SealsDescription>
+              <SealsDescription>016</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, "oriented strand board"-Platten "OSB" und ähnliche Platten [z.B. "wafer-board"-Platten] aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt (ausg. Faserplatten, furnierte Spanplatten, Verbundplatten mit Hohlraummittelagen sowie Platten aus holzartigen Stoffen, mit Zement, Gips oder an</GoodDescription>
+              <GrossMass>49700</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127420228">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77000</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>009</SealsDescription>
+              <SealsDescription>010</SealsDescription>
+              <SealsDescription>011</SealsDescription>
+              <SealsDescription>012</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, "oriented strand board"-Platten "OSB" und ähnliche Platten [z.B. "wafer-board"-Platten] aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt (ausg. Faserplatten, furnierte Spanplatten, Verbundplatten mit Hohlraummittelagen sowie Platten aus holzartigen Stoffen, mit Zement, Gips oder an</GoodDescription>
+              <GrossMass>50500</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127432868">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>233.5</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78300</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>005</SealsDescription>
+              <SealsDescription>006</SealsDescription>
+              <SealsDescription>007</SealsDescription>
+              <SealsDescription>008</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, "oriented strand board"-Platten "OSB" und ähnliche Platten [z.B. "wafer-board"-Platten] aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt (ausg. Faserplatten, furnierte Spanplatten, Verbundplatten mit Hohlraummittelagen sowie Platten aus holzartigen Stoffen, mit Zement, Gips oder an</GoodDescription>
+              <GrossMass>50800</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127435507">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>233.5</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78300</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>001</SealsDescription>
+              <SealsDescription>002</SealsDescription>
+              <SealsDescription>003</SealsDescription>
+              <SealsDescription>004</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, "oriented strand board"-Platten "OSB" und ähnliche Platten [z.B. "wafer-board"-Platten] aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt (ausg. Faserplatten, furnierte Spanplatten, Verbundplatten mit Hohlraummittelagen sowie Platten aus holzartigen Stoffen, mit Zement, Gips oder an</GoodDescription>
+              <GrossMass>50800</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127394621">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>75200</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>021</SealsDescription>
+              <SealsDescription>022</SealsDescription>
+              <SealsDescription>023</SealsDescription>
+              <SealsDescription>024</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, "oriented strand board"-Platten "OSB" und ähnliche Platten [z.B. "wafer-board"-Platten] aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt (ausg. Faserplatten, furnierte Spanplatten, Verbundplatten mit Hohlraummittelagen sowie Platten aus holzartigen Stoffen, mit Zement, Gips oder an</GoodDescription>
+              <GrossMass>48700</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127392815">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76800</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>025</SealsDescription>
+              <SealsDescription>026</SealsDescription>
+              <SealsDescription>027</SealsDescription>
+              <SealsDescription>028</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, "oriented strand board"-Platten "OSB" und ähnliche Platten [z.B. "wafer-board"-Platten] aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt (ausg. Faserplatten, furnierte Spanplatten, Verbundplatten mit Hohlraummittelagen sowie Platten aus holzartigen Stoffen, mit Zement, Gips oder an</GoodDescription>
+              <GrossMass>50300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127391536">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76800</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>029</SealsDescription>
+              <SealsDescription>030</SealsDescription>
+              <SealsDescription>031</SealsDescription>
+              <SealsDescription>032</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, "oriented strand board"-Platten "OSB" und ähnliche Platten [z.B. "wafer-board"-Platten] aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt (ausg. Faserplatten, furnierte Spanplatten, Verbundplatten mit Hohlraummittelagen sowie Platten aus holzartigen Stoffen, mit Zement, Gips oder an</GoodDescription>
+              <GrossMass>50300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127420434">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76800</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>033</SealsDescription>
+              <SealsDescription>034</SealsDescription>
+              <SealsDescription>035</SealsDescription>
+              <SealsDescription>036</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>50300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127394720">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78000</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>037</SealsDescription>
+              <SealsDescription>038</SealsDescription>
+              <SealsDescription>039</SealsDescription>
+              <SealsDescription>040</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>51500</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127431936">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>233.5</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79000</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>041</SealsDescription>
+              <SealsDescription>042</SealsDescription>
+              <SealsDescription>043</SealsDescription>
+              <SealsDescription>044</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>51500</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127435564">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>233.5</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79100</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>045</SealsDescription>
+              <SealsDescription>046</SealsDescription>
+              <SealsDescription>047</SealsDescription>
+              <SealsDescription>048</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>51600</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127391791">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77800</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>049</SealsDescription>
+              <SealsDescription>050</SealsDescription>
+              <SealsDescription>051</SealsDescription>
+              <SealsDescription>052</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>51300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318128931835">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>28800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>233.5</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79800</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>053</SealsDescription>
+              <SealsDescription>054</SealsDescription>
+              <SealsDescription>055</SealsDescription>
+              <SealsDescription>056</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>51000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127434161">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>233.5</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78800</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>057</SealsDescription>
+              <SealsDescription>058</SealsDescription>
+              <SealsDescription>059</SealsDescription>
+              <SealsDescription>060</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>51300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127430276">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>233.5</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78800</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>061</SealsDescription>
+              <SealsDescription>062</SealsDescription>
+              <SealsDescription>063</SealsDescription>
+              <SealsDescription>064</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>51300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127394985">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77800</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>065</SealsDescription>
+              <SealsDescription>066</SealsDescription>
+              <SealsDescription>067</SealsDescription>
+              <SealsDescription>068</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>51300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127430102">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>233.5</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78800</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>069</SealsDescription>
+              <SealsDescription>070</SealsDescription>
+              <SealsDescription>071</SealsDescription>
+              <SealsDescription>072</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>51300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127391163">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77800</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>073</SealsDescription>
+              <SealsDescription>074</SealsDescription>
+              <SealsDescription>075</SealsDescription>
+              <SealsDescription>076</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>51300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127390488">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>CHIPSBOARDS</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>232.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77800</TotalMass>
+            <Seals>
+              <NumberOfSeals>4</NumberOfSeals>
+              <SealsDescription>077</SealsDescription>
+              <SealsDescription>078</SealsDescription>
+              <SealsDescription>079</SealsDescription>
+              <SealsDescription>080</SealsDescription>
+            </Seals>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441000</NHMCode>
+              <GoodDescription>Spanplatten, oriented strand board-Platten (OSB) und ähnliche Platten (z. B. waferboard-Platten) aus Holz oder anderen holzigen Stoffen, auch mit Harz oder anderen organischen Bindemitteln hergestellt</GoodDescription>
+              <GrossMass>51300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

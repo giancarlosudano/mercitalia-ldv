@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>5083917504509</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-05T08:39:32+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2187</SendingCarrier>
+      <MessageReferenceNumber>5296227</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <MadeAvailable>2023-12-05T06:34:00+01:00</MadeAvailable>
+      <ECNPreparationDatetime>2023-12-05T08:30:33+01:00</ECNPreparationDatetime>
+      <DossierNumber>2187202312057936508</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>75343</Code>
+          <Name>Fos-Coussoul</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>753434</Code>
+          <Name>21063</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-12-05T09:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2187</CarrierCode>
+        <ConsignmentNumber>636274</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02535</Code>
+          <Name>Cittadella</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>025353</Code>
+          <Name>Cittadella</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>025353</Code>
+          <Name>Cittadella</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>3009719</CustomerCode>
+          <Name>ArcelorMittal MEDITERRANEE</Name>
+          <VAT>FR29421174038</VAT>
+          <Street>USINE DE FOS SUR MER</Street>
+          <Country>FR</Country>
+          <ZIPCode>13776</ZIPCode>
+          <City>FOS SUR MER CEDEX</City>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <Name>GABRIELLI SPA</Name>
+          <Street>Via Giuseppe Mazzini 58</Street>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <City>Cittadella (IT_35)</City>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>3009719 14</CustomerCode>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+      </Customers>
+      <AdditionalInformation>
+        <ConsignorReference>9000357212797643</ConsignorReference>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>240 VENTIMIGLIA (IT) / VINTIMILLE (FR)</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>10</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>574510</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>87400</RouteCode>
+          <RouteText>VINTIMILLE</RouteText>
+          <BorderpointCode>240</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-12-05T00:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>1</Status>
+          <CarrierCode>2187</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>87</UICCountryCode>
+            <Station>
+              <StationCode>753434</StationCode>
+              <StationName>Fos-Coussoul</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>87</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0240</PointCode>
+              <PointName>VINTIMILLE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2187</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0240</PointCode>
+              <PointName>VENTIMIGLIA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>2287</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>2</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>045013</StationCode>
+              <StationName>VENTIMIGLIA</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>025353</StationCode>
+              <StationName>Cittadella</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2187</CarrierCode>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Fos-sur-Mer (FR_13)</Place>
+        <Date>2023-12-05+01:00</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>87</UICCountryCode>
+            <StationCode>753434</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>025353</StationCode>
+          </End>
+          <CommercialRouteCode>101</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720839</NHMCode>
+            <TariffNumber>574510</TariffNumber>
+            <ChargedMass value="87008" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="378047772959">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21700</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87008</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>65308</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446683104">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>68316</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>46316</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338446753372">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>67229</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>45429</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338446753646">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>73174</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>51374</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046682357">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>73014</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>50514</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378047773544">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21700</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>70057</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>48357</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446683823">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>74474</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>52474</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446690075">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>74293</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>52793</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746682313">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76494</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>53994</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046776647">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>70667</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>48167</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046685244">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>72995</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>51495</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446681983">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>81978</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>59978</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378047777461">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>73724</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>51224</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046685012">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>74104</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>52604</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446682023">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76474</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>54474</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046682324">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>63402</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>40902</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338747851909">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>17600</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>70596</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>52996</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378446681181">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88319</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>66319</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046680989">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22400</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>71980</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>49580</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046680625">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22400</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79414</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>57014</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046681656">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22400</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87547</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+              </Packing>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>BOBINE BRUTE</GoodDescription>
+              <GrossMass>65147</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

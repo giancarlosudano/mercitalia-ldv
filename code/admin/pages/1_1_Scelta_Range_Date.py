@@ -18,6 +18,11 @@ import requests
 import sys
 import re
 
+def load_session_states():
+	st.session_state["box-01-orfeus"] = ""
+	st.session_state["box-02-orfeus"] = ""
+	return	
+
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
 	st.title("Scelta Range Date")
@@ -39,6 +44,7 @@ try:
 
 	if st.session_state["authentication_status"]:		
 		load_dotenv()
+		load_session_states()
 		ldv_folders = []
 		for root, dirs, files in os.walk(os.path.join('ldv')):
 			for name in dirs:

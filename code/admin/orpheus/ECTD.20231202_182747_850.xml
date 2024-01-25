@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>2182717496850</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-02T18:27:47+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131217937</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-02T18:25:59+01:00</ECNPreparationDatetime>
+      <DossierNumber>2155202311291186600</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>DOBOS</Code>
+          <Name>Dobos László egyéni vállalkozó ipar</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>154955</Code>
+          <Name>Mátészalka</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>426973</Code>
+          <Name>Mátészalka 561/562 szelv. ipvk</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-30T12:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2155</CarrierCode>
+        <ConsignmentNumber>685628</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>03050</Code>
+          <Name>Raccordo Ferriere nord</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>0017046</CustomerCode>
+          <Name>DOBOS LÁSZLÓ E.V.</Name>
+          <VAT>HU51891604</VAT>
+          <Street>Ipari út 8.</Street>
+          <Country>HU</Country>
+          <ZIPCode>4700</ZIPCode>
+          <City>Mátészalka</City>
+          <Signature>45556 a feladó megb.</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>4043352</CustomerCode>
+          <Name>FERRIERE NORD S.P.A</Name>
+          <AdditionalInformation>Zona Ind. Le  Rivoli</AdditionalInformation>
+          <VAT>IT00163780307</VAT>
+          <Street>Rivoli Di Osoppo</Street>
+          <Country>IT</Country>
+          <ZIPCode>33010</ZIPCode>
+          <City>OSOPPO (UD)</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>0060012</CustomerCode>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>012165</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>ND-0064</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Eng.sz.: 55/OS/30.11.23/001</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Hivatalos mérlegelést kérünk</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Eng.sz.: A600-15 0943</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>SDS/3070/21 tartalmát elfogadom</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtzahler RCH Strecke: Rail Cargo Logistics Hungaria Kft. ZF 0060012</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <InformationConsignee>AUFTRANG SNR.,KENWORT: DAF 716-003-(E1) 23029//100</InformationConsignee>
+        <WagonGroupInfo>A rakodsi szablyoknak megfelelt.</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Robbanás mentességi ig.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Radioaktív ment.ig.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>979</Type>
+          <DocumentInformation>ANNEX 7</DocumentInformation>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Contract in par.2.art.18 EC 1013</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>Hegyeshalom Gr/Nickelsdorf Gr-Villach/Tarvisio Gr</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>2181-2183FS 00902845   Tarifaszám: 0314.70</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>11</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>55</UICCountryCode>
+            <PointCode>0601</PointCode>
+          </BorderPoint>
+        </PaidUpTo>
+        <AdditionalCharges>
+          <AdditionalCharge>
+            <Code>28</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>34</Code>
+          </AdditionalCharge>
+        </AdditionalCharges>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>902845</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>55010</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <SpecialTreatments>
+        <SpecialTreatment>
+          <SpecialTreatmentCode>74</SpecialTreatmentCode>
+          <UICCountryCode>55</UICCountryCode>
+          <StationCode>139121</StationCode>
+          <StationName>Debrecen</StationName>
+        </SpecialTreatment>
+      </SpecialTreatments>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2155</DeclaratingCarrier>
+          <DeclarationCode>5</DeclarationCode>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2155</DeclaratingCarrier>
+          <DeclarationCode>13</DeclarationCode>
+          <DeclarationText>Tömegmegállapítás Debrecen állomáson</DeclarationText>
+        </CarriersDeclaration>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-11-30T14:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2155</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <Station>
+              <StationCode>154955</StationCode>
+              <StationName>Mátészalka</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0601</PointCode>
+              <PointName>Nickelsdorf (Gr)/Hegyeshalom</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0601</PointCode>
+              <PointName>Nickelsdorf (Gr)/Hegyeshalom</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>Osoppo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2155</CarrierCode>
+        <Signature>2023-12-02 18:25 1131217937</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Mátészalka, 2023.11.29.</Place>
+        <Date>2023-11-29</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>154955</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>030502</StationCode>
+          </End>
+          <CommercialRouteCode>003</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>902845</TariffNumber>
+            <ChargedMass value="43650" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>154955</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>154955</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <AdditionalCharges>
+            <AdditionalCharge>
+              <Code>28</Code>
+              <Prepaid>95</Prepaid>
+            </AdditionalCharge>
+            <AdditionalCharge>
+              <Code>34</Code>
+              <Prepaid>47.66</Prepaid>
+            </AdditionalCharge>
+          </AdditionalCharges>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="315554241945">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>ROTTAME FERROSO RIFIUTO IN LISTA VERDE SECONDO CODICI DI RIFIUTO RIPORTATI INALLEGATO VII DEL REGOLAMENTO CE 1013//2006 CON QUALITA CORRISPONDENTE ALLA CLASSIFICA CECA DAF 716-003-(E1) CER 170405Origine:Ungheria MATERIALE ESENTE DA CORPI CHIUSI MATREIALI PERICOLOSI,SPLOSIVI, RADIOACTIVIE MOTORI, ELECTRICI.Usprung: Wir bestatigen, dass der in diesem in Waggon enthalten</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21600</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>65250</TotalMass>
+            <BookingNumber>2155:20231130093722242:16049353</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>"Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladékvasból vagy -acélból- Más törmelék és hulladék- Más"</GoodDescription>
+              <GrossMass>43650</GrossMass>
+              <AVVKey>170405</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

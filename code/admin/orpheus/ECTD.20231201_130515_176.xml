@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>1130517493176</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-01T13:05:15+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131214435</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-12-01T13:03:22+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202311291214435</DossierNumber>
+      <ECNVersionNumber>7</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>LSR</Code>
+          <Name>L&amp;S Recycling GmbH &amp; Co KG</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>013037</Code>
+          <Name>Spratzern</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>013037</Code>
+          <Name>Spratzern</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-29T13:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2181</CarrierCode>
+        <ConsignmentNumber>789842</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02433</Code>
+          <Name>Verona Porta Vescovo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>024331</Code>
+          <Name>Verona Porta Vescovo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>024331</Code>
+          <Name>Verona Porta Vescovo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>1360106</CustomerCode>
+          <Name>Loacker Recycling GmbH</Name>
+          <VAT>ATU36535905</VAT>
+          <Street>Lustenauerstraße 33</Street>
+          <Country>AT</Country>
+          <ZIPCode>6840</ZIPCode>
+          <City>Götzis</City>
+          <Signature>46394 i. A. d. Abs.</Signature>
+          <Contacts>
+            <PhoneNumber>+43 5523 502-13</PhoneNumber>
+            <FaxNumber>+43 5523 502-54</FaxNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <Name>Acciaierie Di Verona S.P.A.</Name>
+          <VAT>IT. 08521290158</VAT>
+          <Street>Lungadige Ant.GALTAROSSA 21/C</Street>
+          <Country>IT</Country>
+          <ZIPCode>37133</ZIPCode>
+          <City>VERONA (VR)</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>2191401</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>1</Code>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtzahler Fa.Rail Cargo Logistics RS-0039</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Zulaufnummer 81/RO/29.11.23/00602.001</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Beförderung auf der ital. Strecke durch EVU MERCITALIA RAIL Srl (EVU CODE 0083)</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>Loacker</ConsignorReference>
+        <InformationConsignee>63000//110 - Ursprung Österreich</InformationConsignee>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Anhang III</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Wiegeschein</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>via Brenner</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <TariffNumber>520079</TariffNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>81320</RouteCode>
+        </RouteSection>
+      </Routing>
+      <SpecialTreatments>
+        <SpecialTreatment>
+          <SpecialTreatmentCode>74</SpecialTreatmentCode>
+          <UICCountryCode>81</UICCountryCode>
+          <StationCode>055988</StationCode>
+          <StationName>St. Pölten Hbf- Waage</StationName>
+        </SpecialTreatment>
+      </SpecialTreatments>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>013037</StationCode>
+              <StationName>Spratzern</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0332</PointCode>
+              <PointName>Brennero/Brenner</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <ResponsibleCarrierCode>2181</ResponsibleCarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0332</PointCode>
+              <PointName>Brennero/Brenner</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>024331</StationCode>
+              <StationName>Verona Porta Vescovo</StationName>
+            </Station>
+          </SectionTo>
+          <SubContractNumber>218316</SubContractNumber>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2181</CarrierCode>
+        <Signature>2023-11-29 11:15 1131214435</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Götzis</Place>
+        <Date>2023-11-29</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <StationCode>013037</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>024331</StationCode>
+          </End>
+          <CommercialRouteCode>032</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>520079</TariffNumber>
+            <ChargedMass value="55450" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <StationCode>999999</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <StationCode>999999</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <AdditionalCharges>
+            <AdditionalCharge>
+              <Code>34</Code>
+              <Transferred>47</Transferred>
+            </AdditionalCharge>
+          </AdditionalCharges>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="378059320283">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>rottame ferroso conforme alle specifiche categoria Dem.Ind. PF+6 DAF930 with Tondo -057</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26600</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>82050</TotalMass>
+            <BookingNumber>2181:20231129111528113:16045630</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Industrieschrott E3 (Produkt) Dem.Ind. PF+6 DAF930 with Tondo -057</GoodDescription>
+              <GrossMass>55450</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

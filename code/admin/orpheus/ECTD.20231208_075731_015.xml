@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>8075717520015</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-08T07:57:31+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2154</SendingCarrier>
+      <MessageReferenceNumber>17777352</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-12-08T07:56:14+01:00</ECNPreparationDatetime>
+      <DossierNumber>2154202312070877371</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>32408</Code>
+          <Name>Vlecka Cech odpady Jemnice</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>341859</Code>
+          <Name>Jemnice</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-12-07T08:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2154</CarrierCode>
+        <ConsignmentNumber>500835</ConsignmentNumber>
+        <ForwardingTrainNumber>0</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>03050</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>OSOPPO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>OSOPPO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>26068869</CustomerCode>
+          <Name>CECH-ODPADY s.r.o.</Name>
+          <VAT>CZ699001121</VAT>
+          <Street>Molakova 577/34, Karlin</Street>
+          <Country>CZ</Country>
+          <ZIPCode>186 00</ZIPCode>
+          <City>Praha 8</City>
+          <Signature>54-341859-50083-2154-20231207</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>19547</CustomerCode>
+          <Name>CARBOSPED, spol. s r.o.</Name>
+          <VAT>CZ28976096</VAT>
+          <Street>Haskova 1238</Street>
+          <Country>CZ</Country>
+          <ZIPCode>500 02</ZIPCode>
+          <City>Hradec Kralove</City>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>012165</CustomerCode>
+          <Name>FERRIERE NORD S.p.A.</Name>
+          <VAT>IT00163780307</VAT>
+          <Street>Zona Industriale Rivoli</Street>
+          <Country>IT</Country>
+          <ZIPCode>33010</ZIPCode>
+          <City>Osoppo</City>
+          <Signature>not specified</Signature>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Ausnahme aus ZAN: 54/OS/07.12.23/064</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>CDC-Frachtzahler: CARBOSPED, spol. s r.o., Kollarova 1114, Hradec Kralove, MWSt.Nr.CZ28976096 ; OPT: 91320410 ; zum Verwiegen in Bhf. 54-334250 Breclav ; Die Bezahlung RCA und MIR Strecke wird der</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Empfaenger Ferriere Nord SpA mit Vertrag IN902845. Auf der italienischer Strecke von Tarvisio nach Osoppo: Mercitalia  
+PD 84.01.</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>"ech v?voz"</ConsignorReference>
+        <InformationConsignee>Kennwort: SICILIE/11,   Im Auftrag TSR Czech Republic
+Auftrag-Nr.: 23072/110,</InformationConsignee>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>BRECLAV ST.HR ; TARVISIO BOSCOVERDE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>CZ - 2154 CDC ; AT - 2181 RCA ; IT - 2183 MIR</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>CDC:D177052 ; Vertraege RCA und MIR: IN902845</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>11</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>11</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0613</PointCode>
+            <PointName>BRECLAV ST.HR</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+        <AdditionalCharges>
+          <AdditionalCharge>
+            <Code>02</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>03</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>04</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>05</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>06</Code>
+          </AdditionalCharge>
+        </AdditionalCharges>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>177052</ContractNumber>
+      </Tariff>
+      <SectionalInvoicing>
+        <Section>
+          <InvoicingCarrierCode>2181</InvoicingCarrierCode>
+          <InvoicedSection>
+            <UICCountryCode>81</UICCountryCode>
+          </InvoicedSection>
+        </Section>
+      </SectionalInvoicing>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>54130</RouteCode>
+          <RouteText>BRECLAV ST.HR ; TARVISIO BOSCOVERDE</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2154</DeclaratingCarrier>
+          <DeclarationCode>12</DeclarationCode>
+          <DeclarationText>"27.35:2/5/0 Kc" ; obj.c. 21415905 ; DROP 5480735</DeclarationText>
+        </CarriersDeclaration>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-12-07T09:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2154</CarrierCode>
+          <CarrierName>CD Cargo, a.s.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>54</UICCountryCode>
+            <Station>
+              <StationCode>341859</StationCode>
+              <StationName>Jemnice</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0613</PointCode>
+              <PointName>BRECLAV ST.HR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <CarrierName>Rail Cargo Austria AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0613</PointCode>
+              <PointName>BERNHARDSTHAL GRENZE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>OSOPPO</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2154</CarrierCode>
+        <CarrierName>CD Cargo, a.s.</CarrierName>
+        <Signature>54-341859-50083-2154-20231207</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Jemnice</Place>
+        <Date>2023-12-07</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>54</UICCountryCode>
+            <StationCode>341859</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0613</PointCode>
+          </End>
+          <CurrencyCode>CZK</CurrencyCode>
+          <Tariff>
+            <NHMCode>720441</NHMCode>
+            <TariffNumber>177052</TariffNumber>
+          </Tariff>
+          <AdditionalCharges>
+            <AdditionalCharge>
+              <Code>27</Code>
+              <Prepaid>0</Prepaid>
+            </AdditionalCharge>
+            <AdditionalCharge>
+              <Code>34</Code>
+              <Prepaid>1000</Prepaid>
+            </AdditionalCharge>
+          </AdditionalCharges>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0613</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720441</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>83</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>030502</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720441</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="315459585636">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>47650</TotalMass>
+            <LoadLimit>57.1</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720441</NHMCode>
+              <GoodDescription>Drehspane, Frasspane, Hobelspane, Schleifspane, Sagespane und Feilspane, aus Eisen oder Stahl, auch paketiert</GoodDescription>
+              <AdditionalGoodInformation>Hmotnost zasilky 45000 kg uvedena odhadem.1 Wg. Eisenschrott, Stahlschrott SORTE: DAF750-005-E5H/M e DAF 700,  druh 51,52  TOP Kennwort: SICILIE/11Rottame ferroso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento CE 1013/2006 con qualit? corrispondente alla DAF750 - 005 - E5H/M e DAF 700Ursprung: Tsch</AdditionalGoodInformation>
+              <GrossMass>47650</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

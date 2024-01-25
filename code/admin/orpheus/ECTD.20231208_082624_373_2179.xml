@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230011373</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-08T08:26:24+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110131428</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-12-08T08:25:09+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202311110131428</DossierNumber>
+      <ECNVersionNumber>3</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Vadu Lat</Name>
+          <Country>
+            <UICCountryCode>53</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>102491</Code>
+          <Name>Vadu Lat</Name>
+          <Country>
+            <UICCountryCode>53</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>102491</Code>
+          <Name>Vadu Lat</Name>
+          <Country>
+            <UICCountryCode>53</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-10-25T10:00:00+02:00</AcceptanceDate>
+        <CarrierCode>3210</CarrierCode>
+        <ConsignmentNumber>286625</ConsignmentNumber>
+        <ForwardingTrainNumber>45011</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Fiorentina di Piombino</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>067744</Code>
+          <Name>Fiorentina di Piombino</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>067744</Code>
+          <Name>Fiorentina di Piombino</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>7941427</CustomerCode>
+          <Name>METALKA COMMERCE, PODJETJE</Name>
+          <VAT>SI22835750</VAT>
+          <Street>DALMATINOVA ULICA 2</Street>
+          <Country>SI</Country>
+          <ZIPCode>1101</ZIPCode>
+          <City>LJUBLJANA</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>PIOMBINO LOGISTICS S.P.A. - A JSW E</Name>
+          <Street>Largo Caduti sul Lavoro 21</Street>
+          <Country>IT</Country>
+          <ZIPCode>57025</ZIPCode>
+          <City>Piombino (LI)</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: CFRVTR 3210 2155 RCH HURCHUN ZF 0018556/0361.14 PAYER FOR FS AND SZIS MERCITALIARAIL</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>DRUGI ZELEZNI IZD</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>SZTP9028.84</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <Station>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>067744</StationCode>
+            <StationName>Fiorentina di Piombino</StationName>
+          </Station>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>999999</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>53460</RouteCode>
+          <RouteText>CURTICI/LOEKOESHAZA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>55740</RouteCode>
+          <RouteText>ORISZENTPETER HATAR/HODOS MEJA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>3210</CarrierCode>
+          <CarrierName>VTR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>53</UICCountryCode>
+            <Station>
+              <StationCode>102491</StationCode>
+              <StationName>VADU LAT</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>53</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>946</PointCode>
+              <PointName>CURTICI</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2155</CarrierCode>
+          <CarrierName>RCH</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>946</PointCode>
+              <PointName>LOEKOESHAZA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>774</PointCode>
+              <PointName>ORISZENTPETER HATAR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>774</PointCode>
+              <PointName>HODOS MEJA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>067744</StationCode>
+              <StationName>Fiorentina di Piombino</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>3210</CarrierCode>
+        <CarrierName>VTR</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Vadu Lat</Place>
+        <Date>2023-10-25</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>53</UICCountryCode>
+            <StationCode>102491</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>067744</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318339209278">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24980.0</TotalMass>
+            <LoadLimit>237</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318335578015">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25670.0</TotalMass>
+            <LoadLimit>235</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>2200.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339161016">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25300.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318335576084">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25500.0</TotalMass>
+            <LoadLimit>233</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>2200.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339209146">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24860.0</TotalMass>
+            <LoadLimit>236</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339205763">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25300.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318335573032">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>26200.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>2200.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339209518">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24900.0</TotalMass>
+            <LoadLimit>236</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339189066">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24980.0</TotalMass>
+            <LoadLimit>237</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339190148">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24800.0</TotalMass>
+            <LoadLimit>235</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339164044">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25300.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339179794">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25300.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339198810">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24600.0</TotalMass>
+            <LoadLimit>233</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318335570228">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>26040.0</TotalMass>
+            <LoadLimit>238</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>2200.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339192011">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24920.0</TotalMass>
+            <LoadLimit>236</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339199461">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25300.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339192631">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24590.0</TotalMass>
+            <LoadLimit>233</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339163160">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24800.0</TotalMass>
+            <LoadLimit>235</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339192482">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24560.0</TotalMass>
+            <LoadLimit>233</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>732611</NHMCode>
+              <GoodDescription>Mahlkugeln und ahnl. Mahlkorper aus Eisen oder Stahl geschmiedet jedoch nicht weiterbearbeitet</GoodDescription>
+              <AdditionalGoodInformation>D</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

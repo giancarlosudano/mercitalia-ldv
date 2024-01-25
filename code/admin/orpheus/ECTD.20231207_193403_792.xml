@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>7193417518792</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-07T19:34:03+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131237063</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-07T19:32:42+01:00</ECNPreparationDatetime>
+      <DossierNumber>2156202312066242120</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>32700</Code>
+          <Name>Duslo a.s.</Name>
+          <Country>
+            <UICCountryCode>56</UICCountryCode>
+            <Name>SLOWAKEI</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>145169</Code>
+          <Name>Bratislava predmestie</Name>
+          <Country>
+            <UICCountryCode>56</UICCountryCode>
+            <Name>SLOWAKEI</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>145169</Code>
+          <Name>Bratislava predmestie</Name>
+          <Country>
+            <UICCountryCode>56</UICCountryCode>
+            <Name>SLOWAKEI</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-12-06T09:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2156</CarrierCode>
+        <ConsignmentNumber>004507</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>OSOPPO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>OSOPPO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>47258811</CustomerCode>
+          <Name>TSR Slovakia, s.r.o.</Name>
+          <AdditionalInformation>0907725686, v.bolesova@tsr.sk</AdditionalInformation>
+          <VAT>SK2120165619</VAT>
+          <Street>Hrabove   313</Street>
+          <Country>SK</Country>
+          <ZIPCode>014 01</ZIPCode>
+          <City>Bytca</City>
+          <Signature>Nemcova,Kadlicekova</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>012165</CustomerCode>
+          <Name>FERRIERE NORD S P A</Name>
+          <VAT>IT00163780307</VAT>
+          <Street>ZONA INDUSTRIALE RIVOLI</Street>
+          <Country>IT</Country>
+          <ZIPCode>33010</ZIPCode>
+          <City>OSOPPO UD</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>35736046</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Transport number: 24,25 OS 06.12.2023</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtzah. fur SK-Strecke: Budamar Logisticsa.s.</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtzahlung fur die RCA-Strecke: Mercitalia Tarif 9028.45</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>ZSSK CARGO - V 35/20, RCA - 074/20, MIR- TIC 2020</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Empfanger ist nicht verfugungsberechtig   POZ:007/2023-2       RS-0743</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>CODE 1734196</ConsignorReference>
+        <InformationConsignee>Express Pos.:2853-0149 Auftragsnr.:23062//100,23062//110  Im Auftrag TSR Slovakia s.r.o. Kennwort: 23062//100 23062//110 DAF750-005-E5H//M industry// , 923284</InformationConsignee>
+        <WagonGroupInfo>2 Waggons Eisenschrott// zelezny srot  Kennwort: 23062//110,23062//100DAF750-005-E5H//M industryRottame ferroso rifiuto in lista verde secondo codici di rifiuto riportati in    allegato VII del regolamento 1013//2006 con qualita corrispondente alla Ursprung: Slowakische Republik</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Annex VII Reg. (CE) 1013/2006</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Bescheinigung</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>vykaz voznov</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>via Bratislava Petrzalka st.hr./Kittsee Gr./Tarvisio Gr.</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>N ZSSK-Cargo ZSR ;N RCA   OBB-Holdin ;N MIR FS</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>DAF</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>12</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>56</UICCountryCode>
+            <PointCode>0617</PointCode>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <TariffNumber>902845</TariffNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>56170</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2156</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>56</UICCountryCode>
+            <Station>
+              <StationCode>145169</StationCode>
+              <StationName>Bratislava predmestie</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>56</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0617</PointCode>
+              <PointName>Kittsee/Bratislava-Petralka t. hr</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <ResponsibleCarrierCode>2183</ResponsibleCarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0617</PointCode>
+              <PointName>Kittsee/Bratislava-Petralka t. hr</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+          <SubContractNumber>218346</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>Osoppo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2156</CarrierCode>
+        <Signature>2023-12-07 19:32 1131237063</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Bratislava</Place>
+        <Date>2023-12-06</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>56</UICCountryCode>
+            <StationCode>145169</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>030502</StationCode>
+          </End>
+          <CommercialRouteCode>004</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>902845</TariffNumber>
+            <ChargedMass value="103700" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="315659515227">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22900</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76400</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Odpad a srot,zo zeleza,ostatne -DAF750-005-E5H/M industry/SICILIE 23062/110</GoodDescription>
+              <GrossMass>53500</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315653750036">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23900</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>74100</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Odpad a srot,zo zeleza,ostatne DAF750-005-E5H/M industry/SICILIE 23062/100</GoodDescription>
+              <GrossMass>50200</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

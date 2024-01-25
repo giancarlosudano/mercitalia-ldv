@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230011369</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-07T22:49:44+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110132538</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-12-07T22:48:01+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202312070132538</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Sid</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>165167</Code>
+          <Name>Sid</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>165167</Code>
+          <Name>Sid</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-12-06T09:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3881</CarrierCode>
+        <ConsignmentNumber>000208</ConsignmentNumber>
+        <ForwardingTrainNumber>47598</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>053082</Code>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>053082</Code>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>Victoria Oil doo SID</Name>
+          <Street>Branka Erica 2</Street>
+          <Country>RS</Country>
+          <ZIPCode>22240</ZIPCode>
+          <City>Sid</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>BORSARI E &amp; C. S.R.L.</Name>
+          <Street>VIA DI MEZZO,  114/E</Street>
+          <Country>IT</Country>
+          <ZIPCode>41015</ZIPCode>
+          <City>NONANTOLA</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>10</Code>
+          <Text>ENSIGNE OBREZJE</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: EUROLOGSYSTEM</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>OLJNE POGACE</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>INMP0021 SZTP1805.81</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>DAF</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>12</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>72</UICCountryCode>
+            <PointCode>501</PointCode>
+            <PointName>SID</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>092301</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>72010</RouteCode>
+          <RouteText>SID/TOVARNIK</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>78540</RouteCode>
+          <RouteText>SAVSKI MAROF/DOBOVA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>true</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+        <CustomsEndorsements>23SI00112340623923 23HR070327039135M1</CustomsEndorsements>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>3881</CarrierCode>
+          <CarrierName>RTL</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>72</UICCountryCode>
+            <Station>
+              <StationCode>165167</StationCode>
+              <StationName>SID</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>72</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>501</PointCode>
+              <PointName>SID</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>501</PointCode>
+              <PointName>TOVARNIK</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>SAVSKI MAROF</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>DOBOVA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>053082</StationCode>
+              <StationName>Poggio Rusco</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>3881</CarrierCode>
+        <CarrierName>RTL</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Sid</Place>
+        <Date>2023-12-06</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>72</UICCountryCode>
+            <StationCode>165167</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>053082</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="317908220393">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57100.0</TotalMass>
+            <LoadLimit>262</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327039135M1</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>30950.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908228347">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58500.0</TotalMass>
+            <LoadLimit>268</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31700.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908220401">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58100.0</TotalMass>
+            <LoadLimit>271</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>30960.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908223132">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57750.0</TotalMass>
+            <LoadLimit>265</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31290.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908220567">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58200.0</TotalMass>
+            <LoadLimit>268</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31360.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908221896">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57050.0</TotalMass>
+            <LoadLimit>264</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>30650.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908229774">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57600.0</TotalMass>
+            <LoadLimit>258</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31770.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908222332">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58000.0</TotalMass>
+            <LoadLimit>258</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>32230.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908229733">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57200.0</TotalMass>
+            <LoadLimit>264</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327039135M1</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>30810.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908221151">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57350.0</TotalMass>
+            <LoadLimit>262</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31190.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908220989">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57650.0</TotalMass>
+            <LoadLimit>264</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31280.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908222233">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57650.0</TotalMass>
+            <LoadLimit>262</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31460.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908221672">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57850.0</TotalMass>
+            <LoadLimit>266</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31220.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908220856">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57800.0</TotalMass>
+            <LoadLimit>261</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31690.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908220922">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58200.0</TotalMass>
+            <LoadLimit>262</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>32040.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908221102">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58050.0</TotalMass>
+            <LoadLimit>262</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31870.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908222159">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57850.0</TotalMass>
+            <LoadLimit>261</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31730.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908220062">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57900.0</TotalMass>
+            <LoadLimit>264</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31550.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908222993">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58850.0</TotalMass>
+            <LoadLimit>266</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>32280.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908223397">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58600.0</TotalMass>
+            <LoadLimit>263</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>32310.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908220708">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>59450.0</TotalMass>
+            <LoadLimit>264</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>33050.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908221128">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58500.0</TotalMass>
+            <LoadLimit>266</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31870.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908222456">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57950.0</TotalMass>
+            <LoadLimit>265</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31490.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908229865">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58150.0</TotalMass>
+            <LoadLimit>263</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31850.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908229147">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58500.0</TotalMass>
+            <LoadLimit>266</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31890.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908222209">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>58200.0</TotalMass>
+            <LoadLimit>269</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>31330.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317908223421">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>57700.0</TotalMass>
+            <LoadLimit>267</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327039135M1</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230649</NHMCode>
+              <GoodDescription>Olkuchen und andere feste Ruckstande aus der Gewinnung pflanzlicher Fette oder Ole aus Raps oder Rubsensamen mit hohem Gehalt an Erucasaure deren fettes Ol einen Erucasauregehalt von 2 GHT aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten aufweist und deren feste Bestandteile einen Gehalt an Glucosinolaten</GoodDescription>
+              <AdditionalGoodInformation>O</AdditionalGoodInformation>
+              <GrossMass>30970.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

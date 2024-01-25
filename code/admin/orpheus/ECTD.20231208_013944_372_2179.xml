@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230011372</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-08T01:39:44+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110132541</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-12-08T01:38:11+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202312080132541</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Radoiesti</Name>
+          <Country>
+            <UICCountryCode>53</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>104075</Code>
+          <Name>Radoiesti</Name>
+          <Country>
+            <UICCountryCode>53</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>104075</Code>
+          <Name>Radoiesti</Name>
+          <Country>
+            <UICCountryCode>53</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-27T12:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3210</CarrierCode>
+        <ConsignmentNumber>287722</ConsignmentNumber>
+        <ForwardingTrainNumber>45085</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Fiorentina di Piombino</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>067744</Code>
+          <Name>Fiorentina di Piombino</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>067744</Code>
+          <Name>Fiorentina di Piombino</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>ROTARY CONSTRUCTII MENTENANTA SA</Name>
+          <Street>bdul. Metalurgiei</Street>
+          <Country>RO</Country>
+          <ZIPCode>31072</ZIPCode>
+          <City>Bucarest</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>PIOMBINO LOGISTICS S.P.A. - A JSW E</Name>
+          <Street>Largo Caduti sul Lavoro 21</Street>
+          <Country>IT</Country>
+          <ZIPCode>57025</ZIPCode>
+          <City>Piombino (LI)</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: CFR;VTR 3210,2155 RCH,HU:RCHUN ZF 0018556/0361.14, PAYER FOR FS AND SZ IS MERCITALIARAIL</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>ARUK VASBOL VAGY ACEL</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>ROM0018556 SZTP9028.84</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <Station>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>067744</StationCode>
+            <StationName>Fiorentina di Piombino</StationName>
+          </Station>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>999999</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>53460</RouteCode>
+          <RouteText>CURTICI/LOEKOESHAZA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>55740</RouteCode>
+          <RouteText>ORISZENTPETER HATAR/HODOS MEJA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>3210</CarrierCode>
+          <CarrierName>VTR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>53</UICCountryCode>
+            <Station>
+              <StationCode>104075</StationCode>
+              <StationName>RADOIESTI</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>53</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>946</PointCode>
+              <PointName>CURTICI</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2155</CarrierCode>
+          <CarrierName>RCH</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>946</PointCode>
+              <PointName>LOEKOESHAZA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>774</PointCode>
+              <PointName>ORISZENTPETER HATAR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>774</PointCode>
+              <PointName>HODOS MEJA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>067744</StationCode>
+              <StationName>Fiorentina di Piombino</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>3210</CarrierCode>
+        <CarrierName>VTR</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Radoiesti</Place>
+        <Date>2023-11-27</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>53</UICCountryCode>
+            <StationCode>104075</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>067744</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318335576761">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25700.0</TotalMass>
+            <LoadLimit>235</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>2200.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339203990">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25590.0</TotalMass>
+            <LoadLimit>243</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339162006">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24760.0</TotalMass>
+            <LoadLimit>235</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339165033">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24570.0</TotalMass>
+            <LoadLimit>233</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339203552">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24860.0</TotalMass>
+            <LoadLimit>236</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339189959">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24880.0</TotalMass>
+            <LoadLimit>236</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339168094">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24950.0</TotalMass>
+            <LoadLimit>236</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339189793">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24600.0</TotalMass>
+            <LoadLimit>233</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339183606">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25220.0</TotalMass>
+            <LoadLimit>239</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339209203">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24970.0</TotalMass>
+            <LoadLimit>237</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339181758">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24840.0</TotalMass>
+            <LoadLimit>235</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339188993">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25500.0</TotalMass>
+            <LoadLimit>242</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339209559">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24900.0</TotalMass>
+            <LoadLimit>236</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339199800">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25300.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339179265">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24700.0</TotalMass>
+            <LoadLimit>234</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339208965">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24810.0</TotalMass>
+            <LoadLimit>235</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339162923">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>24680.0</TotalMass>
+            <LoadLimit>234</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339177301">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>25300.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>SM</PackageIdentification>
+              </Packing>
+              <NHMCode>732690</NHMCode>
+              <GoodDescription>Waren aus Eisen oder Stahl a.n.g. ausg. gegossen sowie geschmiedet jedoch nicht weiterbearbeitet oder aus Eisen oder Stahldraht</GoodDescription>
+              <AdditionalGoodInformation>A</AdditionalGoodInformation>
+              <GrossMass>1300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

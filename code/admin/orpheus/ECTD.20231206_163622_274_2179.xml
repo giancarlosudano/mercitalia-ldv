@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230011274</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-06T16:36:22+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110132444</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-06T16:35:19+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202312060132444</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Maribor Tezno-Surovina d.o.o.</Name>
+          <Country>
+            <UICCountryCode>79</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>433045</Code>
+          <Name>Maribor Tezno</Name>
+          <Country>
+            <UICCountryCode>79</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>433045</Code>
+          <Name>Maribor Tezno</Name>
+          <Country>
+            <UICCountryCode>79</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-12-05T13:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2179</CarrierCode>
+        <ConsignmentNumber>489526</ConsignmentNumber>
+        <ForwardingTrainNumber>50000</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Cava Tigozzi</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>019141</Code>
+          <Name>Cava Tigozzi</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>019141</Code>
+          <Name>Cava Tigozzi</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>7941628</CustomerCode>
+          <Name>SUROVINA,DRUZBA ZA</Name>
+          <VAT>SI10304452</VAT>
+          <Street>ULICA VITA KRAIGHERJA 5</Street>
+          <Country>SI</Country>
+          <ZIPCode>2000</ZIPCode>
+          <City>MARIBOR</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>ACCIAIERIA ARVEDI S.p.A.</Name>
+          <Street>VIA ACQUAVIVA 18</Street>
+          <Country>IT</Country>
+          <ZIPCode>26100</ZIPCode>
+          <City>CREMONA</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: IZJAVLJAM DA MASA BLAGA NE PRESEGA</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>16 WAGON ODPADNO ZELE</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>978</Type>
+          <DocumentTypeDescription>Odobritev cezmejne posiljke odpadko</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>979</Type>
+          <DocumentTypeDescription>Dokument za cezmejni prevoz posiljk</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>104275 SZTP6401.87</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>11</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>79</UICCountryCode>
+            <PointCode>310</PointCode>
+            <PointName>SEZANA</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>640187</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <Station>
+              <StationCode>433045</StationCode>
+              <StationName>Maribor Tezno</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>019141</StationCode>
+              <StationName>Cava Tigozzi</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2179</CarrierCode>
+        <CarrierName>SZ - TP, d.o.o.</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Maribor Tezno</Place>
+        <Date>2023-12-05</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>79</UICCountryCode>
+            <StationCode>433045</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>019141</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="317953000393">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69820.0</TotalMass>
+            <LoadLimit>214</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>48400.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338767360807">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>63780.0</TotalMass>
+            <LoadLimit>241</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>39700.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338767354529">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>65840.0</TotalMass>
+            <LoadLimit>259</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>39950.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338767367992">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>71540.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>47500.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317959511070">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>61770.0</TotalMass>
+            <LoadLimit>204</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>41350.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317959511500">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>62010.0</TotalMass>
+            <LoadLimit>212</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>40850.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378053775276">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69700.0</TotalMass>
+            <LoadLimit>238</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>45950.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318153751405">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68500.0</TotalMass>
+            <LoadLimit>250</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>43500.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338767379393">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>61820.0</TotalMass>
+            <LoadLimit>232</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>38650.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338767354222">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>66770.0</TotalMass>
+            <LoadLimit>260</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>40750.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378054210414">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>61000.0</TotalMass>
+            <LoadLimit>216</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>39400.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317953000708">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>61680.0</TotalMass>
+            <LoadLimit>218</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>39850.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317959510700">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>63030.0</TotalMass>
+            <LoadLimit>208</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>42250.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317959505072">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>63190.0</TotalMass>
+            <LoadLimit>213</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>41900.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317953001003">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>60300.0</TotalMass>
+            <LoadLimit>211</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>39200.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="317853008470">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>59330.0</TotalMass>
+            <LoadLimit>206</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>1</AdditionalGoodInformation>
+              <GrossMass>38750.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

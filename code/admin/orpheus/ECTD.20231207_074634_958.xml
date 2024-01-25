@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>7074617514958</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-07T07:46:34+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2180</SendingCarrier>
+      <MessageReferenceNumber>31759498</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-07T07:41:31+01:00</ECNPreparationDatetime>
+      <DossierNumber>2180202312077095694</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+      <ORFIMO>1</ORFIMO>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>27299</Code>
+          <Name>ROSTOCK SEEHAFEN UBF</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>272997</Code>
+          <Name>ROSTOCK SEEHAFEN UBF</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-12-02T19:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2180</CarrierCode>
+        <ConsignmentNumber>671412</ConsignmentNumber>
+        <ForwardingTrainNumber>76167</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02432</Code>
+          <Name>VERONA QUADRANTE  EUROPA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>024323</Code>
+          <Name>VERONA QUADRANTE  EUROPA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>024323</Code>
+          <Name>VERONA QUADRANTE  EUROPA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>355446</CustomerCode>
+          <Name>KVLO KOMBIVERKEHR KG</Name>
+          <VAT>DE112012727</VAT>
+          <Street>ZUM LAURENBURGER HOF 76</Street>
+          <Country>DE</Country>
+          <ZIPCode>60594</ZIPCode>
+          <City>FRANKFURT/MAIN</City>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>355446</CustomerCode>
+          <Name>KVLO KOMBIVERKEHR KG</Name>
+          <VAT>DE112012727</VAT>
+          <Street>ZUM LAURENBURGER HOF 76</Street>
+          <Country>DE</Country>
+          <ZIPCode>60594</ZIPCode>
+          <City>FRANKFURT/MAIN</City>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>6783</CustomerCode>
+          <Name>KVI KOMBIVERKEHR INT. VERKEHR</Name>
+          <VAT>DE 112 012 727</VAT>
+          <Street>ZUM LAURENBURGER HOF 76</Street>
+          <Country>DE</Country>
+          <ZIPCode>60594</ZIPCode>
+          <City>FRANKFURT/M</City>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Absender bleibt generell verfügungsberechtigt.</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Absender alleine verfuegungsberechtigt, bis die Sendung das Versandland gemaess Feld 16 bzw. Feld 56 des CIM-Frachtbriefs verlassen hat.</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>5148353069</ConsignorReference>
+      </AdditionalInformation>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>931205</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>80630</RouteCode>
+          <BorderpointCode>463</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81320</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <PrincipalCode>2180</PrincipalCode>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2180</CarrierCode>
+          <CarrierName>DB CARGO AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>272997</StationCode>
+              <StationName>ROSTOCK SEEHAFEN UBF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>202366</StationCode>
+              <StationName>MUENCHEN OST RBF</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>2</Status>
+          <CarrierCode>2183</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>MERCITALIA RAIL SRL</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>022699</StationCode>
+              <StationName>BRENNERO/BRENNER</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>024323</StationCode>
+              <StationName>VERONA QUADRANTE  EUROPA</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>3157</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>LOKOM LOKOMOTION GES. F SCHIENENTRA</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>202366</StationCode>
+              <StationName>MUENCHEN OST RBF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>022699</StationCode>
+              <StationName>BRENNERO/BRENNER</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2180</CarrierCode>
+        <CarrierName>DB CARGO AG</CarrierName>
+        <Street>VOLLHÖFNER WEIDEN 26</Street>
+        <ZIPCode>21129</ZIPCode>
+        <City>HAMBURG</City>
+        <CountryCode>DE</CountryCode>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>ROSTOCK SEEHAFEN UBF</Place>
+        <Date>2023-12-07</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>80</UICCountryCode>
+            <StationCode>272997</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>024323</StationCode>
+          </End>
+          <CommercialRouteCode>065</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>994300</NHMCode>
+            <TariffNumber>931205</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318049937374">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074797</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0505795" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7810</TareWeight>
+              <DeliveryReference>9718006481515101</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>19924.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2019051" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6772</TareWeight>
+              <DeliveryReference>9718006481517101</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049930809">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074784</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0509888" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7480</TareWeight>
+              <DeliveryReference>9718006481515201</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>25000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2052070" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6540</TareWeight>
+              <DeliveryReference>9718006481517901</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27481.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="335249561416">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35700.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074796</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0083410" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6772</TareWeight>
+              <DeliveryReference>9718006481515301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27412.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2022564" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6450</TareWeight>
+              <DeliveryReference>9718006481515501</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>14037.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049920412">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074788</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2014276" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6772</TareWeight>
+              <DeliveryReference>9718006481515401</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>26390.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="9064540" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7120</TareWeight>
+              <DeliveryReference>9718006481517601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27487.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338049569134">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>33940.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.0</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074783</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2019149" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6772</TareWeight>
+              <DeliveryReference>9718006481515601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>14000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2028198" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6750</TareWeight>
+              <DeliveryReference>9718006481515701</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27079.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049921139">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074789</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2031247" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6670</TareWeight>
+              <DeliveryReference>9718006481515801</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>24219.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2063590" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6687</TareWeight>
+              <DeliveryReference>9718006481517201</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28296.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049553205">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074785</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2045596" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6587</TareWeight>
+              <DeliveryReference>9718006481515901</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>29000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="9066081" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7060</TareWeight>
+              <DeliveryReference>9718006481516701</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27543.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318449557665">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>36500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.0</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074782</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2069073" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6734</TareWeight>
+              <DeliveryReference>9718006481516001</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>26140.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2068267" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6734</TareWeight>
+              <DeliveryReference>9718006481517301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>24388.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049554237">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074793</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2066979" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6734</TareWeight>
+              <DeliveryReference>9718006481516101</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2286654" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006481516401</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28836.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049560188">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34300.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074787</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2090213" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6772</TareWeight>
+              <DeliveryReference>9718006481516201</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28700.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="9072741" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6935</TareWeight>
+              <DeliveryReference>9718006481517701</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>13431.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049939792">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074794</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2090511" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6772</TareWeight>
+              <DeliveryReference>9718006481516301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0079299" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6772</TareWeight>
+              <DeliveryReference>9718006481518001</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049922343">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074791</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="9017235" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7029</TareWeight>
+              <DeliveryReference>9718006481516501</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>25913.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="9070625" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7060</TareWeight>
+              <DeliveryReference>9718006481516801</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>4315.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049553262">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074786</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="9021024" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6700</TareWeight>
+              <DeliveryReference>9718006481516601</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28676.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2185828" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6675</TareWeight>
+              <DeliveryReference>9718006481517501</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28560.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049921444">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074790</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="9096363" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6900</TareWeight>
+              <DeliveryReference>9718006481516901</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>25418.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="0505223" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7810</TareWeight>
+              <DeliveryReference>9718006481518101</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>24318.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049939875">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074795</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="9097919" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6900</TareWeight>
+              <DeliveryReference>9718006481517001</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>27324.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2012123" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6772</TareWeight>
+              <DeliveryReference>9718006481518301</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>28050.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318049922178">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>34.2</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202312027074792</DeliveryReference>
+            <CustomerReferences>
+              <CustomerReference>5148353069</CustomerReference>
+              <CustomerReference>5148353018</CustomerReference>
+              <CustomerReference>5148353062</CustomerReference>
+              <CustomerReference>5148353019</CustomerReference>
+              <CustomerReference>5148353064</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2072333" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6781</TareWeight>
+              <DeliveryReference>9718006481517401</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>14000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="2037311" LoadingStatus="loaded">
+              <Prefix> LKWA</Prefix>
+              <Dimensions>
+                <LengthCode>70</LengthCode>
+                <Length measure="ft" value="40" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6450</TareWeight>
+              <DeliveryReference>9718006481517801</DeliveryReference>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhaenger, beladen</GoodDescription>
+                <GrossMass>14000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

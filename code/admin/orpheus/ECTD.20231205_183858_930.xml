@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>5183817507930</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-05T18:38:58+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131232720</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-05T18:37:23+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202312051232720</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>TSSU</Code>
+          <Name>CCT - Gebrüder Weiss Gesellschaft m</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>019745</Code>
+          <Name>Hall in Tirol CCT</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>019745</Code>
+          <Name>Hall in Tirol CCT</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-12-05T19:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2181</CarrierCode>
+        <ConsignmentNumber>633917</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>11101</Code>
+          <Name>Incoronata (Foggia)</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>111013</Code>
+          <Name>Incoronata</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>111013</Code>
+          <Name>Incoronata</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>8022659</CustomerCode>
+          <Name>Lotras srl</Name>
+          <AdditionalInformation>Zona ASI Incoronata</AdditionalInformation>
+          <Street>Terminal Ferroviario</Street>
+          <Country>IT</Country>
+          <ZIPCode>71122</ZIPCode>
+          <City>Foggia</City>
+          <Signature>3366 i. A. d. Abs.</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>047418</CustomerCode>
+          <Name>Lotras srl</Name>
+          <AdditionalInformation>Zona ASI Incoronata</AdditionalInformation>
+          <Street>Terminal Ferroviario</Street>
+          <Country>IT</Country>
+          <ZIPCode>71122</ZIPCode>
+          <City>Foggia</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>8022659</CustomerCode>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>047418</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>TES-Genehmigung: 1145/15-0331</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>11</Code>
+          <Text>Pr 170;</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>Lotras</ConsignorReference>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Genehmigung TES Nr.: 1145B/13-0516</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>via Brennero</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>EXW</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>839496</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>81320</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>2181</CarrierCode>
+          <ResponsibleCarrierCode>2183</ResponsibleCarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>019745</StationCode>
+              <StationName>Hall in Tirol CCT</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0332</PointCode>
+              <PointName>Brennero/Brenner</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+          <SubContractNumber>218333</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0332</PointCode>
+              <PointName>Brennero/Brenner</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>111013</StationCode>
+              <StationName>Incoronata</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2183</CarrierCode>
+        <Signature>2023-12-05 18:37 1131232720</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Foggia</Place>
+        <Date>2023-12-05</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <StationCode>019745</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>111013</StationCode>
+          </End>
+          <CommercialRouteCode>032</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>994200</NHMCode>
+            <TariffNumber>839496</TariffNumber>
+            <ChargedMass value="466060" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="336849544166">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>95090</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+            <BookingNumber>2181:20231205183714481:16069336</BookingNumber>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002720" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>27000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002146" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>29000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336849641269">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>93590</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002253" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>29000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002035" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>25500</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049550361">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>340.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>100200</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002394" LoadingStatus="loaded">
+              <Prefix>CHPA</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>4900</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>27000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="004222" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>44</LengthCode>
+                <Length value="44" measure="ft" />
+                <Width value="8.6" measure="ft" />
+                <Height value="13.1" measure="ft" />
+              </Dimensions>
+              <TareWeight>7300</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336849543382">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>97090</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002806" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>29000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002620" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>29000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049930563">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34720</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>340.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>103320</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="004020" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>44</LengthCode>
+                <Length value="44" measure="ft" />
+                <Width value="8.6" measure="ft" />
+                <Height value="13.1" measure="ft" />
+              </Dimensions>
+              <TareWeight>7300</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>29000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="004036" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>44</LengthCode>
+                <Length value="44" measure="ft" />
+                <Width value="8.6" measure="ft" />
+                <Height value="13.1" measure="ft" />
+              </Dimensions>
+              <TareWeight>7300</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>25000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336849544810">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>94400</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002072" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>26855</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002137" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>4500</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>29000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049523434">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>97090</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002740" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>29000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002786" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>1</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <GrossMass>29000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

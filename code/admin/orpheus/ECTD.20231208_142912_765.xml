@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>8142917521765</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-08T14:29:12+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2187</SendingCarrier>
+      <MessageReferenceNumber>5298054</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <MadeAvailable>2023-12-08T00:00:00+01:00</MadeAvailable>
+      <ECNPreparationDatetime>2023-12-08T14:23:18+01:00</ECNPreparationDatetime>
+      <DossierNumber>2187202312089564840</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>CT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>21790</Code>
+          <Name>CRISTAL UNION</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>171637</Code>
+          <Name>CRISTAL UNION</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-12-08T13:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2187</CarrierCode>
+        <ConsignmentNumber>602581</ConsignmentNumber>
+        <ForwardingTrainNumber>41647</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>00000</Code>
+          <Name>RUSSI</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>059030</Code>
+          <Name>RUSSI</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>059030</Code>
+          <Name>RUSSI</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>2185080</CustomerCode>
+          <Name>MERCITALIA INTERMODAL</Name>
+          <VAT>IT00857491005</VAT>
+          <Street>Via Vattellina</Street>
+          <Country>FR</Country>
+          <ZIPCode>20159</ZIPCode>
+          <City>MILANO - ITALIA</City>
+          <Signature>-</Signature>
+          <Contacts>
+            <PhoneNumber>+39 02 66895 290</PhoneNumber>
+            <Email>Movmodane@cemat.it</Email>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <Name>MERCITALIA INTERMODAL</Name>
+          <Street>Via Vattellina</Street>
+          <Country>FR</Country>
+          <ZIPCode>20159</ZIPCode>
+          <City>MILANO - ITALIA</City>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>3010295 4</CustomerCode>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>3010295 4</CustomerCode>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>3</Code>
+          <Text>Convoyeur(s) ...2187 FRET SNCF sur parcours Français</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>3</Code>
+          <Text>Convoyeur(s) ...3356 BLS sur parcours Suisse</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>3</Code>
+          <Text>Convoyeur(s) ...2183 Mercitalia Rail sur parcours Italien</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>11</Code>
+          <Text>ATP : GB</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>Itinéraire</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>90</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>833901</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>87590</RouteCode>
+          <RouteText>SAINT LOUIS (HAUT RHIN)</RouteText>
+          <BorderpointCode>259</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>85240</RouteCode>
+          <RouteText>BRIG</RouteText>
+          <BorderpointCode>324</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-12-08T00:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>2187</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>87</UICCountryCode>
+            <Station>
+              <StationCode>171637</StationCode>
+              <StationName>SILLERY</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>87</UICCountryCode>
+            <Station>
+              <StationCode>187906</StationCode>
+              <StationName>SAINT LOUIS FRONTIERE</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>2</Status>
+          <CarrierCode>2187</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>87</UICCountryCode>
+            <Station>
+              <StationCode>187906</StationCode>
+              <StationName>SAINT LOUIS FRONTIERE</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>000133</StationCode>
+              <StationName>BASEL SBB RB</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>3356</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>000133</StationCode>
+              <StationName>BASEL SBB RB</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>85</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0324</PointCode>
+              <PointName>BRIG</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0324</PointCode>
+              <PointName>ISELLE-DI-TRASQUERA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>059030</StationCode>
+              <StationName>RUSSI</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2183</CarrierCode>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>ADV Client Paris</Place>
+        <Date>2023-12-08+01:00</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>87</UICCountryCode>
+            <StationCode>171637</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>059030</StationCode>
+          </End>
+          <CommercialRouteCode>101</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>992200</NHMCode>
+            <TariffNumber>833901</TariffNumber>
+            <ChargedMass value="87900" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="378045532769">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87900</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="PITU540017-5" LoadingStatus="loaded">
+              <Prefix>PITU5</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12982901-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31100</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003830-1" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12982905-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30800</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336845584380">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88000</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU002743-6" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935690-6</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31050</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003740-8" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935694-6</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336845569712">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87880</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003681-8" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>2880</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935686-6</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU004093-1" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935682-6</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31050</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045587755">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88050</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003981-7" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935678-6</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU002942-3" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935674-6</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31050</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045589918">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88050</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003480-0" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935670-6</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU004248-8" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935966-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31050</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045576485">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87850</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003967-4" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935958-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30900</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003984-3" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935962-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336845576709">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87900</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003455-9" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935954-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU002954-7" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935950-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318045565898">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87230</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU004095-2" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935942-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU001836-8" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3130</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935946-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30150</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045589900">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87900</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003370-0" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935934-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003342-3" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935938-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045569357">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87800</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003886-8" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935926-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU004082-3" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935930-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30800</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045532793">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87530</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU001929-8" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3130</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935906-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30350</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003365-5" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935902-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31050</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045587862">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88000</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU004192-2" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935898-8</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003921-0" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935894-8</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31050</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045532835">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88100</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003025-5" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935614-6</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003613-0" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935870-8</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre e betterave</GoodDescription>
+                <GrossMass>31100</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318545524023">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>19000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87000</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003458-5" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935870-8</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31050</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003811-1" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935874-8</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045531191">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88050</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003031-6" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935866-8</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003299-9" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935862-8</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31100</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045587326">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87800</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003720-2" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935854-8</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003131-2" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935858-8</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30850</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045565223">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88050</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003136-0" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935918-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31050</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003833-8" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935922-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318045571565">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88050</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU004129-1" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935914-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003728-6" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935910-9</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31050</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336845573417">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88100</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>2187</IMCode>
+              <PermissionNumber>GB</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU003670-0" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935890-8</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>30950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="ITDU002377-0" LoadingStatus="loaded">
+              <Prefix>ITDU0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>3000</TareWeight>
+              <Seals>
+                <NumberOfSeals>0</NumberOfSeals>
+                <SealsDescription>12935886-8</SealsDescription>
+              </Seals>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>170112</NHMCode>
+                <GoodDescription>Sucre de betterave</GoodDescription>
+                <GrossMass>31150</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

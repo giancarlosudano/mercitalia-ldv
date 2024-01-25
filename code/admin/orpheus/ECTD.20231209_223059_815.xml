@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>9223017524815</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-12-09T22:30:59+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131232420</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-12-09T22:29:40+01:00</ECNPreparationDatetime>
+      <DossierNumber>2155202312041192979</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>S2Tel</Code>
+          <Name>SOFÉM Kft. IPV</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>144568</Code>
+          <Name>Tócóvölgy</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>144568</Code>
+          <Name>Tócóvölgy</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-12-05T13:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2155</CarrierCode>
+        <ConsignmentNumber>653832</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02664</Code>
+          <Name>S. Stino di Livenza</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>026641</Code>
+          <Name>S. Stino di Livenza</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>026641</Code>
+          <Name>S. Stino di Livenza</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>4032884</CustomerCode>
+          <Name>SOFÉM KERESK.SZOLGÁLT.ÉS FELDOLG.KF</Name>
+          <Street>Szabó Pál U 18</Street>
+          <Country>HU</Country>
+          <ZIPCode>4033</ZIPCode>
+          <City>Debrecen</City>
+          <Signature>45876 a feladó megb.</Signature>
+          <Contacts>
+            <PhoneNumber>+36 52/419-667</PhoneNumber>
+            <Email>sofem@sofem.hu</Email>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>4076493</CustomerCode>
+          <Name>CO.MET.FER.  S.p.A.</Name>
+          <Street>Via Interporto 5.</Street>
+          <Country>IT</Country>
+          <ZIPCode>30029</ZIPCode>
+          <City>Sant Stino di Livenza VE</City>
+          <Contacts>
+            <PhoneNumber>+39 0421/312318</PhoneNumber>
+            <FaxNumber>+39 0421/314112</FaxNumber>
+            <Email>commerciale@cometfer.it</Email>
+          </Contacts>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>4032884</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtzahler RCH Strecke: SOFÉM Kft. ZF:4032884</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>55/SS/05.12.23/00511.001</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>FS TEM.301/19</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Bizonyító erej feladói mérlegelés. Szerzdésszám: VS/1249/2015</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>SZKI/4307/19 tartalmát elfogadom.</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Tömegmegállapítást kérek!</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <InformationConsignee>AUFTRAGSNR: KENWORT:</InformationConsignee>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>ROBBMENTES IG.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>RADIOAKTMENTES IG.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>979</Type>
+          <DocumentInformation>ANNEX VII</DocumentInformation>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Mérlegjegy: 23/K-100518</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>VIA HEGYESHALOM-TARVISIO B.</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>HU: RCH UIC 2155; AT: RCA UIC 2181; IT: MIR UIC 2183</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>11</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>55</UICCountryCode>
+            <PointCode>0601</PointCode>
+          </BorderPoint>
+        </PaidUpTo>
+        <AdditionalCharges>
+          <AdditionalCharge>
+            <Code>02</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>03</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>05</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>06</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>28</Code>
+          </AdditionalCharge>
+        </AdditionalCharges>
+      </PrepaymentInstructions>
+      <Tariff>
+        <TariffNumber>902845</TariffNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>55010</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <SpecialTreatments>
+        <SpecialTreatment>
+          <SpecialTreatmentCode>74</SpecialTreatmentCode>
+          <UICCountryCode>55</UICCountryCode>
+          <StationCode>139121</StationCode>
+          <StationName>Debrecen</StationName>
+        </SpecialTreatment>
+      </SpecialTreatments>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2155</DeclaratingCarrier>
+          <DeclarationCode>5</DeclarationCode>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2155</DeclaratingCarrier>
+          <DeclarationCode>13</DeclarationCode>
+          <DeclarationText>Hivatalos mérlegelés Debrecen állomáson,mérlegdíj E305-ön elszámolva.</DeclarationText>
+        </CarriersDeclaration>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-12-05T12:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2155</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <Station>
+              <StationCode>144568</StationCode>
+              <StationName>Tócóvölgy</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0601</PointCode>
+              <PointName>Nickelsdorf (Gr)/Hegyeshalom</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0601</PointCode>
+              <PointName>Nickelsdorf (Gr)/Hegyeshalom</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>026641</StationCode>
+              <StationName>S. Stino di Livenza</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2155</CarrierCode>
+        <Signature>2023-12-09 22:29 1131232420</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>TÓCÓVÖLGY</Place>
+        <Date>2023-12-04</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>144568</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>026641</StationCode>
+          </End>
+          <CommercialRouteCode>003</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>902845</TariffNumber>
+            <ChargedMass value="48750" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>144568</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>144568</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <AdditionalCharges>
+            <AdditionalCharge>
+              <Code>28</Code>
+              <Prepaid>95</Prepaid>
+            </AdditionalCharge>
+          </AdditionalCharges>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="315554257206">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>ROTTAME FERROSO RIFIUTO IN LISTA VERDE SECONDO CODICI DI RIFIUTO RIPORTATI IN ALLEGATO VII DEL REGOLAMENTO CE 1013//2006 CON QUALIT CORRISPONDENTE ALLA CLASSIFICA DAF  CER:191202MATERIALE ESENTE DA CORPI CHIUSI MATERIALI PERICOLOSI SPLOSIVI,RADIOATTIVI E MOTORI ELETTRICI.ORIGINE: UNGHERIAURSPRUNG:WIR BESTATIGEN, DASS DER IN DIESEM WAGGON ENTHALTENE SCHROTT FREI VON EX</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22400</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>71150</TotalMass>
+            <BookingNumber>2155:20231205091817725:16066777</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>"Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladékvasból vagy -acélból- Más törmelék és hulladék- Más"</GoodDescription>
+              <GrossMass>48750</GrossMass>
+              <AVVKey>191202</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>
