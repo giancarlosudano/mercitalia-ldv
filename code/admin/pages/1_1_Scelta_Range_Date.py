@@ -50,8 +50,16 @@ try:
 			for name in dirs:
 				ldv_folders.append(os.path.join(name))
 		st.image(os.path.join('images','Slide1.JPG'), use_column_width=True)
-		
-		st.markdown('Descrizione della fase con eventuali note e inserimento di diagramma architetturale con tecnologie e stub AI utilizzati')
+		st.write("""
+### Descrizione
+In questa fase il sistema recupera da una serie di mail i contenuti più importanti per procedere ad una selezione più stretta rispetto alle data.
+La mail sono spedite a indirizzi Mercitalia, e contengono allegati sotto forma di PDF o Excel
+Tutti gli allegati sono convertini in immagini.
+L'utente selezionerà la mail con cui viene inizializzato il processo di estrazione cognitiva dei dati.
+### Componenti utilizzati
+- **Azure App Service**: Web Container che ospita una applicazione Python che organizza tutta la logica applicativa
+- **Azure Blob Storage**: Servizio di storage per file/blob ad alta scalabilità 
+""")	
 		col_1, col_2 = st.columns([1,1])
 		with col_1:
 			data_inizio = st.date_input('Seleziona la data di inizio del range', datetime.date(2023, 11, 1))

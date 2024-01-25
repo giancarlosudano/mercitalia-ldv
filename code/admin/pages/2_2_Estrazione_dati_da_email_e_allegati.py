@@ -62,175 +62,6 @@ Risposta:
 	
 	return response
 
-
-def elaborazione_ldv():
-	
-	fields = get_field_from_cim()
- 
-	box_01_clean = "" if not fields["box-01"] else prompt_for_box("1", "Estrai solo le informazioni del mittente", fields["box-01"], llm)
-	colbox1_1, colbox1_2, colbox1_3 = st.columns([1,1,1])
-	st.session_state["session_box1_2"] = box_01_clean
- 
-	with colbox1_1:
-		st.write(fields["box-01"])
-	with colbox1_2:
-		st.text_area("(1) Mittente (Clean)", value=st.session_state["session_box1_2"], height=150, key="box1_2")
-	with colbox1_3:
-		st.text_area("(1) Mittente (Orpheus)", value="", height=150, key="box1_3", disabled=True)
-
-	st.divider()
-	
-	box_02_clean = "" if not fields["box-02"] else prompt_for_box("2", "Estrai solo le informazioni del codice mittente", fields["box-02"], llm)
-	colbox2_1, colbox2_2, colbox2_3 = st.columns([1,1,1])
-	with colbox2_1:
-		st.write(fields["box-02"])
-	with colbox2_2:
-		st.text_area("(2) Mittente Codice (Clean)", value=box_02_clean, height=100, key="box2_2")
-	with colbox2_3:
-		st.text_area("(2) Mittente Codice (Orpheus)", value="", height=100, key="box2_3", disabled=True)
-	st.selectbox("Ragioni sociali simili", options=[], placeholder="Seleziona la corrispondenza più simile", key="codice_mittente_scelto")
-
-	st.divider()
-
-	box_04_clean = "" if not fields["box-04"] else prompt_for_box("4", "Estrai solo le informazioni della ragione sociale del destinatario", fields["box-04"], llm)
-	colbox4_1, colbox4_2, colbox4_3 = st.columns([1,1,1])
-	with colbox4_1:
-		st.write(fields["box-04"])
-	with colbox4_2:
-		st.text_area("(4) Destinatario (Clean)", height=150, key="box4_2", value=box_04_clean)
-	with colbox4_3:
-		st.text_area("(4) Destinatario (Orpheus)", height=150, key="box4_3", value="", disabled=True)
-  
-	st.divider()
- 
-	box_05_clean = "" if not fields["box-05"] else prompt_for_box("5", "Estrai solo le informazioni della codice mittente", fields["box-05"], llm)
-	colbox5_1, colbox5_2, colbox5_3 = st.columns([1,1,1])
-	with colbox5_1:
-		st.write(fields["box-05"])
-	with colbox5_2:
-		st.text_area("(5) Destinatario Codice (Clean)", height=100, key="box5_2", value=box_05_clean)
-	with colbox5_3:
-		st.text_area("(5) Destinatario Codice (Orpheus)", height=100, key="box5_3", value="", disabled=True)
-	st.selectbox("Ragioni sociali simili", options=[], placeholder="Seleziona la corrispondenza più simile", key="codice_destinatario_scelto")
-
-	st.divider()
-
-	box_10_clean = "" if not fields["box-10"] else prompt_for_box("10", "Estrai solo le informazioni del codice raccordo consegna", fields["box-10"], llm)
-	colbox10_1, colbox10_2, colbox10_3 = st.columns([1,1,1])
-	with colbox10_1:
-		st.write(fields["box-10"])
-	with colbox10_2:
-		st.text_area("(10) Raccordo Consegna (Clean)", height=100, key="box10_2", value=box_10_clean)
-	with colbox10_3:
-		st.text_area("(10) Raccordo Consegna (Orpheus)", height=100, key="box10_3", value="", disabled=True)
-
-	st.divider()
-
-	box_12_clean = "" if not fields["box-12"] else prompt_for_box("12", "Estrai solo le informazioni del codice stazione destinatario. Il codice è solitamente un numero intero.", fields["box-12"], llm)
-	colbox12_1, colbox12_2, colbox12_3 = st.columns([1,1,1])
-	with colbox12_1:
-		st.write(fields["box-12"])
-	with colbox12_2:
-		st.text_area("(12) Codice Stazione Destinatario (Clean)", height=100, key="box12_2", value=box_12_clean)
-	with colbox12_3:
-		st.text_area("(12) Codice Stazione Destinatario (Orpheus)", height=100, key="box12_3", value="", disabled=True)
-
-	st.divider()
-
-	box_13_clean = "" if not fields["box-13"] else prompt_for_box("13", "Estrai solo le informazioni delle condizioni commerciali.", fields["box-13"], llm)
-	colbox13_1, colbox13_2, colbox13_3 = st.columns([1,1,1])
-	with colbox13_1:
-		st.write(fields["box-13"])
-	with colbox13_2:
-		st.text_area("(13) Condizioni commerciali (Clean)", height=100, key="box13_2", value=box_13_clean)
-	with colbox13_3:
-		st.text_area("(13) Condizioni commerciali (Orpheus)", height=100, key="box13_3", value="", disabled=True)
-	st.divider()
-	box_14_clean = "" if not fields["box-14"] else prompt_for_box("14", "Estrai il codice numerico che è solitamente n numero intero.", fields["box-14"], llm)
-	colbox14_1, colbox14_2, colbox14_3 = st.columns([1,1,1])
-	with colbox14_1:
-		st.write(fields["box-14"])
-	with colbox14_2:
-		st.text_area("(14) Codice Condizioni commerciali (Clean)", height=100, key="box14_2", value=box_14_clean)
-	with colbox14_3:
-		st.text_area("(14) Condizioni commerciali (Orpheus)", height=100, key="box14_3", value="", disabled=True)
-	st.divider()
-	box_16_clean = "" if not fields["box-16"] else prompt_for_box("16", "Estrai le informazioni del luogo di consegna", fields["box-16"], llm)
-	colbox16_1, colbox16_2, colbox16_3 = st.columns([1,1,1])
-	with colbox16_1:
-		st.write(fields["box-16"])
-	with colbox16_2:
-		st.text_area("(16) Luogo consegna presa in carico (Clean)", height=100, key="box16_2", value=box_16_clean)
-	with colbox16_3:
-		st.text_area("(16) Luogo consegna presa in carico (Orpheus)", height=100, key="box16_3", value="", disabled=True)
-	st.divider()
-	box_18_clean = "" if not fields["box-18"] else prompt_for_box("18", "Estrai le informazioni della matricola carro distinta", fields["box-18"], llm)
-	colbox18_1, colbox18_2, colbox18_3 = st.columns([1,1,1])
-	with colbox18_1:
-		st.write(fields["box-18"])
-	with colbox18_2:
-		st.text_area("(18) Matricola carro distinta (Clean)", height=100, key="box18_2", value=box_18_clean)
-	with colbox18_3:
-		st.text_area("(18) Matricola carro distinta (Orpheus)", height=100, key="box18_3", value="", disabled=True)
-	st.divider()
-	box_49_clean = "" if not fields["box-49"] else prompt_for_box("49", "Estrai le informazioni del codice affrancazione che è solitamente un codice alfanumerico.", fields["box-49"], llm)
-	colbox49_1, colbox49_2, colbox49_3 = st.columns([1,1,1])
-	with colbox49_1:
-		st.write(fields["box-49"])
-	with colbox49_2:
-		st.text_area("(49) Codice Affrancazione (Clean)", height=100, key="box49_2", value=box_49_clean)
-	with colbox49_3:
-		st.text_area("(49) Codice Affrancazione (Orpheus)", height=100, key="box49_3", value="", disabled=True)
-	st.divider()
-	box_57_clean = "" if not fields["box-57"] else prompt_for_box("57", "Estrai le sole informazioni di trasporto.", fields["box-57"], llm)
-	colbox57_1, colbox57_2, colbox57_3 = st.columns([1,1,1])
-	with colbox57_1:
-		st.write(fields["box-57"])
-	with colbox57_2:
-		st.text_area("(57) Altro trasporti e ruolo (Clean)", height=100, key="box57_2", value=box_57_clean)
-	with colbox57_3:
-		st.text_area("(57) Altro trasporti e ruolo (Orpheus)", height=100, key="box57_3", value="", disabled=True)
-	st.divider()
-	box_62_paese_clean = "" if not fields["box-62-paese"] else prompt_for_box("62", "Estrai il codice del paese.", fields["box-62-paese"], llm)
-	box_62_stazione_clean = "" if not fields["box-62-stazione"] else prompt_for_box("62", "Estrai il codice della stazione.", fields["box-62-stazione"], llm)
-	box_62_impresa_clean = "" if not fields["box-62-impresa"] else prompt_for_box("62", "Estrai il codice dell'impresa.", fields["box-62-impresa"], llm)
-	box_62_spedizione_clean = "" if not fields["box-62-spedizione"] else prompt_for_box("62", "Estrai il codice della spedizione.", fields["box-62-spedizione"], llm)
-	box_29_luogo_clean = "" if not fields["box-29"] else prompt_for_box("29", "Estrai le sole informazioni del luogo.", fields["box-29"], llm)
-	box_29_data_clean = "" if not fields["box-29"] else prompt_for_box("29", "Estrai le sola informazione della data e convertila nel formato YYYYMMDD.", fields["box-29"], llm)
-
-	st.info("(62) Identificazione Spedizione")
- 
-	col_identificazione1, col_identificazione2, col_identificazione3 = st.columns([1,1,1])
-	with col_identificazione1:
-		st.text_input("Codice Paese", key="ident_paese_1", value=fields["box-62-paese"], disabled=True)
-		st.text_input("Codice Stazione", key="ident_stazione_1", value=fields["box-62-stazione"], disabled=True)
-		st.text_input("Codice Impresa", key="ident_impresa_1", value=fields["box-62-impresa"], disabled=True)
-		st.text_input("Codice Spedizione", key="ident_spedizione_1", value=fields["box-62-spedizione"], disabled=True)
-		st.text_input("Luogo", key="ident_luogo_1", value=fields["box-29"], disabled=True)
-		st.text_input("Data", key="ident_data_1", value=fields["box-29"], disabled=True)
-	
-	with col_identificazione2:
-		st.text_input("Codice Paese", key="ident_paese_2", value=box_62_paese_clean)
-		st.text_input("Codice Stazione", key="ident_stazione_2", value=box_62_stazione_clean)
-		st.text_input("Codice Impresa", key="ident_impresa_2", value=box_62_impresa_clean)
-		st.text_input("Codice Spedizione", key="ident_spedizione_2", value=box_62_spedizione_clean)
-		st.text_input("Luogo", key="ident_luogo_2", value=box_29_luogo_clean)
-		st.text_input("Data", key="ident_data_2", value=box_29_data_clean)
-	
-	with col_identificazione3:
-		st.text_input("Codice Paese", key="ident_paese_3", value="")
-		st.text_input("Codice Stazione", key="ident_stazione_3", value="")
-		st.text_input("Codice Impresa", key="ident_impresa_3", value="")
-		st.text_input("Codice Spedizione", key="ident_spedizione_3", value="")
-		st.text_input("Luogo", key="ident_luogo_3", value="")
-		st.text_input("Data", key="ident_data_3", value="")
-
-	st.info("Dettagli Vagoni")
-	st.text_area("Informazioni di testata", height=200, value="")
-	st.text_area("Dettaglio vagoni", height=500, value="")
-	st.toast("Elaborazione effettuata per la lettera di vettura {}".format(st.session_state["ldv"]))
-	return
-
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
 	st.title("Estrazione dati da email e allegati")
@@ -253,8 +84,21 @@ try:
 
 	if st.session_state["authentication_status"]:		
 		st.image(os.path.join('images','Slide2.JPG'), use_column_width=True)
-		st.markdown('Descrizione della fase con eventuali note e inserimento di diagramma architetturale con tecnologie e stub AI utilizzati')
-
+		st.write("""
+### Descrizione
+In questa fase il sistema recupera dalla mail selezonata informazioni da:
+- contenuto della mail
+- allegati PDF o Excel convertiti in immagini
+Successivamente viene utilizzato un modello di training AI trainato sui documenti CIM per estrarre le informazioni più importanti dalla lettera di vettura.
+da una serie di mail i contenuti più importanti per procedere ad una selezione più stretta rispetto alle data.
+Viene utilizzato anche GPT4-Vision assieme al servizio comlementare Azure AI Vision per estrarre informazioni dai documenti di dettaglio dei vagoni in quanto rappresentano tabelle "dense" con formati estremamente variabili.
+Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizia ulteriore del testo.
+### Componenti utilizzati
+- **Azure App Service**: Web Container che ospita una applicazione Python che organizza tutta la logica applicativa
+- **Azure Blob Storage**: Servizio di storage per file/blob ad alta scalabilità
+- **Azure OpenAI**: Servizio di Large Language Model con modelli GPT4-Turbo e GPT-4-Vision
+- **Azure Document Intelligence**: Servizio di AI per l'analisi di documenti, utilizzato un Custom Extraction Model per la CIM
+""")
 		fields = get_field_from_cim()
 
 		llm = AzureChatOpenAI(
@@ -294,7 +138,7 @@ try:
 			subject_value = subject_match.group(1) if subject_match else None
 			body_match = re.search(r'body:([\s\S]+)', content)
 			body_value = body_match.group(1).strip()
-   
+
 		expander_email = st.expander("Email", expanded=True)
 		expander_email.text_input("Da:", value=from_value, key="from_email")
 		expander_email.text_input("Oggetto:", value=subject_value, key="email_subject")

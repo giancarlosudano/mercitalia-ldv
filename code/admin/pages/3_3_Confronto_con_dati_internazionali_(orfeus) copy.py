@@ -124,8 +124,15 @@ try:
 
 	if st.session_state["authentication_status"]:		
 		st.image(os.path.join('images','Slide4.JPG'), use_column_width=True)
-		st.markdown('Descrizione della fase con eventuali note e inserimento di diagramma architetturale con tecnologie e stub AI utilizzati')
-	
+		st.write("""
+### Descrizione
+In questa fase il sistema a partire dai dati di etichetta della CIM cerca tra i dati del sistema Orfeus (di cui è stato fornito una esportazione su range temporale)
+Se il file Orfeus XML corrispondente alle informazioni di etichetta esiste allora vengono catturati tutti i dati necessari dal file per sostituire eventuali campi mancanti o di scansione non perfetta.
+Viene data priorità ai dati di Orfeus rispetto a quelli di CIM.
+### Componenti utilizzati
+- **Azure App Service**: Web Container che ospita una applicazione Python che organizza tutta la logica applicativa. La ricerca tra i file di Orfeus è effettuata mediante tradizionale ricerca XML di libreria
+- **Azure Blob Storage**: Servizio di storage per file/blob ad alta scalabilità per la lettura dei file di Orfeus
+""")	
 		# Recupero Dati CIM
 
 		st.info("Dati estratti dalla CIM")

@@ -9,5 +9,6 @@
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"
     ],
-    "azureFunctions.projectSubpath": "code\\batch"
+    "azureFunctions.projectSubpath": "code\\batch",
+    "python.REPL.enableREPLSmartSend": false
 }
