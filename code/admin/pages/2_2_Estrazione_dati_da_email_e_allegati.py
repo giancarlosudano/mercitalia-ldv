@@ -19,7 +19,30 @@ import sys
 import re
 
 def get_field_from_cim():
-	
+	fields = {}
+	fields['box-01'] = 'Absender(name,Anschrift) KVI KOMBIVERKERHR INT. VERKEHR  ZUM LAURENBURGER HOF 76  D 60594 FRANKFURT/M'
+	fields['box-02'] = '6738'
+	fields['box-03'] = '6738' 
+	fields['box-04'] = 'MERCITALIA INTERMODAL S.P.A. VIA ANTONIO CECHOV 50/2  I 20151 MILANO  MWST-NR. IT 00857491005'
+	fields['box-05'] = 'VERONA QUADRANTE EUROPA'
+	fields['box-06'] = ''
+	fields['box-10'] = ''
+	fields['box-12'] = ''
+	fields['box-13'] = ''
+	fields['box-14'] = ''
+	fields['box-16'] = ''
+	fields['box-18'] = ''
+	fields['box-29'] = ''
+	fields['box-49'] = ''
+	fields['box-57'] = ''
+	fields['box-62-paese'] = ''
+	fields['box-62-stazione'] = ''
+	fields['box-62-impresa'] = ''
+	fields['box-62-spedizione'] = ''
+	fields['box-62-luogo'] = ''
+	fields['box-62-data'] = ''
+	return fields
+
 	from azure.core.credentials import AzureKeyCredential
 	from azure.ai.formrecognizer import DocumentAnalysisClient
 	endpoint = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
