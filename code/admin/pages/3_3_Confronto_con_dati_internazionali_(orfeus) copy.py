@@ -105,6 +105,7 @@ def search_orfeus():
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
 	st.title("Confronto con dati internazionali (Orfeus)")
+	st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
 	load_dotenv()
 
 	import streamlit_authenticator as stauth	

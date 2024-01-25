@@ -26,8 +26,9 @@ def load_session_states():
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
 	st.title("Scelta Range Date")
+	st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
+	import streamlit_authenticator as stauth
 
-	import streamlit_authenticator as stauth	
 	import yaml
 	from yaml.loader import SafeLoader
 

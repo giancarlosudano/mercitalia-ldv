@@ -21,6 +21,7 @@ import re
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
 	st.title("Scelta della RDS con 'inferenza logica' di GPT4")
+	st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
 	load_dotenv()
 
 	import streamlit_authenticator as stauth	

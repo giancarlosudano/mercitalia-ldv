@@ -65,6 +65,7 @@ Risposta:
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
 	st.title("Estrazione dati da email e allegati")
+	st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
 	load_dotenv()
 
 	import streamlit_authenticator as stauth	
@@ -89,6 +90,7 @@ try:
 In questa fase il sistema recupera dalla mail selezonata informazioni da:
 - contenuto della mail
 - allegati PDF o Excel convertiti in immagini
+
 Successivamente viene utilizzato un modello di training AI trainato sui documenti CIM per estrarre le informazioni più importanti dalla lettera di vettura.
 da una serie di mail i contenuti più importanti per procedere ad una selezione più stretta rispetto alle data.
 Viene utilizzato anche GPT4-Vision assieme al servizio comlementare Azure AI Vision per estrarre informazioni dai documenti di dettaglio dei vagoni in quanto rappresentano tabelle "dense" con formati estremamente variabili.
@@ -281,7 +283,7 @@ Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizi
 		st.text_area("Dettaglio vagoni", height=500, value="", key="wagon_list")
 		# -------
 
-		if st.button("Elabora"):
+		if st.button("Conferma i valori"):
 			st.session_state["box-01"] = st.session_state.box1_2
 			st.session_state["box-02"] = st.session_state.box2_2
 			st.session_state["box-04"] = st.session_state.box4_2

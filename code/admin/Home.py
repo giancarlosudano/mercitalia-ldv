@@ -22,7 +22,7 @@ st.set_page_config(page_title="Automazione Lettere di Vettura <=> RDS", page_ico
 
 st.title("Automazione Lettere di Vettura / RDS")
 # st.subheader("Utilizzo di generative AI per l'automazione del processo di assegnazione delle lettere di vettura alle RDS")
-
+st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
 import yaml
 from yaml.loader import SafeLoader
 

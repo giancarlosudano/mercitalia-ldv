@@ -21,6 +21,7 @@ import re
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
 	st.title("Conversione di codici internazionali a codici Mercitalia")
+	st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
 	load_dotenv()
 
 	import streamlit_authenticator as stauth	
@@ -48,39 +49,57 @@ per cui viene effettuata una ricerca "fuzzy" sulla ragione sociale nel database 
 - **Azure App Service**: Web Container che ospita una applicazione Python che organizza tutta la logica applicativa. La ricerca tra i file di Orfeus è effettuata mediante tradizionale ricerca XML di libreria
 - **Azure Blob Storage**: Servizio di storage per file/blob ad alta scalabilità per la lettura dei file di Orfeus e dei file di codifica Clienti Mercitalia
 """)
-		st.selectbox("Codice Mittente (Ragioni sociali simili)", options=[], placeholder="Seleziona la corrispondenza più simile", key="codice_mittente_scelto")
-		st.selectbox("Codice Destinatario (Ragioni sociali simili)", options=[], placeholder="Seleziona la corrispondenza più simile", key="codice_destinatario_scelto")
 
-		# import pandas as pd
-		# from fuzzywuzzy import process
-		# from dotenv import load_dotenv
+		import pandas as pd
+		from fuzzywuzzy import process
+		from dotenv import load_dotenv
 
-		# # Carica i dati da un file Excel
-		# df = pd.read_excel(os.path.join('codici', "clienti.xslx"))
+		# Carica i dati da un file Excel
+		excel_path = os.path.join('ldv', 'clienti.xlsx')
+		st.write(excel_path)
+		df = pd.read_excel(excel_path)
 
-		# # La ragione sociale che stai cercando
-		# ragione_sociale_da_cercare = st.session_state.box1_2
+		# Trova la corrispondenza più simile nel DataFrame
+		corrispondenze1 = process.extract(st.session_state['box-01'], df['ragione sociale'], limit=5)
+		options1 = []
 
-		# # Trova la corrispondenza più simile nel DataFrame
-		# corrispondenze = process.extract(ragione_sociale_da_cercare, df['ragione sociale'], limit=5)
+		# Stampa le corrispondenze trovate e i relativi codici
+		for corrispondenza in corrispondenze1:
+			match = corrispondenza[0]  # La ragione sociale corrispondente
+			score = corrispondenza[1]  # Il punteggio di similarità
 
-		# # Stampa le corrispondenze trovate e i relativi codici
-		# for corrispondenza in corrispondenze:
-		# 	match = corrispondenza[0]  # La ragione sociale corrispondente
-		# 	score = corrispondenza[1]  # Il punteggio di similarità
+			# Trova l'indice (o gli indici) nel DataFrame dove c'è questa corrispondenza
+			indici = df.index[df['ragione sociale'] == match].tolist()
 
-		# 	# Trova l'indice (o gli indici) nel DataFrame dove c'è questa corrispondenza
-		# 	indici = df.index[df['ragione sociale'] == match].tolist()
+			# Stampa i dettagli delle corrispondenze trovate
 
-		# 	# Stampa i dettagli delle corrispondenze trovate
-		# 	options = []
+			for indice in indici:
+				codice_corrispondente = df.loc[indice, 'codice']
+				options1.append(f"{match} - Codice: {codice_corrispondente}, Similarità: {score}")
 
-		# 	for indice in indici:
-		# 		codice_corrispondente = df.loc[indice, 'codice']
-		# 		options.append(f"{match} - Codice: {codice_corrispondente}, Similarità: {score}")
-		
-		# st.session_state["codice_mittente_scelto"] = options
-	
+		st.write(f"Ricerca mittente: {st.session_state['box-01']}")
+		st.selectbox("Mittente (Ragioni sociali simili)", options1, placeholder="Seleziona la corrispondenza più simile", key="mittente_scelto")
+  
+		# Trova la corrispondenza più simile nel DataFrame
+		corrispondenze2 = process.extract(st.session_state['box-04'], df['ragione sociale'], limit=5)
+		options2 = []
+		# Stampa le corrispondenze trovate e i relativi codici
+		for corrispondenza in corrispondenze2:
+			match = corrispondenza[0]  # La ragione sociale corrispondente
+			score = corrispondenza[1]  # Il punteggio di similarità
+
+			# Trova l'indice (o gli indici) nel DataFrame dove c'è questa corrispondenza
+			indici = df.index[df['ragione sociale'] == match].tolist()
+
+			# Stampa i dettagli delle corrispondenze trovate
+			
+
+			for indice in indici:
+				codice_corrispondente = df.loc[indice, 'codice']
+				options2.append(f"{match} - Codice: {codice_corrispondente}, Similarità: {score}")
+    
+		st.write(f"Ricerca mittente: {st.session_state['box-04']}")
+		st.selectbox("Destinatario (Ragioni sociali simili)", options2, placeholder="Seleziona la corrispondenza più simile", key="destinatario_scelto")
 
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
