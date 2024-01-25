@@ -20,7 +20,8 @@ st.set_page_config(page_title="Automazione Lettere di Vettura <=> RDS", page_ico
 #             """
 # st.markdown(mod_page_style, unsafe_allow_html=True)
 
-st.title("Automazione Lettere di Vettura / RDS")
+st.title("Automazione Processo Acquisizione Lettere di Vettura")
+st.subheader("Trasporti internazionali in Import")
 # st.subheader("Utilizzo di generative AI per l'automazione del processo di assegnazione delle lettere di vettura alle RDS")
 st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
 import yaml
