@@ -19,49 +19,26 @@ import sys
 import re
 
 def get_field_from_cim():
-	# fields = {}
-	# fields['box-01'] = 'Absender(name,Anschrift) KVI KOMBIVERKERHR INT. VERKEHR  ZUM LAURENBURGER HOF 76  D 60594 FRANKFURT/M'
-	# fields['box-02'] = '6738'
-	# fields['box-03'] = '6738' 
-	# fields['box-04'] = 'MERCITALIA INTERMODAL S.P.A. VIA ANTONIO CECHOV 50/2  I 20151 MILANO  MWST-NR. IT 00857491005'
-	# fields['box-05'] = 'VERONA QUADRANTE EUROPA'
-	# fields['box-06'] = ''
-	# fields['box-10'] = ''
-	# fields['box-12'] = ''
-	# fields['box-13'] = ''
-	# fields['box-14'] = ''
-	# fields['box-16'] = ''
-	# fields['box-18'] = ''
-	# fields['box-29'] = ''
-	# fields['box-49'] = ''
-	# fields['box-57'] = ''
-	# fields['box-62-paese'] = ''
-	# fields['box-62-stazione'] = ''
-	# fields['box-62-impresa'] = ''
-	# fields['box-62-spedizione'] = ''
-	# fields['box-62-luogo'] = ''
-	# fields['box-62-data'] = ''
-	# return fields
+	if 'ocr-fields' not in st.session_state:
+		from azure.core.credentials import AzureKeyCredential
+		from azure.ai.formrecognizer import DocumentAnalysisClient
+		endpoint = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
+		key = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_KEY")
+		model_id = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_MODEL_ID")
+		model_id = "ldv04"
+		document_analysis_client = DocumentAnalysisClient(endpoint=endpoint, credential=AzureKeyCredential(key))
 
-	from azure.core.credentials import AzureKeyCredential
-	from azure.ai.formrecognizer import DocumentAnalysisClient
-	endpoint = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
-	key = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_KEY")
-	model_id = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_MODEL_ID")
-	model_id = "ldv04"
-	document_analysis_client = DocumentAnalysisClient(endpoint=endpoint, credential=AzureKeyCredential(key))
+		with open(os.path.join('ldv', "cim.jpg"),'rb') as f:
+			poller = document_analysis_client.begin_analyze_document(model_id, document=f)
+		result = poller.result()
 
-	with open(os.path.join('ldv', "cim.jpg"),'rb') as f:
-		poller = document_analysis_client.begin_analyze_document(model_id, document=f)
-	result = poller.result()
+		fields = {}
 
-	fields = {}
-
-	for idx, document in enumerate(result.documents):
-		for name, field in document.fields.items():
-			fields[name] = field.value
-
-	return fields
+		for idx, document in enumerate(result.documents):
+			for name, field in document.fields.items():
+				fields[name] = field.value
+		st.session_state['ocr-fields'] = fields
+	return
 
 def prompt_for_box(numero_casella: str, descrizione_estrazione: str, box: str, llm: AzureChatOpenAI):
 	prompt_base = """il testo delimitato da ### deriva da una scansione OCR di un modulo di trasporto ferroviario. 
@@ -124,8 +101,13 @@ Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizi
 - **Azure OpenAI**: Servizio di Large Language Model con modelli GPT4-Turbo e GPT-4-Vision
 - **Azure Document Intelligence**: Servizio di AI per l'analisi di documenti, utilizzato un Custom Extraction Model per la CIM
 """)
-		fields = get_field_from_cim()
 
+
+		get_field_from_cim()
+  
+		st.write(os.getenv("AZURE_OPENAI_BASE"))
+		st.write(os.getenv("AZURE_OPENAI_KEY"))
+  
 		llm = AzureChatOpenAI(
 			azure_endpoint=os.getenv("AZURE_OPENAI_BASE"), 
 			api_key=os.getenv("AZURE_OPENAI_KEY"),
@@ -172,9 +154,11 @@ Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizi
 		expander_email.text_area("Estrazioni", height=100, value="", key="email_extraction")
 		# -------
   
-		# Recupero Dati CIM
-		fields = get_field_from_cim()
-
+		# Recupero Dati CIM e popolamento sessione ocr-fields
+		get_field_from_cim()
+  
+		fields = st.session_state['ocr-fields']
+  
 		st.info("Dati estratti dalla CIM")
 
 		box_01_clean = "" if not fields["box-01"] else prompt_for_box("1", "Estrai solo le informazioni del mittente", fields["box-01"], llm)
