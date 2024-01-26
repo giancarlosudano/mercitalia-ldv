@@ -243,6 +243,10 @@ Viene data priorità ai dati di Orfeus rispetto a quelli di CIM.
 		# -------
 
 		st.button('Avvia ricerca su Orfeus', key="button_orfeus", on_click=search_orfeus)
+  
+		if st.button("Conferma i valori"):
+			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
+
 
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')

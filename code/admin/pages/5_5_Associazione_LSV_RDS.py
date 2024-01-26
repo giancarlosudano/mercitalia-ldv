@@ -140,7 +140,10 @@ Viene utilizzato GPT4 per sviluppare un algoritmo di ricerca che imposta le cond
 		chain = prompt | llm | output_parser
 		response = chain.invoke({"input": input})
 		container_stream.empty()
-	
+
+		if st.button("Conferma i valori"):
+			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
+
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
 	elif st.session_state["authentication_status"] is None:

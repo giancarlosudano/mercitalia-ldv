@@ -101,6 +101,10 @@ per cui viene effettuata una ricerca "fuzzy" sulla ragione sociale nel database 
 		st.write(f"Ricerca mittente: {st.session_state['box-04']}")
 		st.selectbox("Destinatario (Ragioni sociali simili)", options2, placeholder="Seleziona la corrispondenza più simile", key="destinatario_scelto")
 
+		if st.button("Conferma i valori"):
+			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
+
+  
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
 	elif st.session_state["authentication_status"] is None:

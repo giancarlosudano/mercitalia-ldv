@@ -107,14 +107,17 @@ L'utente selezionerà la mail con cui viene inizializzato il processo di estrazi
 
 		selected_rows = data["selected_rows"]
 
-		if len(selected_rows) != 0:
-			st.session_state["selected_email"] = selected_rows[0]['Data email']
-			st.write('Email selezionata: '.format(st.session_state["selected_email"]))
-			st.write('**Data**: {}'.format(selected_rows[0]['Data email']))
-			st.write('**Soggetto**: {}'.format(selected_rows[0]['Oggetto']))
-			st.write('**Da**: {}'.format(selected_rows[0]['Da']))
+		# if len(selected_rows) != 0:
+		# 	st.session_state["selected_email"] = selected_rows[0]['Data email']
+		# 	st.write('Email selezionata: '.format(st.session_state["selected_email"]))
+		# 	st.write('**Data**: {}'.format(selected_rows[0]['Data email']))
+		# 	st.write('**Soggetto**: {}'.format(selected_rows[0]['Oggetto']))
+		# 	st.write('**Da**: {}'.format(selected_rows[0]['Da']))
+		
+		if st.button("Conferma i valori"):
 			st.session_state["ldv"] = selected_rows[0]['Data email']
-    
+			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
+
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
 	elif st.session_state["authentication_status"] is None:

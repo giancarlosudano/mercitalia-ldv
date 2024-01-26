@@ -44,39 +44,9 @@ if username == 'smith@mercitalia.com':
     st.session_state["authentication_status"] = True
     st.session_state["name"] = "John Smith"
 
-# st.write(name)
-# st.write(authentication_status)
-# st.write(username)
-
-# hashed_passwords = stauth.Hasher(['abc']).generate()
-# st.write(hashed_passwords[0])
-
 if st.session_state["authentication_status"]:
     st.write(f'Welcome *{st.session_state["name"]}*, you are an **admin**.')
 elif st.session_state["authentication_status"] == False:
     st.error('Username/password is incorrect')
 elif st.session_state["authentication_status"] == None:
     st.warning('Please enter your username and password')
-
-# llm = AzureChatOpenAI(
-#     azure_endpoint=os.getenv("AZURE_OPENAI_BASE"), 
-#     api_key=os.getenv("AZURE_OPENAI_KEY"),
-#     api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
-#     max_tokens=1000, 
-#     temperature=0,
-#     deployment_name=os.getenv("AZURE_OPENAI_MODEL"),
-#     model_name=os.getenv("AZURE_OPENAI_MODEL_NAME"),
-#     streaming=False
-# )
-
-# prompt = ChatPromptTemplate.from_messages([
-#     ("system", "You are an AI assistant."),
-#     ("user", "{input}")
-# ])
-
-# output_parser = StrOutputParser()
-
-# chain = prompt | llm | output_parser
-# response = llm.invoke("Hello world...")
-
-# st.write(response.content)
