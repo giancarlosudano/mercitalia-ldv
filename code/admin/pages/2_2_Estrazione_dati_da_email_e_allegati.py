@@ -18,38 +18,70 @@ import requests
 import sys
 import re
 
-def get_field_from_cim():
-	if 'ocr-fields' not in st.session_state:
+def read_field_from_cim():
+	if 'box-01' not in st.session_state:
 		from azure.core.credentials import AzureKeyCredential
 		from azure.ai.formrecognizer import DocumentAnalysisClient
 		endpoint = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
 		key = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_KEY")
 		model_id = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_MODEL_ID")
-		model_id = "ldv04"
+		model_id = "ldv06-neural"
 		document_analysis_client = DocumentAnalysisClient(endpoint=endpoint, credential=AzureKeyCredential(key))
 
 		with open(os.path.join('ldv', "cim.jpg"),'rb') as f:
 			poller = document_analysis_client.begin_analyze_document(model_id, document=f)
 		result = poller.result()
 
-		fields = {}
-
 		for idx, document in enumerate(result.documents):
 			for name, field in document.fields.items():
-				fields[name] = field.value
-		st.session_state['ocr-fields'] = fields
+				st.session_state[name] = field.value
+
+		st.session_state["box-01-clean"] = prompt_for_box("1", "Estrai dal testo solo la ragione sociale del mittente della CIM", st.session_state["box-01"], llm)
+		st.session_state["box-02-clean"] = prompt_for_box("2", "Estrai dal testo un codice numerico che rappresenta il codice mittente della CIM", st.session_state["box-02"], llm)
+		st.session_state["box-03-clean"] = prompt_for_box("3", "Estrai dal testo un codice numerico che rappresenta il codice mittente della CIM", st.session_state["box-03"], llm)
+		st.session_state["box-04-clean"] = prompt_for_box("4", "Estrai dal testo solo la ragione sociale del destinatario della CIM", st.session_state["box-04"], llm)
+		st.session_state["box-05-clean"] = prompt_for_box("5", "Estrai dal testo un codice numerico che rappresenta il codice destinatario della CIM", st.session_state["box-05"], llm)
+		st.session_state["box-06-clean"] = prompt_for_box("6", "Estrai dal testo un codice numerico che rappresenta il codice destinatario della CIM", st.session_state["box-06"], llm)
+		st.session_state["box-10-clean"] = prompt_for_box("10", "Estrai solo le informazioni di un luogo di consegna della CIM", st.session_state["box-10"], llm)
+		st.session_state["box-11-clean"] = prompt_for_box("11", "Estrai dal testo un codice alfanumerico che rappresenta il codice di una stazione di destinazione della CIM", st.session_state["box-11"], llm)
+		st.session_state["box-12-clean"] = prompt_for_box("12", "Estrai dal testo un codice numerico che rappresenta il codice di una stazione di destinazione della CIM", st.session_state["box-12"], llm)
+		st.session_state["box-13-clean"] = prompt_for_box("13", "Estrai dal testo le informazioni più importanti", st.session_state["box-13"], llm)
+		st.session_state["box-14-clean"] = prompt_for_box("14", "Estrai dal testo un codice numerico che rappresenta un codice della CIM", st.session_state["box-14"], llm)
+		st.session_state["box-16-clean"] = prompt_for_box("16", "Estrai le informazioni di un luogo di presa in carico della CIM", st.session_state["box-16"], llm)
+		st.session_state["box-16-orario-clean"] = prompt_for_box("10", "Interpeta la stringa come una data di presa in carico della CIM, eventualmente anche data e orario", st.session_state["box-16-orario"], llm)
+		st.session_state["box-18-clean"] = prompt_for_box("18", "Estrai le informazioni da testo", st.session_state["box-16"], llm)
+		st.session_state["box-19-1-clean"] = prompt_for_box("19", "Estrai le informazioni dal testo", st.session_state["box-19-1-clean"], llm)
+		st.session_state["box-19-2-clean"] = prompt_for_box("19", "Estrai le informazioni dal testo", st.session_state["box-19-1-clean"], llm)
+		st.session_state["box-24-clean"] = prompt_for_box("24", "Estrai un codice numerico che rappresenta il codice NHM della CIM.", st.session_state["box-19-1-clean"], llm)
+		st.session_state["box-25-clean"] = prompt_for_box("24", "Interpreta le informazioni dal testo, che sono dei pesi di vagoni. Estrai se lo trovi il totale della massa.", st.session_state["box-19-1-clean"], llm)
+		st.session_state["box-29-clean"] = prompt_for_box("24", "Interpreta le informazioni di luogo e data della CIM", st.session_state["box-29-clean"], llm)
+		st.session_state["box-49-clean"] = prompt_for_box("24", "Estrai dal testo un codice numerico composto eventualmente da più parti. ", st.session_state["box-49-clean"], llm)
+		st.session_state["box-57-clean"] = prompt_for_box("57", "Nel testo ci sono informazioni di trasporti, con indirizzi e percorsi. Estrai tutte le informazioni che riesci a leggere in modo ordinato. ", st.session_state["box-49-clean"], llm)
+		st.session_state["box-62-paese-clean"] = prompt_for_box("62", "Estrai dal testo un codice numerico che rappresenta un codice della etichetta della CIM. Se nel codice ci sono dei '-' non considerarli.", st.session_state["box-62-paese"], llm)
+		st.session_state["box-62-stazione-clean"] = prompt_for_box("62", "Estrai dal testo un codice numerico che rappresenta un codice della etichetta della CIM. Se nel codice ci sono dei '-' non considerarli.", st.session_state["box-62-stazione"], llm)
+		st.session_state["box-62-impresa-clean"] = prompt_for_box("62", "Estrai dal testo un codice numerico che rappresenta un codice della etichetta della CIM. Se nel codice ci sono dei '-' non considerarli.", st.session_state["box-62-impresa"], llm)
+		st.session_state["box-62-spedizione-clean"] = prompt_for_box("62", "Estrai dal testo un codice numerico che rappresenta un codice della etichetta della CIM. Se nel codice ci sono dei '-' non considerarli.", st.session_state["box-62-spedizione"], llm)
+		st.session_state["box-62-luogo-clean"] = prompt_for_box("29", "Estrai dal testo le sole informazioni del luogo.", st.session_state["box-29"], llm)
+		st.session_state["box-62-data-clean"] = prompt_for_box("29", "Estrai dal testo le sole informazioni della data.", st.session_state["box-29"], llm)
+		st.session_state["box-wagon-list-clean"] = ""
+  
 	return
 
 def prompt_for_box(numero_casella: str, descrizione_estrazione: str, box: str, llm: AzureChatOpenAI):
-	prompt_base = """il testo delimitato da ### deriva da una scansione OCR di un modulo di trasporto ferroviario. 
+	prompt_base = """il testo delimitato da ### deriva da una scansione OCR di un modulo di trasporto ferroviario CIM internazionale. 
 Il testo deriva da una casella che ha come numero iniziale {numero_casella} e che può contenere la descrizione della casella stessa.
 ###
 {box}
 ###
 
 {descrizione_estrazione}
-Non aggiungere altro alla risposta
-Se non trovi nessun codice o nessuna informazione, scrivi "Non trovato"
+- Non aggiungere altro alla risposta
+- Se il testo inizia con il numero della casella non includerlo nella risposta
+- Se non trovi nessun codice o nessuna informazione, scrivi "Non trovato"
+
+Esempio 
+- se la casella è la 29 e il testo è "29 800400500" la risposta sarà "80400500"
+- se la casella è la 19 e il testo è "19 Ragione Sociale xxx yyy" la risposta sarà "Ragione Sociale xxx yyy"
 
 Risposta:
 """
@@ -103,7 +135,7 @@ Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizi
 """)
 
 
-		get_field_from_cim()
+		read_field_from_cim()
   
 		st.write(os.getenv("AZURE_OPENAI_BASE"))
 		st.write(os.getenv("AZURE_OPENAI_KEY"))
@@ -155,47 +187,55 @@ Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizi
 		# -------
   
 		# Recupero Dati CIM e popolamento sessione ocr-fields
-		get_field_from_cim()
+		read_field_from_cim()
   
 		fields = st.session_state['ocr-fields']
   
 		st.info("Dati estratti dalla CIM")
 
-		box_01_clean = "" if not fields["box-01"] else prompt_for_box("1", "Estrai solo le informazioni del mittente", fields["box-01"], llm)
-		colbox1_1, colbox1_2 = st.columns([1,1])
-	
+		colbox1_1, colbox1_2 = st.columns([1,1])	
 		with colbox1_1:
-			st.text_area("(1) Mittente", value=fields["box-01"], disabled=True, height=150, key="box1_1")
+			st.text_area("(1) Mittente", value=st.session_state["box-01"], disabled=True, height=150, key="box1_1")
 		with colbox1_2:
-			st.text_area("(1) Mittente (Clean)", value=box_01_clean, height=150, key="box1_2")
+			st.text_area("(1) Mittente (Clean)", value=st.session_state["box_01_clean"], height=150, key="box1_2")
 		st.divider()
 		
-		box_02_clean = "" if not fields["box-02"] else prompt_for_box("2", "Estrai solo le informazioni del codice mittente", fields["box-02"], llm)
 		colbox2_1, colbox2_2 = st.columns([1,1])
 		with colbox2_1:
-			st.text_area("(2) Mittente Codice", value=fields["box-02"], disabled=True, height=100, key="box2_1")
+			st.text_area("(2) Mittente Codice 1", value=st.session_state["box-02"], disabled=True, height=100, key="box2_1")
 		with colbox2_2:
-			st.text_area("(2) Mittente Codice (Clean)", value=box_02_clean, height=100, key="box2_2")
+			st.text_area("(2) Mittente Codice 1 (Clean)", value=st.session_state["box-02-clean"], height=100, key="box2_2")
 		st.divider()
 
-		box_04_clean = "" if not fields["box-04"] else prompt_for_box("4", "Estrai solo le informazioni della ragione sociale del destinatario", fields["box-04"], llm)
-		colbox4_1, colbox4_2 = st.columns([1,1])
-		with colbox4_1:
-			st.text_area("(4) Destinatario", value=fields["box-04"], disabled=True, height=150, key="box4_1")
-		with colbox4_2:
-			st.text_area("(4) Destinatario (Clean)", height=150, value=box_04_clean, key="box4_2")
-		st.divider()
-	
-		box_05_clean = "" if not fields["box-05"] else prompt_for_box("5", "Estrai solo le informazioni della codice mittente", fields["box-05"], llm)
-		colbox5_1, colbox5_2 = st.columns([1,1])
-		with colbox5_1:
-			st.text_area("(5) Destinatario Codice", value=fields["box-05"], disabled=True, height=100, key="box5_1")
-		with colbox5_2:
-			st.text_area("(5) Destinatario Codice (Clean)", height=100, key="box5_2", value=box_05_clean)
-
+		colbox2_1, colbox2_2 = st.columns([1,1])
+		with colbox2_1:
+			st.text_area("(3) Mittente Codice 2", value=st.session_state["box-03"], disabled=True, height=100, key="box3_1")
+		with colbox2_2:
+			st.text_area("(3) Mittente Codice 2 (Clean)", value=st.session_state["box-03-clean"], height=100, key="box3_2")
 		st.divider()
 
-		box_10_clean = "" if not fields["box-10"] else prompt_for_box("10", "Estrai solo le informazioni del codice raccordo consegna", fields["box-10"], llm)
+		colbox1_1, colbox1_2 = st.columns([1,1])	
+		with colbox1_1:
+			st.text_area("(4) Destinatario", value=st.session_state["box-04"], disabled=True, height=150, key="box4_1")
+		with colbox1_2:
+			st.text_area("(4) Destinatario (Clean)", value=st.session_state["box_04_clean"], height=150, key="box4_2")
+		st.divider()
+		
+		colbox2_1, colbox2_2 = st.columns([1,1])
+		with colbox2_1:
+			st.text_area("(5) Destinatario Codice 1", value=st.session_state["box-05"], disabled=True, height=100, key="box5_1")
+		with colbox2_2:
+			st.text_area("(5) Destinatario Codice 1 (Clean)", value=st.session_state["box-05-clean"], height=100, key="box5_2")
+		st.divider()
+
+		colbox2_1, colbox2_2 = st.columns([1,1])
+		with colbox2_1:
+			st.text_area("(6) Destinatario Codice 2", value=st.session_state["box-06"], disabled=True, height=100, key="box6_1")
+		with colbox2_2:
+			st.text_area("(6) Destinatario Codice 2 (Clean)", value=st.session_state["box-06-clean"], height=100, key="box6_2")
+		st.divider()
+
+		box_10_clean = "" if not fields["box-10"] else 
 		colbox10_1, colbox10_2= st.columns([1,1])
 		with colbox10_1:
 			st.text_area("(10) Raccordo Consegna", value=fields["box-10"], disabled=True, height=100, key="box10_1")
@@ -203,7 +243,7 @@ Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizi
 			st.text_area("(10) Raccordo Consegna (Clean)", height=100, key="box10_2", value=box_10_clean)
 		st.divider()
 
-		box_12_clean = "" if not fields["box-12"] else prompt_for_box("12", "Estrai solo le informazioni del codice stazione destinatario. Il codice è solitamente un numero intero.", fields["box-12"], llm)
+		box_12_clean = "" if not fields["box-12"] else 
 		colbox12_1, colbox12_2 = st.columns([1,1])
 		with colbox12_1:
 			st.text_area("(12) Codice Stazione Destinatario", value=fields["box-12"], disabled=True, height=100, key="box12_1")
@@ -264,7 +304,7 @@ Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizi
 		box_62_stazione_clean = "" if not fields["box-62-stazione"] else prompt_for_box("62", "Estrai il codice della stazione.", fields["box-62-stazione"], llm)
 		box_62_impresa_clean = "" if not fields["box-62-impresa"] else prompt_for_box("62", "Estrai il codice dell'impresa.", fields["box-62-impresa"], llm)
 		box_62_spedizione_clean = "" if not fields["box-62-spedizione"] else prompt_for_box("62", "Estrai il codice della spedizione.", fields["box-62-spedizione"], llm)
-		box_29_luogo_clean = "" if not fields["box-29"] else prompt_for_box("29", "Estrai le sole informazioni del luogo.", fields["box-29"], llm)
+		box_29_luogo_clean = "" if not fields["box-29"] else 
 		box_29_data_clean = "" if not fields["box-29"] else prompt_for_box("29", "Estrai le sola informazione della data e convertila nel formato YYYYMMDD.", fields["box-29"], llm)
 
 		col_identificazione1, col_identificazione2 = st.columns([1,1])
@@ -291,24 +331,24 @@ Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizi
 		# -------
 
 		if st.button("Conferma i valori"):
-			st.session_state["box-01"] = st.session_state.box1_2
-			st.session_state["box-02"] = st.session_state.box2_2
-			st.session_state["box-04"] = st.session_state.box4_2
-			st.session_state["box-05"] = st.session_state.box5_2
-			st.session_state["box-10"] = st.session_state.box10_2
-			st.session_state["box-12"] = st.session_state.box12_2
-			st.session_state["box-13"] = st.session_state.box13_2
-			st.session_state["box-14"] = st.session_state.box14_2
-			st.session_state["box-16"] = st.session_state.box16_2
-			st.session_state["box-18"] = st.session_state.box18_2
-			st.session_state["box-49"] = st.session_state.box49_2
-			st.session_state["box-57"] = st.session_state.box57_2
-			st.session_state["box-62-paese"] = st.session_state.ident_paese_2
-			st.session_state["box-62-stazione"] = st.session_state.ident_stazione_2
-			st.session_state["box-62-impresa"] = st.session_state.ident_impresa_2
-			st.session_state["box-62-spedizione"] = st.session_state.ident_spedizione_2
-			st.session_state["box-62-luogo"] = st.session_state.ident_luogo_2
-			st.session_state["box-62-data"] = st.session_state.ident_data_2
+			st.session_state["box-01-clean"] = st.session_state.box1_2
+			st.session_state["box-02-clean"] = st.session_state.box2_2
+			st.session_state["box-04-clean"] = st.session_state.box4_2
+			st.session_state["box-05-clean"] = st.session_state.box5_2
+			st.session_state["box-10-clean"] = st.session_state.box10_2
+			st.session_state["box-12-clean"] = st.session_state.box12_2
+			st.session_state["box-13-clean"] = st.session_state.box13_2
+			st.session_state["box-14-clean"] = st.session_state.box14_2
+			st.session_state["box-16-clean"] = st.session_state.box16_2
+			st.session_state["box-18-clean"] = st.session_state.box18_2
+			st.session_state["box-49-clean"] = st.session_state.box49_2
+			st.session_state["box-57-clean"] = st.session_state.box57_2
+			st.session_state["box-62-paese-clean"] = st.session_state.ident_paese_2
+			st.session_state["box-62-stazione-clean"] = st.session_state.ident_stazione_2
+			st.session_state["box-62-impresa-clean"] = st.session_state.ident_impresa_2
+			st.session_state["box-62-spedizione-clean"] = st.session_state.ident_spedizione_2
+			st.session_state["box-62-luogo-clean"] = st.session_state.ident_luogo_2
+			st.session_state["box-62-data-clean"] = st.session_state.ident_data_2
 			st.session_state["box-wagon-list"] = st.session_state.wagon_list
 			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
    

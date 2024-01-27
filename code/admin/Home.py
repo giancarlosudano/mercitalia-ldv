@@ -46,6 +46,19 @@ if username == 'smith@mercitalia.com':
 
 if st.session_state["authentication_status"]:
     st.write(f'Welcome *{st.session_state["name"]}*, you are an **admin**.')
+    
+    # # Delete a single key-value pair
+    # del st.session_state[key]
+
+    # Delete all the items in Session state
+    # for key in st.session_state.keys():
+    #     del st.session_state[key]
+    
+    # Azzeramento delle variabili di sessione
+    
+    import lib.common as common
+    common.clean_session()
+    
 elif st.session_state["authentication_status"] == False:
     st.error('Username/password is incorrect')
 elif st.session_state["authentication_status"] == None:

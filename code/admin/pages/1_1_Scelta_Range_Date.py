@@ -17,11 +17,7 @@ import os
 import requests
 import sys
 import re
-
-def load_session_states():
-	st.session_state["box-01-orfeus"] = ""
-	st.session_state["box-02-orfeus"] = ""
-	return	
+import lib.common as common
 
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
@@ -113,8 +109,9 @@ L'utente selezionerà la mail con cui viene inizializzato il processo di estrazi
 		# 	st.write('**Data**: {}'.format(selected_rows[0]['Data email']))
 		# 	st.write('**Soggetto**: {}'.format(selected_rows[0]['Oggetto']))
 		# 	st.write('**Da**: {}'.format(selected_rows[0]['Da']))
-		
+
 		if st.button("Conferma i valori"):
+			common.clean_session()
 			st.session_state["ldv"] = selected_rows[0]['Data email']
 			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
 
@@ -122,7 +119,6 @@ L'utente selezionerà la mail con cui viene inizializzato il processo di estrazi
 		st.error('Username/password is incorrect')
 	elif st.session_state["authentication_status"] is None:
 		st.warning('Please enter your username and password')
-
 
 except Exception as e:
 	st.error(traceback.format_exc())
