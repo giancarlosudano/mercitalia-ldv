@@ -235,94 +235,115 @@ Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizi
 			st.text_area("(6) Destinatario Codice 2 (Clean)", value=st.session_state["box-06-clean"], height=100, key="box6_2")
 		st.divider()
 
-		box_10_clean = "" if not fields["box-10"] else 
 		colbox10_1, colbox10_2= st.columns([1,1])
 		with colbox10_1:
-			st.text_area("(10) Raccordo Consegna", value=fields["box-10"], disabled=True, height=100, key="box10_1")
+			st.text_area("(10) Luogo di Consegna", value=st.session_state["box-10"], disabled=True, height=100, key="box10_1")
 		with colbox10_2:
-			st.text_area("(10) Raccordo Consegna (Clean)", height=100, key="box10_2", value=box_10_clean)
+			st.text_area("(10) Luogo di Consegna (Clean)", value=st.session_state["box-10-clean"], height=100, key="box10_2")
 		st.divider()
 
-		box_12_clean = "" if not fields["box-12"] else 
+		colbox11_1, colbox11_2 = st.columns([1,1])
+		with colbox11_1:
+			st.text_area("(11) Codice Luogo Consegna 1", value=st.session_state["box-11"], disabled=True, height=100, key="box11_1")
+		with colbox11_2:
+			st.text_area("(11) Codice Luogo Consegna 1 (Clean)", st.session_state["box-11-clean"], height=100, key="box11_2")
+		st.divider()
+  
 		colbox12_1, colbox12_2 = st.columns([1,1])
-		with colbox12_1:
-			st.text_area("(12) Codice Stazione Destinatario", value=fields["box-12"], disabled=True, height=100, key="box12_1")
-		with colbox12_2:
-			st.text_area("(12) Codice Stazione Destinatario (Clean)", height=100, key="box12_2", value=box_12_clean)
+		with colbox11_1:
+			st.text_area("(12) Codice Luogo Consegna 2", value=st.session_state["box-12"], disabled=True, height=100, key="box12_1")
+		with colbox11_2:
+			st.text_area("(12) Codice Luogo Consegna 2 (Clean)", st.session_state["box-12-clean"], height=100, key="box12_2")
 		st.divider()
 
-		box_13_clean = "" if not fields["box-13"] else prompt_for_box("13", "Estrai solo le informazioni delle condizioni commerciali.", fields["box-13"], llm)
 		colbox13_1, colbox13_2 = st.columns([1,1])
 		with colbox13_1:
-			st.text_area("(13) Condizioni commerciali", value=fields["box-13"], disabled=True, height=100, key="box13_1")
+			st.text_area("(13) Condizioni commerciali", value=st.session_state["box-13"], disabled=True, height=100, key="box13_1")
 		with colbox13_2:
-			st.text_area("(13) Condizioni commerciali (Clean)", height=100, key="box13_2", value=box_13_clean)
+			st.text_area("(13) Condizioni commerciali (Clean)", value=st.session_state["box-13-clean"], height=100, key="box13_2", )
 		st.divider()
 
-		box_14_clean = "" if not fields["box-14"] else prompt_for_box("14", "Estrai il codice numerico che è solitamente n numero intero.", fields["box-14"], llm)
 		colbox14_1, colbox14_2= st.columns([1,1])
 		with colbox14_1:
-			st.text_area("(14) Codice Condizioni commerciali", value=fields["box-14"], disabled=True, height=100, key="box14_1")
+			st.text_area("(14) Codice Contratto", value=st.session_state["box-14"], disabled=True, height=100, key="box14_1")
 		with colbox14_2:
-			st.text_area("(14) Codice Condizioni commerciali (Clean)", height=100, key="box14_2", value=box_14_clean)
+			st.text_area("(14) Codice Contratto (Clean)", value=st.session_state["box-14-clean"], height=100, key="box14_2")
 		st.divider()
 
-		box_16_clean = "" if not fields["box-16"] else prompt_for_box("16", "Estrai le informazioni del luogo di consegna", fields["box-16"], llm)
-		colbox16_1, colbox16_2 = st.columns([1,1])
+		colbox16_1, colbox16_2= st.columns([1,1])
 		with colbox16_1:
-			st.text_area("(16) Luogo consegna presa in carico", value=fields["box-16"], disabled=True, height=100, key="box16_1")
+			st.text_area("(16) Origine", value=st.session_state["box-16"], disabled=True, height=100, key="box16_1")
 		with colbox16_2:
-			st.text_area("(16) Luogo consegna presa in carico (Clean)", height=100, key="box16_2", value=box_16_clean)
+			st.text_area("(16) Origine (Clean)", value=st.session_state["box-16-clean"], height=100, key="box16_2")
+		st.divider()
+  
+		colbox16_1_orario, colbox16_2_orario= st.columns([1,1])
+		with colbox16_1_orario:
+			st.text_area("(16) Origine Data", value=st.session_state["box-14"], disabled=True, height=100, key="box16_orario_1")
+		with colbox16_2_orario:
+			st.text_area("(16) Orogine Data (Clean)", value=st.session_state["box-14-clean"], height=100, key="box16_orario_2")
 		st.divider()
 
-		box_18_clean = "" if not fields["box-18"] else prompt_for_box("18", "Estrai le informazioni della matricola carro distinta", fields["box-18"], llm)
+		colbox17_1, colbox17_2= st.columns([1,1])
+		with colbox17_1:
+			st.text_area("(17) Origine Codice", value=st.session_state["box-17"], disabled=True, height=100, key="box17_1")
+		with colbox17_2:
+			st.text_area("(17) Origine Codice (Clean)", value=st.session_state["box-17-clean"], height=100, key="box17_2")
+		st.divider()
+
 		colbox18_1, colbox18_2 = st.columns([1,1])
 		with colbox18_1:
-			st.text_area("(18) Matricola carro distinta", value=fields["box-18"], disabled=True, height=100, key="box18_1")
+			st.text_area("(18) Matricola carro distinta", value=st.session_state["box-18"], disabled=True, height=100, key="box18_1")
 		with colbox18_2:
-			st.text_area("(18) Matricola carro distinta (Clean)", height=100, key="box18_2", value=box_18_clean)
+			st.text_area("(18) Matricola carro distinta (Clean)", value=["box-18-clean"], height=100, key="box18_2")
 		st.divider()
 
-		box_49_clean = "" if not fields["box-49"] else prompt_for_box("49", "Estrai le informazioni del codice affrancazione che è solitamente un codice alfanumerico.", fields["box-49"], llm)
+		colbox19_1_1, colbox19_1_2 = st.columns([1,1])
+		with colbox19_1_1:
+			st.text_area("(19) Matricola carro percorso", value=st.session_state["box-19-1"], disabled=True, height=100, key="box19_1_1")
+		with colbox19_1_2:
+			st.text_area("(19) Matricola carro percorso (Clean)", value=["box-19-1-clean"], height=100, key="box19_1_2")
+		st.divider()
+  
+		colbox19_2_1, colbox19_2_2 = st.columns([1,1])
+		with colbox19_2_1:
+			st.text_area("(19) Matricola carro da", value=st.session_state["box-19-2"], disabled=True, height=100, key="box19_2_1")
+		with colbox19_2_2:
+			st.text_area("(19) Matricola carro da (Clean)", value=["box-19-2-clean"], height=100, key="box19_2_2")
+		st.divider()
+
 		colbox49_1, colbox49_2 = st.columns([1,1])
 		with colbox49_1:
-			st.text_area("(49) Codice Affrancazione", value=fields["box-49"], disabled=True, height=100, key="box49_1")
+			st.text_area("(49) Codice Affrancazione", value=st.session_state["box-49"], disabled=True, height=100, key="box49_1")
 		with colbox49_2:
-			st.text_area("(49) Codice Affrancazione (Clean)", height=100, key="box49_2", value=box_49_clean)
+			st.text_area("(49) Codice Affrancazione (Clean)", value=st.session_state["box-49-clean"], height=100, key="box49_2")
 		st.divider()
 
-		box_57_clean = "" if not fields["box-57"] else prompt_for_box("57", "Estrai le sole informazioni di trasporto.", fields["box-57"], llm)
 		colbox57_1, colbox57_2 = st.columns([1,1])
 		with colbox57_1:
-			st.text_area("(57) Altro trasporti e ruolo", value=fields["box-57"], disabled=True, height=100, key="box57_1")
+			st.text_area("(57) Altro trasporti", value=st.session_state["box-57"], disabled=True, height=100, key="box57_1")
 		with colbox57_2:
-			st.text_area("(57) Altro trasporti e ruolo (Clean)", height=100, key="box57_2", value=box_57_clean)
+			st.text_area("(57) Altro trasporti (Clean)", value=st.session_state["box-57-clean"], height=100, key="box57_2")
 		st.divider()
 
 		st.info("(62) Identificazione Spedizione")
-		box_62_paese_clean = "" if not fields["box-62-paese"] else prompt_for_box("62", "Estrai il codice del paese.", fields["box-62-paese"], llm)
-		box_62_stazione_clean = "" if not fields["box-62-stazione"] else prompt_for_box("62", "Estrai il codice della stazione.", fields["box-62-stazione"], llm)
-		box_62_impresa_clean = "" if not fields["box-62-impresa"] else prompt_for_box("62", "Estrai il codice dell'impresa.", fields["box-62-impresa"], llm)
-		box_62_spedizione_clean = "" if not fields["box-62-spedizione"] else prompt_for_box("62", "Estrai il codice della spedizione.", fields["box-62-spedizione"], llm)
-		box_29_luogo_clean = "" if not fields["box-29"] else 
-		box_29_data_clean = "" if not fields["box-29"] else prompt_for_box("29", "Estrai le sola informazione della data e convertila nel formato YYYYMMDD.", fields["box-29"], llm)
-
+  
 		col_identificazione1, col_identificazione2 = st.columns([1,1])
 		with col_identificazione1:
-			st.text_input("Codice Paese", key="ident_paese_1", value=fields["box-62-paese"], disabled=True)
-			st.text_input("Codice Stazione", key="ident_stazione_1", value=fields["box-62-stazione"], disabled=True)
-			st.text_input("Codice Impresa", key="ident_impresa_1", value=fields["box-62-impresa"], disabled=True)
-			st.text_input("Codice Spedizione", key="ident_spedizione_1", value=fields["box-62-spedizione"], disabled=True)
-			st.text_input("Luogo", key="ident_luogo_1", value=fields["box-29"], disabled=True)
-			st.text_input("Data", key="ident_data_1", value=fields["box-29"], disabled=True)
+			st.text_input("Codice Paese", key="ident_paese_1", value=st.session_state["box-62-paese"], disabled=True)
+			st.text_input("Codice Stazione", key="ident_stazione_1", value=st.session_state["box-62-stazione"], disabled=True)
+			st.text_input("Codice Impresa", key="ident_impresa_1", value=st.session_state["box-62-impresa"], disabled=True)
+			st.text_input("Codice Spedizione", key="ident_spedizione_1", value=st.session_state["box-62-spedizione"], disabled=True)
+			st.text_input("Luogo", key="ident_luogo_1", value=st.session_state["box-62-luogo"], disabled=True)
+			st.text_input("Data", key="ident_data_1", value=st.session_state["box-62-data"], disabled=True)
 		
 		with col_identificazione2:
-			st.text_input("Codice Paese", key="ident_paese_2", value=box_62_paese_clean)
-			st.text_input("Codice Stazione", key="ident_stazione_2", value=box_62_stazione_clean)
-			st.text_input("Codice Impresa", key="ident_impresa_2", value=box_62_impresa_clean)
-			st.text_input("Codice Spedizione", key="ident_spedizione_2", value=box_62_spedizione_clean)
-			st.text_input("Luogo", key="ident_luogo_2", value=box_29_luogo_clean)
-			st.text_input("Data", key="ident_data_2", value=box_29_data_clean)
+			st.text_input("Codice Paese", key="ident_paese_2", value=st.session_state["box-62-paese-clean"], disabled=True)
+			st.text_input("Codice Stazione", key="ident_stazione_2", value=st.session_state["box-62-stazione-clean"], disabled=True)
+			st.text_input("Codice Impresa", key="ident_impresa_2", value=st.session_state["box-62-impresa-clean"], disabled=True)
+			st.text_input("Codice Spedizione", key="ident_spedizione_2", value=st.session_state["box-62-spedizione-clean"], disabled=True)
+			st.text_input("Luogo", key="ident_luogo_2", value=st.session_state["box-62-luogo-clean"], disabled=True)
+			st.text_input("Data", key="ident_data_2", value=st.session_state["box-62-data-clean"], disabled=True)
 		# -------
   
 		# Recupero dati Wagon Lists
@@ -331,10 +352,13 @@ Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizi
 		# -------
 
 		if st.button("Conferma i valori"):
+			# TODO completare i bo
 			st.session_state["box-01-clean"] = st.session_state.box1_2
 			st.session_state["box-02-clean"] = st.session_state.box2_2
+			st.session_state["box-03-clean"] = st.session_state.box3_2
 			st.session_state["box-04-clean"] = st.session_state.box4_2
 			st.session_state["box-05-clean"] = st.session_state.box5_2
+			st.session_state["box-06-clean"] = st.session_state.box6_2
 			st.session_state["box-10-clean"] = st.session_state.box10_2
 			st.session_state["box-12-clean"] = st.session_state.box12_2
 			st.session_state["box-13-clean"] = st.session_state.box13_2
