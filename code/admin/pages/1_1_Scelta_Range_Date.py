@@ -41,7 +41,6 @@ try:
 
 	if st.session_state["authentication_status"]:		
 		load_dotenv()
-		load_session_states()
 		ldv_folders = []
 		for root, dirs, files in os.walk(os.path.join('ldv')):
 			for name in dirs:
