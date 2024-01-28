@@ -4,6 +4,7 @@ import os
 import logging
 from dotenv import load_dotenv
 import streamlit_authenticator as stauth
+import xml.etree.ElementTree as ET
 
 load_dotenv()
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -11,19 +12,28 @@ logger = logging.getLogger('azure.core.pipeline.policies.http_logging_policy').s
 
 st.set_page_config(page_title="Automazione Lettere di Vettura <=> RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
 
-# mod_page_style = """
-#             <style>
-#             #MainMenu {visibility: hidden;}
-#             footer {visibility: hidden;}
-#             header {visibility: hidden;}
-#             </style>
-#             """
-# st.markdown(mod_page_style, unsafe_allow_html=True)
-
 st.title("Automazione Processo Acquisizione Lettere di Vettura")
 st.subheader("Trasporti internazionali in Import")
-# st.subheader("Utilizzo di generative AI per l'automazione del processo di assegnazione delle lettere di vettura alle RDS")
 st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
+
+file_name = "ECTD.20231106_232258_875.xml"
+file_path = os.path.join('orpheus', file_name)
+    
+tree = ET.parse(file_path)
+root = tree.getroot()
+
+box_01_orfeus_values = []
+box_10_orfeus_values = []
+
+st.write("Analisi XML")
+# Iterate through the ECN nodes
+for ecn in root.findall(".//ECNs"):
+    node = ecn.find(".//ECN/Customers/Customer[@Type='CR']/Name")
+    if node is not None:
+        st.write("trovato")
+        box_01_orfeus_values.append(node.text)
+        response = st.write(node.text)
+
 import yaml
 from yaml.loader import SafeLoader
 

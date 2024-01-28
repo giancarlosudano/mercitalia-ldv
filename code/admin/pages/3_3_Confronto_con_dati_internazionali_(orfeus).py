@@ -111,12 +111,17 @@ def get_orfeus_data(file_name):
 
 	# Iterate through the ECN nodes
 	for ecn in root.findall(".//ECNs"):
-		node = ecn.find(".//ECN/Customers/Customer[@Type='CR']/name")
+		node = ecn.find(".//ECN/Customers/Customer[@Type='CR']/Name")
 		if node is not None:
 			box_01_orfeus_values.append(node.text)
-	
 	st.session_state["box-01-orfeus"] = box_01_orfeus_values[0]
+ 
 	# st.session_state["box-02-orfeus"] = "" # NA
+ 
+	for ecn in root.findall(".//ECNs"):
+		node = ecn.find(".//ECN/Customers/Customer[@Type='CR']/CustomerCode")
+		if node is not None:
+			box_01_orfeus_values.append(node.text)
 	st.session_state["box-03-orfeus"] = "" # ECNs/ECN/Customers/Customer type "CR"/CustomerCode
  
 	st.session_state["box-04-orfeus"] = "" # ECNs/ECN/Customers/Customer type "CE"/Name
@@ -124,15 +129,19 @@ def get_orfeus_data(file_name):
 	st.session_state["box-06-orfeus"] = "" # ECNs/ECN/Customers/Customer type "FPCE"/CustomerCode
 
 
-	# Iterate through the ECN nodes
+	for ecn in root.findall(".//ECNs"):
+		node = ecn.find(".//ECN/DeliveryPoint/Point/Name")
+		if node is not None:
+			box_10_orfeus_values.append(node.text) 
+	st.session_state["box-10-orfeus"] = box_10_orfeus_values[0]
+	# st.session_state["box-11-orfeus"] = "" #NA
+
 	for ecn in root.findall(".//ECNs"):
 		node = ecn.find(".//ECN/DeliveryPoint/Point/Name")
 		if node is not None:
 			box_10_orfeus_values.append(node.text)
- 
-	st.session_state["box-10-orfeus"] = box_10_orfeus_values[0]
-	# st.session_state["box-11-orfeus"] = "" #NA
 	st.session_state["box-12-orfeus"] = "" # ENCs/ECN/DeliveryPoint/Point/Code
+ 
 	# st.session_state["box-13-orfeus"] = "" #NA
 	st.session_state["box-14-orfeus"] = "" # ECNs/ECN/Tariff/ContractNumber
 	st.session_state["box-16-orfeus"] = "" # ENCs/ECN/AcceptancePoint/Point/Name
