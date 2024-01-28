@@ -16,23 +16,11 @@ st.title("Automazione Processo Acquisizione Lettere di Vettura")
 st.subheader("Trasporti internazionali in Import")
 st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
 
-file_name = "ECTD.20231106_232258_875.xml"
-file_path = os.path.join('orpheus', file_name)
-    
-tree = ET.parse(file_path)
-root = tree.getroot()
-
-box_01_orfeus_values = []
-box_10_orfeus_values = []
-
-st.write("Analisi XML")
-# Iterate through the ECN nodes
-for ecn in root.findall(".//ECNs"):
-    node = ecn.find(".//ECN/Customers/Customer[@Type='CR']/Name")
-    if node is not None:
-        st.write("trovato")
-        box_01_orfeus_values.append(node.text)
-        response = st.write(node.text)
+print('--------------------------------')
+print(' NEW SESSION ')
+print('--------------------------------')
+# st.write(os.getenv("AZURE_OPENAI_BASE")) 
+# st.write(os.getenv("AZURE_OPENAI_KEY"))
 
 import yaml
 from yaml.loader import SafeLoader

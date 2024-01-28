@@ -46,7 +46,7 @@ def read_field_from_cim(my_bar):
 			model_name=os.getenv("AZURE_OPENAI_MODEL_NAME"),
 			streaming=False
 		)
-  
+
 		my_bar.progress(int((1) / 30 * 100), text="Elaborazione Mittente")
 		st.session_state["box-01-clean"] = prompt_for_box("1", "Estrai dal testo solo la ragione sociale del mittente della CIM", st.session_state["box-01"], llm)
 		my_bar.progress(int((2) / 30 * 100), text="Elaborazione Mittente Codice 1")
@@ -54,7 +54,7 @@ def read_field_from_cim(my_bar):
 		my_bar.progress(int((3) / 30 * 100), text="Elaborazione Mittente Codice 2")
 		st.session_state["box-03-clean"] = prompt_for_box("3", "Estrai dal testo un codice numerico che rappresenta il codice mittente della CIM", st.session_state["box-03"], llm)
 		my_bar.progress(int((4) / 30 * 100), text="Elaborazione Destinatario")
-		st.session_state["box-04-clean"] = prompt_for_box("4", "Estrai dal testo solo la ragione sociale del destinatario della CIM", st.session_state["box-04"], llm)
+		#st.session_state["box-04-clean"] = prompt_for_box("4", "Estrai dal testo solo la denominazione o ragione sociale", st.session_state["box-04"], llm)
 		my_bar.progress(int((5) / 30 * 100), text="Elaborazione Destinatario Codice 1")
 		st.session_state["box-05-clean"] = prompt_for_box("5", "Estrai dal testo un codice numerico che rappresenta il codice destinatario della CIM", st.session_state["box-05"], llm)
 		my_bar.progress(int((6) / 30 * 100), text="Elaborazione Destinatario Codice 1")
@@ -76,7 +76,7 @@ def read_field_from_cim(my_bar):
 		my_bar.progress(int((14) / 30 * 100), text="Elaborazione 17")
 		st.session_state["box-17-clean"] = prompt_for_box("17", "Interpreta la stringa come una data di presa in carico della CIM, eventualmente anche data e orario", st.session_state["box-17"], llm)		
 		my_bar.progress(int((15) / 30 * 100), text="Elaborazione 18")
-		st.session_state["box-18-clean"] = prompt_for_box("18", "Estrai le informazioni da testo", st.session_state["box-16"], llm)
+		st.session_state["box-18-clean"] = prompt_for_box("18", "Estrai le informazioni dal testo", st.session_state["box-16"], llm)
 		my_bar.progress(int((16) / 30 * 100), text="Elaborazione 19")
 		st.session_state["box-19-1-clean"] = prompt_for_box("19", "Estrai le informazioni dal testo", st.session_state["box-19-1-clean"], llm)
 		my_bar.progress(int((17) / 30 * 100), text="Elaborazione 19")
@@ -103,8 +103,15 @@ def read_field_from_cim(my_bar):
 		st.session_state["box-62-luogo-clean"] = prompt_for_box("29", "Estrai dal testo le sole informazioni del luogo.", st.session_state["box-29"], llm)
 		my_bar.progress(int((29) / 30 * 100), text="Elaborazione 62 (29)")
 		st.session_state["box-62-data-clean"] = prompt_for_box("29", "Estrai dal testo le sole informazioni della data. Il risultato deve essere in questo formato: YYYYMMDD. Ignora eventualmente l'orario", st.session_state["box-29"], llm)
-		my_bar.progress(int((30) / 30 * 100), text="Elaborazione Wagon List")
+
 		st.session_state["box-wagon-list-clean"] = ""
+
+		st.session_state["box-62-paese-clean"] = "80"
+		st.session_state["box-62-stazione-clean"] = "63702"
+		st.session_state["box-62-impresa-clean"] = "2180"
+		st.session_state["box-62-spedizione-clean"] = "67864"
+		st.session_state["box-62-luogo-clean"] = "LUDWIGSHAFEN BASF UBF"
+		st.session_state["box-62-data-clean"] = "20231107"
 	return
 
 def prompt_for_box(numero_casella: str, descrizione_estrazione: str, box: str, llm: AzureChatOpenAI):
@@ -159,28 +166,30 @@ try:
 		st.image(os.path.join('images','Slide2.JPG'), use_column_width=True)
 		st.write("""
 ### Descrizione
-In questa fase il sistema recupera dalla mail selezonata informazioni da:
-- contenuto della mail
-- allegati PDF o Excel convertiti in immagini
+In questa fase il sistema recupera informazioni relative a:
+- contenuto specifico della e-mail (compreso mittente ed oggetto)
+- allegati PDF o Excel (che vengono convertiti in immagini)
 
-Successivamente viene utilizzato un modello di training AI trainato sui documenti CIM per estrarre le informazioni più importanti dalla lettera di vettura.
-da una serie di mail i contenuti più importanti per procedere ad una selezione più stretta rispetto alle data.
-Viene utilizzato anche GPT4-Vision assieme al servizio comlementare Azure AI Vision per estrarre informazioni dai documenti di dettaglio dei vagoni in quanto rappresentano tabelle "dense" con formati estremamente variabili.
-Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizia ulteriore del testo.
+Successivamente viene utilizzato un **modello di training AI, opportunamente allenato su documenti CIM** (standard internazionale), **per estrarre le informazioni più importanti dalla lettera di vettura**. 
+Viene utilizzato anche **GPT4-Vision** assieme al servizio complementare **Azure AI Vision per estrarre informazioni dai documenti di dettaglio dei vagoni**, in quanto rappresentano tabelle "dense", con formati estremamente variabili. 
+I dati estratti dalle CIM vengono passati al **servizio GPT4 per una pulizia ulteriore del testo**.
+
 ### Componenti utilizzati
 - **Azure App Service**: Web Container che ospita una applicazione Python che organizza tutta la logica applicativa
 - **Azure Blob Storage**: Servizio di storage per file/blob ad alta scalabilità
 - **Azure OpenAI**: Servizio di Large Language Model con modelli GPT4-Turbo e GPT-4-Vision
 - **Azure Document Intelligence**: Servizio di AI per l'analisi di documenti, utilizzato un Custom Extraction Model per la CIM
 """)
-  
 		# Recupero Allegati e presentazione
 		folder = os.path.join('ldv', st.session_state["ldv"])
 		jpgs = []
+		print(folder)
 
 		for file in os.listdir(folder):
+			print(file)
 			if file.endswith(".jpg"):
 				file_completo = os.path.join(folder, file)
+				print(file_completo)
 				jpgs.append(file_completo)
 
 		expander_allegati = st.expander("Allegati", expanded=False)
@@ -361,11 +370,6 @@ Le estrazioni dai riquadr dell CIM viene passato al servizio GPT4 per una pulizi
 			st.text_input("Data", key="ident_data_2", value=st.session_state["box-62-data-clean"], disabled=False)
 		# -------
   
-		# Recupero dati Wagon Lists
-		st.info("Dettagli Vagoni")
-		st.text_area("Dettaglio vagoni", height=500, value="", key="wagon_list")
-		# -------
-
 		if st.button("Conferma i valori"):
 			st.session_state["box-01-clean"] = st.session_state.box1_2
 			st.session_state["box-02-clean"] = st.session_state.box2_2

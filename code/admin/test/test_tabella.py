@@ -125,29 +125,8 @@ def GPT4V_with_AzureAIVision(image_file, prompt):
 		st.write(json.loads(response.text))
 
 try:
-	st.title("Lettere di Vettura")
+	st.title("test_tabella")
 	
-	from streamlit_selectable_image_gallery import image_gallery
-
-	images = []
-	images_path = []
-	
-	images_path.append("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231107 131436 OK/w01.jpg")
-	images_path.append("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231107 202142 OK/w01.jpg")
-	images_path.append("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231107 204644 OK/w01.jpg")
-	images_path.append("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231108 000032 OK/w01.jpg")
-	images_path.append("C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231108 085517 OK/w01.jpg")
-	
-	for file in images_path:
-		with open(file, "rb") as image:
-			encoded = base64.b64encode(image.read()).decode()
-			images.append(f"data:image/jpeg;base64,{encoded}")
-
-	selected_index = image_gallery(images, 300)
-
-	image_path = "C:/Users/gisudano/OneDrive - Microsoft/Desktop/Prototypes/ITF Mercitalia LDV/LDV samples/3 jpeg extraction/20231107 204644 OK/w01.jpg"
-	# prompt = "Extract all the information from this document into a markdown table with this columns: Wagon Number, NHM, Brutto"
-	# GPT4V_with_AzureAIVision(image_path, prompt)
 
 except Exception as e:
 	st.error(traceback.format_exc())

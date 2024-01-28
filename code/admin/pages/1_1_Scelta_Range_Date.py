@@ -48,10 +48,11 @@ try:
 		st.image(os.path.join('images','Slide1.JPG'), use_column_width=True)
 		st.write("""
 ### Descrizione
-In questa fase il sistema recupera da una serie di mail i contenuti più importanti per procedere ad una selezione più stretta rispetto alle data.
-La mail sono spedite a indirizzi Mercitalia, e contengono allegati sotto forma di PDF o Excel
-Tutti gli allegati sono convertini in immagini.
-L'utente selezionerà la mail con cui viene inizializzato il processo di estrazione cognitiva dei dati.
+In questa fase **il sistema recupera da una serie di e-mail i contenuti più importanti** sulla base del range di date scelto dall’operatore, per restringere il campo di ricerca. 
+Le e-mail sono provenienti dall’estero e sono rese disponibili tramite una mailbox Mercitalia.
+Contengono gli allegati Lettera di Vettura e Distinta Carri, sotto forma di PDF o Excel.
+**Tutti gli allegati sono convertiti in immagini**. L'utente selezionerà la mail con cui viene inizializzato il processo di estrazione cognitiva dei dati.
+
 ### Componenti utilizzati
 - **Azure App Service**: Web Container che ospita una applicazione Python che organizza tutta la logica applicativa
 - **Azure Blob Storage**: Servizio di storage per file/blob ad alta scalabilità 
@@ -112,6 +113,7 @@ L'utente selezionerà la mail con cui viene inizializzato il processo di estrazi
 		if st.button("Conferma i valori"):
 			common.clean_session()
 			st.session_state["ldv"] = selected_rows[0]['Data email']
+			print('mail selected ' + st.session_state["ldv"])
 			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
 
 	elif st.session_state["authentication_status"] is False:
