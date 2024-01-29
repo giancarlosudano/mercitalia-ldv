@@ -398,7 +398,6 @@ I dati estratti dalle CIM vengono passati al **servizio GPT4 per una pulizia ult
 			st.session_state["box-62-spedizione-clean"] = st.session_state.ident_spedizione_2
 			st.session_state["box-62-luogo-clean"] = st.session_state.ident_luogo_2
 			st.session_state["box-62-data-clean"] = st.session_state.ident_data_2
-			st.session_state["box-wagon-list-clean"] = st.session_state.wagon_list
 
 			st.session_state["box-01-orfeus"] = st.session_state.box1_2
 			st.session_state["box-02-orfeus"] = st.session_state.box2_2
