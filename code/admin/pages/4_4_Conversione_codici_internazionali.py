@@ -1219,7 +1219,6 @@ In questa fase il sistema effettua un **controllo sui dati relativi ai campi "mi
 			# st.session_state['box-03-selected'] = st.session_state['mittente_scelto'].split(" - Codice: ")[1].split(", Similarità: ")[0]
 			# st.session_state['box-06-selected'] = st.session_state['mittente_scelto'].split(" - Codice: ")[1].split(", Similarità: ")[0]
 			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
-
   
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
