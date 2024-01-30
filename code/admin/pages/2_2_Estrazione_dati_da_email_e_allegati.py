@@ -19,7 +19,7 @@ import sys
 import re
 
 def read_field_from_cim(my_bar):
-	if st.session_state["box-01"] == "":
+	if st.session_state['box-01'] == "":
 		from azure.core.credentials import AzureKeyCredential
 		from azure.ai.formrecognizer import DocumentAnalysisClient
 		endpoint = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
@@ -92,7 +92,7 @@ def read_field_from_cim(my_bar):
 		my_bar.progress(int((23) / 30 * 100), text="Elaborazione 57")
 		st.session_state["box-57-clean"] = prompt_for_box("57", "Nel testo ci sono informazioni di trasporti, con indirizzi e percorsi. Estrai tutte le informazioni che riesci a leggere in modo ordinato. ", st.session_state["box-49-clean"], llm)
 		my_bar.progress(int((24) / 30 * 100), text="Elaborazione 62 1")
-		st.session_state["box-62-paese-clean"] = prompt_for_box("62", "Estrai dal testo un codice numerico che rappresenta un codice della etichetta della CIM. Se nel codice ci sono dei '-' non considerarli.", st.session_state["box-62-paese"], llm)
+		st.session_state["box-62-paese-clean"] = prompt_for_box("62", "Estrai dal testo un codice numerico di due cifre", st.session_state["box-62-paese"], llm)
 		my_bar.progress(int((25) / 30 * 100), text="Elaborazione 62 2")
 		st.session_state["box-62-stazione-clean"] = prompt_for_box("62", "Estrai dal testo un codice numerico che rappresenta un codice della etichetta della CIM. Se nel codice ci sono dei '-' non considerarli.", st.session_state["box-62-stazione"], llm)
 		my_bar.progress(int((26) / 30 * 100), text="Elaborazione 62 3")
@@ -103,15 +103,6 @@ def read_field_from_cim(my_bar):
 		st.session_state["box-62-luogo-clean"] = prompt_for_box("29", "Estrai dal testo le sole informazioni del luogo.", st.session_state["box-29"], llm)
 		my_bar.progress(int((29) / 30 * 100), text="Elaborazione 62 (29)")
 		st.session_state["box-62-data-clean"] = prompt_for_box("29", "Estrai dal testo le sole informazioni della data. Il risultato deve essere in questo formato: YYYYMMDD. Ignora eventualmente l'orario", st.session_state["box-29"], llm)
-
-		st.session_state["box-wagon-list-clean"] = ""
-
-		st.session_state["box-62-paese-clean"] = "80"
-		st.session_state["box-62-stazione-clean"] = "63702"
-		st.session_state["box-62-impresa-clean"] = "2180"
-		st.session_state["box-62-spedizione-clean"] = "67864"
-		st.session_state["box-62-luogo-clean"] = "LUDWIGSHAFEN BASF UBF"
-		st.session_state["box-62-data-clean"] = "20231107"
 	return
 
 def prompt_for_box(numero_casella: str, descrizione_estrazione: str, box: str, llm: AzureChatOpenAI):
@@ -181,21 +172,9 @@ I dati estratti dalle CIM vengono passati al **servizio GPT4 per una pulizia ult
 - **Azure Document Intelligence**: Servizio di AI per l'analisi di documenti, utilizzato un Custom Extraction Model per la CIM
 """)
 		# Recupero Allegati e presentazione
-		folder = os.path.join('ldv', st.session_state["ldv"])
-		jpgs = []
-		print(folder)
-
-		for file in os.listdir(folder):
-			print(file)
-			if file.endswith(".jpg"):
-				file_completo = os.path.join(folder, file)
-				print(file_completo)
-				jpgs.append(file_completo)
-
-		expander_allegati = st.expander("Allegati", expanded=False)
-		for jpg in jpgs:
-			expander_allegati.image(jpg, width=500)
-		# -------
+		file_cim = os.path.join('ldv', st.session_state['ldv'], 'cim.jpg')
+		st.write("cim file: {}".format(file_cim))	
+		st.image(file_cim, use_column_width=True)
   
 		# Recupero Dati Email
 		file_msg = os.path.join('ldv', st.session_state['ldv'], 'msg_data.txt')
@@ -223,206 +202,211 @@ I dati estratti dalle CIM vengono passati al **servizio GPT4 per una pulizia ult
 		read_field_from_cim(my_bar)
   
 		st.info("Dati estratti dalla CIM")
-
-		colbox1_1, colbox1_2 = st.columns([1,1])	
-		with colbox1_1:
-			st.text_area("(1) Mittente", value=st.session_state["box-01"], disabled=True, height=150, key="box1_1")
-		with colbox1_2:
-			st.text_area("(1) Mittente (Clean)", value=st.session_state["box-01-clean"], height=150, key="box1_2")
-		
-		colbox2_1, colbox2_2 = st.columns([1,1])
-		with colbox2_1:
-			st.text_area("(2) Mittente Codice 1", value=st.session_state["box-02"], disabled=True, height=100, key="box2_1")
-		with colbox2_2:
-			st.text_area("(2) Mittente Codice 1 (Clean)", value=st.session_state["box-02-clean"], height=100, key="box2_2")
-
-		colbox2_1, colbox2_2 = st.columns([1,1])
-		with colbox2_1:
-			st.text_area("(3) Mittente Codice 2", value=st.session_state["box-03"], disabled=True, height=100, key="box3_1")
-		with colbox2_2:
-			st.text_area("(3) Mittente Codice 2 (Clean)", value=st.session_state["box-03-clean"], height=100, key="box3_2")
-
-		colbox1_1, colbox1_2 = st.columns([1,1])	
-		with colbox1_1:
-			st.text_area("(4) Destinatario", value=st.session_state["box-04"], disabled=True, height=150, key="box4_1")
-		with colbox1_2:
-			st.text_area("(4) Destinatario (Clean)", value=st.session_state["box-04-clean"], height=150, key="box4_2")
-		
-		colbox2_1, colbox2_2 = st.columns([1,1])
-		with colbox2_1:
-			st.text_area("(5) Destinatario Codice 1", value=st.session_state["box-05"], disabled=True, height=100, key="box5_1")
-		with colbox2_2:
-			st.text_area("(5) Destinatario Codice 1 (Clean)", value=st.session_state["box-05-clean"], height=100, key="box5_2")
-
-		colbox2_1, colbox2_2 = st.columns([1,1])
-		with colbox2_1:
-			st.text_area("(6) Destinatario Codice 2", value=st.session_state["box-06"], disabled=True, height=100, key="box6_1")
-		with colbox2_2:
-			st.text_area("(6) Destinatario Codice 2 (Clean)", value=st.session_state["box-06-clean"], height=100, key="box6_2")
-
-		colbox10_1, colbox10_2= st.columns([1,1])
-		with colbox10_1:
-			st.text_area("(10) Luogo di Consegna", value=st.session_state["box-10"], disabled=True, height=100, key="box10_1")
-		with colbox10_2:
-			st.text_area("(10) Luogo di Consegna (Clean)", value=st.session_state["box-10-clean"], height=100, key="box10_2")
-
-		colbox11_1, colbox11_2 = st.columns([1,1])
-		with colbox11_1:
-			st.text_area("(11) Codice Luogo Consegna 1", value=st.session_state["box-11"], disabled=True, height=100, key="box11_1")
-		with colbox11_2:
-			st.text_area("(11) Codice Luogo Consegna 1 (Clean)", value=st.session_state["box-11-clean"], height=100, key="box11_2")
   
-		colbox12_1, colbox12_2 = st.columns([1,1])
-		with colbox11_1:
-			st.text_area("(12) Codice Luogo Consegna 2", value=st.session_state["box-12"], disabled=True, height=100, key="box12_1")
-		with colbox11_2:
-			st.text_area("(12) Codice Luogo Consegna 2 (Clean)", value=st.session_state["box-12-clean"], height=100, key="box12_2")
+		with st.form("my_form"):
 
-		colbox13_1, colbox13_2 = st.columns([1,1])
-		with colbox13_1:
-			st.text_area("(13) Condizioni commerciali", value=st.session_state["box-13"], disabled=True, height=100, key="box13_1")
-		with colbox13_2:
-			st.text_area("(13) Condizioni commerciali (Clean)", value=st.session_state["box-13-clean"], height=100, key="box13_2", )
+			colbox1_1, colbox1_2 = st.columns([1,1])	
+			with colbox1_1:
+				st.text_area("(1) Mittente", value=st.session_state["box-01"], disabled=True, height=150, key="box1_1")
+			with colbox1_2:
+				st.text_area("(1) Mittente (Clean)", value=st.session_state["box-01-clean"], height=150, key="box1_2")
+			
+			colbox2_1, colbox2_2 = st.columns([1,1])
+			with colbox2_1:
+				st.text_area("(2) Mittente Codice 1", value=st.session_state["box-02"], disabled=True, height=100, key="box2_1")
+			with colbox2_2:
+				st.text_area("(2) Mittente Codice 1 (Clean)", value=st.session_state["box-02-clean"], height=100, key="box2_2")
 
-		colbox14_1, colbox14_2= st.columns([1,1])
-		with colbox14_1:
-			st.text_area("(14) Codice Contratto", value=st.session_state["box-14"], disabled=True, height=100, key="box14_1")
-		with colbox14_2:
-			st.text_area("(14) Codice Contratto (Clean)", value=st.session_state["box-14-clean"], height=100, key="box14_2")
+			colbox2_1, colbox2_2 = st.columns([1,1])
+			with colbox2_1:
+				st.text_area("(3) Mittente Codice 2", value=st.session_state["box-03"], disabled=True, height=100, key="box3_1")
+			with colbox2_2:
+				st.text_area("(3) Mittente Codice 2 (Clean)", value=st.session_state["box-03-clean"], height=100, key="box3_2")
 
-		colbox16_1, colbox16_2= st.columns([1,1])
-		with colbox16_1:
-			st.text_area("(16) Origine", value=st.session_state["box-16"], disabled=True, height=100, key="box16_1")
-		with colbox16_2:
-			st.text_area("(16) Origine (Clean)", value=st.session_state["box-16-clean"], height=100, key="box16_2")
+			colbox1_1, colbox1_2 = st.columns([1,1])	
+			with colbox1_1:
+				st.text_area("(4) Destinatario", value=st.session_state["box-04"], disabled=True, height=150, key="box4_1")
+			with colbox1_2:
+				st.text_area("(4) Destinatario (Clean)", value=st.session_state["box-04-clean"], height=150, key="box4_2")
+			
+			colbox2_1, colbox2_2 = st.columns([1,1])
+			with colbox2_1:
+				st.text_area("(5) Destinatario Codice 1", value=st.session_state["box-05"], disabled=True, height=100, key="box5_1")
+			with colbox2_2:
+				st.text_area("(5) Destinatario Codice 1 (Clean)", value=st.session_state["box-05-clean"], height=100, key="box5_2")
+
+			colbox2_1, colbox2_2 = st.columns([1,1])
+			with colbox2_1:
+				st.text_area("(6) Destinatario Codice 2", value=st.session_state["box-06"], disabled=True, height=100, key="box6_1")
+			with colbox2_2:
+				st.text_area("(6) Destinatario Codice 2 (Clean)", value=st.session_state["box-06-clean"], height=100, key="box6_2")
+
+			colbox10_1, colbox10_2= st.columns([1,1])
+			with colbox10_1:
+				st.text_area("(10) Luogo di Consegna", value=st.session_state["box-10"], disabled=True, height=100, key="box10_1")
+			with colbox10_2:
+				st.text_area("(10) Luogo di Consegna (Clean)", value=st.session_state["box-10-clean"], height=100, key="box10_2")
+
+			colbox11_1, colbox11_2 = st.columns([1,1])
+			with colbox11_1:
+				st.text_area("(11) Codice Luogo Consegna 1", value=st.session_state["box-11"], disabled=True, height=100, key="box11_1")
+			with colbox11_2:
+				st.text_area("(11) Codice Luogo Consegna 1 (Clean)", value=st.session_state["box-11-clean"], height=100, key="box11_2")
+	
+			colbox12_1, colbox12_2 = st.columns([1,1])
+			with colbox11_1:
+				st.text_area("(12) Codice Luogo Consegna 2", value=st.session_state["box-12"], disabled=True, height=100, key="box12_1")
+			with colbox11_2:
+				st.text_area("(12) Codice Luogo Consegna 2 (Clean)", value=st.session_state["box-12-clean"], height=100, key="box12_2")
+
+			colbox13_1, colbox13_2 = st.columns([1,1])
+			with colbox13_1:
+				st.text_area("(13) Condizioni commerciali", value=st.session_state["box-13"], disabled=True, height=100, key="box13_1")
+			with colbox13_2:
+				st.text_area("(13) Condizioni commerciali (Clean)", value=st.session_state["box-13-clean"], height=100, key="box13_2", )
+
+			colbox14_1, colbox14_2= st.columns([1,1])
+			with colbox14_1:
+				st.text_area("(14) Codice Contratto", value=st.session_state["box-14"], disabled=True, height=100, key="box14_1")
+			with colbox14_2:
+				st.text_area("(14) Codice Contratto (Clean)", value=st.session_state["box-14-clean"], height=100, key="box14_2")
+
+			colbox16_1, colbox16_2= st.columns([1,1])
+			with colbox16_1:
+				st.text_area("(16) Origine", value=st.session_state["box-16"], disabled=True, height=100, key="box16_1")
+			with colbox16_2:
+				st.text_area("(16) Origine (Clean)", value=st.session_state["box-16-clean"], height=100, key="box16_2")
+	
+			colbox16_1_orario, colbox16_2_orario= st.columns([1,1])
+			with colbox16_1_orario:
+				st.text_area("(16) Origine Data", value=st.session_state["box-14"], disabled=True, height=100, key="box16_orario_1")
+			with colbox16_2_orario:
+				st.text_area("(16) Origine Data (Clean)", value=st.session_state["box-14-clean"], height=100, key="box16_orario_2")
+
+			colbox17_1, colbox17_2= st.columns([1,1])
+			with colbox17_1:
+				st.text_area("(17) Origine Codice", value=st.session_state["box-17"], disabled=True, height=100, key="box17_1")
+			with colbox17_2:
+				st.text_area("(17) Origine Codice (Clean)", value=st.session_state["box-17-clean"], height=100, key="box17_2")
+
+			colbox18_1, colbox18_2 = st.columns([1,1])
+			with colbox18_1:
+				st.text_area("(18) Matricola carro distinta", value=st.session_state["box-18"], disabled=True, height=100, key="box18_1")
+			with colbox18_2:
+				st.text_area("(18) Matricola carro distinta (Clean)", value=st.session_state["box-18-clean"], height=100, key="box18_2")
+
+			colbox19_1_1, colbox19_1_2 = st.columns([1,1])
+			with colbox19_1_1:
+				st.text_area("(19) Matricola carro percorso", value=st.session_state["box-19-1"], disabled=True, height=100, key="box19_1_1")
+			with colbox19_1_2:
+				st.text_area("(19) Matricola carro percorso (Clean)", value=st.session_state["box-19-1-clean"], height=100, key="box19_1_2")
+	
+			colbox19_2_1, colbox19_2_2 = st.columns([1,1])
+			with colbox19_2_1:
+				st.text_area("(19) Matricola carro da", value=st.session_state["box-19-2"], disabled=True, height=100, key="box19_2_1")
+			with colbox19_2_2:
+				st.text_area("(19) Matricola carro da (Clean)", value=st.session_state["box-19-2-clean"], height=100, key="box19_2_2")
+	
+			colbox24_1, colbox24_2 = st.columns([1,1])
+			with colbox24_1:
+				st.text_area("(24) Codice NHM", value=st.session_state["box-24"], disabled=True, height=100, key="box24_1")
+			with colbox24_2:
+				st.text_area("(24) Codice NHM (Clean)", value=st.session_state["box-24-clean"], height=100, key="box24_2")
+
+			colbox25_1, colbox25_2 = st.columns([1,1])
+			with colbox25_1:
+				st.text_area("(25) Massa", value=st.session_state["box-25"], disabled=True, height=100, key="box25_1")
+			with colbox25_2:
+				st.text_area("(25) Massa (Clean)", value=st.session_state["box-25-clean"], height=100, key="box25_2")
+
+			colbox49_1, colbox49_2 = st.columns([1,1])
+			with colbox49_1:
+				st.text_area("(49) Codice Affrancazione", value=st.session_state["box-49"], disabled=True, height=100, key="box49_1")
+			with colbox49_2:
+				st.text_area("(49) Codice Affrancazione (Clean)", value=st.session_state["box-49-clean"], height=100, key="box49_2")
+
+			colbox57_1, colbox57_2 = st.columns([1,1])
+			with colbox57_1:
+				st.text_area("(57) Altro trasporti", value=st.session_state["box-57"], disabled=True, height=100, key="box57_1")
+			with colbox57_2:
+				st.text_area("(57) Altro trasporti (Clean)", value=st.session_state["box-57-clean"], height=100, key="box57_2")
+
+			st.info("(62) Identificazione Spedizione")
+	
+			col_identificazione1, col_identificazione2 = st.columns([1,1])
+			with col_identificazione1:
+				st.text_input("Codice Paese", key="ident_paese_1", value=st.session_state["box-62-paese"], disabled=True)
+				st.text_input("Codice Stazione", key="ident_stazione_1", value=st.session_state["box-62-stazione"], disabled=True)
+				st.text_input("Codice Impresa", key="ident_impresa_1", value=st.session_state["box-62-impresa"], disabled=True)
+				st.text_input("Codice Spedizione", key="ident_spedizione_1", value=st.session_state["box-62-spedizione"], disabled=True)
+				st.text_input("Luogo", key="box-29", value=st.session_state["box-29"], disabled=True)
+			
+			with col_identificazione2:
+				st.text_input("Codice Paese", key="ident_paese_2", value=st.session_state["box-62-paese-clean"], disabled=False)
+				st.text_input("Codice Stazione", key="ident_stazione_2", value=st.session_state["box-62-stazione-clean"], disabled=False)
+				st.text_input("Codice Impresa", key="ident_impresa_2", value=st.session_state["box-62-impresa-clean"], disabled=False)
+				st.text_input("Codice Spedizione", key="ident_spedizione_2", value=st.session_state["box-62-spedizione-clean"], disabled=False)
+				st.text_input("Luogo", key="ident_luogo_2", value=st.session_state["box-62-luogo-clean"], disabled=False)
+				st.text_input("Data", key="ident_data_2", value=st.session_state["box-62-data-clean"], disabled=False)
+			# -------
+
+			submitted = st.form_submit_button("Conferma valori")
   
-		colbox16_1_orario, colbox16_2_orario= st.columns([1,1])
-		with colbox16_1_orario:
-			st.text_area("(16) Origine Data", value=st.session_state["box-14"], disabled=True, height=100, key="box16_orario_1")
-		with colbox16_2_orario:
-			st.text_area("(16) Orogine Data (Clean)", value=st.session_state["box-14-clean"], height=100, key="box16_orario_2")
+			if submitted:
+				st.session_state["box-01-clean"] = st.session_state.box1_2
+				st.session_state["box-02-clean"] = st.session_state.box2_2
+				st.session_state["box-03-clean"] = st.session_state.box3_2	
+				st.session_state["box-04-clean"] = st.session_state.box4_2
+				st.session_state["box-05-clean"] = st.session_state.box5_2
+				st.session_state["box-06-clean"] = st.session_state.box6_2
+				st.session_state["box-10-clean"] = st.session_state.box10_2
+				st.session_state["box-11-clean"] = st.session_state.box11_2
+				st.session_state["box-12-clean"] = st.session_state.box12_2
+				st.session_state["box-13-clean"] = st.session_state.box13_2
+				st.session_state["box-14-clean"] = st.session_state.box14_2
+				st.session_state["box-16-clean"] = st.session_state.box16_2
+				st.session_state["box-16-orario-clean"] = st.session_state.box16_orario_2
+				st.session_state["box-17-clean"] = st.session_state.box17_2
+				st.session_state["box-18-clean"] = st.session_state.box18_2
+				st.session_state["box-19-1-clean"] = st.session_state.box19_1_2
+				st.session_state["box-19-2-clean"] = st.session_state.box19_2_2
+				st.session_state["box-24-clean"] = st.session_state.box24_2
+				st.session_state["box-25-clean"] = st.session_state.box25_2
+				st.session_state["box-49-clean"] = st.session_state.box49_2
+				st.session_state["box-57-clean"] = st.session_state.box57_2
+				st.session_state["box-62-paese-clean"] = st.session_state.ident_paese_2
+				st.session_state["box-62-stazione-clean"] = st.session_state.ident_stazione_2
+				st.session_state["box-62-impresa-clean"] = st.session_state.ident_impresa_2
+				st.session_state["box-62-spedizione-clean"] = st.session_state.ident_spedizione_2
+				st.session_state["box-62-luogo-clean"] = st.session_state.ident_luogo_2
+				st.session_state["box-62-data-clean"] = st.session_state.ident_data_2
+				# non c'è bisogno del codice 29, è stato scomposto in 62 luodo e 62 data
 
-		colbox17_1, colbox17_2= st.columns([1,1])
-		with colbox17_1:
-			st.text_area("(17) Origine Codice", value=st.session_state["box-17"], disabled=True, height=100, key="box17_1")
-		with colbox17_2:
-			st.text_area("(17) Origine Codice (Clean)", value=st.session_state["box-17-clean"], height=100, key="box17_2")
+				st.session_state["box-01-orfeus"] = st.session_state.box1_2
+				st.session_state["box-02-orfeus"] = st.session_state.box2_2
+				st.session_state["box-03-orfeus"] = st.session_state.box3_2	
+				st.session_state["box-04-orfeus"] = st.session_state.box4_2
+				st.session_state["box-05-orfeus"] = st.session_state.box5_2
+				st.session_state["box-06-orfeus"] = st.session_state.box6_2
+				st.session_state["box-10-orfeus"] = st.session_state.box10_2
+				st.session_state["box-11-orfeus"] = st.session_state.box11_2
+				st.session_state["box-12-orfeus"] = st.session_state.box12_2
+				st.session_state["box-13-orfeus"] = st.session_state.box13_2
+				st.session_state["box-14-orfeus"] = st.session_state.box14_2
+				st.session_state["box-16-orfeus"] = st.session_state.box16_2
+				st.session_state["box-16-orario-orfeus"] = st.session_state.box16_orario_2
+				st.session_state["box-17-orfeus"] = st.session_state.box17_2
+				st.session_state["box-18-orfeus"] = st.session_state.box18_2
+				st.session_state["box-19-1-orfeus"] = st.session_state.box19_1_2
+				st.session_state["box-19-2-orfeus"] = st.session_state.box19_2_2
+				st.session_state["box-24-orfeus"] = st.session_state.box24_2
+				st.session_state["box-25-orfeus"] = st.session_state.box25_2
+				st.session_state["box-49-orfeus"] = st.session_state.box49_2
+				st.session_state["box-57-orfeus"] = st.session_state.box57_2
+				# non c'è bisogno di dati di etichetta
+	
+				st.toast("Valori confermati. E' possibile procedere con la fase successiva")
 
-		colbox18_1, colbox18_2 = st.columns([1,1])
-		with colbox18_1:
-			st.text_area("(18) Matricola carro distinta", value=st.session_state["box-18"], disabled=True, height=100, key="box18_1")
-		with colbox18_2:
-			st.text_area("(18) Matricola carro distinta (Clean)", value=st.session_state["box-18-clean"], height=100, key="box18_2")
-
-		colbox19_1_1, colbox19_1_2 = st.columns([1,1])
-		with colbox19_1_1:
-			st.text_area("(19) Matricola carro percorso", value=st.session_state["box-19-1"], disabled=True, height=100, key="box19_1_1")
-		with colbox19_1_2:
-			st.text_area("(19) Matricola carro percorso (Clean)", value=st.session_state["box-19-1-clean"], height=100, key="box19_1_2")
-  
-		colbox19_2_1, colbox19_2_2 = st.columns([1,1])
-		with colbox19_2_1:
-			st.text_area("(19) Matricola carro da", value=st.session_state["box-19-2"], disabled=True, height=100, key="box19_2_1")
-		with colbox19_2_2:
-			st.text_area("(19) Matricola carro da (Clean)", value=st.session_state["box-19-2-clean"], height=100, key="box19_2_2")
-  
-		colbox24_1, colbox24_2 = st.columns([1,1])
-		with colbox24_1:
-			st.text_area("(24) Codice NHM", value=st.session_state["box-24"], disabled=True, height=100, key="box24_1")
-		with colbox24_2:
-			st.text_area("(24) Codice NHM (Clean)", value=st.session_state["box-24-clean"], height=100, key="box24_2")
-
-		colbox25_1, colbox25_2 = st.columns([1,1])
-		with colbox25_1:
-			st.text_area("(25) Massa", value=st.session_state["box-25"], disabled=True, height=100, key="box25_1")
-		with colbox25_2:
-			st.text_area("(25) Massa (Clean)", value=st.session_state["box-25-clean"], height=100, key="box25_2")
-
-		colbox49_1, colbox49_2 = st.columns([1,1])
-		with colbox49_1:
-			st.text_area("(49) Codice Affrancazione", value=st.session_state["box-49"], disabled=True, height=100, key="box49_1")
-		with colbox49_2:
-			st.text_area("(49) Codice Affrancazione (Clean)", value=st.session_state["box-49-clean"], height=100, key="box49_2")
-
-		colbox57_1, colbox57_2 = st.columns([1,1])
-		with colbox57_1:
-			st.text_area("(57) Altro trasporti", value=st.session_state["box-57"], disabled=True, height=100, key="box57_1")
-		with colbox57_2:
-			st.text_area("(57) Altro trasporti (Clean)", value=st.session_state["box-57-clean"], height=100, key="box57_2")
-
-		st.info("(62) Identificazione Spedizione")
-  
-		col_identificazione1, col_identificazione2 = st.columns([1,1])
-		with col_identificazione1:
-			st.text_input("Codice Paese", key="ident_paese_1", value=st.session_state["box-62-paese"], disabled=True)
-			st.text_input("Codice Stazione", key="ident_stazione_1", value=st.session_state["box-62-stazione"], disabled=True)
-			st.text_input("Codice Impresa", key="ident_impresa_1", value=st.session_state["box-62-impresa"], disabled=True)
-			st.text_input("Codice Spedizione", key="ident_spedizione_1", value=st.session_state["box-62-spedizione"], disabled=True)
-			st.text_input("Luogo", key="ident_luogo_1", value=st.session_state["box-62-luogo"], disabled=True)
-			st.text_input("Data", key="ident_data_1", value=st.session_state["box-62-data"], disabled=True)
-		
-		with col_identificazione2:
-			st.text_input("Codice Paese", key="ident_paese_2", value=st.session_state["box-62-paese-clean"], disabled=False)
-			st.text_input("Codice Stazione", key="ident_stazione_2", value=st.session_state["box-62-stazione-clean"], disabled=False)
-			st.text_input("Codice Impresa", key="ident_impresa_2", value=st.session_state["box-62-impresa-clean"], disabled=False)
-			st.text_input("Codice Spedizione", key="ident_spedizione_2", value=st.session_state["box-62-spedizione-clean"], disabled=False)
-			st.text_input("Luogo", key="ident_luogo_2", value=st.session_state["box-62-luogo-clean"], disabled=False)
-			st.text_input("Data", key="ident_data_2", value=st.session_state["box-62-data-clean"], disabled=False)
-		# -------
-  
-		if st.button("Conferma i valori"):
-			st.session_state["box-01-clean"] = st.session_state.box1_2
-			st.session_state["box-02-clean"] = st.session_state.box2_2
-			st.session_state["box-03-clean"] = st.session_state.box3_2	
-			st.session_state["box-04-clean"] = st.session_state.box4_2
-			st.session_state["box-05-clean"] = st.session_state.box5_2
-			st.session_state["box-06-clean"] = st.session_state.box6_2
-			st.session_state["box-10-clean"] = st.session_state.box10_2
-			st.session_state["box-11-clean"] = st.session_state.box11_2
-			st.session_state["box-12-clean"] = st.session_state.box12_2
-			st.session_state["box-13-clean"] = st.session_state.box13_2
-			st.session_state["box-14-clean"] = st.session_state.box14_2
-			st.session_state["box-16-clean"] = st.session_state.box16_2
-			st.session_state["box-16-orario-clean"] = st.session_state.box16_orario_2
-			st.session_state["box-17-clean"] = st.session_state.box17_2
-			st.session_state["box-18-clean"] = st.session_state.box18_2
-			st.session_state["box-19-1-clean"] = st.session_state.box19_1_2
-			st.session_state["box-19-2-clean"] = st.session_state.box19_2_2
-			st.session_state["box-24-clean"] = st.session_state.box24_2
-			st.session_state["box-25-clean"] = st.session_state.box25_2
-			st.session_state["box-49-clean"] = st.session_state.box49_2
-			st.session_state["box-57-clean"] = st.session_state.box57_2
-			st.session_state["box-62-paese-clean"] = st.session_state.ident_paese_2
-			st.session_state["box-62-stazione-clean"] = st.session_state.ident_stazione_2
-			st.session_state["box-62-impresa-clean"] = st.session_state.ident_impresa_2
-			st.session_state["box-62-spedizione-clean"] = st.session_state.ident_spedizione_2
-			st.session_state["box-62-luogo-clean"] = st.session_state.ident_luogo_2
-			st.session_state["box-62-data-clean"] = st.session_state.ident_data_2
-
-			st.session_state["box-01-orfeus"] = st.session_state.box1_2
-			st.session_state["box-02-orfeus"] = st.session_state.box2_2
-			st.session_state["box-03-orfeus"] = st.session_state.box3_2	
-			st.session_state["box-04-orfeus"] = st.session_state.box4_2
-			st.session_state["box-05-orfeus"] = st.session_state.box5_2
-			st.session_state["box-06-orfeus"] = st.session_state.box6_2
-			st.session_state["box-10-orfeus"] = st.session_state.box10_2
-			st.session_state["box-11-orfeus"] = st.session_state.box11_2
-			st.session_state["box-12-orfeus"] = st.session_state.box12_2
-			st.session_state["box-13-orfeus"] = st.session_state.box13_2
-			st.session_state["box-14-orfeus"] = st.session_state.box14_2
-			st.session_state["box-16-orfeus"] = st.session_state.box16_2
-			st.session_state["box-16-orario-orfeus"] = st.session_state.box16_orario_2
-			st.session_state["box-17-orfeus"] = st.session_state.box17_2
-			st.session_state["box-18-orfeus"] = st.session_state.box18_2
-			st.session_state["box-19-1-orfeus"] = st.session_state.box19_1_2
-			st.session_state["box-19-2-orfeus"] = st.session_state.box19_2_2
-			st.session_state["box-24-orfeus"] = st.session_state.box24_2
-			st.session_state["box-25-orfeus"] = st.session_state.box25_2
-			st.session_state["box-49-orfeus"] = st.session_state.box49_2
-			st.session_state["box-57-orfeus"] = st.session_state.box57_2
-   
-			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
-   
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
 	elif st.session_state["authentication_status"] is None:

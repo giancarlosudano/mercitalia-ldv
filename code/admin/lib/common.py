@@ -29,9 +29,6 @@ def clean_session():
     st.session_state["box-62-stazione"] = ""
     st.session_state["box-62-impresa"] = ""
     st.session_state["box-62-spedizione"] = ""
-    st.session_state["box-62-luogo"] = ""
-    st.session_state["box-62-data"] = ""
-    st.session_state["box-wagon-list"] = ""
     
     st.session_state["box-01-clean"] = ""
     st.session_state["box-02-clean"] = ""
@@ -61,7 +58,6 @@ def clean_session():
     st.session_state["box-62-spedizione-clean"] = ""
     st.session_state["box-62-luogo-clean"] = ""
     st.session_state["box-62-data-clean"] = ""
-    st.session_state["box-wagon-list-clean"] = ""
     
     st.session_state["box-01-orfeus"] = ""
     st.session_state["box-02-orfeus"] = ""
@@ -91,7 +87,6 @@ def clean_session():
     st.session_state["box-62-spedizione-orfeus"] = ""
     st.session_state["box-62-luogo-orfeus"] = ""
     st.session_state["box-62-data-orfeus"] = ""
-    st.session_state["box-wagon-list-orfeus"] = ""
     
     st.session_state["codice-mittente-scelto"] = ""
     st.session_state["codice-destinatario-scelto"] = ""
