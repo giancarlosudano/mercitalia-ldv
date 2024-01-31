@@ -20,6 +20,8 @@ import re
 import lib.common as common
 
 def read_field_from_cim(folder):
+	exp = st.expander("Mail : " + folder)
+	
 	from azure.core.credentials import AzureKeyCredential
 	from azure.ai.formrecognizer import DocumentAnalysisClient
 	endpoint = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
@@ -29,7 +31,8 @@ def read_field_from_cim(folder):
 	document_analysis_client = DocumentAnalysisClient(endpoint=endpoint, credential=AzureKeyCredential(key))
 
 	common.clean_session()
-
+	exp.image(os.path.join('ldv', folder, "cim.jpg"), use_column_width=True)
+ 
 	with open(os.path.join('ldv', folder, "cim.jpg"),'rb') as f:
 		poller = document_analysis_client.begin_analyze_document(model_id, document=f)
 	result = poller.result()
@@ -48,8 +51,8 @@ def read_field_from_cim(folder):
 		model_name=os.getenv("AZURE_OPENAI_MODEL_NAME"),
 		streaming=False
 	)
-	st.write("Estrazione mail: " + folder)
-	my_bar = st.progress(0, text="Elaborazione dati con OCR e GPT")
+
+	my_bar = exp.progress(0, text="Elaborazione dati con OCR e GPT")
 
 	my_bar.progress(int((1) / 30 * 100), text="Elaborazione Mittente")
 	st.session_state["box-01-clean"] = prompt_for_box("1", "Estrai dal testo solo la ragione sociale del mittente della CIM", st.session_state["box-01"], llm)
@@ -201,12 +204,11 @@ def read_field_from_cim(folder):
 			except ValueError as e:
 				print(f"Errore nella conversione della data: {e} nel file {file_name}")
 
-			if file_name == "ECTD.20231106_232258_875.xml":
-				print("xml {0} e session {1} = {2}".format(uic_country_codes[0], st.session_state['box-62-paese-clean'], uic_country_codes[0] == st.session_state['box-62-paese-clean']))
-				print("xml {0} e session {1} = {2}".format(station_codes[0], st.session_state['box-62-stazione-clean'], station_codes[0] == st.session_state['box-62-stazione-clean']))
-				print("xml {0} e session {1} = {2}".format(carrier_codes[0], st.session_state['box-62-impresa-clean'], carrier_codes[0] == st.session_state['box-62-impresa-clean']))
-				print("xml {0} e session {1} = {2}".format(consignment_numbers[0], st.session_state['box-62-spedizione-clean'], consignment_numbers[0].startswith(st.session_state['box-62-spedizione-clean'])))
-				print("xml {0} e session {1} = {2}".format(data_ora_formattata, st.session_state['box-62-data-clean'], data_ora_formattata == st.session_state['box-62-data-clean']))
+			# exp.write("xml {0} e session {1} = {2}".format(uic_country_codes[0], st.session_state['box-62-paese-clean'], uic_country_codes[0] == st.session_state['box-62-paese-clean']))
+			# exp.write("xml {0} e session {1} = {2}".format(station_codes[0], st.session_state['box-62-stazione-clean'], station_codes[0] == st.session_state['box-62-stazione-clean']))
+			# exp.write("xml {0} e session {1} = {2}".format(carrier_codes[0], st.session_state['box-62-impresa-clean'], carrier_codes[0] == st.session_state['box-62-impresa-clean']))
+			# exp.write("xml {0} e session {1} = {2}".format(consignment_numbers[0], st.session_state['box-62-spedizione-clean'], consignment_numbers[0].startswith(st.session_state['box-62-spedizione-clean'])))
+			# exp.write("xml {0} e session {1} = {2}".format(data_ora_formattata, st.session_state['box-62-data-clean'], data_ora_formattata == st.session_state['box-62-data-clean']))
 
 			# Confronto
 			if st.session_state['box-62-paese-clean'] == uic_country_codes[0] \
@@ -215,6 +217,7 @@ def read_field_from_cim(folder):
 			 	and consignment_numbers[0].startswith(st.session_state['box-62-spedizione-clean']) \
 				and st.session_state['box-62-data-clean'] == data_ora_formattata:
 				file_found = file_name
+				exp.write("File trovato: {0}".format(file_name))
 
 	if file_found:
 	
@@ -312,17 +315,17 @@ def read_field_from_cim(folder):
 		['Box 29', st.session_state['box-29'], st.session_state['box-29-clean'], st.session_state['box-29-orfeus']],
 		['Box 49', st.session_state['box-49'], st.session_state['box-49-clean'], st.session_state['box-49-orfeus']],
 		['Box 57', st.session_state['box-57'], st.session_state['box-57-clean'], st.session_state['box-57-orfeus']],
-		['Box 62-paese', st.session_state['box-62-paese-clean'], st.session_state['box-01-clean'], ""],
-		['Box 62-stazione', st.session_state['box-62-stazione-clean'], st.session_state['box-01-clean'], ""],
-		['Box 62-impresa', st.session_state['box-62-impresa-clean'], st.session_state['box-01-clean'], ""],
-		['Box 62-spedizione', st.session_state['box-62-spedizione-clean'], st.session_state['box-01-clean'], ""],
+		['Box 62-paese', st.session_state['box-62-paese'], st.session_state['box-62-paese-clean'], ""],
+		['Box 62-stazione', st.session_state['box-62-stazione'], st.session_state['box-62-stazione-clean'], ""],
+		['Box 62-impresa', st.session_state['box-62-impresa'], st.session_state['box-62-impresa-clean'], ""],
+		['Box 62-spedizione', st.session_state['box-62-spedizione'], st.session_state['box-62-spedizione-clean'], ""],
 		['29 (luogo)', "", st.session_state['box-62-luogo-clean'], ""],
 		['29 (data)', "", st.session_state['box-62-data-clean'], ""]
   	]
 	
 	# Crea il DataFrame
 	df = pd.DataFrame(dati, columns=['Box', 'Estrazione OCR', 'Analisi GPT4', 'Orfeus se esistente'])
- 
+	exp.dataframe(df)
 	return df
 
 def prompt_for_box(numero_casella: str, descrizione_estrazione: str, box: str, llm: AzureChatOpenAI):
@@ -382,19 +385,16 @@ try:
 		from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, ColumnsAutoSizeMode
   
 		ldv_folders = []
-		dataframes = []
 		for root, dirs, files in os.walk(os.path.join('ldv')):
 			for name in dirs:
-				df = read_field_from_cim(name)
-				dataframes.append(df)
-				st.dataframe(df)
+				read_field_from_cim(name)
 		
-		# Create a Pandas Excel writer using XlsxWriter as the engine
-		with pd.ExcelWriter('ldv', 'output.xlsx', engine='xlsxwriter') as writer:
-			i = 0
-			for df in dataframes:
-				df.to_excel(writer, sheet_name=ldv_folders[i])
-			writer.save()
+		# # Create a Pandas Excel writer using XlsxWriter as the engine
+		# with pd.ExcelWriter('ldv', 'output.xlsx', engine='xlsxwriter') as writer:
+		# 	i = 0
+		# 	for df in dataframes:
+		# 		df.to_excel(writer, sheet_name=ldv_folders[i])
+		# 	writer.save()
 
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
