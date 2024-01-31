@@ -389,6 +389,7 @@ try:
 		for root, dirs, files in os.walk(os.path.join('ldv')):
 			for name in dirs:
 				df = read_field_from_cim(name)
+				dataframes.append(df)
 
 		# Create a Pandas Excel writer using XlsxWriter as the engine
 		current_datetime = datetime.datetime.now()
