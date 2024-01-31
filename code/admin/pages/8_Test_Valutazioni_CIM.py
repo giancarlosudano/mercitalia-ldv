@@ -385,16 +385,29 @@ try:
 		from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, ColumnsAutoSizeMode
   
 		ldv_folders = []
+		dataframes = []
 		for root, dirs, files in os.walk(os.path.join('ldv')):
 			for name in dirs:
-				read_field_from_cim(name)
-		
-		# # Create a Pandas Excel writer using XlsxWriter as the engine
-		# with pd.ExcelWriter('ldv', 'output.xlsx', engine='xlsxwriter') as writer:
-		# 	i = 0
-		# 	for df in dataframes:
-		# 		df.to_excel(writer, sheet_name=ldv_folders[i])
-		# 	writer.save()
+				df = read_field_from_cim(name)
+
+		# Create a Pandas Excel writer using XlsxWriter as the engine
+		current_datetime = datetime.datetime.now()
+		serialized_datetime = current_datetime.strftime("%Y%m%d%H%M%S")
+		output_filename = 'analisi_cim_{}.xlsx'.format(serialized_datetime)
+  
+		with pd.ExcelWriter(path=output_filename, engine='xlsxwriter') as writer:
+			i = 0
+			for df in dataframes:
+				df.to_excel(writer, sheet_name=ldv_folders[i])
+			writer.save()
+
+		with open(output_filename, "rb") as template_file:
+			template_byte = template_file.read()
+
+		st.download_button(label="Scarica il file Excel con analisi di tutte le CIM",
+						data=template_byte,
+						file_name=output_filename,
+						mime='application/octet-stream')
 
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
