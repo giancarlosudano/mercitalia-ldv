@@ -37,9 +37,29 @@ authenticator = stauth.Authenticate(
 
 name, authentication_status, username = authenticator.login(location='main')
 
-# if username == 'smith@mercitalia.com':
-#     st.session_state["authentication_status"] = True
-#     st.session_state["name"] = "John Smith"
+if username == 'smith@mercitalia.com':
+    st.session_state["authentication_status"] = True
+    st.session_state["name"] = "John Smith"
+
+# begin test
+from azure.core.credentials import AzureKeyCredential
+from azure.ai.formrecognizer import DocumentAnalysisClient
+
+endpoint = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
+key = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_KEY")
+
+document_analysis_client = DocumentAnalysisClient(
+    endpoint=endpoint, credential=AzureKeyCredential(key)
+)
+
+with open(os.path.join('ldv', '20231107 131436', "distinta-00.pdf"),'rb') as f:
+    poller = document_analysis_client.begin_analyze_document("prebuilt-layout", document=f)
+result = poller.result()
+
+
+
+#end test
+
 
 if username == '':
     st.session_state["authentication_status"] = True
