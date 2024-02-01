@@ -155,7 +155,7 @@ def read_field_from_cim(folder):
 	st.session_state["box-29-clean"] = prompt_for_box("29", "Interpreta le informazioni di luogo e data della CIM", st.session_state["box-29"], llm)
 
 	my_bar.progress(int((22) / 30 * 100), text="Elaborazione 49")
-	st.session_state["box-49-clean"] = prompt_for_box("49", "Estrai dal testo un codice numerico composto eventualmente da più parti. ", st.session_state["box-49"], llm)
+	st.session_state["box-49-clean"] = prompt_for_box("49", "Estrai dal testo un codice numerico di due cifre. ", st.session_state["box-49"], llm)
 
 	my_bar.progress(int((23) / 30 * 100), text="Elaborazione 57")
 	st.session_state["box-57-clean"] = prompt_for_box("57", "Nel testo ci sono informazioni di trasporti, con indirizzi e percorsi. Estrai tutte le informazioni che riesci a leggere in modo ordinato. ", st.session_state["box-57"], llm)
@@ -202,43 +202,56 @@ def read_field_from_cim(folder):
 			consignment_numbers = []
 			acceptance_dates = []
 			
-			# Iterate through the ECN nodes
+			# Iterate through the ECN nodes (paese)
 			for ecn in root.findall(".//ECN"):
 				uic_country_code_node = ecn.find(".//AcceptancePoint/Point/Country/UICCountryCode")
 				if uic_country_code_node is not None:
 					uic_country_codes.append(uic_country_code_node.text)
 
-			# Iterate through the ECN nodes
+			# Iterate through the ECN nodes (stazione 6 cifre)
 			for ecn in root.findall(".//ECN"):
 				station_code = ecn.find(".//AcceptancePoint/Station/Code")
 				if station_code is not None:
 					station_codes.append(station_code.text)
 
-			#Iterate through the ECN nodes
-			for ecn in root.findall(".//ECNs"):
-				sending_carrier_code = ecn.find(".//ECNHeader/SendingCarrier")
-				if sending_carrier_code is not None:
-					sending_carrier_codes.append(sending_carrier_code.text)
+			# #Iterate through the ECN nodes
+			# for ecn in root.findall(".//ECNs"):
+			# 	sending_carrier_code = ecn.find(".//ECNHeader/SendingCarrier")
+			# 	if sending_carrier_code is not None:
+			# 		sending_carrier_codes.append(sending_carrier_code.text)
 
-			# Iterate through the ECN nodes (2)
+			# Iterate through the ECN nodes (impresa 4 cifre)
 			for ecn in root.findall(".//ECN"):
 				carrier_code = ecn.find(".//AcceptancePoint/CarrierCode")
 				if carrier_codes is not None:
 					carrier_codes.append(carrier_code.text)
 
-			# Iterate through the ECN nodes
+			# Iterate through the ECN nodes (spedizione)
 			for ecn in root.findall(".//ECN"):
 				consignment_number = ecn.find(".//AcceptancePoint/ConsignmentNumber")
 				if consignment_numbers is not None:
 					consignment_numbers.append(consignment_number.text)
 
-			# Iterate through the ECN nodes
+			# Iterate through the ECN nodes (data)
 			for ecn in root.findall(".//ECN"):
 				acceptance_date = ecn.find(".//AcceptancePoint/AcceptanceDate")
 				if acceptance_date is not None:
 					acceptance_dates.append(acceptance_date.text)
 			
 			data_ora_originale = acceptance_dates[0]
+			
+			# ...
+
+			# Swap month and day in data_ora_originale
+			day = data_ora_originale[8:10]
+			month = data_ora_originale[5:7]
+			year = data_ora_originale[0:4]
+			data_ora_swapped = year + "-" + month + "-" + day
+
+			similarita = 0
+   
+			if similarita > 2:
+				similarita_text = "folder {0}, filename = {1}, similarità {2}, campi = {3}, data (orfeus) {4} swapped {5} e data session {6}".format(folder, file_name, similarita, similarita_fields, data_ora_originale, data_ora_swapped, st.session_state['box-62-data-clean'])
 
 			#similarità
 			similarita = 0
@@ -271,80 +284,77 @@ def read_field_from_cim(folder):
 			if st.session_state['box-62-paese-clean'] == uic_country_codes[0] \
 				and st.session_state['box-62-stazione-clean'] == station_codes[0] \
 				and st.session_state['box-62-impresa-clean'] == carrier_codes[0] \
-			 	and st.session_state['box-62-spedizione-clean'] == consignment_numbers[0] \
-				and data_ora_originale.startswith(st.session_state['box-62-data-clean']):
-				file_found = file_name
-				exp.write("File trovato: {0}".format(file_name))
+			 	and st.session_state['box-62-spedizione-clean'].startswith(consignment_numbers[0]) \
+				and	(data_ora_originale.startswith(st.session_state['box-62-data-clean']) or data_ora_swapped.startswith(st.session_state['box-62-data-clean'])) :
+				exp.write("File trovato: {0}".format(file_path))
 
-	if file_found:
-	
-		tree = ET.parse(file_path)
-		root = tree.getroot()
+				tree = ET.parse(file_path)
+				root = tree.getroot()
 
-		box_01_orfeus_values = []
-		box_03_orfeus_values = []
-		box_04_orfeus_values = []
-		box_05_orfeus_values = []
-		box_06_orfeus_values = []
-		box_10_orfeus_values = []
-		box_12_orfeus_values = []
-		box_14_orfeus_values = []
-		box_16_orfeus_values = []
-	
-		# Iterate through the ECN nodes
-		for ecn in root.findall(".//ECNs"):
-			node = ecn.find(".//ECN/Customers/Customer[@Type='CR']/Name")
-			if node is not None:
-				box_01_orfeus_values.append(node.text)
-				st.session_state["box-01-orfeus"] = box_01_orfeus_values[0]
+				box_01_orfeus_values = []
+				box_03_orfeus_values = []
+				box_04_orfeus_values = []
+				box_05_orfeus_values = []
+				box_06_orfeus_values = []
+				box_10_orfeus_values = []
+				box_12_orfeus_values = []
+				box_14_orfeus_values = []
+				box_16_orfeus_values = []
+			
+				# Iterate through the ECN nodes
+				for ecn in root.findall(".//ECNs"):
+					node = ecn.find(".//ECN/Customers/Customer[@Type='CR']/Name")
+					if node is not None:
+						box_01_orfeus_values.append(node.text)
+						st.session_state["box-01-orfeus"] = box_01_orfeus_values[0]
 
-		for ecn in root.findall(".//ECNs"):
-			node = ecn.find(".//ECN/Customers/Customer[@Type='CR']/CustomerCode")
-			if node is not None:
-				box_03_orfeus_values.append(node.text)
-				st.session_state["box-03-orfeus"] = box_03_orfeus_values[0]
+				for ecn in root.findall(".//ECNs"):
+					node = ecn.find(".//ECN/Customers/Customer[@Type='CR']/CustomerCode")
+					if node is not None:
+						box_03_orfeus_values.append(node.text)
+						st.session_state["box-03-orfeus"] = box_03_orfeus_values[0]
 
-		for ecn in root.findall(".//ECNs"):
-			node = ecn.find(".//ECN/Customers/Customer[@Type='CE']/Name")
-			if node is not None:
-				box_04_orfeus_values.append(node.text)
-				st.session_state["box-04-orfeus"] = box_04_orfeus_values[0]
+				for ecn in root.findall(".//ECNs"):
+					node = ecn.find(".//ECN/Customers/Customer[@Type='CE']/Name")
+					if node is not None:
+						box_04_orfeus_values.append(node.text)
+						st.session_state["box-04-orfeus"] = box_04_orfeus_values[0]
 
-		for ecn in root.findall(".//ECNs"):
-			node = ecn.find(".//ECN/Customers/Customer[@Type='CE']/CustomerCode")
-			if node is not None:
-				box_05_orfeus_values.append(node.text)
-				st.session_state["box-05-orfeus"] = box_05_orfeus_values[0]
+				for ecn in root.findall(".//ECNs"):
+					node = ecn.find(".//ECN/Customers/Customer[@Type='CE']/CustomerCode")
+					if node is not None:
+						box_05_orfeus_values.append(node.text)
+						st.session_state["box-05-orfeus"] = box_05_orfeus_values[0]
 
-		for ecn in root.findall(".//ECNs"):
-			node = ecn.find(".//ECN/Customers/Customer[@Type='FPCE']/CustomerCode")
-			if node is not None:
-				box_06_orfeus_values.append(node.text)
-				st.session_state["box-06-orfeus"] = box_06_orfeus_values[0]
+				for ecn in root.findall(".//ECNs"):
+					node = ecn.find(".//ECN/Customers/Customer[@Type='FPCE']/CustomerCode")
+					if node is not None:
+						box_06_orfeus_values.append(node.text)
+						st.session_state["box-06-orfeus"] = box_06_orfeus_values[0]
 
-		for ecn in root.findall(".//ECNs"):
-			node = ecn.find(".//ECN/DeliveryPoint/Point/Name")
-			if node is not None:
-				box_10_orfeus_values.append(node.text) 
-				st.session_state["box-10-orfeus"] = box_10_orfeus_values[0]
+				for ecn in root.findall(".//ECNs"):
+					node = ecn.find(".//ECN/DeliveryPoint/Point/Name")
+					if node is not None:
+						box_10_orfeus_values.append(node.text) 
+						st.session_state["box-10-orfeus"] = box_10_orfeus_values[0]
 
-		for ecn in root.findall(".//ECNs"):
-			node = ecn.find(".//ECN/DeliveryPoint/Point/Code")
-			if node is not None:
-				box_12_orfeus_values.append(node.text)
-				st.session_state["box-12-orfeus"] = box_12_orfeus_values[0]
+				for ecn in root.findall(".//ECNs"):
+					node = ecn.find(".//ECN/DeliveryPoint/Point/Code")
+					if node is not None:
+						box_12_orfeus_values.append(node.text)
+						st.session_state["box-12-orfeus"] = box_12_orfeus_values[0]
 
-		for ecn in root.findall(".//ECNs"):
-			node = ecn.find(".//ECN/Tariff/ContractNumber")
-			if node is not None:
-				box_14_orfeus_values.append(node.text)
-				st.session_state["box-14-orfeus"] = box_14_orfeus_values[0]
+				for ecn in root.findall(".//ECNs"):
+					node = ecn.find(".//ECN/Tariff/ContractNumber")
+					if node is not None:
+						box_14_orfeus_values.append(node.text)
+						st.session_state["box-14-orfeus"] = box_14_orfeus_values[0]
 
-		for ecn in root.findall(".//ECNs"):
-			node = ecn.find(".//ECN/AcceptancePoint/Point/Name")
-			if node is not None:
-				box_16_orfeus_values.append(node.text)
-				st.session_state["box-16-orfeus"] = box_16_orfeus_values[0]
+				for ecn in root.findall(".//ECNs"):
+					node = ecn.find(".//ECN/AcceptancePoint/Point/Name")
+					if node is not None:
+						box_16_orfeus_values.append(node.text)
+						st.session_state["box-16-orfeus"] = box_16_orfeus_values[0]
 
 	# create a dataframe
 	import pandas as pd
@@ -369,6 +379,7 @@ def read_field_from_cim(folder):
 		['Box 19-1', st.session_state['box-19-1'], st.session_state['box-19-1-clean'], st.session_state['box-19-1-orfeus']],
 		['Box 19-2', st.session_state['box-19-2'], st.session_state['box-19-1-clean'], st.session_state['box-19-1-orfeus']],
 		['Box 23', st.session_state['box-23'], st.session_state['box-23-clean'], st.session_state['box-23-orfeus']],
+  		['Box 24', st.session_state['box-24'], st.session_state['box-24-clean'], st.session_state['box-24-orfeus']],
 		['Box 25', st.session_state['box-25'], st.session_state['box-25-clean'], st.session_state['box-25-orfeus']],
 		['Box 29', st.session_state['box-29'], st.session_state['box-29-clean'], st.session_state['box-29-orfeus']],
 		['Box 49', st.session_state['box-49'], st.session_state['box-49-clean'], st.session_state['box-49-orfeus']],
