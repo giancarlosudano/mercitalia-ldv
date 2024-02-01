@@ -19,6 +19,43 @@ import sys
 import re
 import lib.common as common
 
+def get_override(folder, variable_name):
+	variabili = {}
+	with open(os.path.join('ldv', folder, 'override.txt'), 'r') as file:
+		for riga in file:
+			# Rimozione degli spazi bianchi e dei caratteri di nuova linea
+			riga = riga.strip()
+			# Controllo se la riga non è vuota
+			if riga:
+				# Divisione della riga in base al segno '='
+				chiave, valore = riga.split('=')
+				# Aggiunta della coppia chiave-valore al dizionario
+				variabili[chiave] = valore
+	return variabili[variable_name]
+
+def prompt_for_etichetta(numero_casella: str, descrizione_estrazione: str, box: str, llm: AzureChatOpenAI):
+	prompt_base = """il testo delimitato da ### deriva da una scansione OCR di un modulo di trasporto ferroviario CIM internazionale. 
+
+###
+{box}
+###
+
+{descrizione_estrazione}
+- pulisci il testo da eventuali caratteri non alfanumerici come , . - o spazi
+- Non aggiungere altro alla risposta
+- Se non trovi nessun codice o nessuna informazione, scrivi "Non trovato"
+
+Risposta:
+"""
+
+	output_parser = StrOutputParser()
+	system_message = "Sei un assistente virtuale che aiuta ad estrarre informazioni da una testo analizzato con OCR da documenti CIM utilizzati nel trasporto ferroviario internazionale di merci."
+	prompt = ChatPromptTemplate.from_messages([("system", system_message),("user", "{input}")])
+	chain = prompt | llm | output_parser
+	response = chain.invoke({"input": prompt_base.format(numero_casella=numero_casella, descrizione_estrazione=descrizione_estrazione, box=box)})
+	
+	return response
+
 def read_field_from_cim(folder):
 	exp = st.expander("Mail : " + folder)
 	
@@ -79,7 +116,7 @@ def read_field_from_cim(folder):
 	st.session_state["box-11-clean"] = prompt_for_box("11", "Estrai dal testo un codice alfanumerico che rappresenta il codice di una stazione di destinazione della CIM", st.session_state["box-11"], llm)
 
 	my_bar.progress(int((9) / 30 * 100), text="Elaborazione Destinazione")
-	st.session_state["box-12-clean"] = prompt_for_box("12", "Estrai dal testo un codice numerico che rappresenta il codice di una stazione di destinazione della CIM", st.session_state["box-12"], llm)
+	st.session_state["box-12-clean"] = prompt_for_box("12", "Estrai dal testo un codice alfanumerico. Se il codice inizia con 2 cancella il 2. Se inizia con 12 cancella il 12.", st.session_state["box-12"], llm)
 
 	my_bar.progress(int((10) / 30 * 100), text="Elaborazione Destinazione Codice")
 	st.session_state["box-13-clean"] = prompt_for_box("13", "Estrai dal testo le informazioni più importanti", st.session_state["box-13"], llm)
@@ -97,47 +134,49 @@ def read_field_from_cim(folder):
 	st.session_state["box-17-clean"] = prompt_for_box("17", "Interpreta la stringa come una data di presa in carico della CIM, eventualmente anche data e orario", st.session_state["box-17"], llm)		
 
 	my_bar.progress(int((15) / 30 * 100), text="Elaborazione 18")
-	st.session_state["box-18-clean"] = prompt_for_box("18", "Estrai le informazioni dal testo", st.session_state["box-16"], llm)
+	st.session_state["box-18-clean"] = prompt_for_box("18", "Estrai le informazioni dal testo", st.session_state["box-18"], llm)
 
 	my_bar.progress(int((16) / 30 * 100), text="Elaborazione 19")
-	st.session_state["box-19-1-clean"] = prompt_for_box("19", "Estrai le informazioni dal testo", st.session_state["box-19-1-clean"], llm)
+	st.session_state["box-19-1-clean"] = prompt_for_box("19", "Estrai le informazioni dal testo", st.session_state["box-19-1"], llm)
 
 	my_bar.progress(int((17) / 30 * 100), text="Elaborazione 19")
-	st.session_state["box-19-2-clean"] = prompt_for_box("19", "Estrai le informazioni dal testo", st.session_state["box-19-1-clean"], llm)
+	st.session_state["box-19-2-clean"] = prompt_for_box("19", "Estrai le informazioni dal testo", st.session_state["box-19-1"], llm)
+
+	st.session_state["box-23"] = get_override(folder, "box-23")
+	st.session_state["box-23-clean"] = get_override(folder, "box-23")
 
 	my_bar.progress(int((18) / 30 * 100), text="Elaborazione 24")
-	st.session_state["box-24-clean"] = prompt_for_box("24", "Estrai un codice numerico che rappresenta il codice NHM della CIM.", st.session_state["box-24-clean"], llm)
+	st.session_state["box-24-clean"] = prompt_for_box("24", "Estrai una sequenza di uno o più codici numerici. Se incontri il testo NHM non considerarlo.", st.session_state["box-24"], llm)
 
 	my_bar.progress(int((19) / 30 * 100), text="Elaborazione 25")
-	st.session_state["box-25-clean"] = prompt_for_box("25", "Interpreta le informazioni dal testo, che sono dei pesi di vagoni. Estrai se lo trovi il totale della massa.", st.session_state["box-25-clean"], llm)
+	st.session_state["box-25-clean"] = prompt_for_box("25", "Interpreta le informazioni dal testo, che sono dei pesi di vagoni. Estrai se lo trovi il totale della massa.", st.session_state["box-25"], llm)
 
 	my_bar.progress(int((21) / 30 * 100), text="Elaborazione 29")
-	st.session_state["box-29-clean"] = prompt_for_box("29", "Interpreta le informazioni di luogo e data della CIM", st.session_state["box-29-clean"], llm)
+	st.session_state["box-29-clean"] = prompt_for_box("29", "Interpreta le informazioni di luogo e data della CIM", st.session_state["box-29"], llm)
 
 	my_bar.progress(int((22) / 30 * 100), text="Elaborazione 49")
-	st.session_state["box-49-clean"] = prompt_for_box("49", "Estrai dal testo un codice numerico composto eventualmente da più parti. ", st.session_state["box-49-clean"], llm)
+	st.session_state["box-49-clean"] = prompt_for_box("49", "Estrai dal testo un codice numerico composto eventualmente da più parti. ", st.session_state["box-49"], llm)
 
 	my_bar.progress(int((23) / 30 * 100), text="Elaborazione 57")
-	st.session_state["box-57-clean"] = prompt_for_box("57", "Nel testo ci sono informazioni di trasporti, con indirizzi e percorsi. Estrai tutte le informazioni che riesci a leggere in modo ordinato. ", st.session_state["box-57-clean"], llm)
+	st.session_state["box-57-clean"] = prompt_for_box("57", "Nel testo ci sono informazioni di trasporti, con indirizzi e percorsi. Estrai tutte le informazioni che riesci a leggere in modo ordinato. ", st.session_state["box-57"], llm)
 
 	my_bar.progress(int((24) / 30 * 100), text="Elaborazione 62 1")
-	st.session_state["box-62-paese-clean"] = prompt_for_box("62", "Estrai dal testo un codice numerico di due cifre", st.session_state["box-62-paese"], llm)
+	st.session_state["box-62-paese-clean"] = prompt_for_etichetta("62", "Estrai dal testo un codice numerico di due cifre", st.session_state["box-62-paese"], llm)
 
 	my_bar.progress(int((25) / 30 * 100), text="Elaborazione 62 2")
-	st.session_state["box-62-stazione-clean"] = prompt_for_box("62", "Estrai dal testo un codice numerico che rappresenta un codice della etichetta della CIM. Se nel codice ci sono dei '-' non considerarli.", st.session_state["box-62-stazione"], llm)
+	st.session_state["box-62-stazione-clean"] = prompt_for_etichetta("62", "Estrai dal testo un codice numerico o alfanumerico", st.session_state["box-62-stazione"], llm)
 
 	my_bar.progress(int((26) / 30 * 100), text="Elaborazione 62 3")
-	st.session_state["box-62-impresa-clean"] = prompt_for_box("62", "Estrai dal testo un codice numerico che rappresenta un codice della etichetta della CIM. Se nel codice ci sono dei '-' non considerarli.", st.session_state["box-62-impresa"], llm)
+	st.session_state["box-62-impresa-clean"] = prompt_for_etichetta("62", "Estrai dal testo un codice numerico o alfanumerico", st.session_state["box-62-impresa"], llm)
 
-	my_bar.progress(int((27) / 30 * 100), text="Elaborazione 63 4")
-	st.session_state["box-62-spedizione-clean"] = prompt_for_box("62", "Estrai dal testo un codice numerico che rappresenta un codice della etichetta della CIM. Se nel codice ci sono dei '-' non considerarli.", st.session_state["box-62-spedizione"], llm)
+	my_bar.progress(int((27) / 30 * 100), text="Elaborazione 62 4")
+	st.session_state["box-62-spedizione-clean"] = prompt_for_etichetta("62", "Estrai dal testo un codice numerico o alfanumerico", st.session_state["box-62-spedizione"], llm)
 
 	my_bar.progress(int((28) / 30 * 100), text="Elaborazione 62 luogo (da 29)")
 	st.session_state["box-62-luogo-clean"] = prompt_for_box("29", "Estrai dal testo le sole informazioni del luogo.", st.session_state["box-29"], llm)
 
-	my_bar.progress(int((29) / 30 * 100), text="Elaborazione 62 luogo (da 29)")
-	st.session_state["box-62-data-clean"] = prompt_for_box("29", "Estrai dal testo le sole informazioni della data. Il risultato deve essere in questo formato: YYYYMMDD. Ignora eventualmente l'orario", st.session_state["box-29"], llm)
-
+	my_bar.progress(int((29) / 30 * 100), text="Elaborazione 62 data (da 29)")
+	st.session_state["box-62-data-clean"] = prompt_for_etichetta("29", "Estrai dal testo le sole informazioni della data. Il risultato deve essere in questo formato: YYYY-MM-DD. Ignora eventualmente l'orario. Intepreta la data o come YYYY MM DD o come DD MM YYYY. Non interpretare la data come YYYY DD MM.", st.session_state["box-29"], llm)
 	
 	import time
 	folder_path = os.path.join('orpheus')
@@ -175,8 +214,14 @@ def read_field_from_cim(folder):
 					station_codes.append(station_code.text)
 
 			# Iterate through the ECN nodes
-			for ecn in root.findall(".//ECNs"):
-				carrier_code = ecn.find(".//ECNHeader/SendingCarrier")
+			# for ecn in root.findall(".//ECNs"):
+			# 	carrier_code = ecn.find(".//ECNHeader/SendingCarrier")
+			# 	if carrier_codes is not None:
+			# 		carrier_codes.append(carrier_code.text)
+
+			# Iterate through the ECN nodes (2)
+			for ecn in root.findall(".//ECN"):
+				carrier_code = ecn.find(".//AcceptancePoint/CarrierCode")
 				if carrier_codes is not None:
 					carrier_codes.append(carrier_code.text)
 
@@ -193,16 +238,16 @@ def read_field_from_cim(folder):
 					acceptance_dates.append(acceptance_date.text)
 			
 			data_ora_originale = acceptance_dates[0]
+			# data_ora_formattata = ""
 			# Analizzare la stringa nel formato originale
 			# '%Y-%m-%dT%H:%M:%S%z' è il formato di analisi
 			# '%Y' sta per anno, '%m' per mese, '%d' per giorno, '%H' per ore, '%M' per minuti, '%S' per secondi, '%z' per il fuso orario
-			try:
-				data_ora_obj = datetime.datetime.strptime(data_ora_originale, '%Y-%m-%dT%H:%M:%S%z')
-				# Formattare l'oggetto datetime nel nuovo formato
-				# '%Y%m%d-%H%M%S' è il formato di output
-				data_ora_formattata = data_ora_obj.strftime('%Y%m%d')
-			except ValueError as e:
-				print(f"Errore nella conversione della data: {e} nel file {file_name}")
+			# try:
+			# 	# Formattare l'oggetto datetime nel nuovo formato
+			# 	# '%Y%m%d-%H%M%S' è il formato di output
+			# 	# data_ora_formattata = data_ora_obj.strftime('%Y%m%d')
+			# except ValueError as e:
+				# print(f"Errore nella conversione della data: {e} nel file {file_name}")
 
 			# exp.write("xml {0} e session {1} = {2}".format(uic_country_codes[0], st.session_state['box-62-paese-clean'], uic_country_codes[0] == st.session_state['box-62-paese-clean']))
 			# exp.write("xml {0} e session {1} = {2}".format(station_codes[0], st.session_state['box-62-stazione-clean'], station_codes[0] == st.session_state['box-62-stazione-clean']))
@@ -210,12 +255,36 @@ def read_field_from_cim(folder):
 			# exp.write("xml {0} e session {1} = {2}".format(consignment_numbers[0], st.session_state['box-62-spedizione-clean'], consignment_numbers[0].startswith(st.session_state['box-62-spedizione-clean'])))
 			# exp.write("xml {0} e session {1} = {2}".format(data_ora_formattata, st.session_state['box-62-data-clean'], data_ora_formattata == st.session_state['box-62-data-clean']))
 
+			#similarità
+			similarita = 0
+			similarita_fields = ""
+			if st.session_state['box-62-paese-clean'] == uic_country_codes[0]:
+				similarita += 1
+				similarita_fields += "paese | "
+			if st.session_state['box-62-stazione-clean'] == station_codes[0]:
+				similarita += 1
+				similarita_fields += "stazione | "
+			if st.session_state['box-62-impresa-clean'] == carrier_codes[0]:
+				similarita += 1
+				similarita_fields += "impresa | "
+			if st.session_state['box-62-spedizione-clean'] == consignment_numbers[0]:
+				similarita += 1
+				similarita_fields += "spedizione | "
+			if data_ora_originale.startswith(st.session_state['box-62-spedizione-clean']):
+				similarita += 1
+				similarita_fields += "data"
+
+			if similarita > 2:
+				similarita_text = "folder {0}, filename = {1}, similarità {2}, campi = {3}, data (orfeus) {4} e data session {5}".format(folder, file_name, similarita, similarita_fields, data_ora_originale, st.session_state['box-62-data-clean'])
+				exp.write(similarita_text)
+				print(similarita_text)
+
 			# Confronto
 			if st.session_state['box-62-paese-clean'] == uic_country_codes[0] \
 				and st.session_state['box-62-stazione-clean'] == station_codes[0] \
 				and st.session_state['box-62-impresa-clean'] == carrier_codes[0] \
-			 	and consignment_numbers[0].startswith(st.session_state['box-62-spedizione-clean']) \
-				and st.session_state['box-62-data-clean'] == data_ora_formattata:
+			 	and st.session_state['box-62-spedizione-clean'] == consignment_numbers[0] \
+				and data_ora_originale.startswith(st.session_state['box-62-data-clean']):
 				file_found = file_name
 				exp.write("File trovato: {0}".format(file_name))
 
@@ -239,55 +308,55 @@ def read_field_from_cim(folder):
 			node = ecn.find(".//ECN/Customers/Customer[@Type='CR']/Name")
 			if node is not None:
 				box_01_orfeus_values.append(node.text)
-		st.session_state["box-01-orfeus"] = box_01_orfeus_values[0]
+				st.session_state["box-01-orfeus"] = box_01_orfeus_values[0]
 
 		for ecn in root.findall(".//ECNs"):
 			node = ecn.find(".//ECN/Customers/Customer[@Type='CR']/CustomerCode")
 			if node is not None:
 				box_03_orfeus_values.append(node.text)
-		st.session_state["box-03-orfeus"] = box_03_orfeus_values[0] 
+				st.session_state["box-03-orfeus"] = box_03_orfeus_values[0]
 
 		for ecn in root.findall(".//ECNs"):
 			node = ecn.find(".//ECN/Customers/Customer[@Type='CE']/Name")
 			if node is not None:
 				box_04_orfeus_values.append(node.text)
-		st.session_state["box-04-orfeus"] = box_04_orfeus_values[0]
+				st.session_state["box-04-orfeus"] = box_04_orfeus_values[0]
 
 		for ecn in root.findall(".//ECNs"):
 			node = ecn.find(".//ECN/Customers/Customer[@Type='CE']/CustomerCode")
 			if node is not None:
 				box_05_orfeus_values.append(node.text)
-		st.session_state["box-05-orfeus"] = box_05_orfeus_values[0]
+				st.session_state["box-05-orfeus"] = box_05_orfeus_values[0]
 
 		for ecn in root.findall(".//ECNs"):
 			node = ecn.find(".//ECN/Customers/Customer[@Type='FPCE']/CustomerCode")
 			if node is not None:
 				box_06_orfeus_values.append(node.text)
-		st.session_state["box-06-orfeus"] = box_06_orfeus_values[0] 
+				st.session_state["box-06-orfeus"] = box_06_orfeus_values[0] 
 
 		for ecn in root.findall(".//ECNs"):
 			node = ecn.find(".//ECN/DeliveryPoint/Point/Name")
 			if node is not None:
 				box_10_orfeus_values.append(node.text) 
-		st.session_state["box-10-orfeus"] = box_10_orfeus_values[0]
+				st.session_state["box-10-orfeus"] = box_10_orfeus_values[0]
 
 		for ecn in root.findall(".//ECNs"):
 			node = ecn.find(".//ECN/DeliveryPoint/Point/Code")
 			if node is not None:
 				box_12_orfeus_values.append(node.text)
-		st.session_state["box-12-orfeus"] = box_12_orfeus_values[0]
+				st.session_state["box-12-orfeus"] = box_12_orfeus_values[0]
 
 		for ecn in root.findall(".//ECNs"):
 			node = ecn.find(".//ECN/Tariff/ContractNumber")
 			if node is not None:
 				box_14_orfeus_values.append(node.text)
-		st.session_state["box-14-orfeus"] = box_14_orfeus_values[0]
+				st.session_state["box-14-orfeus"] = box_14_orfeus_values[0]
 
 		for ecn in root.findall(".//ECNs"):
 			node = ecn.find(".//ECN/AcceptancePoint/Point/Name")
 			if node is not None:
 				box_16_orfeus_values.append(node.text)
-		st.session_state["box-16-orfeus"] = box_16_orfeus_values[0]
+				st.session_state["box-16-orfeus"] = box_16_orfeus_values[0]
 
 	# create a dataframe
 	import pandas as pd
@@ -311,6 +380,7 @@ def read_field_from_cim(folder):
 		['Box 18', st.session_state['box-18'], st.session_state['box-18-clean'], st.session_state['box-17-orfeus']],
 		['Box 19-1', st.session_state['box-19-1'], st.session_state['box-19-1-clean'], st.session_state['box-19-1-orfeus']],
 		['Box 19-2', st.session_state['box-19-2'], st.session_state['box-19-1-clean'], st.session_state['box-19-1-orfeus']],
+		['Box 23', st.session_state['box-23'], st.session_state['box-23-clean'], st.session_state['box-23-orfeus']],
 		['Box 25', st.session_state['box-25'], st.session_state['box-25-clean'], st.session_state['box-25-orfeus']],
 		['Box 29', st.session_state['box-29'], st.session_state['box-29-clean'], st.session_state['box-29-orfeus']],
 		['Box 49', st.session_state['box-49'], st.session_state['box-49-clean'], st.session_state['box-49-orfeus']],
@@ -319,8 +389,8 @@ def read_field_from_cim(folder):
 		['Box 62-stazione', st.session_state['box-62-stazione'], st.session_state['box-62-stazione-clean'], ""],
 		['Box 62-impresa', st.session_state['box-62-impresa'], st.session_state['box-62-impresa-clean'], ""],
 		['Box 62-spedizione', st.session_state['box-62-spedizione'], st.session_state['box-62-spedizione-clean'], ""],
-		['29 (luogo)', "", st.session_state['box-62-luogo-clean'], ""],
-		['29 (data)', "", st.session_state['box-62-data-clean'], ""]
+		['Box 29 (luogo)', "", st.session_state['box-62-luogo-clean'], ""],
+		['Box 29 (data)', "", st.session_state['box-62-data-clean'], ""]
   	]
 	
 	# Crea il DataFrame
@@ -390,16 +460,18 @@ try:
 			for name in dirs:
 				df = read_field_from_cim(name)
 				dataframes.append(df)
+				ldv_folders.append(name)
 
 		# Create a Pandas Excel writer using XlsxWriter as the engine
 		current_datetime = datetime.datetime.now()
 		serialized_datetime = current_datetime.strftime("%Y%m%d%H%M%S")
 		output_filename = 'analisi_cim_{}.xlsx'.format(serialized_datetime)
-  
+
 		with pd.ExcelWriter(path=output_filename, engine='xlsxwriter') as writer:
 			i = 0
 			for df in dataframes:
 				df.to_excel(writer, sheet_name=ldv_folders[i])
+				i += 1
 			writer.save()
 
 		with open(output_filename, "rb") as template_file:
