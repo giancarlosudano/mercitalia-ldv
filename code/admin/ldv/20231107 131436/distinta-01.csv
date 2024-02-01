@@ -1,0 +1,53 @@
+﻿,0,1,2,3,4,5,6,7
+0,Pos. Waggon-Nr.,Ladeeinheit-Nr. LE-Art / -Bauart,Auftragsnummer intern / UIRR,Rechnungs- empfänger,Netto [kg] Gesamt [kg],beschreibung Waren-,Gateway nach,Gefahrgut Plomben Dokumente Abfall Schäden Zoll
+1,12. 318045433956,TCVU5610133,10289584 /,Hoyer GmbH,10.000,ACRONAL* A 107;EMPTY,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:
+2,20 / TC,5658073119,,14.000,UNCLEANED _Previous,,,
+3,,,,,Product : TX-100/BASE BULK,,,
+4,,,,,,,,
+5,,WABU7732144,10287901 /,Hoyer GmbH,30.060,STYRONAL D 517,,:unselected: :unselected: :unselected: :unselected: :unselected: :selected: X
+6,22 / TC,5658063308,,32.650,,,,
+7,13. 318045561145,PCVU2582570,10289904 /,Lanfer Transporte,24.000,Acronal® V 215,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:
+8,20 / TC,5658073159,GmbH & Co. KG,27.770,,,,
+9,HOYU7070736,10286964 /,Hoyer GmbH,23.500,"argon, tiefgekühlt, flüssig",,"X :selected: :unselected: :unselected: :unselected:
+:unselected: :unselected:",
+10,20 / TC,5658063245,,29.000,,,,
+11,14. 318049545524,RCLU1354983,10269391 /,"R.M.I, Chemical","28,000",NPG 90 Glycol,,":unselected: :unselected: :unselected: :unselected: :unselected:
+:unselected:"
+12,24 / TC,5657993079,Logistics B.V.,"32,500",,,,
+13,BIDU5906928,10285649 /,Bertschi AG,26.940,"HYDROCARBONS, C12-",,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:,
+14,24 / TC,5658063078,,31.110,"C15, N-ALKANES,",,,
+15,,,,,"ISOALKANES, CYCLICS, <2% AROMATICS (2710.19.29)",,,
+16,15. 318045563224,NOBU1374260,10278534 /,Bertschi AG,27.000,PREPARATION BASED ON,,:unselected: :unselected: :selected: X :unselected: :unselected: :unselected:
+17,,30 / SC,5658033267,,29.880,POLYSTYRENE,,
+18,,,(3903.19.00),,,,,
+19,,BUZU0000124,10281417 /,Buzzatti Trasporti s.r.,28.000,starch,,":unselected: :unselected: :unselected: :unselected: :unselected:
+:unselected:"
+20,30 / SC,5658043348,1.,"31,000",,,,
+21,16. 318045562549,LOEB3102270,10293757 /,Löblein Transport,26.500,Ferro Silicon,,":unselected:
+:unselected: :unselected: :unselected: :unselected: :unselected:"
+22,30 / OT,5658103159,GmbH,"29,000",,,,
+23,LOEB3301250,10293753 /,Löblein Transport,"26,500",Ferro Silicon,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:,
+24,30 / OT,5658103155,GmbH,29.000,,,,
+25,17. 338345757656,WABU2640723,10289583 /,Hoyer GmbH,"24,540",ACRONAL* S 505,,":unselected:
+:unselected: :unselected: :unselected: :unselected: :unselected:"
+26,20 / TC,5658073120,,27.640,,,,
+27,WABU5611251,10282835 /,Hoyer GmbH,20.000,Acronal ECO 6270,,":unselected:
+:unselected: :unselected: :unselected: :unselected: :unselected:",
+28,20 / TC,5658043307,,"24,000",,,,
+29,18. 338549566507,ARCE0052785,10291830 /,Arcese Trasporti S.p.,21.220,Ecovio,,:unselected: :unselected: X :selected: :unselected: :unselected: :unselected:
+30,10 / MT,5658073349,A,28.220,,,,
+31,19. 338549566218,CCPD3022225,10292649 /,Transco Mainsped,21.345,Laminate+Hygieneartikel,,:unselected: :unselected: :selected: X :unselected: :unselected: :unselected:
+32,10 / SP,5658093002,GmbH,28.345,,,,
+33,BIDU4920990,10285636 /,Bertschi AG,28.500,CAPROLACTAM,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:,
+34,24 / TC,5658063076,,"32,980",(2933.71.00),,,
+35,20. 338549565855,CCPD3021980,10277450 /,Transco Mainsped,25.037,RID: UN 2211,,:selected: X :unselected: X :selected: :unselected: :unselected: :unselected:
+36,,10 / SP,5658033091,GmbH,32.037,,,
+37,Gesamtladung:,,,Netto:,914.200,,,
+38,,,,Gesamt:,1.062.590,,,
+39,Waggons,,Sendungen,,,,,
+40,beladen: 20,,beladen: 37,,,,,
+41,leer: 0,,leer: 0,,,,,
+42,gesamt: 20,,gesamt: 37,,,,,
+43,GEFAHRGUT NACH RID UND ABFALL,,,,,,,
+44,,,,,,,,Brutto-
+45,Pos. Waggon-Nr.,Ladeeinheit-Nr.,"Gefahrgut-Nr.,","Gefahrgut, weitere",Angaben,,,masse [kg]

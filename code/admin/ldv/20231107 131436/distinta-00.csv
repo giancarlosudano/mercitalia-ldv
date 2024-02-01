@@ -1,0 +1,52 @@
+﻿,0,1,2,3,4,5,6,7
+0,Pos. Waggon-Nr.,Ladeeinheit-Nr. LE-Art / -Bauart,Auftragsnummer intern / UIRR,Rechnungs- empfänger,Netto [kg] Gesamt [kg],beschreibung Waren-,Gateway nach,Gefahrgut Plomben Dokumente Schäden Abfall Zoll
+1,01. 378549560266,HOYU9643708,10290128 /,Hoyer GmbH,25.760,NATRIUMBISULFIT,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:
+2,20 / TC,5658073195,,"29,560",LOESUNG 38-40% NON FOODGRADE,,,
+3,,WABU7731282,10286461 /,Hoyer GmbH,29.080,BASONAL 8913,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:
+4,22 / TC,5658063181,,"31,430",,,,
+5,02. 338549569485,HOYU9610160,10288925 /,Hoyer GmbH,17.830,"AMINES, FLAMMABLE,",,:selected: X :unselected: :unselected: :unselected: :unselected: :unselected:
+6,20 / TC,5658073044,,21.650,"CORROSIVE, N.O.S.",,,
+7,MCMU3350034,10289908 /,Lanfer Transporte,27.500,RID: UN 2051,,"X :selected: :unselected: :unselected: :unselected: :unselected:
+:unselected:",
+8,24 / TC,5658073164,GmbH & Co. KG,32.160,,,,
+9,03. 378045574985,BUZU0001141,10281445 /,Buzzatti Trasporti s.r.,28.000,starch,,":unselected: :unselected: :unselected:
+:unselected: :unselected: :unselected:"
+10,30 / SC,5658043349,1.,"31,300",,,,
+11,AAMU3501153,10289910 /,Lanfer Transporte,"24,000",Pluriol® A 1020 E,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:,
+12,24 / TC,5658073166,GmbH & Co. KG,28.500,,,,
+13,04. 318045121577,BUZU0000464,10281397 /,Buzzatti Trasporti s.r.,28.000,starch,,":unselected: :unselected: :unselected:
+:unselected: :unselected: :unselected:"
+14,30 / SC,5658043347,1.,31.300,,,,
+15,RICU2267039,10282112 /,Rinnen GmbH & Co.,20.000,RID: UN 2735,,:selected: :unselected: :unselected: :unselected: :unselected: :unselected:,
+16,20/TC,5658043215,KG,23.990,,,,
+17,05. 378045640083,LOEB3104713,10293756 /,Löblein Transport,26.500,Ferro Silicon,,":unselected: :unselected:
+:unselected: :unselected: :unselected: :unselected:"
+18,30 / OT,5658103158,GmbH,29.000,,,,
+19,LOEB3340046,10293754 /,Löblein Transport,26.500,Ferro Silicon,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:,
+20,30 / OT,5658103156,GmbH,"28,940",,,,
+21,06. 318045562705,TICU0014711,10285399 /,Liverani Group SPA,29.000,GLYZERIN,,":unselected:
+:unselected: :unselected: :unselected: :unselected: :unselected:"
+22,22/TC,5658063052,,32.380,,,,
+23,BIDU4937821,10285644 /,Bertschi AG,26.940,"HYDROCARBONS, C12-",,":unselected:
+:unselected: :unselected: :unselected: :unselected: :unselected:",
+24,24 / TC,5658063077,,31.400,"C15, N-ALKANES,",,,
+25,"ISOALKANES, CYCLICS,",,,,,,,
+26,,,,<2% AROMATICS (2710.19.29),,,,
+27,07. 318045121254,RICU7351137,10289311 /,Rinnen GmbH & Co.,27.100,2-Ethylhexylacrylat,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:
+28,24 / TC,5658073086,KG,31.160,,,,
+29,RICU7300823,10282317 /,Rinnen GmbH & Co.,22.000,RID: UN 1123,,X :selected: :unselected: :unselected: :unselected: :unselected: :unselected:,
+30,22 / TC,5658043248,KG,25.700,,,,
+31,08. 338549568982,BIDU4996280,10285453 /,Bertschi AG,24.320,TETRAHYDROFURAN,,:selected: :unselected: :unselected: :unselected: :unselected: :unselected:
+32,22/ TC,5658063056,,28.620,,,,
+33,WABU2410588,10285947 /,Hoyer GmbH,22.960,RID: UN 1760,,X :selected: :unselected: :unselected: :unselected: :unselected: :unselected:,
+34,20 / TC,5658063113,,27.210,,,,
+35,09. 378549560506,ARCE0034523,10291848 /,Arcese Trasporti S.p.,15.268,Bosch Werkzeuge,,:selected: X :unselected: :selected: X :unselected: :unselected: X :selected:
+36,10 / MT,5658073355,A.,22.268,,,,
+37,10. 338549569105,BIDU5914271,10279773 /,Bertschi AG,25.000,RID: UN 1301,,:selected: X :unselected: :unselected: :unselected: :unselected: :unselected:
+38,23 / TC,5658033424,,28.830,,,,
+39,BWCU2030040,10288846 /,Bay Logistik,24.300,IMPRESS BP 400 DS,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:,
+40,22 / TC,5658073032,,28.140,,,,
+41,11. 318045575491,ERSU3543210,10271430 /,Buzzatti Trasporti s.r.,28.000,starch,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:
+42,30 / SC,5657993295,1.,31.100,,,,
+43,HOYU9612841,10278497 /,Hoyer GmbH,"25,000",MOWILITH LDL 2559 W,,:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:,
+44,20 / TC,5658033246,,28.820,BULK,,,

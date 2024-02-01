@@ -176,7 +176,7 @@ def read_field_from_cim(folder):
 	st.session_state["box-62-luogo-clean"] = prompt_for_box("29", "Estrai dal testo le sole informazioni del luogo.", st.session_state["box-29"], llm)
 
 	my_bar.progress(int((29) / 30 * 100), text="Elaborazione 62 data (da 29)")
-	st.session_state["box-62-data-clean"] = prompt_for_etichetta("29", "Estrai dal testo le sole informazioni della data. Il risultato deve essere in questo formato: YYYY-MM-DD. Ignora eventualmente l'orario. Intepreta la data o come YYYY MM DD o come DD MM YYYY. Non interpretare la data come YYYY DD MM.", st.session_state["box-29"], llm)
+	st.session_state["box-62-data-clean"] = prompt_for_etichetta("29", "Estrai dal testo le sole informazioni della data. Intepreta la data o come YYYY MM DD o come DD MM YYYY, non usare il formato americano per l'interpretazione. La formattazione finale deve essere YYYY-MM-DD", st.session_state["box-29"], llm)
 	
 	import time
 	folder_path = os.path.join('orpheus')
@@ -198,6 +198,7 @@ def read_field_from_cim(folder):
 			uic_country_codes = []
 			station_codes = []
 			carrier_codes = []
+			sending_carrier_codes = []
 			consignment_numbers = []
 			acceptance_dates = []
 			
@@ -213,11 +214,11 @@ def read_field_from_cim(folder):
 				if station_code is not None:
 					station_codes.append(station_code.text)
 
-			# Iterate through the ECN nodes
-			# for ecn in root.findall(".//ECNs"):
-			# 	carrier_code = ecn.find(".//ECNHeader/SendingCarrier")
-			# 	if carrier_codes is not None:
-			# 		carrier_codes.append(carrier_code.text)
+			#Iterate through the ECN nodes
+			for ecn in root.findall(".//ECNs"):
+				sending_carrier_code = ecn.find(".//ECNHeader/SendingCarrier")
+				if sending_carrier_code is not None:
+					sending_carrier_codes.append(sending_carrier_code.text)
 
 			# Iterate through the ECN nodes (2)
 			for ecn in root.findall(".//ECN"):
@@ -238,22 +239,6 @@ def read_field_from_cim(folder):
 					acceptance_dates.append(acceptance_date.text)
 			
 			data_ora_originale = acceptance_dates[0]
-			# data_ora_formattata = ""
-			# Analizzare la stringa nel formato originale
-			# '%Y-%m-%dT%H:%M:%S%z' è il formato di analisi
-			# '%Y' sta per anno, '%m' per mese, '%d' per giorno, '%H' per ore, '%M' per minuti, '%S' per secondi, '%z' per il fuso orario
-			# try:
-			# 	# Formattare l'oggetto datetime nel nuovo formato
-			# 	# '%Y%m%d-%H%M%S' è il formato di output
-			# 	# data_ora_formattata = data_ora_obj.strftime('%Y%m%d')
-			# except ValueError as e:
-				# print(f"Errore nella conversione della data: {e} nel file {file_name}")
-
-			# exp.write("xml {0} e session {1} = {2}".format(uic_country_codes[0], st.session_state['box-62-paese-clean'], uic_country_codes[0] == st.session_state['box-62-paese-clean']))
-			# exp.write("xml {0} e session {1} = {2}".format(station_codes[0], st.session_state['box-62-stazione-clean'], station_codes[0] == st.session_state['box-62-stazione-clean']))
-			# exp.write("xml {0} e session {1} = {2}".format(carrier_codes[0], st.session_state['box-62-impresa-clean'], carrier_codes[0] == st.session_state['box-62-impresa-clean']))
-			# exp.write("xml {0} e session {1} = {2}".format(consignment_numbers[0], st.session_state['box-62-spedizione-clean'], consignment_numbers[0].startswith(st.session_state['box-62-spedizione-clean'])))
-			# exp.write("xml {0} e session {1} = {2}".format(data_ora_formattata, st.session_state['box-62-data-clean'], data_ora_formattata == st.session_state['box-62-data-clean']))
 
 			#similarità
 			similarita = 0
@@ -264,9 +249,12 @@ def read_field_from_cim(folder):
 			if st.session_state['box-62-stazione-clean'] == station_codes[0]:
 				similarita += 1
 				similarita_fields += "stazione | "
+			if st.session_state['box-62-impresa-clean'] == sending_carrier_codes[0]:
+				similarita += 1
+				similarita_fields += "impresa (sending_carrier_code) | "
 			if st.session_state['box-62-impresa-clean'] == carrier_codes[0]:
 				similarita += 1
-				similarita_fields += "impresa | "
+				similarita_fields += "impresa (carrier_code) | "
 			if st.session_state['box-62-spedizione-clean'] == consignment_numbers[0]:
 				similarita += 1
 				similarita_fields += "spedizione | "
@@ -332,7 +320,7 @@ def read_field_from_cim(folder):
 			node = ecn.find(".//ECN/Customers/Customer[@Type='FPCE']/CustomerCode")
 			if node is not None:
 				box_06_orfeus_values.append(node.text)
-				st.session_state["box-06-orfeus"] = box_06_orfeus_values[0] 
+				st.session_state["box-06-orfeus"] = box_06_orfeus_values[0]
 
 		for ecn in root.findall(".//ECNs"):
 			node = ecn.find(".//ECN/DeliveryPoint/Point/Name")
