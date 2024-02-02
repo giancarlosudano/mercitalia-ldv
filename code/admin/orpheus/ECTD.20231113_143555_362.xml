@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>3143517409362</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-13T14:35:55+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2154</SendingCarrier>
+      <MessageReferenceNumber>17736813</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-13T14:33:43+01:00</ECNPreparationDatetime>
+      <DossierNumber>2154202311130836832</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>52033</Code>
+          <Name>CBU - Yard</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>534149</Code>
+          <Name>Kolin</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-13T13:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2154</CarrierCode>
+        <ConsignmentNumber>527259</ConsignmentNumber>
+        <ForwardingTrainNumber>0</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>01868</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>018689</Code>
+          <Name>CHIGNOLO PO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>018689</Code>
+          <Name>CHIGNOLO PO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>999999</CustomerCode>
+          <Name>GEFCO France SAS</Name>
+          <AdditionalInformation>Kolin Toyota</AdditionalInformation>
+          <VAT>FR24789791464</VAT>
+          <Street>15 Boulevard Charles de Gaulle</Street>
+          <Country>FR</Country>
+          <ZIPCode>92700</ZIPCode>
+          <City>Colombes</City>
+          <Signature>54-534149-52725-2154-20231113</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <Name>GEFCO France SAS</Name>
+          <VAT>FR24789791464</VAT>
+          <Street>15 Boulevard Charles de Gaulle</Street>
+          <Country>FR</Country>
+          <ZIPCode>92700</ZIPCode>
+          <City>Colombes</City>
+          <Signature>not specified</Signature>
+        </Customer>
+        <Customer Type="FPCE">
+          <Name>GEFCO France SAS</Name>
+          <VAT>FR24789791464</VAT>
+          <Street>15 Boulevard Charles de Gaulle</Street>
+          <Country>FR</Country>
+          <ZIPCode>92700</ZIPCode>
+          <City>Colombes</City>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtzahler: GEFCO France SAS, 15 Boulevard Charles de Gaulle, Colombes, MWSt.Nr.FR24789791464</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>2385 GEFCO 177</ConsignorReference>
+        <WagonGroupInfo>NHM 870 32 110
+16 wagons 224 cars
+Weight of 16 wagons 502 310kg</WagonGroupInfo>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>HORNI DVORISTE ST.HR ; TARVISIO BOSCOVERDE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>CZ - 2154 CDC ; AT - 2154 CDC ; IT - 2183 MIR</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>90</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>548350</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>54100</RouteCode>
+          <RouteText>HORNI DVORISTE ST.HR ; TARVISIO BOSCOVERDE</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2154</DeclaratingCarrier>
+          <DeclarationCode>12</DeclarationCode>
+          <DeclarationText>obj.c. 21324785 ; DROP 5423622 AGEF_KonitChP078</DeclarationText>
+        </CarriersDeclaration>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2154</CarrierCode>
+          <CarrierName>CD Cargo, a.s.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>54</UICCountryCode>
+            <Station>
+              <StationCode>534149</StationCode>
+              <StationName>Kolin</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>018689</StationCode>
+              <StationName>CHIGNOLO PO</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2154</CarrierCode>
+        <CarrierName>CD Cargo, a.s.</CarrierName>
+        <Signature>54-534149-52725-2154-20231113</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Kolin</Place>
+        <Date>2023-11-13</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>54</UICCountryCode>
+            <StationCode>534149</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0610</PointCode>
+          </End>
+          <CurrencyCode>CZK</CurrencyCode>
+          <Tariff>
+            <NHMCode>870321</NHMCode>
+            <TariffNumber>548350</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0610</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>CZK</CurrencyCode>
+          <Tariff>
+            <NHMCode>870321</NHMCode>
+            <TariffNumber>548350</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>83</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>018689</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>870321</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="238743640605">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15970</TotalMass>
+            <LoadLimit>21.8</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15970</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743640498">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15470</TotalMass>
+            <LoadLimit>21.8</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15470</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743640670">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31620</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15945</TotalMass>
+            <LoadLimit>22</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15945</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743640654">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31450</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>16260</TotalMass>
+            <LoadLimit>22</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>16260</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743642007">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31620</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15950</TotalMass>
+            <LoadLimit>22</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15950</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743640878">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31400</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15225</TotalMass>
+            <LoadLimit>22</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15225</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743640126">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31650</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15195</TotalMass>
+            <LoadLimit>22</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15195</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743642403">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15185</TotalMass>
+            <LoadLimit>21.8</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15185</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743641975">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15180</TotalMass>
+            <LoadLimit>21.8</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15180</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743640886">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31640</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15225</TotalMass>
+            <LoadLimit>22</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15225</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743642171">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31310</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15175</TotalMass>
+            <LoadLimit>22</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15175</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743642155">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15205</TotalMass>
+            <LoadLimit>22</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15205</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743641611">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15200</TotalMass>
+            <LoadLimit>21.8</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15200</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743642346">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31130</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15155</TotalMass>
+            <LoadLimit>22</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15155</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743640092">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15105</TotalMass>
+            <LoadLimit>21.8</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15105</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238743640704">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31650</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>15335</TotalMass>
+            <LoadLimit>22</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870321</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, mit Hubkolbenverbrennungsmotor, mit einem Hubraum von &lt;= 1.000 cm?, neu (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15335</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

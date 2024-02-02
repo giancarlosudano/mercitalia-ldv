@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>8093717386915</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-08T09:37:05+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131133506</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-08T09:36:37+01:00</ECNPreparationDatetime>
+      <DossierNumber>2155202310301146300</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>S2Tel</Code>
+          <Name>SOFÉM Kft. IPV</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>144568</Code>
+          <Name>Tócóvölgy</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>144568</Code>
+          <Name>Tócóvölgy</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-07T13:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2155</CarrierCode>
+        <ConsignmentNumber>653428</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>03050</Code>
+          <Name>OSOPPS RACCORDO FERRIERE NORD</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>4032884</CustomerCode>
+          <Name>SOFÉM KERESK.SZOLGÁLT.ÉS FELDOLG.KF</Name>
+          <Street>Szabó Pál U 18</Street>
+          <Country>HU</Country>
+          <ZIPCode>4033</ZIPCode>
+          <City>Debrecen</City>
+          <Signature>45876 a feladó megb.</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>4043352</CustomerCode>
+          <Name>FERRIERE NORD S.P.A</Name>
+          <Street>Rivoli Di Osoppo</Street>
+          <Country>IT</Country>
+          <ZIPCode>33010</ZIPCode>
+          <City>Osoppo (UD)</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>4032884</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>KÖLTSÉGV. RCH SZAKASZ: SOFÉM KFT.</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>55/OS/07.11.23/016</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>FS TEM.301/19</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Bizonyító erej feladói mérlegelés. Szerzdésszám: VS/1249/2015</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>SZKI/4307/19 tartalmát elfogadom.</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>FERRIERE NORD</ConsignorReference>
+        <InformationConsignee>AUFTRAGSNR: KENWORT: FN-042-23,23028//100</InformationConsignee>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>ROBBMENTES IG.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>RADIOAKTMENTES IG.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>979</Type>
+          <DocumentInformation>ANNEX VII</DocumentInformation>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Mérlegjegy: 23/K-100478</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>VIA HEGYESHALOM-TARVISIO</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>2181-2183 FS 00902845</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>11</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>55</UICCountryCode>
+            <PointCode>0601</PointCode>
+          </BorderPoint>
+        </PaidUpTo>
+        <AdditionalCharges>
+          <AdditionalCharge>
+            <Code>02</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>03</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>05</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>06</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>28</Code>
+          </AdditionalCharge>
+        </AdditionalCharges>
+      </PrepaymentInstructions>
+      <Tariff>
+        <TariffNumber>902845</TariffNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>55010</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2155</DeclaratingCarrier>
+          <DeclarationCode>5</DeclarationCode>
+        </CarriersDeclaration>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2155</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <Station>
+              <StationCode>144568</StationCode>
+              <StationName>Tócóvölgy</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0601</PointCode>
+              <PointName>Nickelsdorf (Gr)/Hegyeshalom</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0601</PointCode>
+              <PointName>Nickelsdorf (Gr)/Hegyeshalom</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>Osoppo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2155</CarrierCode>
+        <Signature>2023-11-08 09:36 1131133506</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>TÓCÓVÖLGY</Place>
+        <Date>2023-11-06</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>144568</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>030502</StationCode>
+          </End>
+          <CommercialRouteCode>003</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>902845</TariffNumber>
+            <ChargedMass value="50700" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>144568</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>144568</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <AdditionalCharges>
+            <AdditionalCharge>
+              <Code>28</Code>
+              <Prepaid>95</Prepaid>
+            </AdditionalCharge>
+          </AdditionalCharges>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="315554229544">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>ROTTAME FERROSO RIFIUTO IN LISTA VERDE SECONDO CODICI DI RIFIUTO RIPORTATI IN ALLEGATO VII DEL REGOLAMENTO CE 1013//2006 CON QUALIT CORRISPONDENTE ALLA CLASSIFICA DAF720-009-E2 CER:170405MATERIALE ESENTE DA CORPI CHIUSI MATERIALI PERICOLOSI SPLOSIVI,RADIOATTIVI E MOTORI ELETTRICI.ORIGINE: UNGHERIAURSPRUNG:WIR BESTATIGEN, DASS DER IN DIESEM WAGGON ENTHALTENE SCHROTT FR</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22200</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>72900</TotalMass>
+            <BookingNumber>2155:20231107082159726:15954785</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>"Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladékvasból vagy -acélból- Más törmelék és hulladék- Más"</GoodDescription>
+              <GrossMass>50700</GrossMass>
+              <AVVKey>170405</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

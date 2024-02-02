@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>5081817418375</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-15T08:18:50+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131162629</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-15T08:17:19+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202311151162629</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>OMV</Code>
+          <Name>OMV Downstream GmbH</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>029231</Code>
+          <Name>Groß Schwechat</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>042150</Code>
+          <Name>Groß Schwechat- OMV</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-15T07:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2181</CarrierCode>
+        <ConsignmentNumber>645663</ConsignmentNumber>
+        <ForwardingTrainNumber>47225</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>25155</Code>
+          <Name>Venezia Marghera Scalo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>025155</Code>
+          <Name>Venezia Marghera Scalo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>025155</Code>
+          <Name>Venezia Marghera Scalo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>1625334</CustomerCode>
+          <Name>OMV Downstream GmbH</Name>
+          <VAT>ATU48359903</VAT>
+          <Street>TRABRENNSTRASSE 6-8</Street>
+          <Country>AT</Country>
+          <ZIPCode>1020</ZIPCode>
+          <City>Wien</City>
+          <Signature>1083 i. A. d. Abs.</Signature>
+          <Contacts>
+            <PhoneNumber>+43-1-40440-41260</PhoneNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <Name>SAN MARCO PETROLI SPA</Name>
+          <Street>Via dell'Elettronica 2</Street>
+          <Country>IT</Country>
+          <ZIPCode>30175</ZIPCode>
+          <City>Marghera</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>0726828</CustomerCode>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>030468</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>1</Code>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>S538
+S538
+Empf nicht verfügungsberechtigt</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>231115 53 S538 7031000939</ConsignorReference>
+        <InformationConsignee>KWG tw. mit Telematik (&gt; ATEX 1) ausgerstet, Leer KWG retour an Absender</InformationConsignee>
+        <WagonGroupInfo>eingefllte Menge: 1082050 kg</WagonGroupInfo>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>via Tarvisio</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>0220.67 5.) TI IN 519010</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>022067</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>029231</StationCode>
+              <StationName>Groß Schwechat</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>025155</StationCode>
+              <StationName>Venezia Marghera Scalo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2181</CarrierCode>
+        <Signature>2023-11-15 08:17 1131162629</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>SCHWECHAT</Place>
+        <Date>2023-11-15</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <StationCode>029231</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>274400</NHMCode>
+            <TariffNumber>022067</TariffNumber>
+            <ChargedMass value="1082050" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="378479319105">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 64000 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>25600</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>163.6</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89600</TotalMass>
+            <BookingNumber>2181:20231115081708895:15988139</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>64000</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>64000</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479310195">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63250 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>25750</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>164.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89000</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63250</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63250</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479319055">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63800 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>25600</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>163.6</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89400</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63800</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63800</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338479338315">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63150 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>141.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>84850</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63150</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63150</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479324915">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63800 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>25750</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>164.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89550</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63800</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63800</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479310328">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63200 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26150</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>164.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89350</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63200</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63200</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479335226">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 65600 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>158.6</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89300</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>65600</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>65600</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338579311659">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63150 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>163.6</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89650</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63150</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63150</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338579311683">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 62950 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26450</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>163.6</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89400</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>62950</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>62950</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338579310560">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63450 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>26100</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>163.6</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89550</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63450</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63450</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338479330643">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63300 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23450</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>149.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>86750</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63300</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63300</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338479333738">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 65200 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>24300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>158.6</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>65200</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>65200</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338479331575">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63050 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23450</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>149.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>86500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63050</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63050</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338579310651">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63400 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>25950</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>163.6</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89350</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63400</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63400</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479318982">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63900 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>25650</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>163.6</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89550</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63900</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63900</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338479338257">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63150 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>141.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>84850</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63150</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63150</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378479319071">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Marine Fuel RMG380 max. 0.5 S)Eingefllte Masse: 63700 kg85 Stk. Zoll(Bahn)verschlsse angelegt:Plomben OMV-AT</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>25450</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>163.6</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89150</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>9</DangerLabel>
+                <TechnicalDescription>KOHLENWASSERSTOFFE</TechnicalDescription>
+                <LongTextDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63700</Weight>
+                <HazardNumber>90</HazardNumber>
+                <UNNumber>3082</UNNumber>
+                <Class>9</Class>
+                <PackingGroup>III</PackingGroup>
+              </RID>
+              <NHMCode>274400</NHMCode>
+              <GoodDescription>UMWELTGEFÄHRDENDER STOFF, FLÜSSIG, N. A.G.</GoodDescription>
+              <GrossMass>63700</GrossMass>
+              <HSCode>27079999</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

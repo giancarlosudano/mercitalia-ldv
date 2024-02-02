@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>8223917390652</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-08T22:39:27+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2184</SendingCarrier>
+      <MessageReferenceNumber>178040</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <MadeAvailable>2023-11-08T21:49:00+01:00</MadeAvailable>
+      <ECNPreparationDatetime>2023-11-08T22:29:08+01:00</ECNPreparationDatetime>
+      <DossierNumber>2184202311080161108</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>CT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>92572</Code>
+          <Name>Rotterdam-Botlek C.RO Container</Name>
+          <Country>
+            <UICCountryCode>84</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>005462</Code>
+          <Name>Rotterdam-Botlek</Name>
+          <Country>
+            <UICCountryCode>84</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-08T21:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2184</CarrierCode>
+        <ConsignmentNumber>105999</ConsignmentNumber>
+        <ForwardingTrainNumber>42729</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02701</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>027011</Code>
+          <Name>Pordenone</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CE">
+          <CustomerCode>7225501</CustomerCode>
+          <Name>Hupac Intermodal SA</Name>
+          <VAT>CHE106844385</VAT>
+          <Street>Viale R. Manzoni 6</Street>
+          <Country>CH</Country>
+          <ZIPCode>6830</ZIPCode>
+          <City>CHIASSO</City>
+        </Customer>
+        <Customer Type="CR">
+          <CustomerCode>3200001</CustomerCode>
+          <Name>Hupac Intermodal NV</Name>
+          <VAT>NL001842341B01</VAT>
+          <Street>Albert Plesmanweg 107C</Street>
+          <Country>NL</Country>
+          <ZIPCode>3088 GC</ZIPCode>
+          <City>ROTTERDAM</City>
+        </Customer>
+      </Customers>
+      <AdditionalInformation>
+        <ConsignorReference>*199 807 038*</ConsignorReference>
+      </AdditionalInformation>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>EXW</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>832832</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>84160</RouteCode>
+          <RouteText>Zevenaar/Emmerich Gr.</RouteText>
+          <BorderpointCode>416</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>80620</RouteCode>
+          <RouteText>Salzburg Hbf</RouteText>
+          <BorderpointCode>462</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>81300</RouteCode>
+          <RouteText>Tarvisio Boscoverde</RouteText>
+          <BorderpointCode>330</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>2184</CarrierCode>
+          <CarrierName>DB Cargo Nederland N.V.</CarrierName>
+          <Street>Moreelsepark 1</Street>
+          <ZIPCode>3511 EP</ZIPCode>
+          <City>UTRECHT</City>
+          <CountryCode>NL</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>84</UICCountryCode>
+            <Station>
+              <StationCode>005462</StationCode>
+              <StationName>Rotterdam-Botlek</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>84</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0416</PointCode>
+              <PointName>Zevenaar</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>2</Status>
+          <CarrierCode>2180</CarrierCode>
+          <CarrierName>DB Cargo AG</CarrierName>
+          <Street>Rheinstrasse 2</Street>
+          <ZIPCode>55116</ZIPCode>
+          <City>MAINZ</City>
+          <CountryCode>DE</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0416</PointCode>
+              <PointName>Emmerich</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>200295</StationCode>
+              <StationName>München Nord Rbf</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>3157</CarrierCode>
+          <CarrierName>Lokomotion</CarrierName>
+          <Street>Kastenbauerstraße 2</Street>
+          <ZIPCode>81677</ZIPCode>
+          <City>MÜNCHEN</City>
+          <CountryCode>DE</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>200295</StationCode>
+              <StationName>München Nord Rbf</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0462</PointCode>
+              <PointName>Freilassing</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>2</Status>
+          <CarrierCode>3157</CarrierCode>
+          <CarrierName>Lokomotion</CarrierName>
+          <Street>Kastenbauerstraße 2</Street>
+          <ZIPCode>81677</ZIPCode>
+          <City>MÜNCHEN</City>
+          <CountryCode>DE</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0462</PointCode>
+              <PointName>Salzburg</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Arnoldstein</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="5">
+          <Status>0</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail S.r.l.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>027011</StationCode>
+              <StationName>Pordenone</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2183</CarrierCode>
+        <CarrierName>Mercitalia Rail S.r.l.</CarrierName>
+        <Street>Amministrazione e Bilancio, Polo Am</Street>
+        <ZIPCode>10126</ZIPCode>
+        <City>TORINO</City>
+        <CountryCode>IT</CountryCode>
+        <Signature>2438538T</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Utrecht</Place>
+        <Date>2023-11-08</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>84</UICCountryCode>
+            <StationCode>005462</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>027011</StationCode>
+          </End>
+          <CommercialRouteCode>376</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>994300</NHMCode>
+            <TariffNumber>832832</TariffNumber>
+            <Distance>
+              <KM>1378</KM>
+            </Distance>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338545065223">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21500.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>200.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>38600.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077074</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CLDA2160638" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7100</TareWeight>
+              <DeliveryReference>NROCO0077074</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>SHOES IN BOXES</AdditionalGoodInformation>
+                <GrossMass>10000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338545064069">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21550.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>200.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>28550.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0076713</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="ITAA0000214" LoadingStatus="empty">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>NROCO0076713</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993300</NHMCode>
+                <GoodDescription>Sattelanhänger, leer gebraucht u vor oder nach Lastlauf per Bahn</GoodDescription>
+                <AdditionalGoodInformation>.</AdditionalGoodInformation>
+                <GrossMass>0.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338545260360">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20200.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>200.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51400.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077108</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CLDA2180995" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7200</TareWeight>
+              <DeliveryReference>NROCO0077108</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>SOLARPANELS</AdditionalGoodInformation>
+                <GrossMass>24000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549610321">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27600.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>47977.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0076739</CustomerReference>
+              <CustomerReference>NROCO0076842</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="923081" LoadingStatus="loaded">
+              <Prefix>MAEU</Prefix>
+              <Checkdigit>9</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+              <DeliveryReference>NROCO0076842</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>HOUSEHLOLD GOODS</AdditionalGoodInformation>
+                <GrossMass>6598.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="111660" LoadingStatus="loaded">
+              <Prefix>MSKU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+              <DeliveryReference>NROCO0076739</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>HOUSEHOLD GOODS</AdditionalGoodInformation>
+                <GrossMass>5779.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549563785">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>342.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>95880.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0076978</CustomerReference>
+              <CustomerReference>NROCO0077018</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2215823" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7080</TareWeight>
+              <DeliveryReference>NROCO0076978</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>GLASS FIBER</AdditionalGoodInformation>
+                <GrossMass>19100.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2213311" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7200</TareWeight>
+              <DeliveryReference>NROCO0077018</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>PLASTIC AND DERIVATIVES</AdditionalGoodInformation>
+                <GrossMass>27500.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338545065421">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21500.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>200.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>53771.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0076438</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="DSVA7301632" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7150</TareWeight>
+              <DeliveryReference>NROCO0076438</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>PLASTICA</AdditionalGoodInformation>
+                <GrossMass>25121.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549563512">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>342.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>97260.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077019</CustomerReference>
+              <CustomerReference>NROCO0077056</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2214051" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7130</TareWeight>
+              <DeliveryReference>NROCO0077019</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>STEEL</AdditionalGoodInformation>
+                <GrossMass>24000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2213760" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7130</TareWeight>
+              <DeliveryReference>NROCO0077056</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>MISCELLANEOUS GOODS</AdditionalGoodInformation>
+                <GrossMass>24000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338545110813">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>197.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>33444.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077023</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="143292" LoadingStatus="loaded">
+              <Prefix>HLBU</Prefix>
+              <Checkdigit>9</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3900</TareWeight>
+              <DeliveryReference>NROCO0077023</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>HOUSEWARES</AdditionalGoodInformation>
+                <GrossMass>7544.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549564205">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>36000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>342.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>72890.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077162</CustomerReference>
+              <CustomerReference>NROCO0077173</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2214093" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7130</TareWeight>
+              <DeliveryReference>NROCO0077162</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>STEEL</AdditionalGoodInformation>
+                <GrossMass>25000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="006008" LoadingStatus="empty">
+              <Prefix>CODA</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4760</TareWeight>
+              <DeliveryReference>NROCO0077173</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993100</NHMCode>
+                <GoodDescription>Grosscontainer,leer gebraucht und vor oder nach Lastlauf per Bahn</GoodDescription>
+                <AdditionalGoodInformation>Grosscontainer,leer gebraucht und vor oder nach Lastlauf per Bahn</AdditionalGoodInformation>
+                <GrossMass>0.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338545260220">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20200.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>200.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>42135.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077037</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="VATA1360990" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6935</TareWeight>
+              <DeliveryReference>NROCO0077037</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>NUTRITIONS</AdditionalGoodInformation>
+                <GrossMass>15000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338545781159">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>17000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>172.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>26471.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077024</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="574287" LoadingStatus="loaded">
+              <Prefix>UETU</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3700</TareWeight>
+              <DeliveryReference>NROCO0077024</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>HOUSEWARES</AdditionalGoodInformation>
+                <GrossMass>5771.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049564289">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>342.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>71385.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077183</CustomerReference>
+              <CustomerReference>NROCO0077184</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2213482" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7415</TareWeight>
+              <DeliveryReference>NROCO0077183</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>EMPTY PACKAGING</AdditionalGoodInformation>
+                <GrossMass>10920.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2213944" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7130</TareWeight>
+              <DeliveryReference>NROCO0077184</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>EMPTY PACKAGING</AdditionalGoodInformation>
+                <GrossMass>10920.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549566689">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>36000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>342.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>72470.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077187</CustomerReference>
+              <CustomerReference>NROCO0077188</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2213380" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7500</TareWeight>
+              <DeliveryReference>NROCO0077187</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>EMPTY PALLETS</AdditionalGoodInformation>
+                <GrossMass>10920.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2213477" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7130</TareWeight>
+              <DeliveryReference>NROCO0077188</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>EMPTY PACKAGING</AdditionalGoodInformation>
+                <GrossMass>10920.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549566986">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>36000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>342.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>72100.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077181</CustomerReference>
+              <CustomerReference>NROCO0077182</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2213672" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7130</TareWeight>
+              <DeliveryReference>NROCO0077181</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>EMPTY PALLETS</AdditionalGoodInformation>
+                <GrossMass>10920.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2214180" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7130</TareWeight>
+              <DeliveryReference>NROCO0077182</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>EMPTY PACKAGING</AdditionalGoodInformation>
+                <GrossMass>10920.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338545260592">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20200.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>200.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>30108.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077021</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="606033" LoadingStatus="loaded">
+              <Prefix>TCKU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3730</TareWeight>
+              <DeliveryReference>NROCO0077021</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>HOUSEWARES</AdditionalGoodInformation>
+                <GrossMass>6178.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338545069407">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21500.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>200.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>28500.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0076708</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="ITAB0000013" LoadingStatus="empty">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>NROCO0076708</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993300</NHMCode>
+                <GoodDescription>Sattelanhänger, leer gebraucht u vor oder nach Lastlauf per Bahn</GoodDescription>
+                <AdditionalGoodInformation>Sattelanhänger, leer gebraucht u vor oder nach Lastlauf per Bahn</AdditionalGoodInformation>
+                <GrossMass>0.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338545064580">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21500.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>200.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>38650.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077073</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CLDA2161090" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7150</TareWeight>
+              <DeliveryReference>NROCO0077073</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>SHOES IN BOXES</AdditionalGoodInformation>
+                <GrossMass>10000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549563579">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>35000.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>342.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>35000.0</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338545062568">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21500.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>200.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>57100.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077202</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="CODA2213461" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="70.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>7600</TareWeight>
+              <DeliveryReference>NROCO0077202</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>PLASTIC AND DERIVATIVES</AdditionalGoodInformation>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338545261764">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20200.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>200.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>27566.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROCO0077022</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="818032" LoadingStatus="loaded">
+              <Prefix>HLXU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3950</TareWeight>
+              <DeliveryReference>NROCO0077022</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>HOUSEWARES</AdditionalGoodInformation>
+                <GrossMass>3416.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+      </Wagons>
+      <ChangeLogs>
+        <ChangeLog CarrierCode="2184" DateTime="2023-11-08T22:33:16+01:00" NumberOfModifiedVersion="000" />
+      </ChangeLogs>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

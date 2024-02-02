@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>7052717379498</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-07T05:27:25+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2154</SendingCarrier>
+      <MessageReferenceNumber>17724791</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-07T05:24:13+01:00</ECNPreparationDatetime>
+      <DossierNumber>2154202311070824810</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>72175</Code>
+          <Name>Mondi Steti a.s.</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>542878</Code>
+          <Name>Hnevice</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-07T04:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2154</CarrierCode>
+        <ConsignmentNumber>024299</ConsignmentNumber>
+        <ForwardingTrainNumber>0</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>07811</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>078113</Code>
+          <Name>PESCARA PORTA NUOVA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>078113</Code>
+          <Name>PESCARA PORTA NUOVA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>58113767</CustomerCode>
+          <Name>Mondi Paper Sales GmbH</Name>
+          <VAT>ATU58113767</VAT>
+          <Street>Marxergasse 4A</Street>
+          <Country>AT</Country>
+          <ZIPCode>1030</ZIPCode>
+          <City>Wien</City>
+          <Signature>not specified</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>91019442</CustomerCode>
+          <Name>CD Cargo, a.s.</Name>
+          <AdditionalInformation>Oductovna prepravnich trzeb Olomouc</AdditionalInformation>
+          <VAT>CZ28196678</VAT>
+          <Street>Videnska 15</Street>
+          <Country>CZ</Country>
+          <ZIPCode>772 11</ZIPCode>
+          <City>Olomouc</City>
+        </Customer>
+        <Customer Type="CE">
+          <Name>L.T.C.F.S. Transporti Celeri</Name>
+          <Street>P.ZZA..V. Colonna 7</Street>
+          <Country>IT</Country>
+          <ZIPCode>00000</ZIPCode>
+          <City>Pescara</City>
+          <Signature>not specified</Signature>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>1</Code>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Ausnahme aus ZAN: 54/BI/05.11.23/011</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>CDC-Frachtzahler: CD Cargo, a.s., Videnska 15, Olomouc, MWSt.Nr.CZ28196678 ; OPT: 91019442 ; PA 0034, PD 84.00   BUCHUGSNR. 54/BI/05.11.23/011</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>3370264</ConsignorReference>
+        <InformationConsignee>MONDI ITALIA SRL,CORSO CARLO MARX 32
+I-95045 MISTERBIANCO</InformationConsignee>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>HORNI DVORISTE ST.HR ; TARVISIO BOSCOVERDE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>CZ - 2154 CDC ; AT - 2181 RCA ; IT - 2183 MIR</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>CDC:91019442 ; 5181.58
+FRACHTZAHLER RCA+FS STRECKEN: RCL-AT FURNITZ,ZF KDN: 767675-2     
+EK RCA/TIC NR.2183.06 
+FUR DIE ABRECHNUNG DER IT-STRECKE CZ/CDC</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>2154, AT/RCA 2181, IT/MIR 2183</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>10</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0610</PointCode>
+            <PointName>SUMMERAU GRENZE</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>910194</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>54100</RouteCode>
+          <RouteText>HORNI DVORISTE ST.HR ; TARVISIO BOSCOVERDE</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2154</DeclaratingCarrier>
+          <DeclarationCode>12</DeclarationCode>
+          <DeclarationText>obj.c. 21343163 ; DROP 5432471</DeclarationText>
+        </CarriersDeclaration>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-11-07T03:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2154</CarrierCode>
+          <CarrierName>CD Cargo, a.s.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>54</UICCountryCode>
+            <Station>
+              <StationCode>542878</StationCode>
+              <StationName>Hnevice</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0610</PointCode>
+              <PointName>HORNI DVORISTE ST.HR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <CarrierName>Rail Cargo Austria AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0610</PointCode>
+              <PointName>SUMMERAU GRENZE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>078113</StationCode>
+              <StationName>PESCARA PORTA NUOVA</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2154</CarrierCode>
+        <CarrierName>CD Cargo, a.s.</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Steti</Place>
+        <Date>2023-11-07</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>54</UICCountryCode>
+            <StationCode>542878</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0610</PointCode>
+          </End>
+          <CurrencyCode>CZK</CurrencyCode>
+          <Tariff>
+            <NHMCode>480429</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0610</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>480429</NHMCode>
+            <TariffNumber>518158</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>83</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>078113</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>480429</NHMCode>
+            <TariffNumber>518158</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="215424590127">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>15500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23948</TotalMass>
+            <LoadLimit>29.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>480429</NHMCode>
+              <GoodDescription>Kraftsackpapier, weder gestrichen noch uberzogen, in Rollen mit einer Breite &gt; 36 cm (ausg. ungebleicht sowie Waren der Pos. 4802, 4803 oder 4808)</GoodDescription>
+              <AdditionalGoodInformation>Verschlusse : 4ks- CD 131943-946Paper in reels : 26 reelsSB003-070-1015-1200</AdditionalGoodInformation>
+              <GrossMass>23948</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

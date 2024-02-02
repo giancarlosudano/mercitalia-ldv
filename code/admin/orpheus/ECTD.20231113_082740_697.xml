@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>3082717406697</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-13T08:27:40+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131153307</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-13T08:27:19+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202311131153307</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>OMV</Code>
+          <Name>OMV Downstream GmbH</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>028605</Code>
+          <Name>Wien Lobau Hafen</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>041954</Code>
+          <Name>WIEN LOBAU AB OM</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-13T08:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2181</CarrierCode>
+        <ConsignmentNumber>644427</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>25155</Code>
+          <Name>Venezia Marghera Scalo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>025155</Code>
+          <Name>Venezia Marghera Scalo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>025916</Code>
+          <Name>Venezia Marghera Scalo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>1625334</CustomerCode>
+          <Name>OMV Downstream GmbH</Name>
+          <VAT>ATU48359903</VAT>
+          <Street>TRABRENNSTRASSE 6-8</Street>
+          <Country>AT</Country>
+          <ZIPCode>1020</ZIPCode>
+          <City>Wien</City>
+          <Signature>1083 i. A. d. Abs.</Signature>
+          <Contacts>
+            <PhoneNumber>+43-1-40440-41260</PhoneNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <Name>SAN MARCO PETROLI SPA</Name>
+          <Street>Via dell'Elettronica 2</Street>
+          <Country>IT</Country>
+          <ZIPCode>30175</ZIPCode>
+          <City>Marghera</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>0726828</CustomerCode>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>0030468</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>1</Code>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>E600
+E600
+Empf nicht verfügungsberechtigt</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>231113 60 E600 6030881589</ConsignorReference>
+        <InformationConsignee>KWG tw. mit Telematik (&gt; ATEX 1) ausgerstet, Leer KWG retour an Absender</InformationConsignee>
+        <WagonGroupInfo>eingefllte Menge: 1085150 kg</WagonGroupInfo>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>via Tarvisio</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>0220.67 5.) TI IN 519010</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>022067</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>028605</StationCode>
+              <StationName>Wien Lobau Hafen</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>025155</StationCode>
+              <StationName>Venezia Marghera Scalo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2181</CarrierCode>
+        <Signature>2023-11-13 08:27 1131153307</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>WIEN</Place>
+        <Date>2023-11-13</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <StationCode>028605</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>272400</NHMCode>
+            <TariffNumber>022067</TariffNumber>
+            <ChargedMass value="1085150" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="378479295768">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.6  LITER15:87565Eingefllte Masse: 63800 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23750</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87550</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192828</ARC>
+            </ReferenceNumbers>
+            <BookingNumber>2181:20231113082708394:15977793</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63800</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63800</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078430018">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.6  LITER15:87771Eingefllte Masse: 63950 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23750</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87700</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192900</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63950</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63950</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078437880">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.6  LITER15:87771Eingefllte Masse: 63950 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>24250</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>167.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88200</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192920</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63950</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63950</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078366501">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.6  LITER15:87634Eingefllte Masse: 63850 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87650</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192915</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63850</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63850</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378478401474">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.5  LITER15:87509Eingefllte Masse: 63750 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>24000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87750</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192880</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63750</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63750</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078484759">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.5  LITER15:87509Eingefllte Masse: 63750 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23650</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87400</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192854</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63750</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63750</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078489196">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.5  LITER15:87852Eingefllte Masse: 64000 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>24050</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88050</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192957</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>64000</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>64000</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078484502">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.5  LITER15:87577Eingefllte Masse: 63800 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>24100</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87900</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192833</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63800</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63800</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078374125">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.6  LITER15:87565Eingefllte Masse: 63800 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>24400</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88200</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192812</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63800</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63800</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078484072">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.3  LITER15:87601Eingefllte Masse: 63800 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23600</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87400</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192962</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63800</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63800</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078374786">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.3  LITER15:87739Eingefllte Masse: 63900 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>24250</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88150</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192849</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63900</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63900</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078373069">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.2  LITER15:87613Eingefllte Masse: 63800 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23850</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87650</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192860</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63800</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63800</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078487158">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.2  LITER15:87751Eingefllte Masse: 63900 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23850</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87750</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192936</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63900</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63900</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078374679">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.1  LITER15:87763Eingefllte Masse: 63900 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23950</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87850</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192807</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63900</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63900</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078436692">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.1  LITER15:87213Eingefllte Masse: 63500 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>24650</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>169.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88150</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192978</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63500</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63500</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078375015">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.1  LITER15:88106Eingefllte Masse: 64150 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23650</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>170</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87800</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192793</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>64150</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>64150</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338078436866">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>(Super 95 without bio content)DICHTE15:728.2  LITER15:87270Eingefllte Masse: 63550 kg51 Stk. Zoll(Bahn)verschlsse angelegt:1286771-1286821</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>24400</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>169.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87950</TotalMass>
+            <ReferenceNumbers>
+              <ARC>23ATI1113E00000192875</ARC>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <RID>
+                <Law>2023</Law>
+                <DangerLabel>3</DangerLabel>
+                <LongTextDescription>BENZIN</LongTextDescription>
+                <AdditionalInformation>UMWELTGEFAEHRDEND</AdditionalInformation>
+                <Weight>63550</Weight>
+                <HazardNumber>33</HazardNumber>
+                <UNNumber>1203</UNNumber>
+                <Class>3</Class>
+                <PackingGroup>II</PackingGroup>
+              </RID>
+              <NHMCode>272400</NHMCode>
+              <GoodDescription>BENZIN</GoodDescription>
+              <GrossMass>63550</GrossMass>
+              <HSCode>27101245</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

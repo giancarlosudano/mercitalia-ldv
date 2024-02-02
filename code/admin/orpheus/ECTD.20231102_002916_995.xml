@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>2002917357995</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-02T00:29:16+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2180</SendingCarrier>
+      <MessageReferenceNumber>30901224</MessageReferenceNumber>
+      <ShipmentType>CUV</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-02T00:23:51+01:00</ECNPreparationDatetime>
+      <DossierNumber>2180202311027087883</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+      <ORFIMO>1</ORFIMO>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>00557</Code>
+          <Name>ROTTERDAM RSC</Name>
+          <Country>
+            <UICCountryCode>84</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>005579</Code>
+          <Name>ROTTERDAM RSC</Name>
+          <Country>
+            <UICCountryCode>84</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-01T23:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2180</CarrierCode>
+        <ConsignmentNumber>031914</ConsignmentNumber>
+        <ForwardingTrainNumber>40021</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>01812</Code>
+          <Name>BRESCIA EST FASCIO MERCI</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>018127</Code>
+          <Name>BRESCIA EST FASCIO MERCI</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>018127</Code>
+          <Name>BRESCIA EST FASCIO MERCI</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>999999999</CustomerCode>
+          <Name>HUPAC INTERMODAL N.V.NL-3088 GC ROT</Name>
+          <Street>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</Street>
+          <Country>XX</Country>
+          <ZIPCode>999999999</ZIPCode>
+          <City>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</City>
+        </Customer>
+        <Customer Type="CE">
+          <Name>TERMINALI ITALIA S.R.LI-25125 BRESC</Name>
+          <Street>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</Street>
+          <Country>XX</Country>
+          <ZIPCode>999999999</ZIPCode>
+          <City>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</City>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>649728649</CustomerCode>
+          <Name>HUPI HUPAC INTERMODAL SA</Name>
+          <VAT>IT 025 473 901 26</VAT>
+          <Street>VIALE R.MANZONI 6</Street>
+          <Country>CH</Country>
+          <ZIPCode>6830</ZIPCode>
+          <City>CHIASSO</City>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Absender alleine verfuegungsberechtigt, bis die Sendung das Versandland gemaess Feld 16 bzw. Feld 56 des CIM-Frachtbriefs verlassen hat.</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>EXW</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>924543</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>84160</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>80910</RouteCode>
+          <BorderpointCode>491</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>85210</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <PrincipalCode>2183</PrincipalCode>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>2184</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>DB CARGO NEDERLAND N.V.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>84</UICCountryCode>
+            <Station>
+              <StationCode>005579</StationCode>
+              <StationName>ROTTERDAM RSC</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>84</UICCountryCode>
+            <Station>
+              <StationCode>007351</StationCode>
+              <StationName>ZEVENAAR</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MERCITALIA RAIL SRL</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>053074</StationCode>
+              <StationName>CHIASSO</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>018127</StationCode>
+              <StationName>BRESCIA EST FASCIO MERCI</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>3096</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>DB CARGO SCHWEIZ GMBH</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>139535</StationCode>
+              <StationName>BASEL GRENZE 80912</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>053074</StationCode>
+              <StationName>CHIASSO</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>2</Status>
+          <CarrierCode>2180</CarrierCode>
+          <ResponsibleCarrierCode>2183</ResponsibleCarrierCode>
+          <CarrierName>DB CARGO AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>84</UICCountryCode>
+            <Station>
+              <StationCode>007351</StationCode>
+              <StationName>ZEVENAAR</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>139535</StationCode>
+              <StationName>BASEL GRENZE 80912</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2183</CarrierCode>
+        <CarrierName>MERCITALIA RAIL SRL</CarrierName>
+        <Street>PIAZZA DELLA CROCE ROSSA 1</Street>
+        <ZIPCode>00161</ZIPCode>
+        <City>ROMA</City>
+        <CountryCode>IT</CountryCode>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>ROTTERDAM RSC</Place>
+        <Date>2023-11-02</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>84</UICCountryCode>
+            <StationCode>005579</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>018127</StationCode>
+          </End>
+          <CommercialRouteCode>311</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>992200</NHMCode>
+            <TariffNumber>924543</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338545758256">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>17600.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>20.0</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202311017087423</DeliveryReference>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Befoerderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338545762324">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>17400.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>20.0</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202311017087424</DeliveryReference>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Befoerderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338545765160">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>17400.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>20.0</WagonLength>
+            </WagonTypeDetails>
+            <DeliveryReference>80202311017087425</DeliveryReference>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Befoerderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

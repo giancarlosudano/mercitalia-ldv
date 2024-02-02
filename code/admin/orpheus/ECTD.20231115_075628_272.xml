@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>5075617418272</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-15T07:56:28+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2180</SendingCarrier>
+      <MessageReferenceNumber>12000057450464</MessageReferenceNumber>
+      <ShipmentType>CUV</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-15T07:54:19+01:00</ECNPreparationDatetime>
+      <DossierNumber>2180202311153958148</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>19014</Code>
+          <Name>GIESSEN ERDKW BIEBER</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>836585</Code>
+          <Name>GIESSEN ERDKW BIEBER</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-15T19:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2180</CarrierCode>
+        <ConsignmentNumber>719435</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>017020</Code>
+          <Name>Milano Smistamento</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>800429469141</CustomerCode>
+          <Name>MERCITALIA RAIL SRL WKM</Name>
+          <Street>Piazza della Croco Rossa 1</Street>
+          <Country>IT</Country>
+          <ZIPCode>00161</ZIPCode>
+          <City>Roma</City>
+          <Signature>i.A.DB Cargo AG</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>800429469141</CustomerCode>
+          <Name>MERCITALIA RAIL SRL WKM</Name>
+          <Street>Piazza della Croco Rossa 1</Street>
+          <Country>IT</Country>
+          <ZIPCode>00161</ZIPCode>
+          <City>Roma</City>
+        </Customer>
+      </Customers>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>9018.06.-0</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>10</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>901806</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>80910</RouteCode>
+          <BorderpointCode>491</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>85210</RouteCode>
+          <BorderpointCode>321</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2180</CarrierCode>
+          <CarrierName>DB Cargo AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>836585</StationCode>
+              <StationName>GIESSEN ERDKW BIEBER</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>144337</StationCode>
+              <StationName>BASEL BAD GBF</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>2</Status>
+          <CarrierCode>2185</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>SBB Cargo AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>144337</StationCode>
+              <StationName>BASEL BAD GBF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>053090</StationCode>
+              <StationName>CHIASSO SMISTAMENTO</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>053090</StationCode>
+              <StationName>CHIASSO SMISTAMENTO</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>017020</StationCode>
+              <StationName>Milano Smistamento</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2180</CarrierCode>
+        <CarrierName>DB Cargo AG</CarrierName>
+        <Signature>AftNr. 80 2023 1115 395 8148</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>GIESSEN ERDKW BIEBER</Place>
+        <Date>2023-11-15</Date>
+      </MadeOut>
+      <ChargesNote>
+        <ChargesNoteAvailable>0</ChargesNoteAvailable>
+      </ChargesNote>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>80</UICCountryCode>
+            <StationCode>836585</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>017020</StationCode>
+          </End>
+          <CommercialRouteCode>011</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>992200</NHMCode>
+            <TariffNumber>901806</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318339180867">
+          <WagonDetails LoadingStatus="empty">
+            <WagonInfo>Betriebl. Sonderbeh.: 33</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>24000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>199.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>24000.0</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339185460">
+          <WagonDetails LoadingStatus="empty">
+            <WagonInfo>Betriebl. Sonderbeh.: 33</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23500.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>199.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23500.0</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+      <ChangeLogs>
+        <ChangeLog CarrierCode="2180" DateTime="2023-11-15T07:54:19+01:00" NumberOfModifiedVersion="000" />
+      </ChangeLogs>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

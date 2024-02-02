@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>6131217376204</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-06T13:12:31+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2154</SendingCarrier>
+      <MessageReferenceNumber>17723780</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-06T13:11:56+01:00</ECNPreparationDatetime>
+      <DossierNumber>2154202311060823799</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>82505</Code>
+          <Name>Stora Enso Wood Products Plana s.r.</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>749457</Code>
+          <Name>Plana u Marianskych Lazni</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-06T13:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2154</CarrierCode>
+        <ConsignmentNumber>501726</ConsignmentNumber>
+        <ForwardingTrainNumber>0</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02712</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>027128</Code>
+          <Name>TREVISO C.LE</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>027128</Code>
+          <Name>TREVISO C.LE</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>999999</CustomerCode>
+          <Name>Stora Enso Wood Products Plana s.r.</Name>
+          <VAT>CZ64361179</VAT>
+          <Street>not specified</Street>
+          <Country>CZ</Country>
+          <ZIPCode>999999</ZIPCode>
+          <City>not specified</City>
+          <Signature>54-749457-50172-2154-20231106</Signature>
+          <Contacts>
+            <PhoneNumber>602247531</PhoneNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>13972</CustomerCode>
+          <Name>RND s.r.o.</Name>
+          <VAT>CZ25390198</VAT>
+          <Street>Halkova 171/2, Hodolany</Street>
+          <Country>CZ</Country>
+          <ZIPCode>779 00</ZIPCode>
+          <City>Olomouc</City>
+        </Customer>
+        <Customer Type="CE">
+          <Name>Astolfo di Dametto Srl</Name>
+          <Street>Via Bivio Motta (Scalo FS)</Street>
+          <Country>IT</Country>
+          <ZIPCode>31100</ZIPCode>
+          <City>Treviso</City>
+          <Signature>not specified</Signature>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>767675</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>1</Code>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>CDC-Frachtzahler: RND s.r.o., Halkova 171/2, Hodolany, Olomouc, MWSt.Nr.CZ25390198 ; OPT: 91313972 ; Ganzzug Villach Sud - Treviso. Die Beforderung auf der Italiensche strecke erfolgt durch EVU-MIR;</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Scarico e consegna a carico di Rail Cargo Logistics Austria,  Buchungs. Nr. 54/TV/06.11.23/014</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <InformationConsignee>zur Verfugung:</InformationConsignee>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>HORNI DVORISTE ST.HR ; TARVISIO BOSCOVERDE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>CZ - 2154 CDC ; AT - 2181 RCA ; IT - 2183 MIR</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>CDC:D806222 ; via Summerau/Tarvisio Boscoverde;Kontrakt VK Nr.5183.72 fur die OBB und FS Strecke; Abrechnung durch OBB-ZF Nr.767675-2;Kontrakt EK Nr.2183.75</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>fur die Abrechnung der IT-Strecke</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>11</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>11</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0610</PointCode>
+            <PointName>HORNI DVORISTE ST.HR</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+        <AdditionalCharges>
+          <AdditionalCharge>
+            <Code>02</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>03</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>04</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>05</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>06</Code>
+          </AdditionalCharge>
+        </AdditionalCharges>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>806222</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>54100</RouteCode>
+          <RouteText>HORNI DVORISTE ST.HR ; TARVISIO BOSCOVERDE</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2154</DeclaratingCarrier>
+          <DeclarationCode>12</DeclarationCode>
+          <DeclarationText>Buchungs. Nr. 54/TV/06.11.23/014 ; obj.c. 21341840 ; DROP 5431787</DeclarationText>
+        </CarriersDeclaration>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2154</CarrierCode>
+          <CarrierName>CD Cargo, a.s.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>54</UICCountryCode>
+            <Station>
+              <StationCode>749457</StationCode>
+              <StationName>Plana u Marianskych Lazni</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0610</PointCode>
+              <PointName>HORNI DVORISTE ST.HR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <CarrierName>Rail Cargo Austria AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0610</PointCode>
+              <PointName>SUMMERAU GRENZE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>027128</StationCode>
+              <StationName>TREVISO C.LE</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2154</CarrierCode>
+        <CarrierName>CD Cargo, a.s.</CarrierName>
+        <Signature>54-749457-50172-2154-20231106</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Plana u Marianskych Lazni</Place>
+        <Date>2023-11-06</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>54</UICCountryCode>
+            <StationCode>749457</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0610</PointCode>
+          </End>
+          <CurrencyCode>CZK</CurrencyCode>
+          <Tariff>
+            <NHMCode>440712</NHMCode>
+            <TariffNumber>806222</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0610</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>440712</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>83</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>027128</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>440712</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="315427809449">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27400</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>55250</TotalMass>
+            <LoadLimit>62.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>440712</NHMCode>
+              <GoodDescription>Tannenholz der Art "Abies spp." und Fichtenholz der Art "Picea spp.", in der Langsrichtung gesagt oder gesaumt, gemessert oder geschalt, mit einer Dicke von &gt; 6 mm</GoodDescription>
+              <AdditionalGoodInformation>Verschlusse : 723934;35;36;37Zustellung nach Kunde mit LKW.......23PL716160 + 23PL716161 - 22 pktL?IMBALLAGGIO SRLVIA GIOVANNI PASCOLI 5/a36065 MUSSOLENTE (VI)ITALIA</AdditionalGoodInformation>
+              <GrossMass>55250</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

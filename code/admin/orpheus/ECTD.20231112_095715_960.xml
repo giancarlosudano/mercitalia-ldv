@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>2095717404960</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-12T09:57:15+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131148953</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-12T09:55:32+01:00</ECNPreparationDatetime>
+      <DossierNumber>2155202311101161928</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>HORVA</Code>
+          <Name>Horváth R+K IPV</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>012898</Code>
+          <Name>Gyr</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>012716</Code>
+          <Name>Gyr-Rendez</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-10T24:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2155</CarrierCode>
+        <ConsignmentNumber>752949</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>03050</Code>
+          <Name>Osoppo Raccordo Ferriere Nord</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>0016543</CustomerCode>
+          <Name>ALCUFER IPARI KERESKEDELMI ÉS SZOLG</Name>
+          <AdditionalInformation>FE00004200001</AdditionalInformation>
+          <VAT>HU 10356962</VAT>
+          <Street>Mészáros Lörinc Út 13</Street>
+          <Country>HU</Country>
+          <ZIPCode>9023</ZIPCode>
+          <City>Gyr</City>
+          <Signature>45175 a feladó megb.</Signature>
+          <Contacts>
+            <PhoneNumber>+36 96/512-700</PhoneNumber>
+            <FaxNumber>+36 96/512-709</FaxNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>4043352</CustomerCode>
+          <Name>FERRIERE NORD S.P.A</Name>
+          <VAT>IT00163780307</VAT>
+          <Street>Zona Industriale Rivoli</Street>
+          <Country>IT</Country>
+          <ZIPCode>33010</ZIPCode>
+          <City>Osoppo (UD)</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>0060012</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>ND-0049 ; Engedélyszám: 55/OS/11.11.23/031-050; Költségvisel RCH szakaszon Rail Cargo Logistics Hungaria Kft. ZF: 0060012 10966925 ; Bizonyító erej feledaói mérlegelés.</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>"SDS/3070/21 tartalmát elfogadom"</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Komplett Zugtransport  Die Bezahlung RCA und MIR Strecke wird der Empfaenger FERRIERE NORD SPA mit Vertrag IN283020 auferlegt.</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtbrief gemäß Art. 6 § 6 CIM RCH 049/18; RCA 033/18; MIR 25/2019</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>Ksz.:238413/HU - 238432/HU</ConsignorReference>
+        <InformationConsignee>FERRIERE NORD-AUFTRAGSNR:23047//110, 23053//100  - DAF700</InformationConsignee>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Robbanás mentességi igazolás</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Radioaktivitás mentességi nyilat.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>979</Type>
+          <DocumentInformation>ANNEX VII</DocumentInformation>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>kísér dokumentum</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>az 1013/2006/EK(2006.jún.14.)rend.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>180/2007.(VII.3.)Korm.rend.megf.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>BEJELENTLAP</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>via Hegyeshalom/Nickelsdorf-Tarvisio</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>55-2155;81-2181;83-2183</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>DAP</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>47</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>55</UICCountryCode>
+            <PointCode>0601</PointCode>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <TariffNumber>283020</TariffNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>55010</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2155</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <Station>
+              <StationCode>012898</StationCode>
+              <StationName>Gyr</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0601</PointCode>
+              <PointName>Nickelsdorf (Gr)/Hegyeshalom</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0601</PointCode>
+              <PointName>Nickelsdorf (Gr)/Hegyeshalom</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>Osoppo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2155</CarrierCode>
+        <Signature>2023-11-12 09:55 1131148953</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Gyr, 2023.</Place>
+        <Date>2023-11-10</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>012898</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>030502</StationCode>
+          </End>
+          <CommercialRouteCode>013</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+            <ChargedMass value="1099800" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>012898</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>012898</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <AdditionalCharges>
+            <AdditionalCharge>
+              <Code>28</Code>
+              <Prepaid>1900</Prepaid>
+            </AdditionalCharge>
+          </AdditionalCharges>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="315554251530">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF780-013-E8 Origine: UngheriaDAF780-013-E8 lamierino  B1010 - GA430 - CER 191202 Wir bestatigen dass der in diesem Waggon enthaltene Schrott frei von explosive[23047/110 - DAF780-013-E8 - DAF700 - 238413/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>68400</TotalMass>
+            <BookingNumber>2155:20231110134503528:15971837</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>46600</GrossMass>
+              <AVVKey>191202</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315553303670">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF780-013-E8 Origine: UngheriaDAF780-013-E8 lamierino  B1010 - GA430 - CER 191202 Wir bestatigen dass der in diesem Waggon enthaltene Schrott frei von explosive[23047/110 - DAF780-013-E8 - DAF700 - 238414/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>69250</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>"Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladékvasból vagy -acélból- Más törmelék és hulladék- Más"</GoodDescription>
+              <GrossMass>47450</GrossMass>
+              <AVVKey>191202</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315554257206">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF720-009-E2 Origine: UngheriaDAF720-009-E2 pantografato   B1010 - GA430 - CER 191202 Wir bestatigen dass der in diesem Waggon enthaltene Schrott frei von explo[23047/110 - DAF720-009-E2 - DAF700 - 238415/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22400</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>71200</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>"Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladékvasból vagy -acélból- Más törmelék és hulladék- Más"</GoodDescription>
+              <GrossMass>48800</GrossMass>
+              <AVVKey>191202</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315554264426">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238416/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22200</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79300</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>57100</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315559590700">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238417/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22400</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79600</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>57200</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315554227894">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238418/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22340</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79740</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>57400</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315554262321">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238419/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22600</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79700</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>57100</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315553316193">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238420/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21280</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79780</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>58500</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315554253619">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238421/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79600</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>57300</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315554257057">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238422/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22100</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79600</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>57500</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315553317084">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238423/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21370</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79620</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>58250</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315553301450">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238424/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21600</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79750</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>58150</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315554257248">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238425/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22420</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79070</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>56650</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315553315302">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238426/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>20900</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79750</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>58850</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315553313067">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238427/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>57800</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315553311400">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238428/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79700</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>57700</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315554238990">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-E5H//M Origine: UngheriaDAF750-005-E5H//M tornitura ferro   B1010 - GA430 - CER 120101 Wir bestatigen dass der in diesem Waggon enthaltene Schrott fre[23047/110 - DAF750-005-E5H/M - DAF700 - 238429/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79550</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>56850</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315553301146">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF710-010-E1 Origine: UngheriaDAF710-010-E1 demolizione   B1010 - GA430 - CER 191202 Wir bestatigen dass der in diesem Waggon enthaltene Schrott frei von explos[23053/100 - DAF710-010-E1 - DAF700 - 238430/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21600</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>73100</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>51500</GrossMass>
+              <AVVKey>191202</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315554261950">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF706-050-E1 Origine: UngheriaDAF706-050-E1 cesoiato   B1010 - GA430 - CER 191202 Wir bestatigen dass der in diesem Waggon enthaltene Schrott frei von explosive[23053/100 - DAF706-050-E1 - DAF700 - 238431/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>68400</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>45700</GrossMass>
+              <AVVKey>191202</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315554231086">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF780-095-E8 Origine: UngheriaDAF780-095-E8 lam. stagnato   B1010 - GA430 - CER 191202 Wir bestatigen dass der in diesem Waggon enthaltene Schrott frei von expl[23053/100 - DAF780-095-E8 - DAF700 - 238432/HU]</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22200</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>75600</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladék vasból vagy acélból; más törmelék és hulladék; a k.m.k.</GoodDescription>
+              <GrossMass>53400</GrossMass>
+              <AVVKey>191202</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

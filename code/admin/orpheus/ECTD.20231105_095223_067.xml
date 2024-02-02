@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>5095217372067</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-05T09:52:23+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2184</SendingCarrier>
+      <MessageReferenceNumber>177566</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <MadeAvailable>2023-11-05T07:55:00+01:00</MadeAvailable>
+      <ECNPreparationDatetime>2023-11-05T08:19:50+01:00</ECNPreparationDatetime>
+      <DossierNumber>2184202311050160633</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>91440</Code>
+          <Name>Beverwijk Corus-sporen</Name>
+          <Country>
+            <UICCountryCode>84</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>001131</Code>
+          <Name>Beverwijk</Name>
+          <Country>
+            <UICCountryCode>84</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-05T07:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2184</CarrierCode>
+        <ConsignmentNumber>711838</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>05012</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>050120</Code>
+          <Name>Castelguelfo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CE">
+          <Name>LANZI</Name>
+          <VAT>IT12125010152</VAT>
+          <Street>VIA BONN, 6</Street>
+          <Country>IT</Country>
+          <ZIPCode>99999</ZIPCode>
+          <City>Castelfuelfo</City>
+          <Signature>LANZI</Signature>
+        </Customer>
+        <Customer Type="CR">
+          <CustomerCode>3714301</CustomerCode>
+          <Name>TATA STEEL IJMUIDEN</Name>
+          <VAT>NL001707371B01</VAT>
+          <Street>COM .BPS.OU</Street>
+          <Country>NL</Country>
+          <ZIPCode>202311</ZIPCode>
+          <City>6 RAILPLANNING.TATASTEEL.COM</City>
+          <Signature>Railplanning Tata Steel</Signature>
+          <Contacts>
+            <PhoneNumber>0251 495438</PhoneNumber>
+            <FaxNumber>0251 470449</FaxNumber>
+            <Email>Railplanning@tatasteel.com</Email>
+          </Contacts>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>RICHTZAHLKODE 8091-4|ABSENDER IST V</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>ERFUEGUNGSBERECHTIGT</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>/0001836539/*/44822</ConsignorReference>
+        <InformationConsignee>/ /BLS/FNC /</InformationConsignee>
+        <WagonGroupInfo>TOTAAL 3    COLLI.</WagonGroupInfo>
+      </AdditionalInformation>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>10</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <TariffNumber>825200</TariffNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>84160</RouteCode>
+          <RouteText>Zevenaar/Emmerich Gr.</RouteText>
+          <BorderpointCode>416</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>80910</RouteCode>
+          <RouteText>Basel Bad Gbf</RouteText>
+          <BorderpointCode>491</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>85210</RouteCode>
+          <RouteText>Chiasso (Como Confine)</RouteText>
+          <BorderpointCode>321</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>true</STP>
+        <PrincipalCode>2184</PrincipalCode>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>2184</CarrierCode>
+          <CarrierName>DB Cargo Nederland N.V.</CarrierName>
+          <Street>Moreelsepark 1</Street>
+          <ZIPCode>3511 EP</ZIPCode>
+          <City>UTRECHT</City>
+          <CountryCode>NL</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>84</UICCountryCode>
+            <Station>
+              <StationCode>001131</StationCode>
+              <StationName>Beverwijk</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>84</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0416</PointCode>
+              <PointName>Zevenaar</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2180</CarrierCode>
+          <CarrierName>DB Cargo AG</CarrierName>
+          <Street>Rheinstrasse 2</Street>
+          <ZIPCode>55116</ZIPCode>
+          <City>MAINZ</City>
+          <CountryCode>DE</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0416</PointCode>
+              <PointName>Emmerich</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0491</PointCode>
+              <PointName>Basel Badischer Bahnhof</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>2185</CarrierCode>
+          <CarrierName>SBB Cargo AG</CarrierName>
+          <Street>Verkehrsabrechnung</Street>
+          <ZIPCode>CH-9000</ZIPCode>
+          <City>ST. GALLEN</City>
+          <CountryCode>CH</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>85</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0491</PointCode>
+              <PointName>Basel Bad Gbf</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>85</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0321</PointCode>
+              <PointName>Chiasso (Como Confine)</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail S.r.l.</CarrierName>
+          <Street>Amministrazione e Bilancio, Polo Am</Street>
+          <ZIPCode>10126</ZIPCode>
+          <City>TORINO</City>
+          <CountryCode>IT</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0321</PointCode>
+              <PointName>Chiasso (Como Confine)</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>050120</StationCode>
+              <StationName>Castelguelfo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2180</CarrierCode>
+        <CarrierName>DB Cargo AG</CarrierName>
+        <Street>Rheinstrasse 2</Street>
+        <ZIPCode>55116</ZIPCode>
+        <City>MAINZ</City>
+        <CountryCode>DE</CountryCode>
+        <Signature>2439090T</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Utrecht</Place>
+        <Date>2023-11-05</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>84</UICCountryCode>
+            <StationCode>001131</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>84</UICCountryCode>
+            <PointCode>0416</PointCode>
+          </End>
+          <CommercialRouteCode>311</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720839</NHMCode>
+            <TariffNumber>825200</TariffNumber>
+            <Distance>
+              <KM>144</KM>
+            </Distance>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338746730732">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21880.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>68115.0</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720838</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, in Rollen "Coils", nur warmgewalzt, weder plattiert noch überzogen, mit einer Dicke von &gt;= 3 mm, jedoch &lt; 4,75 mm, ungebeizt, ohne Oberflächenmuster</GoodDescription>
+              <AdditionalGoodInformation>STAALPRODUKTEN,ZIE BIJLAGE                                            0001 COLLI</AdditionalGoodInformation>
+              <GrossMass>23117.0</GrossMass>
+            </Good>
+            <Good>
+              <NHMCode>720839</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, in Rollen "Coils", nur warmgewalzt, weder plattiert noch überzogen, mit einer Dicke von &lt; 3 mm, ungebeizt, ohne Oberflächenmuster</GoodDescription>
+              <AdditionalGoodInformation>STAALPRODUKTEN,ZIE BIJLAGE                                            0002 COLLI</AdditionalGoodInformation>
+              <GrossMass>23118.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+      <ChangeLogs>
+        <ChangeLog CarrierCode="2184" DateTime="2023-11-05T09:45:28+01:00" NumberOfModifiedVersion="000" />
+      </ChangeLogs>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

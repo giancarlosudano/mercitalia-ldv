@@ -27,7 +27,7 @@ def read_field_from_cim():
 	file_list = os.listdir(folder_path)
 	
 	i = 0
-	df = pd.DataFrame(columns=['File', 'UICountryCode', 'StationCode', 'SendingCarrier', 'ConsignmentNumber', 'AcceptanceDate'])
+	df = pd.DataFrame(columns=['File', 'UICountryCode', 'StationCode', 'CarrierCode', 'ConsignmentNumber', 'AcceptanceDate'])
  
 	for index, file_name in enumerate(file_list):
 		# Costruisci il percorso completo del file
@@ -56,9 +56,9 @@ def read_field_from_cim():
 				if station_code is not None:
 					station_codes.append(station_code.text)
 
-			# Iterate through the ECN nodes
-			for ecn in root.findall(".//ECNs"):
-				carrier_code = ecn.find(".//ECNHeader/SendingCarrier")
+			# Iterate through the ECN nodes (impresa 4 cifre)
+			for ecn in root.findall(".//ECN"):
+				carrier_code = ecn.find(".//AcceptancePoint/CarrierCode")
 				if carrier_codes is not None:
 					carrier_codes.append(carrier_code.text)
 
@@ -75,14 +75,9 @@ def read_field_from_cim():
 					acceptance_dates.append(acceptance_date.text)
 			
 			data_ora_originale = acceptance_dates[0]
-			# Analizzare la stringa nel formato originale
-			# '%Y-%m-%dT%H:%M:%S%z' è il formato di analisi
-			# '%Y' sta per anno, '%m' per mese, '%d' per giorno, '%H' per ore, '%M' per minuti, '%S' per secondi, '%z' per il fuso orario
 			try:
 				data_ora_obj = datetime.datetime.strptime(data_ora_originale, '%Y-%m-%dT%H:%M:%S%z')
-				# Formattare l'oggetto datetime nel nuovo formato
-				# '%Y%m%d-%H%M%S' è il formato di output
-				data_ora_formattata = data_ora_obj.strftime('%Y%m%d')
+				data_ora_formattata = data_ora_obj.strftime('%Y-%m-%d')
 			except ValueError as e:
 				print(f"Errore nella conversione della data: {e} nel file {file_name}")
 

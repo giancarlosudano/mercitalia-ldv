@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230010395</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-06T12:28:52+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110131206</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-06T12:28:33+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202311060131206</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Sremska Mitrovica</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>165092</Code>
+          <Name>Sremska Mitrovica</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>165092</Code>
+          <Name>Sremska Mitrovica</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-10-31T15:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3212</CarrierCode>
+        <ConsignmentNumber>238907</ConsignmentNumber>
+        <ForwardingTrainNumber>46916</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>053082</Code>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>053082</Code>
+          <Name>Poggio Rusco</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>YU DIN COMMERCE d.o.o.</Name>
+          <Street>Draginje Niksic 25a</Street>
+          <Country>RS</Country>
+          <ZIPCode>22000</ZIPCode>
+          <City>Sremska Mitrovica</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>BORSARI E&amp;CSRL</Name>
+          <Street>via di mezzo 114/e</Street>
+          <Country>IT</Country>
+          <ZIPCode>41015</ZIPCode>
+          <City>nonantola</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>10</Code>
+          <Text>ENSIGNE OBREZJE</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: 037/23</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: EUROLOGSYSTEM</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>PESNI REZANCI</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>430501 INMP0021 SZTP4011.00</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>DAF</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>12</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>72</UICCountryCode>
+            <PointCode>501</PointCode>
+            <PointName>SID</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>2023</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>72010</RouteCode>
+          <RouteText>SID/TOVARNIK</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>78540</RouteCode>
+          <RouteText>SAVSKI MAROF/DOBOVA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>true</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+        <CustomsEndorsements>23HR070327030995M4</CustomsEndorsements>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>3212</CarrierCode>
+          <CarrierName>KP</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>72</UICCountryCode>
+            <Station>
+              <StationCode>165092</StationCode>
+              <StationName>SREMSKA MITROVICA</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>72</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>501</PointCode>
+              <PointName>SID</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2178</CarrierCode>
+          <CarrierName>HZ Cargo</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>501</PointCode>
+              <PointName>TOVARNIK</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>SAVSKI MAROF</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>DOBOVA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>053082</StationCode>
+              <StationName>Poggio Rusco</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>3212</CarrierCode>
+        <CarrierName>KP</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Sremska Mitrovica</Place>
+        <Date>2023-10-31</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>72</UICCountryCode>
+            <StationCode>165092</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>053082</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338793320957">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78200.0</TotalMass>
+            <LoadLimit>188</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59400.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338393382803">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79150.0</TotalMass>
+            <LoadLimit>214</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>57750.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793342985">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79500.0</TotalMass>
+            <LoadLimit>200</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59500.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793321195">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78100.0</TotalMass>
+            <LoadLimit>191</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338407643356">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79310.0</TotalMass>
+            <LoadLimit>203</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59050.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793352398">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>74540.0</TotalMass>
+            <LoadLimit>204</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>54150.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793350277">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>75520.0</TotalMass>
+            <LoadLimit>195</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>56050.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338707641613">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>75400.0</TotalMass>
+            <LoadLimit>210</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>54400.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793356712">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>76600.0</TotalMass>
+            <LoadLimit>204</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>56200.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793344262">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>76350.0</TotalMass>
+            <LoadLimit>201</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>56250.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793344254">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>74750.0</TotalMass>
+            <LoadLimit>204</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>54300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793355730">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>75450.0</TotalMass>
+            <LoadLimit>203</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>55150.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338707646042">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>75560.0</TotalMass>
+            <LoadLimit>206</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338707641167">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79950.0</TotalMass>
+            <LoadLimit>216</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>58350.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338707646893">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78610.0</TotalMass>
+            <LoadLimit>206</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>58050.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793332267">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79410.0</TotalMass>
+            <LoadLimit>195</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59900.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793326764">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79400.0</TotalMass>
+            <LoadLimit>199</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59500.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338407643331">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78850.0</TotalMass>
+            <LoadLimit>203</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>58550.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793320619">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78800.0</TotalMass>
+            <LoadLimit>192</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59650.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338707640128">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79750.0</TotalMass>
+            <LoadLimit>218</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>57950.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378407640812">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79360.0</TotalMass>
+            <LoadLimit>198</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59600.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338407643448">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79330.0</TotalMass>
+            <LoadLimit>203</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59050.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338407643547">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79320.0</TotalMass>
+            <LoadLimit>203</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338393381037">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79240.0</TotalMass>
+            <LoadLimit>201</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59100.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793321740">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78800.0</TotalMass>
+            <LoadLimit>202</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>58550.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338407643505">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79440.0</TotalMass>
+            <LoadLimit>203</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59100.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793353982">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79810.0</TotalMass>
+            <LoadLimit>202</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030995M4</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>230320</NHMCode>
+              <GoodDescription>Bagasse ausgelaugte Rubenschnitzel und andere Abfalle aus der Zuckergewinnung</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59600.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

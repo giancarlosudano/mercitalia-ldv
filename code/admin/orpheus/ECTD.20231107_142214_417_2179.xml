@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230010417</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-07T14:22:14+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110131256</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-11-07T14:20:35+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202311070131256</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Kaposvar</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>062885</Code>
+          <Name>Kaposvar</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>062885</Code>
+          <Name>Kaposvar</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-03T14:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3305</CarrierCode>
+        <ConsignmentNumber>240069</ConsignmentNumber>
+        <ForwardingTrainNumber>44773</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Rovigo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>057067</Code>
+          <Name>Rovigo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>057067</Code>
+          <Name>Rovigo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>CARGILL MAGYARORSZÁG KFT.</Name>
+          <Street>HUNGARIA KRT. 30</Street>
+          <Country>HU</Country>
+          <ZIPCode>1087</ZIPCode>
+          <City>Budapest</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>RAIL SERVICE SRL</Name>
+          <Street>BANCHINA DELL_ AZOTO</Street>
+          <Country>IT</Country>
+          <ZIPCode>30175</ZIPCode>
+          <City>VENEZIA MARGHERA</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>1</Code>
+          <Text>Empfaenger nicht verfuegungsberechtigt</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: RAIL SERVICE S.R.L.</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>KORUZA</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>SZTP1801.73</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>55</UICCountryCode>
+            <PointCode>730</PointCode>
+            <PointName>MURAKERESZTUR</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>999999</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>55300</RouteCode>
+          <RouteText>MURAKERESZTUR/KOTORIBA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>78510</RouteCode>
+          <RouteText>CAKOVEC/SREDISCE</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>3305</CarrierCode>
+          <CarrierName>LTE HU</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <Station>
+              <StationCode>062885</StationCode>
+              <StationName>KAPOSVAR</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>730</PointCode>
+              <PointName>MURAKERESZTUR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>2</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>730</PointCode>
+              <PointName>KOTORIBA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>551</PointCode>
+              <PointName>CAKOVEC</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>551</PointCode>
+              <PointName>SREDISCE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>057067</StationCode>
+              <StationName>Rovigo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>3305</CarrierCode>
+        <CarrierName>LTE HU</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Kaposvar</Place>
+        <Date>2023-11-03</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>062885</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>057067</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338393380237">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>74720.0</TotalMass>
+            <LoadLimit>208</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>53920.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793354519">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78500.0</TotalMass>
+            <LoadLimit>202</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793354436">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78400.0</TotalMass>
+            <LoadLimit>202</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58200.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792820536">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79750.0</TotalMass>
+            <LoadLimit>218</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793354469">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77740.0</TotalMass>
+            <LoadLimit>202</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>57540.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793354725">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78360.0</TotalMass>
+            <LoadLimit>201</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58260.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792830576">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79450.0</TotalMass>
+            <LoadLimit>212</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58250.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793354311">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78750.0</TotalMass>
+            <LoadLimit>203</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58450.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792830063">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79450.0</TotalMass>
+            <LoadLimit>211</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58350.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792830162">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79070.0</TotalMass>
+            <LoadLimit>212</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>57870.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793354758">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79780.0</TotalMass>
+            <LoadLimit>201</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>59680.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792820577">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79750.0</TotalMass>
+            <LoadLimit>218</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>57900.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792830147">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79500.0</TotalMass>
+            <LoadLimit>205</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58200.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792820635">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79800.0</TotalMass>
+            <LoadLimit>218</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792830014">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79200.0</TotalMass>
+            <LoadLimit>210</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58200.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792830071">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79430.0</TotalMass>
+            <LoadLimit>214</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58030.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792820361">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79750.0</TotalMass>
+            <LoadLimit>220</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>57600.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792830097">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79200.0</TotalMass>
+            <LoadLimit>212</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792820379">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79150.0</TotalMass>
+            <LoadLimit>220</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>57000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793385646">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>76030.0</TotalMass>
+            <LoadLimit>218</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>54280.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338792830154">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79600.0</TotalMass>
+            <LoadLimit>217</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58300.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338007645546">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79110.0</TotalMass>
+            <LoadLimit>204</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>58700.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793344189">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79550.0</TotalMass>
+            <LoadLimit>200</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>59500.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793385448">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>76930.0</TotalMass>
+            <LoadLimit>225</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100590</NHMCode>
+              <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+              <AdditionalGoodInformation>K</AdditionalGoodInformation>
+              <GrossMass>54390.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

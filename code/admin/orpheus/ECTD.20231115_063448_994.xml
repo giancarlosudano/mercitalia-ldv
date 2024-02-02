@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>5063417417994</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-15T06:34:48+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131158771</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-11-15T06:32:54+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202311141158771</DossierNumber>
+      <ECNVersionNumber>7</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>OKO</Code>
+          <Name>P.Kovac &amp; Co Schrottwerk Graz</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>034918</Code>
+          <Name>Graz Ostbahnhof</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>034918</Code>
+          <Name>Graz Ostbahnhof</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-14T11:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2181</CarrierCode>
+        <ConsignmentNumber>604819</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Ferriere Nord S.p.A</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>2171726</CustomerCode>
+          <Name>Schrott-Waltner GmbH.</Name>
+          <VAT>ATU28621408</VAT>
+          <Street>Raiffeisenstraße 61</Street>
+          <Country>AT</Country>
+          <ZIPCode>8010</ZIPCode>
+          <City>Graz</City>
+          <Signature>2853 i. A. d. Abs.</Signature>
+          <Contacts>
+            <PhoneNumber>00433164604</PhoneNumber>
+            <FaxNumber>0043316460440</FaxNumber>
+            <Email>info@schrottwaltner.at</Email>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <Name>Ferriere Nord S.p.A.</Name>
+          <Street>Localita Zona Industriale SNC</Street>
+          <Country>IT</Country>
+          <ZIPCode>33010</ZIPCode>
+          <City>Osoppo (UD)</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>8023756</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>RS-0018</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Schrott-Waltner GmbH, Beförderung auf der ital. Strecke von Tarviso nach Osoppo  durch EVU Mercitalia (EVU Code 0083)</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>81/OS/14.11.23/189</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>VERWIEGUNG IN GRAZ HBF</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>SD860011057</ConsignorReference>
+        <InformationConsignee>Zulaufnummer:81//OS//14.11.23//189ordine n23032//100</InformationConsignee>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>979</Type>
+          <DocumentInformation>ANNEX VII</DocumentInformation>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>Leitweg laut Angebot</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>Tarif 5200.84 / Rail Cargo Via Tarvisio B. contratto 218305</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>11</PrepaidcodeCarrier>
+        <AdditionalCharges>
+          <AdditionalCharge>
+            <Code>34</Code>
+          </AdditionalCharge>
+        </AdditionalCharges>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>520084</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <SpecialTreatments>
+        <SpecialTreatment>
+          <SpecialTreatmentCode>74</SpecialTreatmentCode>
+          <UICCountryCode>81</UICCountryCode>
+          <StationCode>045955</StationCode>
+          <StationName>Graz Hbf- Waage</StationName>
+        </SpecialTreatment>
+      </SpecialTreatments>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>034918</StationCode>
+              <StationName>Graz Ostbahnhof</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>Osoppo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2181</CarrierCode>
+        <Signature>2023-11-14 09:05 1131158771</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Graz</Place>
+        <Date>2023-11-14</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <StationCode>034918</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>030502</StationCode>
+          </End>
+          <CommercialRouteCode>030</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>520084</TariffNumber>
+            <ChargedMass value="36350" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <StationCode>031724</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <StationCode>031724</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <AdditionalCharges>
+            <AdditionalCharge>
+              <Code>34</Code>
+              <Prepaid>47</Prepaid>
+            </AdditionalCharge>
+          </AdditionalCharges>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318153802000">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>E1 4-6mm pesante (DAF 716 - E1)INT. CODE 003 CER 170405Rottame Ferroso Rifiuto in Lista Verde secondo codici di rifiuto riportati in allegato VII del Regolamento CE 1013//2006 con qualit corrispondente alle specifiche EUROFER e CECA.Provenienza: Austria Confermiamo che il rottame contenuto nel vagone  esente da materiale esplosive e radioattivo.</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>23850</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>157.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>60200</TotalMass>
+            <BookingNumber>2181:20231114090540891:15983382</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfälle und Schrott, aus Eisen oder Stahl (ausg. Schlacken, Zunder und andere Abfälle der Eisen- und Stahlherstellung; Abfälle und Schrott, radioaktiv; Bruchstücke von Masseln, Blöcken oder anderen Rohformen, aus Roh- oder Spiegeleisen; Abfälle und Schrott, aus Gusseisen, aus legiertem Stahl oder aus verzinntem Eisen oder Stahl; Dreh-, Fräs-, Hobel</GoodDescription>
+              <GrossMass>36350</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

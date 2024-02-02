@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>7081017380159</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-07T08:10:20+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131098977</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-07T08:09:22+01:00</ECNPreparationDatetime>
+      <DossierNumber>2155202310261141931</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>ALCUF</Code>
+          <Name>Alcufer Kft. IPV</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>039966</Code>
+          <Name>Ajka</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>039966</Code>
+          <Name>Ajka</Name>
+          <Country>
+            <UICCountryCode>55</UICCountryCode>
+            <Name>UNGARN</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-10-27T10:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2155</CarrierCode>
+        <ConsignmentNumber>687822</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>03050</Code>
+          <Name>Osoppo Raccordo Ferriere Nord</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>0016543</CustomerCode>
+          <Name>ALCUFER IPARI KERESKEDELMI ÉS SZOLG</Name>
+          <AdditionalInformation>FE00004200003</AdditionalInformation>
+          <VAT>HU 10356962</VAT>
+          <Street>Mészáros Lörinc Út 13</Street>
+          <Country>HU</Country>
+          <ZIPCode>9023</ZIPCode>
+          <City>Gyr</City>
+          <Signature>46195 a feladó megb.</Signature>
+          <Contacts>
+            <PhoneNumber>+36 96/512-700</PhoneNumber>
+            <FaxNumber>+36 96/512-709</FaxNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>4043352</CustomerCode>
+          <Name>.FERRIERE NORD S.P.A</Name>
+          <VAT>IT00163780307</VAT>
+          <Street>Zona Industriale Rivoli</Street>
+          <Country>IT</Country>
+          <ZIPCode>33010</ZIPCode>
+          <City>Osoppo (UD)</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>0060012</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>ND-0046 Engedélyszám: 55/OS/30/10/23/044 ; Költségvisel RCHszakaszon Rail Cargo Logistics Hungaria Kft. ZF:0060012.  Hivatalos vasúti mérlegelést kérünk.</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>"SDS/3070/21 tartalmát elfogadom"</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>Ksz.:238031/HU</ConsignorReference>
+        <InformationConsignee>FERRIERE NORD-AUFTRAGSNR:23047//100  Qualität: DAF750-005-E5HM  -  DAF700</InformationConsignee>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Robbanás mentességi igazolás</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Radioaktivitás mentességi nyilat.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>ANNEX VII</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>238031/HU sz. kísér dokumentum</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>az 1013/2006/EK(2006.jún.14.)rend.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>180/2007.(VII.3.)Korm.rend.megf.</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Bejelentlap</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>SOPRON-TARVISIO</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>55-2155;81-2181;83-2183</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>DAP</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>47</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>55</UICCountryCode>
+            <PointCode>0796</PointCode>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>902845</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>55960</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <SpecialTreatments>
+        <SpecialTreatment>
+          <SpecialTreatmentCode>74</SpecialTreatmentCode>
+          <UICCountryCode>55</UICCountryCode>
+          <StationCode>039966</StationCode>
+          <StationName>Ajka</StationName>
+        </SpecialTreatment>
+      </SpecialTreatments>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2155</DeclaratingCarrier>
+          <DeclarationCode>13</DeclarationCode>
+          <DeclarationText>Hivatalos vasúti mérlegelés Ajkán elvégezve</DeclarationText>
+        </CarriersDeclaration>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2155</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <Station>
+              <StationCode>039966</StationCode>
+              <StationName>Ajka</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0796</PointCode>
+              <PointName>Sopron (Gr)</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0796</PointCode>
+              <PointName>Sopron (Gr)</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>Osoppo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2155</CarrierCode>
+        <Signature>2023-11-07 08:09 1131098977</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Gyr, 2023.</Place>
+        <Date>2023-10-27</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>039966</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>030502</StationCode>
+          </End>
+          <CommercialRouteCode>013</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>902845</TariffNumber>
+            <ChargedMass value="30850" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>039966</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>55</UICCountryCode>
+            <StationCode>039966</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <AdditionalCharges>
+            <AdditionalCharge>
+              <Code>34</Code>
+              <Prepaid>47.66</Prepaid>
+            </AdditionalCharge>
+            <AdditionalCharge>
+              <Code>28</Code>
+              <Prepaid>95</Prepaid>
+            </AdditionalCharge>
+          </AdditionalCharges>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="315553316839">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>1 vagon Eisenschrott // ROTTAME NHM 7204  Rottame ferrosso rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento  CE 1013//2006 con qualita corrispondente alla classifica  DAF750-005-(E5H//M) Origine: UngheriaDAF750-005-(E5H//M) tornitura ferro   B1010 - GA430 - CER 120101Wir bestatigen dass der in diesem Waggon enthaltene Schrott </WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>52150</TotalMass>
+            <BookingNumber>2155:20231027083644036:15914323</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>"Vas- és acéltörmelék és hulladék; ingot újraolvasztott hulladékvasból vagy -acélból- Más törmelék és hulladék- Más"</GoodDescription>
+              <GrossMass>30850</GrossMass>
+              <AVVKey>120101</AVVKey>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

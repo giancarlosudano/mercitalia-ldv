@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>2151917362597</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-02T15:19:32+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2154</SendingCarrier>
+      <MessageReferenceNumber>17717762</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-02T15:17:31+01:00</ECNPreparationDatetime>
+      <DossierNumber>2154202311020817781</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>22204</Code>
+          <Name>Metalsrot Tlumacov, a.s.</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>364752</Code>
+          <Name>Tlumacov</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-02T13:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2154</CarrierCode>
+        <ConsignmentNumber>501239</ConsignmentNumber>
+        <ForwardingTrainNumber>0</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>03050</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>OSOPPO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>OSOPPO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>46901094</CustomerCode>
+          <Name>Metalsrot Tlumacov a.s.</Name>
+          <VAT>CZ46901094</VAT>
+          <Street>Manesova 510</Street>
+          <Country>CZ</Country>
+          <ZIPCode>763 62</ZIPCode>
+          <City>Tlumacov</City>
+          <Signature>54-364752-50123-2154-20231102</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>9189</CustomerCode>
+          <Name>MORAVIA STEEL a.s.</Name>
+          <VAT>CZ699002812</VAT>
+          <Street>Prumyslova 1000, Stare Mesto</Street>
+          <Country>CZ</Country>
+          <ZIPCode>739 61</ZIPCode>
+          <City>Trinec</City>
+        </Customer>
+        <Customer Type="CE">
+          <Name>FERRIERE NORD S.p.A.</Name>
+          <VAT>IT00163780307</VAT>
+          <Street>Zona Industriale Rivoli</Street>
+          <Country>IT</Country>
+          <ZIPCode>33010</ZIPCode>
+          <City>Osoppo</City>
+          <Signature>not specified</Signature>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Ausnahme aus ZAN: 54/OS/2.11.23/151</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>CDC-Frachtzahler: MORAVIA STEEL a.s., Prumyslova 1000, Stare Mesto, Trinec, MWSt.Nr.CZ699002812 ; OPT: 41209189 ; PD 84.01; Die Bezahlung RCA und MIR Strecke wird der Empfaenger Ferriere Nord SpA mit</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Vertrag IN902845. Auf der italienischer Strecke von Tarvisio B. nach Osoppo Mercitalia</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>2853-0206</ConsignorReference>
+        <InformationConsignee>Ordine Nr.: 23012/100, BOZ IMEX s.a.s.</InformationConsignee>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>BRECLAV ST.HR ; TARVISIO BOSCOVERDE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>CZ - 2154 CDC ; AT - 2181 RCA ; IT - 2183 MIR</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>CDC:D627014 ; Vertraege RCA und MIR IN902845</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>11</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>11</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0613</PointCode>
+            <PointName>BRECLAV ST.HR</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+        <AdditionalCharges>
+          <AdditionalCharge>
+            <Code>02</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>03</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>04</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>06</Code>
+          </AdditionalCharge>
+        </AdditionalCharges>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>627014</ContractNumber>
+      </Tariff>
+      <SectionalInvoicing>
+        <Section>
+          <InvoicingCarrierCode>2181</InvoicingCarrierCode>
+          <InvoicedSection>
+            <UICCountryCode>81</UICCountryCode>
+          </InvoicedSection>
+        </Section>
+      </SectionalInvoicing>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>54130</RouteCode>
+          <RouteText>BRECLAV ST.HR ; TARVISIO BOSCOVERDE</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2154</DeclaratingCarrier>
+          <DeclarationCode>12</DeclarationCode>
+          <DeclarationText>VYJIMKA 54/OS/2.11.23/151 ; obj.c. 21331178 ; DROP 5426086</DeclarationText>
+        </CarriersDeclaration>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-11-02T15:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2154</CarrierCode>
+          <CarrierName>CD Cargo, a.s.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>54</UICCountryCode>
+            <Station>
+              <StationCode>364752</StationCode>
+              <StationName>Tlumacov</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0613</PointCode>
+              <PointName>BRECLAV ST.HR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <CarrierName>Rail Cargo Austria AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0613</PointCode>
+              <PointName>BERNHARDSTHAL GRENZE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>OSOPPO</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2154</CarrierCode>
+        <CarrierName>CD Cargo, a.s.</CarrierName>
+        <Signature>54-364752-50123-2154-20231102</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Tlumacov</Place>
+        <Date>2023-11-02</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>54</UICCountryCode>
+            <StationCode>364752</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0613</PointCode>
+          </End>
+          <CurrencyCode>CZK</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>627014</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0613</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>83</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>030502</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="315459528826">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51150</TotalMass>
+            <LoadLimit>57.1</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus Eisen oder Stahl, ungeschreddert, unpaketiert</GoodDescription>
+              <AdditionalGoodInformation>EWC 191202 1 vagon - volne lozeno,zel.odpad dr.27 (E1)1 Waggon Eisenschrott/NHM7204/R4,Sorte E1ROTTAME ferroso NHM 7204 rifiuto in lista verde secondo codici di rifiuto riportati in allegato VII del regolamento CE 1013/2006 con qualita corrispondente alla DAF 710 - COD. INT. 010 (E1) E DAF 700,  HMS 1+2  - EWC 191202Origine: Repubblica Ceca</AdditionalGoodInformation>
+              <GrossMass>51150</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>5165717372545</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-05T16:57:35+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131124026</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-05T16:56:56+01:00</ECNPreparationDatetime>
+      <DossierNumber>2156202311036195761</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>15101</Code>
+          <Name>COMAX - TT, a.s</Name>
+          <Country>
+            <UICCountryCode>56</UICCountryCode>
+            <Name>SLOWAKEI</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>136762</Code>
+          <Name>TRNAVA</Name>
+          <Country>
+            <UICCountryCode>56</UICCountryCode>
+            <Name>SLOWAKEI</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>136762</Code>
+          <Name>TRNAVA</Name>
+          <Country>
+            <UICCountryCode>56</UICCountryCode>
+            <Name>SLOWAKEI</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-03T15:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2156</CarrierCode>
+        <ConsignmentNumber>785220</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>OSOPPO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>OSOPPO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>36254207</CustomerCode>
+          <Name>Recyclo, s.r.o.</Name>
+          <AdditionalInformation>pre obchod.partnera TSR Slovakia s.</AdditionalInformation>
+          <VAT>SK2020168095</VAT>
+          <Street>Ulica Strojarenska 8481/4</Street>
+          <Country>SK</Country>
+          <ZIPCode>917 02</ZIPCode>
+          <City>Trnava</City>
+          <Signature>R.Fuchsberger</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>00163780307</CustomerCode>
+          <Name>FERRIERE NORD SPA</Name>
+          <VAT>IT00163780307</VAT>
+          <Street>Zona industriale Rivoli</Street>
+          <Country>IT</Country>
+          <ZIPCode>33010</ZIPCode>
+          <City>Osoppo</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>36536580</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Platca za ZSSKC: SPED-TRANS Levice, a.s., ICO:36536580, 120688/1395</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Tovar ma status tovaru Unie/Ware Statut Europische Union</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Transport N.: 56 OS 031123/018 POZ-002/2023-2</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Die Bezahlung RCA und MIR Strecke wird der Emfaenger Ferriere Nord SpA mit Vertrag IN902845. Auf der IT Strecke von Tarvisio nach Osopo.</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>1</Code>
+          <Text>Empfanger ist nicht verfugungsberechtig.</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>CODE 1734196</ConsignorReference>
+        <InformationConsignee>Ordine Nr. 23061//100  DAF706-050-E1//ELBA 170405</InformationConsignee>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>ANNEX VII</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>916</Type>
+          <DocumentInformation>Radiation Inspection</DocumentInformation>
+          <DocumentTypeDescription>Sonstiges Dokument</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>via Bratislava-Petrzalka sthr./Kittsee Gr.-Tarvisio B.</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>N ZSSK-Cargo ZSR ;N RCA   OBB-Holdin ;N MIR FS</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>56</UICCountryCode>
+            <PointCode>0617</PointCode>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>425565</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>56170</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2156</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>56</UICCountryCode>
+            <Station>
+              <StationCode>136762</StationCode>
+              <StationName>Trnava</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>56</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0617</PointCode>
+              <PointName>Kittsee/Bratislava-Petralka t. hr</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0617</PointCode>
+              <PointName>Kittsee/Bratislava-Petralka t. hr</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>Osoppo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2156</CarrierCode>
+        <Signature>2023-11-05 16:56 1131124026</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Trnava</Place>
+        <Date>2023-11-03</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0617</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>425565</TariffNumber>
+            <ChargedMass value="35300" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="315654201591">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>Tovar nie je vybusny ani radioaktivny. Zasietovane, siet zaistenia. RIV 1.11.1ROTTAME FERROSO IN LISTA VERDE SECONDO CODICI DI RIFIUTO RIPORTATI IN ALLEGATO VII DEL REGOLAMENTO CE 1013//2006 CON QUALITA CORRISPONDENTE ALLA CLASSIFICA EUROFER E//O ceca E1.Origine: SLOVAKIA</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>22900</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>58200</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>ocelovy srot/eisenschott/Rottame  pos. 23061/100 DAF706-050-E1/ELBA</GoodDescription>
+              <AdditionalGoodInformation>Der Verlader des Wagens bestatigt, dass das gelieferte Material keine Sprengstoffe, ungeschnitte Hohlkorper oder sonstige explosivgefahrliche Stoffe enthalt und frei con Radioaktivitat ist. Diese Erklarung ist fur die Verladefirma auch ohne Unterschrift verbindlich.</AdditionalGoodInformation>
+              <GrossMass>35300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>8163817389763</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-08T16:38:23+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2180</SendingCarrier>
+      <MessageReferenceNumber>15000030908500</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-11-08T16:18:23+01:00</ECNPreparationDatetime>
+      <DossierNumber>2180202311083963862</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>20174</Code>
+          <Name>TRAUNSTEIN STADT</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>201178</Code>
+          <Name>TRAUNSTEIN</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-08T16:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2180</CarrierCode>
+        <ConsignmentNumber>759936</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>019141</Code>
+          <Name>Cava Tigozzi</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>800000108738</CustomerCode>
+          <Name>ALFA Rohstoffhandel München GmbH</Name>
+          <Street>Bahnhofstr. 106</Street>
+          <Country>DE</Country>
+          <ZIPCode>82166</ZIPCode>
+          <City>Gräfelfing</City>
+          <Signature>i.A.DB Cargo AG</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>800969751106</CustomerCode>
+          <Name>Acciaieria Arvedi S.p.A.</Name>
+          <Street>Via Acquaviva 18 - Zone Porto Canal</Street>
+          <Country>IT</Country>
+          <ZIPCode>26100</ZIPCode>
+          <City>Cremona</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>800789001823</CustomerCode>
+          <Name>Rail Cargo Logistics - Germany GmbH</Name>
+          <ZIPCode>60329</ZIPCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>RS-0040</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Zulaufnummer:</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>1</Code>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Zulaufnummer: Cava 25</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <InformationConsignee>Cat. E1 - 1401075 80 CA 9/11/2023 25</InformationConsignee>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>via Salzburg - Tarvisio</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>DE: 2180DB-Cargo; AT: 2181 RCA; IT 3128 Inrail</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>DE: 2180 DB-Cargo 8905.66-3; AT&amp;IT 2181 RCA Tarif 9502.03</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>15</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>15</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>80</UICCountryCode>
+            <PointCode>0462</PointCode>
+            <PointName>Salzburg</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>890566</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>80620</RouteCode>
+          <BorderpointCode>462</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+          <BorderpointCode>330</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>3763</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>Smart Rail GmbH</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>339358</StationCode>
+              <StationName>TRAUNSTEIN STADT</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>200295</StationCode>
+              <StationName>MUENCHEN NORD RBF</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2180</CarrierCode>
+          <CarrierName>DB Cargo AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>200295</StationCode>
+              <StationName>MUENCHEN NORD RBF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>200600</StationCode>
+              <StationName>SALZBURG HBF</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <CarrierName>Rail Cargo Austria AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>200600</StationCode>
+              <StationName>SALZBURG HBF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>036624</StationCode>
+              <StationName>ARNOLDSTEIN</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>036624</StationCode>
+              <StationName>ARNOLDSTEIN</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>019141</StationCode>
+              <StationName>Cava Tigozzi</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2180</CarrierCode>
+        <CarrierName>DB Cargo AG</CarrierName>
+        <Signature>AftNr. 80 2023 1108 396 3862</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>TRAUNSTEIN</Place>
+        <Date>2023-11-08</Date>
+      </MadeOut>
+      <ChargesNote>
+        <ChargesNoteAvailable>0</ChargesNoteAvailable>
+      </ChargesNote>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>80</UICCountryCode>
+            <StationCode>201178</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>80</UICCountryCode>
+            <PointCode>0462</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720449</NHMCode>
+            <TariffNumber>890565</TariffNumber>
+            <ChargedMass value="53650.0" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318054004227">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>iscrizione all'ALBO Nazionale la gestione dei rifiuti art.1.28 legge 15/12/04 n.308; Betriebl. Sonderbeh.: 33</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>21900.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>140.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>75550.0</TotalMass>
+            <LoadLimit>58</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>EisenschrottRottamedi ferro, materia prima seconfaria per l'industria metallurgica conforme alle specificheUNI CECA AISI Cat.</GoodDescription>
+              <AdditionalGoodInformation>Cat. E1 - 14010752, Wir versichern, dass der gelieferte Schrott sprengstofffrei ist. Rottame destinato alla rifusione essente da contaminazione radioattiva. - Schwerer Schrott, Abdeckung nicht erforderlich! -</AdditionalGoodInformation>
+              <GrossMass>53650</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+      <ChangeLogs>
+        <ChangeLog CarrierCode="2180" DateTime="2023-11-08T16:18:23+01:00" NumberOfModifiedVersion="000" />
+        <ChangeLog CarrierCode="2180" DateTime="2023-11-08T16:34:40+01:00" NumberOfModifiedVersion="001" />
+      </ChangeLogs>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

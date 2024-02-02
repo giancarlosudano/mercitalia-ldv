@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>4110317370965</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-04T11:03:14+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131125653</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-04T11:01:45+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202311041125653</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>62289</Code>
+          <Name>Tychy Fiat</Name>
+          <Country>
+            <UICCountryCode>51</UICCountryCode>
+            <Name>POLEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>622894</Code>
+          <Name>Tychy Fiat</Name>
+          <Country>
+            <UICCountryCode>51</UICCountryCode>
+            <Name>POLEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>622894</Code>
+          <Name>Tychy Fiat</Name>
+          <Country>
+            <UICCountryCode>51</UICCountryCode>
+            <Name>POLEN</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-02T11:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2151</CarrierCode>
+        <ConsignmentNumber>540062</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Transwagon - SEVEL</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>070185</Code>
+          <Name>Fossacesia-Torino Di Sangro</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>070185</Code>
+          <Name>Fossacesia-Torino Di Sangro</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>PL FCA Poland S.A.</Name>
+          <Street>Grazynskiego 141</Street>
+          <Country>PL</Country>
+          <ZIPCode>43300</ZIPCode>
+          <City>Bielsko Biala</City>
+        </Customer>
+        <Customer Type="CE">
+          <Name>Transwagon SPA</Name>
+          <AdditionalInformation>racc.SEVEL</AdditionalInformation>
+          <Street>via Melchiorre Gioia 168</Street>
+          <Country>IT</Country>
+          <ZIPCode>20125</ZIPCode>
+          <City>Milano</City>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtbrief Nr:PKP/CD-00005100, OBB/TI-IN283012 Sonstige;16 zgody PL+CZ PKP CARGO 2151 133/2023 AT RCA 2181 RCA-RC IT MIR 2183 MIR 2023 Sonstige;16 Przewóz wg harmonogramu - Zac</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>ZEBRZYDOWICE - PETROVICE U KARVINE; BRECLAV - BERNHARDSTHAL (HOHENAU); TARVISIO BOSCOVERDE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>PKP CARGO S.A. 54 1; RCA 81 1; MIR 83 1</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>EXW</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <TariffNumber>218110</TariffNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>51260</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>54130</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2151</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>51</UICCountryCode>
+            <Station>
+              <StationCode>622894</StationCode>
+              <StationName>Tychy Fiat</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>51</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0826</PointCode>
+              <PointName>Petrovice U Karvine/Zebrzydowice</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2151</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0826</PointCode>
+              <PointName>Petrovice U Karvine/Zebrzydowice</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0613</PointCode>
+              <PointName>Bernhardsthal Grenze/Beclav st.hr.</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0613</PointCode>
+              <PointName>Bernhardsthal Grenze/Beclav st.hr.</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>070185</StationCode>
+              <StationName>Fossacesia-Torino Di Sangro</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2151</CarrierCode>
+        <Signature>2023-11-04 11:01 1131125653</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Tychy Fiat</Place>
+        <Date>2023-11-04</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0613</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>992200</NHMCode>
+            <TariffNumber>218110</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="218343018840">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>26000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>284.8</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>26000</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218343018097">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>26000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>284.8</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>26000</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218343018436">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>26000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>284.8</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>26000</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218343018477">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>26000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>284.8</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>26000</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="278043540683">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>28700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>322.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>28700</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="278043481961">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>29400</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>309.8</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>29400</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="278043542697">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>28700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>322.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>28700</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343081929">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>26700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>270</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>26700</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343082265">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>26540</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>270</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>26540</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="237443547821">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>296.8</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>26500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="247443130296">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>270</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>26500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="278043542069">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>28700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>322.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>28700</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343082455">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>27000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>270</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>27000</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="278043542630">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>28700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>322.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>28700</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343081473">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>27000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>270</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>27000</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="278043541608">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>28700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>322.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>28700</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="278043542390">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>28700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>322.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>28700</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992200</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, sng</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

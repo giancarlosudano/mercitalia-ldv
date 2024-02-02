@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230010392</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-06T09:30:38+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110131158</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-11-06T09:29:11+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202311050131158</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>PRAVDA</Name>
+          <Country>
+            <UICCountryCode>22</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>451708</Code>
+          <Name>PRAVDA</Name>
+          <Country>
+            <UICCountryCode>22</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>451708</Code>
+          <Name>PRAVDA</Name>
+          <Country>
+            <UICCountryCode>22</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-10-30T08:00:00+01:00</AcceptanceDate>
+        <CarrierCode>0022</CarrierCode>
+        <ConsignmentNumber>833392</ConsignmentNumber>
+        <ForwardingTrainNumber>47788</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>030502</Code>
+          <Name>Osoppo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>kamet - Steel</Name>
+          <Street>Dnipropetrovsk obl. soborna str. 18</Street>
+          <Country>UA</Country>
+          <ZIPCode>51925</ZIPCode>
+          <City>Kamianske</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>FERRIERE NORD S.P.A</Name>
+          <Street>Zona Industriale Rivoli</Street>
+          <Country>IT</Country>
+          <ZIPCode>33010</ZIPCode>
+          <City>Osoppo</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: MAV VONALI KV. TRANSAGENT</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>FELKESZ TERMEK VASBOL</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>380</Type>
+          <DocumentTypeDescription>Komercialna faktura</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>820</Type>
+          <DocumentTypeDescription>Odpremnica, model T</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>820</Type>
+          <DocumentTypeDescription>Odpremnica, model T</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>TRARR134 FS104275 SZTP4183.01</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>DAF</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>12</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>22</UICCountryCode>
+            <PointCode>955</PointCode>
+            <PointName>CSOP</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>999999</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>22550</RouteCode>
+          <RouteText>CSOP/ZAHONY (GR)</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>55310</RouteCode>
+          <RouteText>GYEKENYES/KOPRIVNICA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>78540</RouteCode>
+          <RouteText>SAVSKI MAROF/DOBOVA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="4">
+          <RouteCode>79120</RouteCode>
+          <RouteText>NOVA GORICA/GORIZIA CENTRALE</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>true</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+        <CustomsEndorsements>23HU7210001BCEC450 23HU7210001BCEC468 23HU7210001BCEC450 23HU7210001BCEC468</CustomsEndorsements>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>0022</CarrierCode>
+          <CarrierName>UZ</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>22</UICCountryCode>
+            <Station>
+              <StationCode>451708</StationCode>
+              <StationName>PRAVDA</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>22</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>955</PointCode>
+              <PointName>CSOP</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2155</CarrierCode>
+          <CarrierName>RCH</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>955</PointCode>
+              <PointName>ZAHONY (GR)</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>55</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>731</PointCode>
+              <PointName>GYEKENYES</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>3531</CarrierCode>
+          <CarrierName>TRARR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>731</PointCode>
+              <PointName>KOPRIVNICA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>SAVSKI MAROF</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>DOBOVA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>312</PointCode>
+              <PointName>NOVA GORICA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="5">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>312</PointCode>
+              <PointName>GORIZIA CENTRALE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>030502</StationCode>
+              <StationName>Osoppo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>0022</CarrierCode>
+        <CarrierName>UZ</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>PRAVDA</Place>
+        <Date>2023-10-30</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>22</UICCountryCode>
+            <StationCode>451708</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>030502</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="315559577376">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>70137.0</TotalMass>
+            <LoadLimit>218</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HU7210001BCEC468</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>5</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720711</NHMCode>
+              <GoodDescription>Halbzeug aus Eisen oder nichtlegiertem Stahl mit einem Kohlenstoffgehalt von 0 25 GHT mit quadratischem Querschnitt oder mit rechteckigem Querschnitt und einer Breite von dem Zweifachen der Dicke Dicke</GoodDescription>
+              <AdditionalGoodInformation>F</AdditionalGoodInformation>
+              <GrossMass>48337.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="315559582178">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>69770.0</TotalMass>
+            <LoadLimit>215</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HU7210001BCEC450</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>5</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720711</NHMCode>
+              <GoodDescription>Halbzeug aus Eisen oder nichtlegiertem Stahl mit einem Kohlenstoffgehalt von 0 25 GHT mit quadratischem Querschnitt oder mit rechteckigem Querschnitt und einer Breite von dem Zweifachen der Dicke Dicke</GoodDescription>
+              <AdditionalGoodInformation>F</AdditionalGoodInformation>
+              <GrossMass>48250.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

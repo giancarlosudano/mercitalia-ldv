@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>9091617392386</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-09T09:16:59+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2187</SendingCarrier>
+      <MessageReferenceNumber>5282226</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <MadeAvailable>2023-11-07T00:00:00+01:00</MadeAvailable>
+      <ECNPreparationDatetime>2023-11-09T09:12:50+01:00</ECNPreparationDatetime>
+      <DossierNumber>2187202311079624346</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>05811</Code>
+          <Name>Ravenna</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>058115</Code>
+          <Name>Ravenna</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-10-11T02:00:00+02:00</AcceptanceDate>
+        <CarrierCode>2187</CarrierCode>
+        <ConsignmentNumber>100008</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>90910</Code>
+          <Name>RELAIS EF EXTÉRIEURE RÉGIORAIL</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>743716</Code>
+          <Name>RELAIS EF EXTÉRIEURE RÉGIORAIL</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>743716</Code>
+          <Name>RELAIS EF EXTÉRIEURE RÉGIORAIL</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>57264</CustomerCode>
+          <Name>MARCEGAGLIA CARBON STEEL S.p.A</Name>
+          <VAT>02466220205</VAT>
+          <Street>VIA BRESCIANI</Street>
+          <Country>FR</Country>
+          <ZIPCode>46040</ZIPCode>
+          <City>GAZOLDO DEGLI IPPOLITI</City>
+          <Signature>-</Signature>
+          <Contacts>
+            <PhoneNumber>0376685293</PhoneNumber>
+            <FaxNumber>0376 685664</FaxNumber>
+            <Email>info@marcegaglia.com</Email>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>57264</CustomerCode>
+          <Name>GROUPE COMBRONDE</Name>
+          <Street>RUE DE L'INDUSTRIE 2</Street>
+          <Country>FR</Country>
+          <ZIPCode>63360</ZIPCode>
+          <City>GERZAT</City>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>57264 0</CustomerCode>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>57264 0</CustomerCode>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+      </Customers>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>141</Type>
+          <DocumentInformation>Viaggi 8029613 - 8028732</DocumentInformation>
+          <Quantity>1</Quantity>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>10</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>577716</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>83400</RouteCode>
+          <RouteText>VENTIMIGLIA</RouteText>
+          <BorderpointCode>240</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CarriersDeclarations>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-10-11T00:00:00+02:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>058115</StationCode>
+              <StationName>RAVENNA</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0240</PointCode>
+              <PointName>VENTIMIGLIA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>2</Status>
+          <CarrierCode>2187</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>87</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0240</PointCode>
+              <PointName>VINTIMILLE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>87</UICCountryCode>
+            <Station>
+              <StationCode>743716</StationCode>
+              <StationName>AMBERIEU</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2187</CarrierCode>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>RAVENNA</Place>
+        <Date>2023-11-07+01:00</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>058115</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>87</UICCountryCode>
+            <StationCode>743716</StationCode>
+          </End>
+          <CommercialRouteCode>101</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>722530</NHMCode>
+            <TariffNumber>577716</TariffNumber>
+            <ChargedMass value="68121" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="337446770964">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>68121</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>46121</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338735465514">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24680</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76042</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>51362</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318346777127">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>66712</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>45912</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338735460945">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77984</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>53484</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338735467916">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27400</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78447</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>51047</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="337446771525">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>67332</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>45332</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378046687984">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21810</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>62472</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>40662</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746683675">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21350</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>67193</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>45843</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318346777432">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>56503</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>35703</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746683618">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21350</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>66370</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>45020</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746681877">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21350</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>66972</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>45622</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338546680558">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>66510</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>45010</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338546685300">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>19300</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>64319</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>45019</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338735467932">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27400</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>74110</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>46710</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318346777283">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>57839</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>37039</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338546682331">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21500</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>60957</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>39457</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338735461067">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24550</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76466</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>51916</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338735450383">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23690</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>72384</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>48694</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318346777135">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>55718</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>34918</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746683717">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21400</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>66430</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>45030</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338746691389">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>21200</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>67505</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>722530</NHMCode>
+              <GoodDescription>Prodotti Prodotti piatti di acciai legati diversi dagli acciai inossidabili, di larghezza &gt;= 600 mm, solo laminati a caldo, in rotoli  coils   escl. quelli di acciai al silicio detti  magnetici</GoodDescription>
+              <GrossMass>46305</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

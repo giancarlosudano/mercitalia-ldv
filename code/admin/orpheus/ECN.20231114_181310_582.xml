@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>4181317416582</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-14T18:13:10+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2187</SendingCarrier>
+      <MessageReferenceNumber>5279428</MessageReferenceNumber>
+      <ShipmentType>CUV</ShipmentType>
+      <MessageType>ECN</MessageType>
+      <MadeAvailable>2023-10-30T00:00:00+01:00</MadeAvailable>
+      <ECNPreparationDatetime>2023-11-14T18:07:56+01:00</ECNPreparationDatetime>
+      <DossierNumber>2187202310304915724</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>27052</Code>
+          <Name>MOREL PROFILE</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>721357</Code>
+          <Name>MOREL PROFILE</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-10-31T01:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2187</CarrierCode>
+        <ConsignmentNumber>601062</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>00000</Code>
+          <Name>S.ZENO FOLZANO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>019000</Code>
+          <Name>S.ZENO FOLZANO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>019000</Code>
+          <Name>S.ZENO FOLZANO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>322644</CustomerCode>
+          <Name>MOREL DISTRIBUTION PROFILES</Name>
+          <AdditionalInformation>BP 201</AdditionalInformation>
+          <VAT>FR61421649575</VAT>
+          <Street>St Jean d'Ardières</Street>
+          <Country>FR</Country>
+          <ZIPCode>69822</ZIPCode>
+          <City>BELLEVILLE CEDEX</City>
+          <Signature>-</Signature>
+          <Contacts>
+            <PhoneNumber>04 74 66 07 10</PhoneNumber>
+            <Email>mc.colmenero@morel-belleville.com</Email>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>161</CustomerCode>
+          <Name>DUFERCO TRAVI E PROFILATI SPA</Name>
+          <AdditionalInformation>248  TROISDORF</AdditionalInformation>
+          <Street>Via Armando Diaz</Street>
+          <Country>FR</Country>
+          <ZIPCode>25010</ZIPCode>
+          <City>SAN ZENO NAVIGLIO</City>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>3010295 6</CustomerCode>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>3010295 6</CustomerCode>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+      </Customers>
+      <AdditionalInformation>
+        <InformationConsignee>-</InformationConsignee>
+      </AdditionalInformation>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>90</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>578358</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>87400</RouteCode>
+          <RouteText>VINTIMILLE</RouteText>
+          <BorderpointCode>240</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-10-31T00:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>2187</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>87</UICCountryCode>
+            <Station>
+              <StationCode>721357</StationCode>
+              <StationName>BELLEVILLE-SUR-SAONE</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>87</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0240</PointCode>
+              <PointName>VINTIMILLE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0240</PointCode>
+              <PointName>VENTIMIGLIA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>019000</StationCode>
+              <StationName>S.ZENO FOLZANO</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2183</CarrierCode>
+        <CarrierName>Mercitalia Rail-MIR</CarrierName>
+        <Street>Piazza Crocce Rossa 1</Street>
+        <ZIPCode>00161</ZIPCode>
+        <City>Rome</City>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Belleville sur Saone</Place>
+        <Date>2023-10-30+01:00</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>87</UICCountryCode>
+            <StationCode>721357</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>019000</StationCode>
+          </End>
+          <CommercialRouteCode>101</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>992100</NHMCode>
+            <TariffNumber>578358</TariffNumber>
+            <ChargedMass value="23510" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318339209054">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>23510</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23510</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339183275">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>24000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>24000</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339194991">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>23220</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23220</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339168458">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>23720</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23720</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339163012">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>23380</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23380</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339167856">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>23320</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23320</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338739361032">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>23400</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23400</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339161230">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>23400</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23400</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339698389">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>20200</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>20200</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339206423">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>23700</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23700</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318335575029">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>23540</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23540</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339689883">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>19950</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>19950</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339689537">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>21380</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>21380</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339197606">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>23640</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>23640</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318339695922">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>20260</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>20260</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992100</NHMCode>
+              <GoodDescription>Véhicules de chemin de fer comme moyen de transport, à 2 essieux, vides, nda</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

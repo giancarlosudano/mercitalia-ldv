@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230010377</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-06T07:07:12+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110131032</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-11-06T07:06:14+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202311010131032</DossierNumber>
+      <ECNVersionNumber>2</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Vreoci</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>152504</Code>
+          <Name>Vreoci</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>152504</Code>
+          <Name>Vreoci</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-10-30T15:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3212</CarrierCode>
+        <ConsignmentNumber>230102</ConsignmentNumber>
+        <ForwardingTrainNumber>47592</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Dinazzano Scalo (FER - Casalgrande)</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>293068</Code>
+          <Name>Dinazzano Scalo (FER - Casalgrande)</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>293068</Code>
+          <Name>Dinazzano Scalo (FER - Casalgrande)</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>BALKAN SANDOS AND CLAY</Name>
+          <Street>UL.ANDRICEV VENAC 4/i</Street>
+          <Country>RS</Country>
+          <ZIPCode>11000</ZIPCode>
+          <City>BEOGRAD</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>United Minerals Srl</Name>
+          <Street>Via Antonio Vivaldi 4</Street>
+          <Country>IT</Country>
+          <ZIPCode>41012</ZIPCode>
+          <City>Carpy MO</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: 291/22</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: T.T.CARGO</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>GLINA</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>SZTP9553.59</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>999999</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>72010</RouteCode>
+          <RouteText>SID/TOVARNIK</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>78540</RouteCode>
+          <RouteText>SAVSKI MAROF/DOBOVA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>true</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+        <CustomsEndorsements>23SI00112340547202 23HR070327030552MO</CustomsEndorsements>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>3212</CarrierCode>
+          <CarrierName>KP</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>72</UICCountryCode>
+            <Station>
+              <StationCode>152504</StationCode>
+              <StationName>VREOCI</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>72</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>501</PointCode>
+              <PointName>SID</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>501</PointCode>
+              <PointName>TOVARNIK</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>SAVSKI MAROF</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>DOBOVA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>293068</StationCode>
+              <StationName>Dinazzano Scalo (FER - Casalgrande)</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>3212</CarrierCode>
+        <CarrierName>KP</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Vreoci</Place>
+        <Date>2023-10-30</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>72</UICCountryCode>
+            <StationCode>152504</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>293068</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318308551866">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78000.0</TotalMass>
+            <LoadLimit>230</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308551429">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78000.0</TotalMass>
+            <LoadLimit>230</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308550595">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77960.0</TotalMass>
+            <LoadLimit>230</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308555339">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77500.0</TotalMass>
+            <LoadLimit>225</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308545314">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79000.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308544556">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79000.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308555263">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77500.0</TotalMass>
+            <LoadLimit>225</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308544697">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79000.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308558044">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77500.0</TotalMass>
+            <LoadLimit>225</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308558150">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77500.0</TotalMass>
+            <LoadLimit>225</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308555636">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77500.0</TotalMass>
+            <LoadLimit>225</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308551437">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78000.0</TotalMass>
+            <LoadLimit>230</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308557400">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77500.0</TotalMass>
+            <LoadLimit>225</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308556782">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77500.0</TotalMass>
+            <LoadLimit>225</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308544010">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79000.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308559026">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77500.0</TotalMass>
+            <LoadLimit>225</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308545199">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79000.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308557681">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77500.0</TotalMass>
+            <LoadLimit>225</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308558820">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>77500.0</TotalMass>
+            <LoadLimit>225</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318308544127">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79000.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327030552MO</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>250700</NHMCode>
+              <GoodDescription>Kaolin und anderer kaolinhaltiger Ton und Lehm auch gebrannt</GoodDescription>
+              <AdditionalGoodInformation>G</AdditionalGoodInformation>
+              <GrossMass>55000.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

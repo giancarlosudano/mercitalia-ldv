@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>3192117369482</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-03T19:21:20+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2187</SendingCarrier>
+      <MessageReferenceNumber>5279457</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECN</MessageType>
+      <MadeAvailable>2023-10-31T00:00:00+01:00</MadeAvailable>
+      <ECNPreparationDatetime>2023-11-03T19:18:54+01:00</ECNPreparationDatetime>
+      <DossierNumber>2187202310308965781</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+      <PrintForm>CT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>20305</Code>
+          <Name>AMBROGIO</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>340570</Code>
+          <Name>AMBROGIO</Name>
+          <Country>
+            <UICCountryCode>87</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-01T01:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2187</CarrierCode>
+        <ConsignmentNumber>601211</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>00000</Code>
+          <Name>GALLARATE</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>010306</Code>
+          <Name>GALLARATE</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>010306</Code>
+          <Name>GALLARATE</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>2119782</CustomerCode>
+          <Name>AMBROGIO TRASPORTI SpA C/o AMBROGIO</Name>
+          <AdditionalInformation>BP10036</AdditionalInformation>
+          <VAT>IT 00510420011</VAT>
+          <Street>Cef 14, Av. d'Alegera</Street>
+          <Country>FR</Country>
+          <ZIPCode>64990</ZIPCode>
+          <City>MOUGUERRE</City>
+          <Signature>-</Signature>
+          <Contacts>
+            <PhoneNumber>05 59 426 300</PhoneNumber>
+            <Email>traffic.mg@ambrogiointermodal.com</Email>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>2119782</CustomerCode>
+          <Name>AMBROGIO TRASPORTI SpA C/o AMBROGIO</Name>
+          <Street>Via Tognasca 5</Street>
+          <Country>FR</Country>
+          <ZIPCode>21013</ZIPCode>
+          <City>GALLARATE</City>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>2119782 0</CustomerCode>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>2119782 0</CustomerCode>
+          <Country>FR</Country>
+          <ZIPCode>-</ZIPCode>
+          <Signature>-</Signature>
+        </Customer>
+      </Customers>
+      <AdditionalInformation>
+        <ConsignorReference>MGGA-1</ConsignorReference>
+      </AdditionalInformation>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>90</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>470447</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>87590</RouteCode>
+          <RouteText>SAINT LOUIS (HAUT RHIN)</RouteText>
+          <BorderpointCode>259</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>85220</RouteCode>
+          <RouteText>RANZO-S.ABBONDIO</RouteText>
+          <BorderpointCode>322</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-10-31T00:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>1</Status>
+          <CarrierCode>2187</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>87</UICCountryCode>
+            <Station>
+              <StationCode>340570</StationCode>
+              <StationName>MOUGUERRE CEF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>87</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0100</PointCode>
+              <PointName>BASEL,DELLE OU VERRIERES</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>2</Status>
+          <CarrierCode>3356</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>85</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0100</PointCode>
+              <PointName>BASEL,DELLE OU VERRIERES</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>011130</StationCode>
+              <StationName>LUINO</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>011130</StationCode>
+              <StationName>LUINO</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>010306</StationCode>
+              <StationName>GALLARATE</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2187</CarrierCode>
+        <CarrierName>SAS Fret SNCF-Fret SNCF</CarrierName>
+        <Street>16 rue Simone Veil</Street>
+        <ZIPCode>93400</ZIPCode>
+        <City>Saint  Ouen sur Seine</City>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>MOUGUERRE</Place>
+        <Date>2023-10-30+01:00</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>87</UICCountryCode>
+            <StationCode>340570</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>010306</StationCode>
+          </End>
+          <CommercialRouteCode>101</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>992200</NHMCode>
+            <TariffNumber>470447</TariffNumber>
+            <ChargedMass value="80400" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338349549513">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>80400</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM7048" LoadingStatus="empty">
+              <Prefix>AM704</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>730431</NHMCode>
+                <GoodDescription>Tubes et tiges de forage, renvoi 20</GoodDescription>
+                <GrossMass>20800</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM5015" LoadingStatus="empty">
+              <Prefix>AM501</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>854511</NHMCode>
+                <GoodDescription>Electrodes en graphite (four electrique)</GoodDescription>
+                <GrossMass>24800</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378449620343">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27300</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>83900</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4031" LoadingStatus="empty">
+              <Prefix>AM403</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>24100</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4151" LoadingStatus="empty">
+              <Prefix>AM415</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>24500</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349622476">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>83100</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM7285" LoadingStatus="empty">
+              <Prefix>AM728</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>210390</NHMCode>
+                <GoodDescription>sauces, condiments et assaisonnements</GoodDescription>
+                <GrossMass>23100</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4275" LoadingStatus="empty">
+              <Prefix>AM427</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>722790</NHMCode>
+                <GoodDescription>FIL MACHINE EN ACIER</GoodDescription>
+                <GrossMass>23000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349621932">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>69800</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AMBE0010528" LoadingStatus="empty">
+              <Prefix>AMBE0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480300</NHMCode>
+                <GoodDescription>Papier, ouate, cellulose pour hygiène</GoodDescription>
+                <GrossMass>10100</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM5101" LoadingStatus="empty">
+              <Prefix>AM510</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>722790</NHMCode>
+                <GoodDescription>FIL MACHINE EN ACIER</GoodDescription>
+                <GrossMass>22700</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349549414">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26920</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>81220</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM7212" LoadingStatus="empty">
+              <Prefix>AM721</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>210390</NHMCode>
+                <GoodDescription>sauces, condiments et assaisonnements</GoodDescription>
+                <GrossMass>23400</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4255" LoadingStatus="empty">
+              <Prefix>AM425</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>722790</NHMCode>
+                <GoodDescription>FIL MACHINE EN ACIER</GoodDescription>
+                <GrossMass>22900</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349548465">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27680</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>84480</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4291" LoadingStatus="empty">
+              <Prefix>AM429</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>680919</NHMCode>
+                <GoodDescription>ouvrages en platre</GoodDescription>
+                <GrossMass>23700</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM5156" LoadingStatus="empty">
+              <Prefix>AM515</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>722790</NHMCode>
+                <GoodDescription>FIL MACHINE EN ACIER</GoodDescription>
+                <GrossMass>25100</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549616690">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27900</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>84000</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM8011" LoadingStatus="empty">
+              <Prefix>AM801</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>722790</NHMCode>
+                <GoodDescription>FIL MACHINE EN ACIER</GoodDescription>
+                <GrossMass>23600</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM5205" LoadingStatus="empty">
+              <Prefix>AM520</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>24500</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049614795">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27160</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>83560</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM8076" LoadingStatus="empty">
+              <Prefix>AM807</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>24800</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4182" LoadingStatus="empty">
+              <Prefix>AM418</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>23600</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349622658">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>82700</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AMBE0011130" LoadingStatus="empty">
+              <Prefix>AMBE0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>722790</NHMCode>
+                <GoodDescription>FIL MACHINE EN ACIER</GoodDescription>
+                <GrossMass>22800</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AMBE0010431" LoadingStatus="empty">
+              <Prefix>AMBE0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>722790</NHMCode>
+                <GoodDescription>FIL MACHINE EN ACIER</GoodDescription>
+                <GrossMass>22900</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378449620475">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27350</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>84750</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM6607" LoadingStatus="empty">
+              <Prefix>AM660</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>160414</NHMCode>
+                <GoodDescription>preparations et conserves de poissons; caviar</GoodDescription>
+                <GrossMass>23500</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4156" LoadingStatus="empty">
+              <Prefix>AM415</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>321410</NHMCode>
+                <GoodDescription>Mastics et enduits utilises en peinture</GoodDescription>
+                <GrossMass>25900</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349621817">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>83300</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM7299" LoadingStatus="empty">
+              <Prefix>AM729</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>210390</NHMCode>
+                <GoodDescription>sauces, condiments et assaisonnements</GoodDescription>
+                <GrossMass>23400</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM6523" LoadingStatus="empty">
+              <Prefix>AM652</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>722790</NHMCode>
+                <GoodDescription>FIL MACHINE EN ACIER</GoodDescription>
+                <GrossMass>22900</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349621288">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>86000</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4131" LoadingStatus="empty">
+              <Prefix>AM413</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>24400</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM6597" LoadingStatus="empty">
+              <Prefix>AM659</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>24600</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349621064">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78000</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM6532" LoadingStatus="empty">
+              <Prefix>AM653</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480620</NHMCode>
+                <GoodDescription>papiers et cartons sulfurises; papiers calandres</GoodDescription>
+                <GrossMass>21000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4172" LoadingStatus="empty">
+              <Prefix>AM417</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>730431</NHMCode>
+                <GoodDescription>Tubes et tiges de forage, renvoi 20</GoodDescription>
+                <GrossMass>20000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549616708">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27900</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78100</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM6537" LoadingStatus="empty">
+              <Prefix>AM653</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480620</NHMCode>
+                <GoodDescription>papiers et cartons sulfurises; papiers calandres</GoodDescription>
+                <GrossMass>24200</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4185" LoadingStatus="empty">
+              <Prefix>AM418</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>18000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349549364">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26960</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>84760</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AMBE0012861" LoadingStatus="empty">
+              <Prefix>AMBE0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>321410</NHMCode>
+                <GoodDescription>Mastics et enduits utilises en peinture</GoodDescription>
+                <GrossMass>25000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM5215" LoadingStatus="empty">
+              <Prefix>AM521</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>24800</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378449620095">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27300</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>84100</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AMBE0011778" LoadingStatus="empty">
+              <Prefix>AMBE0</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>722790</NHMCode>
+                <GoodDescription>FIL MACHINE EN ACIER</GoodDescription>
+                <GrossMass>25400</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4129" LoadingStatus="empty">
+              <Prefix>AM412</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>210390</NHMCode>
+                <GoodDescription>sauces, condiments et assaisonnements</GoodDescription>
+                <GrossMass>23400</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349549711">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26800</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>83800</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM5297" LoadingStatus="empty">
+              <Prefix>AM529</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>24400</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM6571" LoadingStatus="empty">
+              <Prefix>AM657</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480254</NHMCode>
+                <GoodDescription>papiers et cartons, non couches, pour l'ecriture ou l'impression</GoodDescription>
+                <GrossMass>24600</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349548267">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27680</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>72680</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM6549" LoadingStatus="empty">
+              <Prefix>AM654</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>19000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM6585" LoadingStatus="empty">
+              <Prefix>AM658</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480429</NHMCode>
+                <GoodDescription>Papiers et cartons pour couverture</GoodDescription>
+                <GrossMass>18000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338349548598">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27680</WagonMass>
+              <AxleNumber>2</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77680</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM5257" LoadingStatus="empty">
+              <Prefix>AM525</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>722790</NHMCode>
+                <GoodDescription>FIL MACHINE EN ACIER</GoodDescription>
+                <GrossMass>22000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="AM4247" LoadingStatus="empty">
+              <Prefix>AM424</Prefix>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>480620</NHMCode>
+                <GoodDescription>papiers et cartons sulfurises; papiers calandres</GoodDescription>
+                <GrossMass>20000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

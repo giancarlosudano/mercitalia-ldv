@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>3061017405936</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-13T06:10:49+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2180</SendingCarrier>
+      <MessageReferenceNumber>13000031478305</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-13T06:08:09+01:00</ECNPreparationDatetime>
+      <DossierNumber>2180202311133970887</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>16332</Code>
+          <Name>KOENITZ STAHLW THUER</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>164020</Code>
+          <Name>KOENITZ(THUER)</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-13T08:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2180</CarrierCode>
+        <ConsignmentNumber>776716</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>83016</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>017020</Code>
+          <Name>Milano Smistamento</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>017020</Code>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>800002533842</CustomerCode>
+          <Name>Stahlwerk Thüringen GmbH</Name>
+          <VAT>DE150536120</VAT>
+          <Street>Kronacher Straße 6</Street>
+          <Country>DE</Country>
+          <ZIPCode>07333</ZIPCode>
+          <City>Unterwellenborn</City>
+          <Signature>i.A.DB Cargo AG</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <Name>Manni Sipre SPA - Crema (CR)</Name>
+          <Street>Via Gaeta 23</Street>
+          <Country>IT</Country>
+          <ZIPCode>26013</ZIPCode>
+          <City>Crema</City>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Abs. allein verf.ber., bis die Sendung Versandland gem. Feld 16 bzw. Feld 56 des CIM-Fbr. verl. hat.</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>STATION MASTER TRENITALIA, FORWARDING TO CREMA, T2-Korridor (kein Begleit-Papier) Empfänger nicht verfügungsberechtigt</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>6300018744</ConsignorReference>
+        <InformationConsignee>Bestell-Nr. OSC2380408,OSC2380411,OSC2380457</InformationConsignee>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>9076.30-8</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>10</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>907630</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>80910</RouteCode>
+          <BorderpointCode>491</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>85210</RouteCode>
+          <BorderpointCode>321</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2180</CarrierCode>
+          <CarrierName>DB Cargo AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>233205</StationCode>
+              <StationName>KOENITZ STAHLW THUER</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>144337</StationCode>
+              <StationName>BASEL BAD GBF</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>2</Status>
+          <CarrierCode>2185</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>SBB Cargo AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>144337</StationCode>
+              <StationName>BASEL BAD GBF</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>053090</StationCode>
+              <StationName>CHIASSO SMISTAMENTO</StationName>
+            </Station>
+          </SectionTo>
+          <SubContractNumber>388065</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>2183</CarrierCode>
+          <ResponsibleCarrierCode>2180</ResponsibleCarrierCode>
+          <CarrierName>Mercitalia Rail</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>053090</StationCode>
+              <StationName>CHIASSO SMISTAMENTO</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>017020</StationCode>
+              <StationName>Milano Smistamento</StationName>
+            </Station>
+          </SectionTo>
+          <SubContractNumber>165002</SubContractNumber>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2180</CarrierCode>
+        <CarrierName>DB Cargo AG</CarrierName>
+        <Signature>AftNr. 80 2023 1113 397 0887</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>KOENITZ(THUER)</Place>
+        <Date>2023-11-13</Date>
+      </MadeOut>
+      <ChargesNote>
+        <ChargesNoteAvailable>0</ChargesNoteAvailable>
+      </ChargesNote>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>80</UICCountryCode>
+            <StationCode>164020</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>017020</StationCode>
+          </End>
+          <CommercialRouteCode>011</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>721631</NHMCode>
+            <TariffNumber>907630</TariffNumber>
+            <ChargedMass value="51320.0" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318539361283">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonInfo>Betriebl. Sonderbeh.: 01</WagonInfo>
+            <WagonTypeDetails>
+              <WagonMass>24500.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>199.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>75820.0</TotalMass>
+            <LoadLimit>56</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721631</NHMCode>
+              <GoodDescription>Formstahl,aus Eisen, aus nichtlegiertem Stahl</GoodDescription>
+              <AdditionalGoodInformation>U-Profile - 12 Bund(e) - Verrechng. z. theor. Gew. 51,452</AdditionalGoodInformation>
+              <GrossMass>51320</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+      <ChangeLogs>
+        <ChangeLog CarrierCode="2180" DateTime="2023-11-13T06:08:09+01:00" NumberOfModifiedVersion="000" />
+      </ChangeLogs>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

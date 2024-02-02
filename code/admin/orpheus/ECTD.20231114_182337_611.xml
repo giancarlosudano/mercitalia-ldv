@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>4182317416611</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-14T18:23:37+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2184</SendingCarrier>
+      <MessageReferenceNumber>178663</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <MadeAvailable>2023-11-14T20:00:00+01:00</MadeAvailable>
+      <ECNPreparationDatetime>2023-11-14T17:44:17+01:00</ECNPreparationDatetime>
+      <DossierNumber>2184202311140161682</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>CT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>92181</Code>
+          <Name>Rail Service Center Waalhaven</Name>
+          <Country>
+            <UICCountryCode>84</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>005579</Code>
+          <Name>Rail Service Center Waalhaven</Name>
+          <Country>
+            <UICCountryCode>84</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-14T20:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2184</CarrierCode>
+        <ConsignmentNumber>119339</ConsignmentNumber>
+        <ForwardingTrainNumber>42529</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02432</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>024323</Code>
+          <Name>Verona Quadrante Europa</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>3200001</CustomerCode>
+          <Name>Hupac Intermodal NV</Name>
+          <VAT>NL001842341B01</VAT>
+          <Street>Albert Plesmanweg 107C</Street>
+          <Country>NL</Country>
+          <ZIPCode>3088 GC</ZIPCode>
+          <City>ROTTERDAM</City>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>7225501</CustomerCode>
+          <Name>Hupac Intermodal SA</Name>
+          <VAT>CHE106844385</VAT>
+          <Street>Viale R. Manzoni 6</Street>
+          <Country>CH</Country>
+          <ZIPCode>6830</ZIPCode>
+          <City>CHIASSO</City>
+          <Signature>John van Leeuwen</Signature>
+          <Contacts>
+            <PhoneNumber>010 4953111</PhoneNumber>
+            <FaxNumber>010 4280595</FaxNumber>
+          </Contacts>
+        </Customer>
+      </Customers>
+      <AdditionalInformation>
+        <ConsignorReference>* 150 814 026 *</ConsignorReference>
+        <InformationConsignee>HV/34621</InformationConsignee>
+      </AdditionalInformation>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>EXW</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>833761</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>84160</RouteCode>
+          <RouteText>Zevenaar/Emmerich Gr.</RouteText>
+          <BorderpointCode>416</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>80630</RouteCode>
+          <RouteText>Kufstein Grenze</RouteText>
+          <BorderpointCode>463</BorderpointCode>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>81320</RouteCode>
+          <RouteText>Brennero/Brenner</RouteText>
+          <BorderpointCode>332</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>2184</CarrierCode>
+          <CarrierName>DB Cargo Nederland N.V.</CarrierName>
+          <Street>Moreelsepark 1</Street>
+          <ZIPCode>3511 EP</ZIPCode>
+          <City>UTRECHT</City>
+          <CountryCode>NL</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>84</UICCountryCode>
+            <Station>
+              <StationCode>005579</StationCode>
+              <StationName>Rail Service Center Waalhaven</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>84</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0416</PointCode>
+              <PointName>Zevenaar</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2180</CarrierCode>
+          <CarrierName>DB Cargo AG</CarrierName>
+          <Street>Rheinstrasse 2</Street>
+          <ZIPCode>55116</ZIPCode>
+          <City>MAINZ</City>
+          <CountryCode>DE</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0416</PointCode>
+              <PointName>Emmerich</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>200295</StationCode>
+              <StationName>München Nord Rbf</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>2</Status>
+          <CarrierCode>3157</CarrierCode>
+          <CarrierName>Lokomotion</CarrierName>
+          <Street>Kastenbauerstraße 2</Street>
+          <ZIPCode>81677</ZIPCode>
+          <City>MÜNCHEN</City>
+          <CountryCode>DE</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>200295</StationCode>
+              <StationName>München Nord Rbf</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0463</PointCode>
+              <PointName>Kiefersfelden</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>2</Status>
+          <CarrierCode>3157</CarrierCode>
+          <CarrierName>Lokomotion</CarrierName>
+          <Street>Kastenbauerstraße 2</Street>
+          <ZIPCode>81677</ZIPCode>
+          <City>MÜNCHEN</City>
+          <CountryCode>DE</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0463</PointCode>
+              <PointName>Kufstein</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0332</PointCode>
+              <PointName>Brenner</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="5">
+          <Status>0</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail S.r.l.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0332</PointCode>
+              <PointName>Brennero</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>024323</StationCode>
+              <StationName>Verona Quadrante Europa</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2180</CarrierCode>
+        <CarrierName>DB Cargo AG</CarrierName>
+        <Street>Rheinstrasse 2</Street>
+        <ZIPCode>55116</ZIPCode>
+        <City>MAINZ</City>
+        <CountryCode>DE</CountryCode>
+        <Signature>2440529T</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Utrecht</Place>
+        <Date>2023-11-14</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>84</UICCountryCode>
+            <StationCode>005579</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>024323</StationCode>
+          </End>
+          <CommercialRouteCode>097</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>994300</NHMCode>
+            <TariffNumber>833761</TariffNumber>
+            <Distance>
+              <KM>1309</KM>
+            </Distance>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338549566432">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34300.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>342.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>94170.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2726082</CustomerReference>
+              <CustomerReference>NROTT2729146</CustomerReference>
+              <CustomerReference>NROTT2729957</CustomerReference>
+              <CustomerReference>NROTT2730186</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="223973" LoadingStatus="loaded">
+              <Prefix>TCLU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2230</TareWeight>
+              <DeliveryReference>NROTT2726082</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>PTA</AdditionalGoodInformation>
+                <GrossMass>25600.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="492068" LoadingStatus="loaded">
+              <Prefix>BIDU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3640</TareWeight>
+              <DeliveryReference>NROTT2729146</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>ISOCYANIC ACID  POLYMETHYLENEPOLYPHENYLENE ESTER</AdditionalGoodInformation>
+                <GrossMass>24000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="564460" LoadingStatus="empty">
+              <Prefix>FCIU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2200</TareWeight>
+              <DeliveryReference>NROTT2729957</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993100</NHMCode>
+                <GoodDescription>Grosscontainer,leer gebraucht und vor oder nach Lastlauf per Bahn</GoodDescription>
+                <AdditionalGoodInformation>LEEG/LEER/EMPTY</AdditionalGoodInformation>
+                <GrossMass>0.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="411093" LoadingStatus="empty">
+              <Prefix>CICU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2200</TareWeight>
+              <DeliveryReference>NROTT2730186</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993100</NHMCode>
+                <GoodDescription>Grosscontainer,leer gebraucht und vor oder nach Lastlauf per Bahn</GoodDescription>
+                <AdditionalGoodInformation>LEEG/LEER/EMPTY</AdditionalGoodInformation>
+                <GrossMass>0.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045533114">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>196.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79010.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2726083</CustomerReference>
+              <CustomerReference>NROTT2729124</CustomerReference>
+              <CustomerReference>NROTT2730185</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="254008" LoadingStatus="loaded">
+              <Prefix>TCKU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2230</TareWeight>
+              <DeliveryReference>NROTT2726083</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>PTA</AdditionalGoodInformation>
+                <GrossMass>25600.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="462363" LoadingStatus="loaded">
+              <Prefix>HGTU</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3920</TareWeight>
+              <DeliveryReference>NROTT2729124</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>DALTOFOAM TR 33256</AdditionalGoodInformation>
+                <GrossMass>25060.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="315804" LoadingStatus="empty">
+              <Prefix>OCVU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2200</TareWeight>
+              <DeliveryReference>NROTT2730185</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993100</NHMCode>
+                <GoodDescription>Grosscontainer,leer gebraucht und vor oder nach Lastlauf per Bahn</GoodDescription>
+                <AdditionalGoodInformation>LEEG/LEER/EMPTY</AdditionalGoodInformation>
+                <GrossMass>0.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549568297">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34300.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>342.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>98855.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2728121</CustomerReference>
+              <CustomerReference>NROTT2730354</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="535441" LoadingStatus="loaded">
+              <Prefix>RCLU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="25.7" />
+                <Width measure="ft" value="8.2" />
+                <Height measure="ft" value="9.0" />
+              </Dimensions>
+              <TareWeight>4620</TareWeight>
+              <DeliveryReference>NROTT2728121</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>GLYCOL</AdditionalGoodInformation>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="VATA1360984" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="44.6" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6935</TareWeight>
+              <DeliveryReference>NROTT2730354</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>WHEAT STARCH</AdditionalGoodInformation>
+                <GrossMass>25000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378549560159">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34300.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>342.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>101185.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2729299</CustomerReference>
+              <CustomerReference>NROTT2730722</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="935432" LoadingStatus="loaded">
+              <Prefix>RCLU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="25.7" />
+                <Width measure="ft" value="8.2" />
+                <Height measure="ft" value="9.0" />
+              </Dimensions>
+              <TareWeight>4950</TareWeight>
+              <DeliveryReference>NROTT2729299</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>PLASTICIZER</AdditionalGoodInformation>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="VATA1360979" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="44.6" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>6935</TareWeight>
+              <DeliveryReference>NROTT2730722</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GoodDescription>Sattelanhänger, beladen</GoodDescription>
+                <AdditionalGoodInformation>HIDES</AdditionalGoodInformation>
+                <GrossMass>27000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318545524361">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>19000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>197.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79230.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2724701</CustomerReference>
+              <CustomerReference>NROTT2726500</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="495521" LoadingStatus="loaded">
+              <Prefix>BIDU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="25.7" />
+                <Width measure="ft" value="8.2" />
+                <Height measure="ft" value="9.0" />
+              </Dimensions>
+              <TareWeight>3800</TareWeight>
+              <DeliveryReference>NROTT2724701</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>ALPHA C14 C16 OLEFIN BLEND  1 TETRADECENE  1 HEXADECENE</AdditionalGoodInformation>
+                <GrossMass>25000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="590291" LoadingStatus="loaded">
+              <Prefix>BIDU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3430</TareWeight>
+              <DeliveryReference>NROTT2726500</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <LongTextDescription>STYREN, MONOMER, STABILISIERT</LongTextDescription>
+                  <Weight>28000.0</Weight>
+                  <HazardNumber>39</HazardNumber>
+                  <UNNumber>2055</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>STYRENE MONOMER  STABILIZED</AdditionalGoodInformation>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045589728">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>197.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>46200.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2730147</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="FERE0014989" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="45.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>5200</TareWeight>
+              <DeliveryReference>NROTT2730147</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994200</NHMCode>
+                <GoodDescription>Wechselbehälter, beladen im Grosscontainerverkehr</GoodDescription>
+                <AdditionalGoodInformation>SOLAR PANELS</AdditionalGoodInformation>
+                <GrossMass>21000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318545524478">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>19000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>197.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>41400.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2730540</CustomerReference>
+              <CustomerReference>NROTT2730541</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="DEWA0024234" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3200</TareWeight>
+              <DeliveryReference>NROTT2730540</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994200</NHMCode>
+                <GoodDescription>Wechselbehälter, beladen im Grosscontainerverkehr</GoodDescription>
+                <AdditionalGoodInformation>FROZEN PRODUCTS</AdditionalGoodInformation>
+                <GrossMass>8000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="DEWA0024240" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3200</TareWeight>
+              <DeliveryReference>NROTT2730541</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994200</NHMCode>
+                <GoodDescription>Wechselbehälter, beladen im Grosscontainerverkehr</GoodDescription>
+                <AdditionalGoodInformation>FROZEN PRODUCTS</AdditionalGoodInformation>
+                <GrossMass>8000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338345758381">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>18000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>197.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79977.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2729218</CustomerReference>
+              <CustomerReference>NROTT2729625</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="127913" LoadingStatus="loaded">
+              <Prefix>RCLU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.0" />
+              </Dimensions>
+              <TareWeight>5248</TareWeight>
+              <DeliveryReference>NROTT2729218</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <TechnicalDescription>PUROX B LIQUID</TechnicalDescription>
+                  <LongTextDescription>ERWÄRMTER FLÜSSIGER STOFF, ENTZÜNDBAR, N.A.G.</LongTextDescription>
+                  <Weight>27014.0</Weight>
+                  <HazardNumber>30</HazardNumber>
+                  <UNNumber>3256</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>PUROX B LIQUID</AdditionalGoodInformation>
+                <GrossMass>27014.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="215184" LoadingStatus="loaded">
+              <Prefix>DHIU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="25.7" />
+                <Width measure="ft" value="8.2" />
+                <Height measure="ft" value="9.0" />
+              </Dimensions>
+              <TareWeight>4715</TareWeight>
+              <DeliveryReference>NROTT2729625</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <LongTextDescription>XYLENE</LongTextDescription>
+                  <Weight>25000.0</Weight>
+                  <HazardNumber>30</HazardNumber>
+                  <UNNumber>1307</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>XYLENES</AdditionalGoodInformation>
+                <GrossMass>25000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338345758373">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>18000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>196.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>48200.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2729948</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="FERE0016549" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="45.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>5200</TareWeight>
+              <DeliveryReference>NROTT2729948</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994200</NHMCode>
+                <GoodDescription>Wechselbehälter, beladen im Grosscontainerverkehr</GoodDescription>
+                <AdditionalGoodInformation>NICKEL</AdditionalGoodInformation>
+                <GrossMass>25000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338345758266">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>18000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>197.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77790.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2728790</CustomerReference>
+              <CustomerReference>NROTT2730103</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="311705" LoadingStatus="loaded">
+              <Prefix>HUKU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4420</TareWeight>
+              <DeliveryReference>NROTT2728790</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>OCTADECAN-1-OL</AdditionalGoodInformation>
+                <GrossMass>23500.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="152657" LoadingStatus="loaded">
+              <Prefix>MEMU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3870</TareWeight>
+              <DeliveryReference>NROTT2730103</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>GLYCERIN 99,5%, PH. EUR. GMO</AdditionalGoodInformation>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045572450">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>197.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>83630.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2728696</CustomerReference>
+              <CustomerReference>NROTT2729720</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="935431" LoadingStatus="loaded">
+              <Prefix>RCLU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="25.7" />
+                <Width measure="ft" value="8.2" />
+                <Height measure="ft" value="9.0" />
+              </Dimensions>
+              <TareWeight>4950</TareWeight>
+              <DeliveryReference>NROTT2728696</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>GLYCOL</AdditionalGoodInformation>
+                <GrossMass>27950.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="773256" LoadingStatus="loaded">
+              <Prefix>WABU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.0" />
+              </Dimensions>
+              <TareWeight>2650</TareWeight>
+              <DeliveryReference>NROTT2729720</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>DL 935H</AdditionalGoodInformation>
+                <GrossMass>28080.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318545524213">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>18000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>197.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>39800.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2730187</CustomerReference>
+              <CustomerReference>NROTT2730188</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="DEWA0036493" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2900</TareWeight>
+              <DeliveryReference>NROTT2730187</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994200</NHMCode>
+                <GoodDescription>Wechselbehälter, beladen im Grosscontainerverkehr</GoodDescription>
+                <AdditionalGoodInformation>CACAO</AdditionalGoodInformation>
+                <GrossMass>8000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="DEWA0036507" LoadingStatus="loaded">
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2900</TareWeight>
+              <DeliveryReference>NROTT2730188</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994200</NHMCode>
+                <GoodDescription>Wechselbehälter, beladen im Grosscontainerverkehr</GoodDescription>
+                <AdditionalGoodInformation>CACAO</AdditionalGoodInformation>
+                <GrossMass>8000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378045573508">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>20000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>196.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78300.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2729033</CustomerReference>
+              <CustomerReference>NROTT2729269</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="311038" LoadingStatus="loaded">
+              <Prefix>HUKU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="25.7" />
+                <Width measure="ft" value="8.2" />
+                <Height measure="ft" value="9.0" />
+              </Dimensions>
+              <TareWeight>4180</TareWeight>
+              <DeliveryReference>NROTT2729033</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <TechnicalDescription>METHYL ACETATE</TechnicalDescription>
+                  <LongTextDescription>ENTZÜNDBARER FLÜSSIGER STOFF, N.A.G.</LongTextDescription>
+                  <Weight>26500.0</Weight>
+                  <HazardNumber>33</HazardNumber>
+                  <UNNumber>1993</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>II</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>METHYL ACETATE</AdditionalGoodInformation>
+                <GrossMass>26500.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="491189" LoadingStatus="loaded">
+              <Prefix>BIDU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3620</TareWeight>
+              <DeliveryReference>NROTT2729269</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>ISOCYANIC ACID  POLYMETHYLENEPOLYPHENYLENE ESTER</AdditionalGoodInformation>
+                <GrossMass>24000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338345756328">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>18000.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>197.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>80010.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2726499</CustomerReference>
+              <CustomerReference>NROTT2730093</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="495789" LoadingStatus="loaded">
+              <Prefix>BIDU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>3570</TareWeight>
+              <DeliveryReference>NROTT2726499</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <LongTextDescription>STYREN, MONOMER, STABILISIERT</LongTextDescription>
+                  <Weight>28000.0</Weight>
+                  <HazardNumber>39</HazardNumber>
+                  <UNNumber>2055</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>STYRENE MONOMER  STABILIZED</AdditionalGoodInformation>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="330074" LoadingStatus="loaded">
+              <Prefix>LOEB</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2440</TareWeight>
+              <DeliveryReference>NROTT2730093</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>FERRO SILICON</AdditionalGoodInformation>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378449933167">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>340.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88830.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2727502</CustomerReference>
+              <CustomerReference>NROTT2729490</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="133008" LoadingStatus="loaded">
+              <Prefix>RCLU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.0" />
+              </Dimensions>
+              <TareWeight>4000</TareWeight>
+              <DeliveryReference>NROTT2727502</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <LongTextDescription>STYREN, MONOMER, STABILISIERT</LongTextDescription>
+                  <Weight>28000.0</Weight>
+                  <HazardNumber>39</HazardNumber>
+                  <UNNumber>2055</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>STYRENE MONOMER STABILIZED</AdditionalGoodInformation>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="842851" LoadingStatus="loaded">
+              <Prefix>FOTU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.0" />
+              </Dimensions>
+              <TareWeight>3330</TareWeight>
+              <DeliveryReference>NROTT2729490</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>TRIACETIN</AdditionalGoodInformation>
+                <GrossMass>18000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378449920123">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>340.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>100420.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2726295</CustomerReference>
+              <CustomerReference>NROTT2728371</CustomerReference>
+              <CustomerReference>NROTT2730184</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="591370" LoadingStatus="loaded">
+              <Prefix>BIDU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="25.7" />
+                <Width measure="ft" value="8.2" />
+                <Height measure="ft" value="9.0" />
+              </Dimensions>
+              <TareWeight>4170</TareWeight>
+              <DeliveryReference>NROTT2726295</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>HYDROCARBONS  C11 C14  N ALKANES  ISOALKANES  CYCLICS   2  AROMATICS</AdditionalGoodInformation>
+                <GrossMass>27000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="491269" LoadingStatus="loaded">
+              <Prefix>BIDU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.2" />
+                <Height measure="ft" value="9.0" />
+              </Dimensions>
+              <TareWeight>3500</TareWeight>
+              <DeliveryReference>NROTT2728371</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>ISOCYANIC ACID  POLYMETHYLENEPOLYPHENYLENE ESTER</AdditionalGoodInformation>
+                <GrossMass>28050.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="365152" LoadingStatus="empty">
+              <Prefix>GESU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>22</LengthCode>
+                <Length measure="ft" value="20.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>2200</TareWeight>
+              <DeliveryReference>NROTT2730184</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993100</NHMCode>
+                <GoodDescription>Grosscontainer,leer gebraucht und vor oder nach Lastlauf per Bahn</GoodDescription>
+                <AdditionalGoodInformation>LEEG/LEER/EMPTY</AdditionalGoodInformation>
+                <GrossMass>0.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049938269">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35500.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>340.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>71980.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2726565</CustomerReference>
+              <CustomerReference>NROTT2729951</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="535478" LoadingStatus="loaded">
+              <Prefix>RCLU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="25.7" />
+                <Width measure="ft" value="8.2" />
+                <Height measure="ft" value="9.0" />
+              </Dimensions>
+              <TareWeight>4780</TareWeight>
+              <DeliveryReference>NROTT2726565</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <LongTextDescription>STYREN, MONOMER, STABILISIERT</LongTextDescription>
+                  <Weight>28000.0</Weight>
+                  <HazardNumber>39</HazardNumber>
+                  <UNNumber>2055</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>STYRENE MONOMER STABILIZED</AdditionalGoodInformation>
+                <GrossMass>28000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="161015" LoadingStatus="empty">
+              <Prefix>IVTU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="40.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="9.6" />
+              </Dimensions>
+              <TareWeight>3700</TareWeight>
+              <DeliveryReference>NROTT2729951</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993100</NHMCode>
+                <GoodDescription>Grosscontainer,leer gebraucht und vor oder nach Lastlauf per Bahn</GoodDescription>
+                <AdditionalGoodInformation>LEEG/LEER/EMPTY</AdditionalGoodInformation>
+                <GrossMass>0.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338345756740">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>17900.0</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>197.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77080.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2728711</CustomerReference>
+              <CustomerReference>NROTT2729382</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="351337" LoadingStatus="loaded">
+              <Prefix>HUKU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="8.6" />
+              </Dimensions>
+              <TareWeight>4800</TareWeight>
+              <DeliveryReference>NROTT2728711</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <TechnicalDescription>METHYL ACETATE</TechnicalDescription>
+                  <LongTextDescription>ENTZÜNDBARER FLÜSSIGER STOFF, N.A.G.</LongTextDescription>
+                  <Weight>26500.0</Weight>
+                  <HazardNumber>33</HazardNumber>
+                  <UNNumber>1993</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>II</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>METHYL ACETATE</AdditionalGoodInformation>
+                <GrossMass>26500.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="462407" LoadingStatus="loaded">
+              <Prefix>BUKU</Prefix>
+              <Checkdigit>1</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="30.0" />
+                <Width measure="ft" value="8.2" />
+                <Height measure="ft" value="9.0" />
+              </Dimensions>
+              <TareWeight>2880</TareWeight>
+              <DeliveryReference>NROTT2729382</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>1 BUTEN  POLYMER MIT ETHEN UND 1 PROPEN</AdditionalGoodInformation>
+                <GrossMass>25000.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="338549565665">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>34300.0</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>342.0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>92193.0</TotalMass>
+            <CustomerReferences>
+              <CustomerReference>NROTT2727679</CustomerReference>
+              <CustomerReference>NROTT2729189</CustomerReference>
+            </CustomerReferences>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="571344" LoadingStatus="loaded">
+              <Prefix>MRSU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length measure="ft" value="40.0" />
+                <Width measure="ft" value="8.0" />
+                <Height measure="ft" value="9.6" />
+              </Dimensions>
+              <TareWeight>3720</TareWeight>
+              <DeliveryReference>NROTT2727679</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>ASEPTIC MANGO PUREE SINGLE STRENGTH</AdditionalGoodInformation>
+                <GrossMass>24518.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="215156" LoadingStatus="loaded">
+              <Prefix>DHIU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length measure="ft" value="25.7" />
+                <Width measure="ft" value="8.2" />
+                <Height measure="ft" value="9.0" />
+              </Dimensions>
+              <TareWeight>4715</TareWeight>
+              <DeliveryReference>NROTT2729189</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <DangerLabel>3</DangerLabel>
+                  <LongTextDescription>ACETON</LongTextDescription>
+                  <Weight>24940.0</Weight>
+                  <HazardNumber>33</HazardNumber>
+                  <UNNumber>1090</UNNumber>
+                  <Class>3</Class>
+                  <PackingGroup>II</PackingGroup>
+                </RID>
+                <NHMCode>994100</NHMCode>
+                <GoodDescription>Grosscontainer, beladen</GoodDescription>
+                <AdditionalGoodInformation>ACETONE</AdditionalGoodInformation>
+                <GrossMass>24940.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+      </Wagons>
+      <ChangeLogs>
+        <ChangeLog CarrierCode="2184" DateTime="2023-11-14T18:17:52+01:00" NumberOfModifiedVersion="000" />
+      </ChangeLogs>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

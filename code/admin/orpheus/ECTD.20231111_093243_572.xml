@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>1093217403572</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-11T09:32:43+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131150897</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-11T09:32:22+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202311111150897</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>KLV</Code>
+          <Name>Villach Süd CCT</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>019901</Code>
+          <Name>Villach Süd CCT</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>019901</Code>
+          <Name>Villach Süd CCT</Name>
+          <Country>
+            <UICCountryCode>81</UICCountryCode>
+            <Name>ÖSTERREICH</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-11T08:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2181</CarrierCode>
+        <ConsignmentNumber>597633</ConsignmentNumber>
+        <ForwardingTrainNumber>41281</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Bari Lamasinata</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>111179</Code>
+          <Name>Bari Lamasinata</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>111179</Code>
+          <Name>Bari Lamasinata</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>8022659</CustomerCode>
+          <Name>Lotras srl</Name>
+          <VAT>IT02339200715</VAT>
+          <Street>Terminal Ferroviario</Street>
+          <Country>IT</Country>
+          <ZIPCode>71100</ZIPCode>
+          <City>Foggia (FG)</City>
+          <Signature>Villach Süd CCT i.A.d.Abs.</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>8022659</CustomerCode>
+          <Name>Lotras srl</Name>
+          <VAT>IT02339200715</VAT>
+          <Street>Terminal Ferroviario</Street>
+          <Country>IT</Country>
+          <ZIPCode>71100</ZIPCode>
+          <City>Foggia (FG)</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>8022659</CustomerCode>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>8022659</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Genehmigung TES. 1400P/19-0690</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>11</Code>
+          <Text>Pr 170;Pr 172;</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>Lotras</ConsignorReference>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>Abkommensnummer: 839496 / Zug 42201 ab 12.01.18</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>EXW</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>839496</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>_002751-6 Wand Vorne zerkratzt, Rahmen Rundherum zerkratzt, Greifkante / Greifkantenblech Rundherum zerkratzt, Plane/Verschlüsse Rundherum abgeschürft, Plane/Ve</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>zerkratzt, Dach Oben durchlöchert; MXMU_530376-9 Rahmen Links Mitte verformt, Tür (en) Hinten undicht, Aufstiegsleiter Vorne verformt, Wand Rechts Mitte eingede</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>m zerkratzt, Längsträger Rundherum verbogen, Wand Rundherum eingedellt, Wand Rundherum zerkratzt; _002555-5 Plane/Verschlüsse Ganze linke Seite abgeschürft, Pla</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>rechte Seite abgeschürft, Tür (en) Hinten eingedellt, Wand Vorne zerkratzt, Tür (en) Hinten verformt, Tür (en) Hinten zerkratzt, Wand Rundherum eingedellt; _00</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>üsse Ganze linke Seite Graffiti, Tür (en) Hinten eingedellt, Rahmen Rundherum abgeschürft, Plane/Verschlüsse Rundherum abgeschürft; _002659-3 Plane/Verschlüsse</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>n; _002397-4 Greifkante / Greifkantenblech Links Vorne fehlend, Plane/Verschlüsse Links Vorne gerissen, Greifkante / Greifkantenblech Rechts Vorne fehlend, Grei</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>blech Rechts Hinten fehlend; _002449-8 Tür (en) Hinten eingedellt, Längsträger Links Vorne verformt, Greifkante / Greifkantenblech Rundherum verformt, Greifkant</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>Rundherum zerkratzt, Tür (en) Hinten zerkratzt, Plane/Verschlüsse Rundherum abgeschürft, Wand Vorne zerkratzt, Wand Vorne ausgebeult; MXMU_530382-0 Plane/Versc</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>rverriegelung Hinten verbogen, Sonstiges Vorne durchlöchert, Aufstiegsleiter Vorne verbogen, Querträger Rundherum verformt, Längsträger Rundherum verformt, Wand</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>t, Wand Rundherum zerkratzt; MXMU_530385-6 Querträger Rundherum verformt, Aufstiegsleiter Vorne verbogen, Längsträger Rundherum verbogen, Querträger Hinten eing</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>lüsse Oben abgeschürft, Wand Rundherum eingedellt, Wand Rundherum zerkratzt; MXMU_530388-2 Aufstiegsleiter Vorne verbogen, Wand Vorne eingedellt, Tür (en) Hinte</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>riegelung Hinten verbogen, Querträger Rundherum verformt, Längsträger Rundherum verformt, Wand Rundherum eingedellt, Wand Rundherum zerkratzt; _004222-8 Wand Vo</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>Vorne zerkratzt, Türverriegelung Hinten verbogen, Tür (en) Hinten eingedellt, Tür (en) Hinten zerkratzt, Plane/Verschlüsse Rundherum abgeschürft, Plane/Verschl</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>repariert, Tür (en) Hinten verbogen, Unterfahrschutz Rechts Mitte verbogen, Unterfahrschutz Links Mitte verbogen, Stützbein Rechts Vorne verbogen TA/EB: EB 054</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>e/Verschlüsse Rechts Mitte gerissen, Tür (en) Ganze linke Seite zerkratzt, Tür (en) Hinten eingedellt, Wand Vorne zerkratzt, Rahmen Rundherum zerkratzt, Plane/V</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>abgeschürft; _002412-1 Längsträger Rundherum verbogen, Tür (en) Hinten zerkratzt, Plane/Verschlüsse Rundherum abgeschürft, Wand Vorne zerkratzt; _002377-9 Tür</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>lt, Tür (en) Hinten zerkratzt, Unterfahrschutz Vorne eingedellt, Wand Vorne zerkratzt, Querträger Rundherum verformt, Längsträger Rundherum verformt, Plane/Vers</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>geschürft; _002253-5 Greifkante / Greifkantenblech Rechts Vorne verbogen, Tür (en) Hinten eingedellt, Tür (en) Hinten zerkratzt, Längsträger Rundherum verbogen,</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>undherum abgeschürft, Wand Vorne zerkratzt, Plane/Verschlüsse Oben lose; _002806-6 Tür (en) Hinten eingedellt, Wand Vorne eingedellt, Wand Vorne zerkratzt, Quer</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>formt, Längsträger Rundherum verformt, Plane/Verschlüsse Rundherum prov. repariert, Plane/Verschlüsse Rundherum abgeschürft, Rahmen Rundherum zerkratzt; ECBU_46</DeclarationText>
+        </CarriersDeclaration>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2181</DeclaratingCarrier>
+          <DeclarationCode>4.2</DeclarationCode>
+          <DeclarationText>ndherum verbogen, Türverriegelung Hinten verbogen, Längsträger Rundherum verbogen, Wand Rundherum eingedellt, Wand Rundherum zerkratzt</DeclarationText>
+        </CarriersDeclaration>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>2181</CarrierCode>
+          <ResponsibleCarrierCode>2183</ResponsibleCarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <Station>
+              <StationCode>019901</StationCode>
+              <StationName>Villach Süd CCT</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+          <SubContractNumber>218333</SubContractNumber>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>111179</StationCode>
+              <StationName>Bari Lamasinata</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2183</CarrierCode>
+        <Signature>2023-11-11 09:32 1131150897</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Villach Süd CCT</Place>
+        <Date>2023-11-11</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <StationCode>019901</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>111179</StationCode>
+          </End>
+          <CommercialRouteCode>041</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>994200</NHMCode>
+            <TariffNumber>839496</TariffNumber>
+            <ChargedMass value="499200" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318349611695">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>339.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>90235</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+            <BookingNumber>2181:20231111093208743:15974043</BookingNumber>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002751" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Holz und Pellets, Siegel:511407</AdditionalGoodInformation>
+                <GrossMass>27000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="530376" LoadingStatus="loaded" UTITypeDetail="OT">
+              <Prefix>MXMU</Prefix>
+              <Checkdigit>9</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="8.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>4400</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Aliminium/Siegel:: 511573</AdditionalGoodInformation>
+                <GrossMass>22790</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336849642382">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>83945</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002555" LoadingStatus="loaded">
+              <Prefix>CHPA</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>4900</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Holz, Siegel:511577</AdditionalGoodInformation>
+                <GrossMass>24000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002781" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Holz, Siegel:560701</AdditionalGoodInformation>
+                <GrossMass>21000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049523111">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29500</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>93020</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002659" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Schnittholz, Siegel:551684</AdditionalGoodInformation>
+                <GrossMass>26575</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002397" LoadingStatus="loaded">
+              <Prefix>CHPA</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>4900</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets, Siegel:553383</AdditionalGoodInformation>
+                <GrossMass>27000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="336849544091">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87800</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002449" LoadingStatus="loaded">
+              <Prefix>CHPA</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>4900</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Holz, Siegel:511009</AdditionalGoodInformation>
+                <GrossMass>24000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002386" LoadingStatus="loaded">
+              <Prefix>CHPA</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>4900</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets 511285</AdditionalGoodInformation>
+                <GrossMass>25000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318349611182">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>339.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>87530</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="530382" LoadingStatus="loaded" UTITypeDetail="OT">
+              <Prefix>MXMU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="8.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>4400</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Aluminium - 560703</AdditionalGoodInformation>
+                <GrossMass>23000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="530385" LoadingStatus="loaded" UTITypeDetail="OT">
+              <Prefix>MXMU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="8.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>4400</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Aluminium, Siegel:564986</AdditionalGoodInformation>
+                <GrossMass>24730</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378449930619">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35500</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>340.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>59600</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>172</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="530388" LoadingStatus="loaded" UTITypeDetail="OT">
+              <Prefix>MXMU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="8.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>4400</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>AT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Aluminium 511281</AdditionalGoodInformation>
+                <GrossMass>2400</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="004222" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>44</LengthCode>
+                <Length value="44" measure="ft" />
+                <Width value="8.6" measure="ft" />
+                <Height value="13.1" measure="ft" />
+              </Dimensions>
+              <TareWeight>7300</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Metall: Siegel:542728</AdditionalGoodInformation>
+                <GrossMass>10000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378449920644">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>35500</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>340.3</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>94300</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002459" LoadingStatus="loaded">
+              <Prefix>CHPA</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>4900</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Holz, Siegel: 511572</AdditionalGoodInformation>
+                <GrossMass>24000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002412" LoadingStatus="loaded">
+              <Prefix>CHPA</Prefix>
+              <Checkdigit>1</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>4900</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Papier/Siegel::542748</AdditionalGoodInformation>
+                <GrossMass>25000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318349612503">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>339.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>93945</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002377" LoadingStatus="loaded">
+              <Prefix>CHPA</Prefix>
+              <Checkdigit>9</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>4900</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Holz, Siegel:511405</AdditionalGoodInformation>
+                <GrossMass>26000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002253" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Pellets 553384</AdditionalGoodInformation>
+                <GrossMass>27000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049521164">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29000</WagonMass>
+              <AxleNumber>6</AxleNumber>
+              <WagonLength>295.9</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89325</TotalMass>
+            <ExceptionalConsignment>
+              <IMCode>0081</IMCode>
+              <PermissionNumber>170</PermissionNumber>
+            </ExceptionalConsignment>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="sw" Number="002806" LoadingStatus="loaded">
+              <Prefix>NOTA</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.5" measure="ft" />
+              </Dimensions>
+              <TareWeight>5045</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>schnittholz 560988</AdditionalGoodInformation>
+                <GrossMass>27000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="462909" LoadingStatus="loaded" UTITypeDetail="HC">
+              <Prefix>ECBU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>45</LengthCode>
+                <Length value="45" measure="ft" />
+                <Width value="8" measure="ft" />
+                <Height value="9.6" measure="ft" />
+              </Dimensions>
+              <TareWeight>4280</TareWeight>
+              <DepartureCountry>AT</DepartureCountry>
+              <DestinationCountry>IT</DestinationCountry>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>990200</NHMCode>
+                <AdditionalGoodInformation>Milch, Siegel:511579</AdditionalGoodInformation>
+                <GrossMass>24000</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

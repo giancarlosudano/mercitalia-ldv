@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>4084217412761</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-14T08:42:15+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131158733</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-14T08:40:52+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202311141158733</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>9</Code>
+          <Name>Gerstungen</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+            <Name>DEUTSCHLAND</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>160846</Code>
+          <Name>Gerstungen</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+            <Name>DEUTSCHLAND</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>160846</Code>
+          <Name>Gerstungen</Name>
+          <Country>
+            <UICCountryCode>80</UICCountryCode>
+            <Name>DEUTSCHLAND</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-14T10:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3162</CarrierCode>
+        <ConsignmentNumber>600502</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>05420</Code>
+          <Name>Adria</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>057067</Code>
+          <Name>Rovigo</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>054221</Code>
+          <Name>Cavanella Po</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>K + S Minerals &amp; Agriculture GmbH</Name>
+          <AdditionalInformation>Werk Werra Standort Hattorf</AdditionalInformation>
+          <Street>Hattorfer Str.</Street>
+          <Country>DE</Country>
+          <ZIPCode>36269</ZIPCode>
+          <City>Philippsthal (Werra)</City>
+          <Signature>RCA i. A. d. Abs.</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>8023756</CustomerCode>
+          <Name>Adriatica S.P.A.</Name>
+          <VAT>DE294050237</VAT>
+          <Street>Strada Dogado n. 300/19-21</Street>
+          <Country>IT</Country>
+          <ZIPCode>45017</ZIPCode>
+          <City>Loreo</City>
+          <Contacts>
+            <PhoneNumber>+49/69-238503-0</PhoneNumber>
+            <FaxNumber>+49/69238503-18</FaxNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>8023756</CustomerCode>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>8023756</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>CH-0062</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtzahler Strecke DE: RCL Germany GmbH</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtzahler Strecke AT+IT: RCA+MIR Tarif 9502.49 ZF802.375-6</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>9000385468</ConsignorReference>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>via Kuftstein/Brenner Gr.</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>in RCC-DE 3162, in AT RCA 2181, in IT MIR 2183</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>80</UICCountryCode>
+            <PointCode>0463</PointCode>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <TariffNumber>950249</TariffNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>80630</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81320</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>1</Status>
+          <CarrierCode>3162</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>160846</StationCode>
+              <StationName>Gerstungen</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0463</PointCode>
+              <PointName>Kufstein</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0463</PointCode>
+              <PointName>Kufstein</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0332</PointCode>
+              <PointName>Brennero/Brenner</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0332</PointCode>
+              <PointName>Brennero/Brenner</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>057067</StationCode>
+              <StationName>Rovigo</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2181</CarrierCode>
+        <Signature>2023-11-14 08:40 1131158733</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Frankfurt/Main</Place>
+        <Date>2023-11-14</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>80</UICCountryCode>
+            <StationCode>160846</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>057067</StationCode>
+          </End>
+          <CommercialRouteCode>065</CommercialRouteCode>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>310420</NHMCode>
+            <TariffNumber>950249</TariffNumber>
+            <ChargedMass value="1083000" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338506590664">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+            <BookingNumber>2181:20231114084002595:15983220</BookingNumber>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506591837">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506590268">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506592124">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506590102">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506590151">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506590136">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506591027">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506591506">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506590789">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506591068">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506591217">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506593338">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506591142">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506592199">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506591860">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506592355">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506591902">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338506590284">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>165.2</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79500</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>310420</NHMCode>
+              <GoodDescription>Kaliumchlorid (ausg. in Tabletten oder ähnl. Formen oder in Packungen mit einem Rohgewicht von &lt;= 10 kg)</GoodDescription>
+              <GrossMass>57000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>1134017404066</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-11T13:40:36+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2154</SendingCarrier>
+      <MessageReferenceNumber>17734121</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-11T13:39:07+01:00</ECNPreparationDatetime>
+      <DossierNumber>2154202311110834140</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>32411</Code>
+          <Name>KRONOSPAN Jihlava</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>342154</Code>
+          <Name>Jihlava</Name>
+          <Country>
+            <UICCountryCode>54</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-11T10:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2154</CarrierCode>
+        <ConsignmentNumber>502591</ConsignmentNumber>
+        <ForwardingTrainNumber>0</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>02830</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>028308</Code>
+          <Name>CASARSA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>028308</Code>
+          <Name>CASARSA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>6473</CustomerCode>
+          <Name>KRONOSPAN CR,spol. s r.o.</Name>
+          <VAT>CZ62417690</VAT>
+          <Street>Na Hranici 2361/6</Street>
+          <Country>CZ</Country>
+          <ZIPCode>586 01</ZIPCode>
+          <City>Jihlava</City>
+          <Signature>54-342154-50259-2154-20231111</Signature>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>7637</CustomerCode>
+          <Name>Rail Cargo Logistics - Czech Republ</Name>
+          <VAT>CZ60755351</VAT>
+          <Street>Mickova 431/64</Street>
+          <Country>CZ</Country>
+          <ZIPCode>614 00</ZIPCode>
+          <City>Brno</City>
+        </Customer>
+        <Customer Type="CE">
+          <Name>Kronospan Italia S.R.L.</Name>
+          <Street>Via Bordano 10</Street>
+          <Country>IT</Country>
+          <ZIPCode>33078</ZIPCode>
+          <City>San Vito Al Tagliamento</City>
+          <Signature>not specified</Signature>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>7676752</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Ausnahme aus ZAN: 54/CA/11.11.23/021-0</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>CDC-Frachtzahler: Rail Cargo Logistics - Czech Republic s.r.o., Mickova 431/64, Brno, MWSt.Nr.CZ60755351 ; OPT: 91307637 ; HO -0442 Verfugungsberechtigter. RCL-Austria
+Platce CD: Rail Cargo</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Logistics-CR, IC60755351, 91307637; 
+
+54/CA/11.11.23/021-040</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>0321427</ConsignorReference>
+        <WagonGroupInfo>1 Waggon Spanplatten         NHM 4410/4411 . .</WagonGroupInfo>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>HORNI DVORISTE ST.HR ; TARVISIO BOSCOVERDE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>CZ - 2154 CDC ; AT - 2181 RCA ; IT - 2183 MIR</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>CDC:D606013 ; Frachzahlung Summerau Gr-Tarvisio ZF 059028-1, Tarvisio-Casarsa ZF 767675-2 EK-Tarif 2183.08, CD D606013</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>10</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0610</PointCode>
+            <PointName>HORNI DVORISTE ST.HR</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>606013</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>54100</RouteCode>
+          <RouteText>HORNI DVORISTE ST.HR ; TARVISIO BOSCOVERDE</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2154</DeclaratingCarrier>
+          <DeclarationCode>12</DeclarationCode>
+          <DeclarationText>obj.c. 21355362 ; DROP 5441193</DeclarationText>
+        </CarriersDeclaration>
+        <DifferentAcceptance>
+          <DifferentAcceptanceDate>2023-11-11T13:00:00+01:00</DifferentAcceptanceDate>
+        </DifferentAcceptance>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2154</CarrierCode>
+          <CarrierName>CD Cargo, a.s.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>54</UICCountryCode>
+            <Station>
+              <StationCode>342154</StationCode>
+              <StationName>Jihlava</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0610</PointCode>
+              <PointName>HORNI DVORISTE ST.HR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <CarrierName>Rail Cargo Austria AG</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0610</PointCode>
+              <PointName>SUMMERAU GRENZE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>028308</StationCode>
+              <StationName>CASARSA</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2154</CarrierCode>
+        <CarrierName>CD Cargo, a.s.</CarrierName>
+        <Signature>54-342154-50259-2154-20231111</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Jihlava</Place>
+        <Date>2023-11-11</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>54</UICCountryCode>
+            <StationCode>342154</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0610</PointCode>
+          </End>
+          <CurrencyCode>CZK</CurrencyCode>
+          <Tariff>
+            <NHMCode>441011</NHMCode>
+            <TariffNumber>606013</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0610</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>441011</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>83</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>028308</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>441011</NHMCode>
+            <TariffNumber>218308</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318127430508">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51850</TotalMass>
+            <LoadLimit>62.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>51850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318128931447">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>28800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51850</TotalMass>
+            <LoadLimit>61.2</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>51850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127431746">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50950</TotalMass>
+            <LoadLimit>62.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>50950</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127431076">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50399</TotalMass>
+            <LoadLimit>62.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>50399</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127421911">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51850</TotalMass>
+            <LoadLimit>63.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>51850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127395982">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51850</TotalMass>
+            <LoadLimit>63.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>51850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127432447">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51850</TotalMass>
+            <LoadLimit>62.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>51850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127390645">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50395</TotalMass>
+            <LoadLimit>63.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>50395</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127435226">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51850</TotalMass>
+            <LoadLimit>62.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>51850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127423164">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50395</TotalMass>
+            <LoadLimit>63.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>50395</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127395859">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51850</TotalMass>
+            <LoadLimit>63.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>51850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127391734">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51850</TotalMass>
+            <LoadLimit>63.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>51850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127393144">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>26500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50395</TotalMass>
+            <LoadLimit>63.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>50395</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318128821218">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51850</TotalMass>
+            <LoadLimit>62.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>51850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318128920655">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>28000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50395</TotalMass>
+            <LoadLimit>62</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>50395</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127431225">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50950</TotalMass>
+            <LoadLimit>62.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>50950</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318128820459">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>51850</TotalMass>
+            <LoadLimit>62.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>51850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318128920234">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50390</TotalMass>
+            <LoadLimit>62.2</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>50390</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318128821408">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50950</TotalMass>
+            <LoadLimit>62.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>50950</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318127431571">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>50390</TotalMass>
+            <LoadLimit>62.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>441011</NHMCode>
+              <GoodDescription>Spanplatten aus Holz, auch mit Harz oder anderen organischen Bindemitteln hergestellt, roh oder nur geschliffen (ausg. oriented strand board-Spanplatten und waferboard-Spanplatten, Faserplatten und Verbundplatten mit Hohlraum-Mittellagen)</GoodDescription>
+              <GrossMass>50390</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

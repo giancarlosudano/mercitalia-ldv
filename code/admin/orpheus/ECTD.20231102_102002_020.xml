@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>2102017360020</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-02T10:20:02+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131107160</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-02T10:17:49+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202310301107160</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>07811</Code>
+          <Name>Pescara Porta Nuova</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>078113</Code>
+          <Name>Pescara Porta Nuova</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>078113</Code>
+          <Name>Pescara Porta Nuova</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-03T13:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2181</CarrierCode>
+        <ConsignmentNumber>602219</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>12338</Code>
+          <Name>Bicocca</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>123380</Code>
+          <Name>Bicocca</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>123380</Code>
+          <Name>Bicocca</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>7676752</CustomerCode>
+          <Name>Rail Cargo Logistics - Austria GmbH</Name>
+          <AdditionalInformation>i.A. T.C.F.S. Trasporti</AdditionalInformation>
+          <VAT>ATU 15378507</VAT>
+          <Street>Hart, 101</Street>
+          <Country>AT</Country>
+          <ZIPCode>9586</ZIPCode>
+          <City>Fürnitz</City>
+          <Signature>45007 i. A. d. Abs.</Signature>
+          <Contacts>
+            <PhoneNumber>+43/664/8217092</PhoneNumber>
+            <FaxNumber>+43/1/9300083711561</FaxNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <Name>Logistica Meridionale Srl</Name>
+          <Street>Contrada S.Vitale 244</Street>
+          <Country>IT</Country>
+          <ZIPCode>82100</ZIPCode>
+          <City>Benevento (BN)</City>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>7676752</CustomerCode>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Zugbildung Pescara - Bicocca Zug 56471</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Die Beförderung in Italien erfolgt durch EVU-MIR</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>1</Code>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>15</Code>
+          <Text>176 - SG: 176  SG</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <ConsignorReference>Sunte</ConsignorReference>
+        <InformationConsignee>Weiterleitung (REEX) Pescara - Bicocca als Ganzzug</InformationConsignee>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>Kontrakt VK 5181.58 für ÖBB Abrechnung durch ZF 767675-2, Kontrakt EK 2183.06 für TI Abrechnung</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>518158</ContractNumber>
+      </Tariff>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>2</Status>
+          <CarrierCode>2183</CarrierCode>
+          <ResponsibleCarrierCode>2181</ResponsibleCarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>078113</StationCode>
+              <StationName>Pescara Porta Nuova</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>123380</StationCode>
+              <StationName>Bicocca</StationName>
+            </Station>
+          </SectionTo>
+          <SubContractNumber>218322</SubContractNumber>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2181</CarrierCode>
+        <Signature>2023-11-02 10:17 1131107160</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>FÜRNITZ</Place>
+        <Date>2023-11-02</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>078113</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>123380</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>440700</NHMCode>
+            <TariffNumber>518158</TariffNumber>
+            <ChargedMass value="542885" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="218143951992">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>28300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>295.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79190</TotalMass>
+            <BookingNumber>2181:20231102101744681:15936273</BookingNumber>
+          </WagonDetails>
+          <LoadingTackles>
+            <LoadingTackle Type="STR">
+              <TotalWeight>90</TotalWeight>
+              <Quantity>18</Quantity>
+            </LoadingTackle>
+          </LoadingTackles>
+          <Goods>
+            <Good>
+              <NHMCode>440700</NHMCode>
+              <GoodDescription>Holz, in der Längsrichtung gesägt oder gesäumt, gemessert oder geschält, auch gehobelt, geschliffen oder an den Enden verbunden, mit einer Dicke von &gt; 6 mm</GoodDescription>
+              <GrossMass>50800</GrossMass>
+              <HSCode>440700</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218143952057">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>295.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>75785</TotalMass>
+          </WagonDetails>
+          <LoadingTackles>
+            <LoadingTackle Type="STR">
+              <TotalWeight>85</TotalWeight>
+              <Quantity>17</Quantity>
+            </LoadingTackle>
+          </LoadingTackles>
+          <Goods>
+            <Good>
+              <NHMCode>440700</NHMCode>
+              <GoodDescription>Holz, in der Längsrichtung gesägt oder gesäumt, gemessert oder geschält, auch gehobelt, geschliffen oder an den Enden verbunden, mit einer Dicke von &gt; 6 mm</GoodDescription>
+              <GrossMass>11000</GrossMass>
+              <HSCode>440700</HSCode>
+            </Good>
+            <Good>
+              <NHMCode>441800</NHMCode>
+              <GoodDescription>Bautischler- und Zimmermannsarbeiten, einschl. Verbundplatten mit Hohlraum-Mittellagen,  zusammengesetzte Fußbodenplatten, Schindeln "shingles" und shakes", aus Holz (ausg. Verschalbretter aus Sperrholz, Stäbe und Friese für Parkett, nichtzusammengesetzt sowie vorgefertigte Gebäude)</GoodDescription>
+              <GrossMass>37000</GrossMass>
+              <HSCode>441800</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218143952024">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>28350</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>295.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79960</TotalMass>
+          </WagonDetails>
+          <LoadingTackles>
+            <LoadingTackle Type="STR">
+              <TotalWeight>90</TotalWeight>
+              <Quantity>18</Quantity>
+            </LoadingTackle>
+          </LoadingTackles>
+          <Goods>
+            <Good>
+              <NHMCode>441800</NHMCode>
+              <GoodDescription>Bautischler- und Zimmermannsarbeiten, einschl. Verbundplatten mit Hohlraum-Mittellagen,  zusammengesetzte Fußbodenplatten, Schindeln "shingles" und shakes", aus Holz (ausg. Verschalbretter aus Sperrholz, Stäbe und Friese für Parkett, nichtzusammengesetzt sowie vorgefertigte Gebäude)</GoodDescription>
+              <GrossMass>51520</GrossMass>
+              <HSCode>441800</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218143952537">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>295.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>71960</TotalMass>
+          </WagonDetails>
+          <LoadingTackles>
+            <LoadingTackle Type="STR">
+              <TotalWeight>60</TotalWeight>
+              <Quantity>12</Quantity>
+            </LoadingTackle>
+          </LoadingTackles>
+          <Goods>
+            <Good>
+              <NHMCode>440700</NHMCode>
+              <GoodDescription>Holz, in der Längsrichtung gesägt oder gesäumt, gemessert oder geschält, auch gehobelt, geschliffen oder an den Enden verbunden, mit einer Dicke von &gt; 6 mm</GoodDescription>
+              <GrossMass>44100</GrossMass>
+              <HSCode>440700</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218143951216">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>28750</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>295.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76810</TotalMass>
+          </WagonDetails>
+          <LoadingTackles>
+            <LoadingTackle Type="STR">
+              <TotalWeight>60</TotalWeight>
+              <Quantity>12</Quantity>
+            </LoadingTackle>
+          </LoadingTackles>
+          <Goods>
+            <Good>
+              <NHMCode>440700</NHMCode>
+              <GoodDescription>Holz, in der Längsrichtung gesägt oder gesäumt, gemessert oder geschält, auch gehobelt, geschliffen oder an den Enden verbunden, mit einer Dicke von &gt; 6 mm</GoodDescription>
+              <GrossMass>48000</GrossMass>
+              <HSCode>440700</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218143950697">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27900</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>295.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78858</TotalMass>
+          </WagonDetails>
+          <LoadingTackles>
+            <LoadingTackle Type="STR">
+              <TotalWeight>60</TotalWeight>
+              <Quantity>12</Quantity>
+            </LoadingTackle>
+          </LoadingTackles>
+          <Goods>
+            <Good>
+              <NHMCode>440700</NHMCode>
+              <GoodDescription>Holz, in der Längsrichtung gesägt oder gesäumt, gemessert oder geschält, auch gehobelt, geschliffen oder an den Enden verbunden, mit einer Dicke von &gt; 6 mm</GoodDescription>
+              <GrossMass>50898</GrossMass>
+              <HSCode>440700</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218143951471">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>28100</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>295.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76982</TotalMass>
+          </WagonDetails>
+          <LoadingTackles>
+            <LoadingTackle Type="STR">
+              <TotalWeight>95</TotalWeight>
+              <Quantity>19</Quantity>
+            </LoadingTackle>
+          </LoadingTackles>
+          <Goods>
+            <Good>
+              <NHMCode>440700</NHMCode>
+              <GoodDescription>Holz, in der Längsrichtung gesägt oder gesäumt, gemessert oder geschält, auch gehobelt, geschliffen oder an den Enden verbunden, mit einer Dicke von &gt; 6 mm</GoodDescription>
+              <GrossMass>48787</GrossMass>
+              <HSCode>440700</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218143952669">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27024</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>295.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78014</TotalMass>
+          </WagonDetails>
+          <LoadingTackles>
+            <LoadingTackle Type="STR">
+              <TotalWeight>90</TotalWeight>
+              <Quantity>18</Quantity>
+            </LoadingTackle>
+          </LoadingTackles>
+          <Goods>
+            <Good>
+              <NHMCode>440700</NHMCode>
+              <GoodDescription>Holz, in der Längsrichtung gesägt oder gesäumt, gemessert oder geschält, auch gehobelt, geschliffen oder an den Enden verbunden, mit einer Dicke von &gt; 6 mm</GoodDescription>
+              <GrossMass>50900</GrossMass>
+              <HSCode>440700</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218143952719">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>28000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>295.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77290</TotalMass>
+          </WagonDetails>
+          <LoadingTackles>
+            <LoadingTackle Type="STR">
+              <TotalWeight>90</TotalWeight>
+              <Quantity>18</Quantity>
+            </LoadingTackle>
+          </LoadingTackles>
+          <Goods>
+            <Good>
+              <NHMCode>440700</NHMCode>
+              <GoodDescription>Holz, in der Längsrichtung gesägt oder gesäumt, gemessert oder geschält, auch gehobelt, geschliffen oder an den Enden verbunden, mit einer Dicke von &gt; 6 mm</GoodDescription>
+              <GrossMass>49200</GrossMass>
+              <HSCode>440700</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218143950846">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27550</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>295.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>76640</TotalMass>
+          </WagonDetails>
+          <LoadingTackles>
+            <LoadingTackle Type="STR">
+              <TotalWeight>90</TotalWeight>
+              <Quantity>18</Quantity>
+            </LoadingTackle>
+          </LoadingTackles>
+          <Goods>
+            <Good>
+              <NHMCode>440700</NHMCode>
+              <GoodDescription>Holz, in der Längsrichtung gesägt oder gesäumt, gemessert oder geschält, auch gehobelt, geschliffen oder an den Enden verbunden, mit einer Dicke von &gt; 6 mm</GoodDescription>
+              <GrossMass>49000</GrossMass>
+              <HSCode>440700</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="218143951414">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27900</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>295.7</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78770</TotalMass>
+          </WagonDetails>
+          <LoadingTackles>
+            <LoadingTackle Type="STR">
+              <TotalWeight>70</TotalWeight>
+              <Quantity>14</Quantity>
+            </LoadingTackle>
+          </LoadingTackles>
+          <Goods>
+            <Good>
+              <NHMCode>440700</NHMCode>
+              <GoodDescription>Holz, in der Längsrichtung gesägt oder gesäumt, gemessert oder geschält, auch gehobelt, geschliffen oder an den Enden verbunden, mit einer Dicke von &gt; 6 mm</GoodDescription>
+              <GrossMass>50800</GrossMass>
+              <HSCode>440700</HSCode>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

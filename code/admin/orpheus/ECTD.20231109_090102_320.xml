@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>9090117392320</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-09T09:01:02+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2185</SendingCarrier>
+      <MessageReferenceNumber>20231109085744119</MessageReferenceNumber>
+      <ShipmentType>CUV</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-09T08:57:44+01:00</ECNPreparationDatetime>
+      <DossierNumber>2185202311090000031</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>20</Code>
+          <Name>UNKNOWN</Name>
+          <Country>
+            <UICCountryCode>85</UICCountryCode>
+            <Name>Schweiz</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>022186</Code>
+          <Name>Sins</Name>
+          <Country>
+            <UICCountryCode>85</UICCountryCode>
+            <Name>Schweiz</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>022186</Code>
+          <Name>Sins</Name>
+          <Country>
+            <UICCountryCode>85</UICCountryCode>
+            <Name>Schweiz</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-09T00:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2185</CarrierCode>
+        <ConsignmentNumber>048439</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>UNKNOWN</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>Italien</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>017020</Code>
+          <Name>Milano Smistamento</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>Italien</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>017020</Code>
+          <Name>Milano Smistamento</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>Italien</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>8545015133</CustomerCode>
+          <Name>SBB Cargo AG</Name>
+          <AdditionalInformation>G-PN-CH</AdditionalInformation>
+          <StreetNumber>12</StreetNumber>
+          <Street>Bahnhofstrasse</Street>
+          <Country>CH</Country>
+          <ZIPCode>4600</ZIPCode>
+          <City>Olten</City>
+          <Contacts>
+            <PhoneNumber>051 2290322</PhoneNumber>
+            <FaxNumber>051 2290348</FaxNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <CustomerCode>8545017610</CustomerCode>
+          <Name>Mercitalia Rail S.r.l.</Name>
+          <AdditionalInformation>Gestione Parco Carri</AdditionalInformation>
+          <StreetNumber>1</StreetNumber>
+          <Street>Piazza Sigmund Freud</Street>
+          <Country>CH</Country>
+          <ZIPCode>IT-20154</ZIPCode>
+          <City>Milano</City>
+          <Contacts>
+            <PhoneNumber>02 63716655</PhoneNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>8545015133</CustomerCode>
+          <Name>SBB Cargo AG</Name>
+          <AdditionalInformation>G-PN-CH</AdditionalInformation>
+          <StreetNumber>12</StreetNumber>
+          <Street>Bahnhofstrasse</Street>
+          <Country>CH</Country>
+          <ZIPCode>4600</ZIPCode>
+          <City>Olten</City>
+          <Contacts>
+            <PhoneNumber>051 2290322</PhoneNumber>
+            <FaxNumber>051 2290348</FaxNumber>
+          </Contacts>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>8545017610</CustomerCode>
+          <Name>Mercitalia Rail S.r.l.</Name>
+          <AdditionalInformation>Gestione Parco Carri</AdditionalInformation>
+          <StreetNumber>1</StreetNumber>
+          <Street>Piazza Sigmund Freud</Street>
+          <Country>CH</Country>
+          <ZIPCode>IT-20154</ZIPCode>
+          <City>Milano</City>
+          <Contacts>
+            <PhoneNumber>02 63716655</PhoneNumber>
+          </Contacts>
+        </Customer>
+      </Customers>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>630077</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>85210</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2185</CarrierCode>
+          <CarrierName>SBB_CARGO</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>022186</StationCode>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>053090</StationCode>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MERCITALIA</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>053090</StationCode>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>017020</StationCode>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2185</CarrierCode>
+        <CarrierName>SBB_CARGO</CarrierName>
+        <Signature>782684853</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Olten</Place>
+        <Date>2023-11-09</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>85</UICCountryCode>
+            <StationCode>022186</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>017020</StationCode>
+          </End>
+          <CommercialRouteCode>001</CommercialRouteCode>
+          <CurrencyCode>CHF</CurrencyCode>
+          <Tariff>
+            <NHMCode>992220</NHMCode>
+            <TariffNumber>630077</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338046371500">
+          <WagonDetails LoadingStatus="empty">
+            <WagonTypeDetails>
+              <WagonMass>26800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>233</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>26800</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>992220</NHMCode>
+              <GoodDescription>Eisenbahnwagen als Beförderungsmittel mit mehr als 2 Achsen, leer, zur/nach Reparatur</GoodDescription>
+              <GrossMass>0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

@@ -1,0 +1,1666 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230010424</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-08T06:17:15+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110131278</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-11-08T06:15:52+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202311080131278</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Sombor</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>255505</Code>
+          <Name>Sombor</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>255505</Code>
+          <Name>Sombor</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-10-30T15:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3212</CarrierCode>
+        <ConsignmentNumber>238105</ConsignmentNumber>
+        <ForwardingTrainNumber>47596</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Brescia Fascio Merci</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>018127</Code>
+          <Name>Brescia Fascio Merci</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>018127</Code>
+          <Name>Brescia Fascio Merci</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>AGRICOM DOO</Name>
+          <Street>Sonanski put T</Street>
+          <Country>RS</Country>
+          <ZIPCode>25000</ZIPCode>
+          <City>Sombor</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>MILAGRI SLR</Name>
+          <Street>Via Caradosso 18</Street>
+          <Country>IT</Country>
+          <ZIPCode>20123</ZIPCode>
+          <City>Milano</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>10</Code>
+          <Text>ENSIGNE OBREZJE</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>KORUZA</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>434502 SZTP6015.00</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>DAF</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>12</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>72</UICCountryCode>
+            <PointCode>502</PointCode>
+            <PointName>BOGOJEVO</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>999999</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>72020</RouteCode>
+          <RouteText>BOGOJEVO/ERDUT</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>78540</RouteCode>
+          <RouteText>SAVSKI MAROF/DOBOVA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>true</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+        <CustomsEndorsements>23SI00112340561772 23HR070599009009M4</CustomsEndorsements>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>3212</CarrierCode>
+          <CarrierName>KP</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>72</UICCountryCode>
+            <Station>
+              <StationCode>255505</StationCode>
+              <StationName>SOMBOR</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>72</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>502</PointCode>
+              <PointName>BOGOJEVO</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2178</CarrierCode>
+          <CarrierName>HZ Cargo</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>502</PointCode>
+              <PointName>ERDUT</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>SAVSKI MAROF</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>DOBOVA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>018127</StationCode>
+              <StationName>Brescia Fascio Merci</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>3212</CarrierCode>
+        <CarrierName>KP</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Sombor</Place>
+        <Date>2023-10-30</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>72</UICCountryCode>
+            <StationCode>255505</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>018127</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318345588970">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78693.0</TotalMass>
+            <LoadLimit>177</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000856" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027795.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001238" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027798.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345570747">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79362.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000834" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027798.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001098" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027799.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345575779">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79262.0</TotalMass>
+            <LoadLimit>177</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000405" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3250.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027801.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000828" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027796.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345576694">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79618.0</TotalMass>
+            <LoadLimit>178</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000186" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3200.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027801.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000771" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027797.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345562736">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79068.0</TotalMass>
+            <LoadLimit>175</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000373" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3250.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027801.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000891" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027802.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345570507">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79538.0</TotalMass>
+            <LoadLimit>176</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000374" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3250.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027796.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000802" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027802.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345588830">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79446.0</TotalMass>
+            <LoadLimit>178</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001024" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>9</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027800.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001312" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027796.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345586479">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79360.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000832" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027797.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001011" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027798.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345565580">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79778.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000215" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3130.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027799.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000758" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027799.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345571836">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79911.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000421" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3250.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027810.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001147" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027801.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345566877">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79695.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000640" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027796.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000954" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027799.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345568618">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79598.0</TotalMass>
+            <LoadLimit>179</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000997" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027797.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001328" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027801.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345588616">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79569.0</TotalMass>
+            <LoadLimit>179</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000744" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027801.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000987" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027788.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345579946">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79234.0</TotalMass>
+            <LoadLimit>177</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000286" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3250.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027791.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001133" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027798.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345577361">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79364.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000876" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027797.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000977" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027802.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345568873">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79297.0</TotalMass>
+            <LoadLimit>176</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000720" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027799.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000810" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027798.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345568170">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79469.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000069" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3150.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027802.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000890" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>9</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027802.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345565366">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79032.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001120" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027805.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001257" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027797.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="358345572954">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79673.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000913" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027795.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000991" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027778.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345582080">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79160.0</TotalMass>
+            <LoadLimit>175</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000548" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027787.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001159" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027793.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345564666">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79366.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000874" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027803.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000929" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>5</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027798.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345567552">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79300.0</TotalMass>
+            <LoadLimit>176</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000807" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027802.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001083" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>0</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027798.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345565291">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79501.0</TotalMass>
+            <LoadLimit>176</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000386" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3250.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027803.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001097" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027798.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345574574">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79062.0</TotalMass>
+            <LoadLimit>177</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000616" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>7</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027785.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000847" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>20</LengthCode>
+                <Length value="20" measure="ft" />
+              </Dimensions>
+              <TareWeight>2715.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027792.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345588210">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79882.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000389" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>3</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3250.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027802.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001115" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>8</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027780.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345565697">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78899.0</TotalMass>
+            <LoadLimit>172</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000727" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>1</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027804.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001308" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027795.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="318345587840">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>79907.0</TotalMass>
+            <LoadLimit>180</LoadLimit>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="000300" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>2</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3250.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027809.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="001346" LoadingStatus="empty">
+              <Prefix>GBTU</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>30</LengthCode>
+                <Length value="30" measure="ft" />
+              </Dimensions>
+              <TareWeight>3050.0</TareWeight>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <Packing>
+                  <NumberOfPackages>1</NumberOfPackages>
+                  <PackageIdentification>WA</PackageIdentification>
+                </Packing>
+                <NHMCode>100590</NHMCode>
+                <GoodDescription>Mais ausg. Samen zur Aussaat</GoodDescription>
+                <AdditionalGoodInformation>K</AdditionalGoodInformation>
+                <GrossMass>0027798.0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

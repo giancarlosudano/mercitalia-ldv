@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>3134617367884</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-03T13:46:38+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2154</SendingCarrier>
+      <MessageReferenceNumber>17719814</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-03T13:43:28+01:00</ECNPreparationDatetime>
+      <DossierNumber>2154202310250819833</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>not given</Name>
+          <Country>
+            <UICCountryCode>51</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>074500</Code>
+          <Name>DABROWA GORNICZA ZABKOWICE</Name>
+          <Country>
+            <UICCountryCode>51</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-10-25T00:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3751</CarrierCode>
+        <ConsignmentNumber>999953</ConsignmentNumber>
+        <ForwardingTrainNumber>0</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>07226</Code>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>072264</Code>
+          <Name>TERNI</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>072264</Code>
+          <Name>TERNI</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>999999</CustomerCode>
+          <Name>EUROMET PL Sp. z.o.o.</Name>
+          <Street>ul. Chemiczna 6</Street>
+          <Country>PL</Country>
+          <ZIPCode>42-520</ZIPCode>
+          <City>Dabrowa Gornicza</City>
+          <Signature>not specified</Signature>
+        </Customer>
+        <Customer Type="CE">
+          <Name>ACCIAI SPECIALI TERNI S.P.A.</Name>
+          <VAT>IT00715760559</VAT>
+          <Street>VIALE BENEDETTO BRIN 218</Street>
+          <Country>IT</Country>
+          <ZIPCode>05100</ZIPCode>
+          <City>TERNI</City>
+          <Signature>not specified</Signature>
+        </Customer>
+        <Customer Type="FPCE">
+          <CustomerCode>20145</CustomerCode>
+          <Name>CD Cargo Austria GmbH</Name>
+          <VAT>ATU63360419</VAT>
+          <Street>Rotenturmstrasse 22/24</Street>
+          <Country>AT</Country>
+          <ZIPCode>1010</ZIPCode>
+          <City>Wien</City>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Frachtzahler: CD Cargo Austria GmbH, Rotenturmstrasse 22/24, Wien, MWSt.Nr.ATU63360419 ; OPT: 91920145</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>CHALUPKI GR ; BRECLAV ST.HR ; TARVISIO BOSCOVERDE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>PL - 3751 ORL ; CZ - 2154 CDC ; AT - 2154 CDC ; IT - 2183 MIR</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <PrepaidCode>42</PrepaidCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>42</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>369023</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>51250</RouteCode>
+          <RouteText>CHALUPKI GR ; BRECLAV ST.HR ; TARVISIO BOSCOVERDE</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>54130</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CarriersDeclarations>
+        <CarriersDeclaration>
+          <DeclaratingCarrier>2154</DeclaratingCarrier>
+          <DeclarationCode>12</DeclarationCode>
+          <DeclarationText>obj.c. 21335342</DeclarationText>
+        </CarriersDeclaration>
+      </CarriersDeclarations>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>3751</CarrierCode>
+          <CarrierName>Orion Rail Logistics Sp. Zo.o. sp.k</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>51</UICCountryCode>
+            <Station>
+              <StationCode>074500</StationCode>
+              <StationName>DABROWA GORNICZA ZABKOWICE</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>51</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0825</PointCode>
+              <PointName>CHALUPKI GR</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2154</CarrierCode>
+          <CarrierName>CD Cargo, a.s.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0825</PointCode>
+              <PointName>BOHUMIN ST.HR</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>TARVISIO BOSCOVERDE</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>072264</StationCode>
+              <StationName>TERNI</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>3751</CarrierCode>
+        <CarrierName>Orion Rail Logistics Sp. Zo.o. sp.k</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>DABROWA GORNICZA</Place>
+        <Date>2023-10-25</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>51</UICCountryCode>
+            <StationCode>074500</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>51</UICCountryCode>
+            <PointCode>0825</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720421</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0825</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>54</UICCountryCode>
+            <PointCode>0613</PointCode>
+          </End>
+          <CurrencyCode>CZK</CurrencyCode>
+          <Tariff>
+            <NHMCode>720421</NHMCode>
+            <TariffNumber>369023</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0613</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>CZK</CurrencyCode>
+          <Tariff>
+            <NHMCode>720421</NHMCode>
+            <TariffNumber>369023</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>83</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>072264</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>720421</NHMCode>
+            <TariffNumber>999999</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318353765908">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23180</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>54000</TotalMass>
+            <LoadLimit>57.3</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>54000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353762939">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>52750</TotalMass>
+            <LoadLimit>57.3</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>52750</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353771971">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>53350</TotalMass>
+            <LoadLimit>56.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>53350</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378053756888">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>53850</TotalMass>
+            <LoadLimit>58.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>53850</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353762574">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>54400</TotalMass>
+            <LoadLimit>58.1</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>54400</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353771856">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>45700</TotalMass>
+            <LoadLimit>58.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>45700</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353764786">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24450</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>45800</TotalMass>
+            <LoadLimit>58.1</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>45800</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353764265">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24450</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>45750</TotalMass>
+            <LoadLimit>58.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>45750</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353779230">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>46150</TotalMass>
+            <LoadLimit>58.7</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>46150</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353765510">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23700</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>45300</TotalMass>
+            <LoadLimit>57.9</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>45300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378053757613">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>46050</TotalMass>
+            <LoadLimit>58</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>46050</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353768894">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24650</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>45150</TotalMass>
+            <LoadLimit>58.4</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>45150</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353769702">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23900</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>45150</TotalMass>
+            <LoadLimit>58.1</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>45150</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353761725">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>45350</TotalMass>
+            <LoadLimit>57.8</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>45350</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353766781">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23160</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>45100</TotalMass>
+            <LoadLimit>58</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>45100</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353763473">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>24000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>46000</TotalMass>
+            <LoadLimit>58.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>46000</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353766286">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23400</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>46650</TotalMass>
+            <LoadLimit>58.1</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>46650</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353778984">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>46300</TotalMass>
+            <LoadLimit>58.5</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>46300</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318353770288">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>0</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>46200</TotalMass>
+            <LoadLimit>58.4</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>720421</NHMCode>
+              <GoodDescription>Abfalle und Schrott, aus nichtrostendem Stahl</GoodDescription>
+              <GrossMass>46200</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

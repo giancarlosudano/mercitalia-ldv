@@ -82,9 +82,9 @@ Contengono gli allegati Lettera di Vettura e Distinta Carri, sotto forma di PDF 
 					subject_pattern = r"subject: (.+)"
 					subject_match = re.search(subject_pattern, content)
 					subject_value = subject_match.group(1) if subject_match else None
-					data_convertita = datetime.datetime.strptime(name, '%Y%m%d %H%M%S')
-					if data_inizio <= data_convertita.date() <= data_fine:
-						df.loc[i] = [name, subject_value, from_value]
+					# data_convertita = datetime.datetime.strptime(name, '%Y%m%d %H%M%S')
+					# if data_inizio <= data_convertita.date() <= data_fine:
+					df.loc[i] = [name, subject_value, from_value]
 				i += 1
 
 		# select the columns you want the users to see

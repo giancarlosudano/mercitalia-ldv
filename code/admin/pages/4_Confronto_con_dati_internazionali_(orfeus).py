@@ -19,10 +19,10 @@ import sys
 import re
 
 def alert(session1: str):
-    outcome = ""
-    if st.session_state["box-{0}-clean".format(session1)] != st.session_state["box-{0}-orfeus".format(session1)]:
-        outcome = ":triangular_flag_on_post:"
-    return outcome
+	outcome = ""
+	if st.session_state["box-{0}-clean".format(session1)] != st.session_state["box-{0}-orfeus".format(session1)]:
+		outcome = ":triangular_flag_on_post:"
+	return outcome
 
 def search_orfeus(my_bar):
 	import time
@@ -60,9 +60,9 @@ def search_orfeus(my_bar):
 				if station_code is not None:
 					station_codes.append(station_code.text)
 
-			# Iterate through the ECN nodes
-			for ecn in root.findall(".//ECNs"):
-				carrier_code = ecn.find(".//ECNHeader/SendingCarrier")
+			# Iterate through the ECN nodes (impresa 4 cifre)
+			for ecn in root.findall(".//ECN"):
+				carrier_code = ecn.find(".//AcceptancePoint/CarrierCode")
 				if carrier_codes is not None:
 					carrier_codes.append(carrier_code.text)
 
@@ -79,9 +79,13 @@ def search_orfeus(my_bar):
 					acceptance_dates.append(acceptance_date.text)
 			
 			data_ora_originale = acceptance_dates[0]
-			# Analizzare la stringa nel formato originale
-			# '%Y-%m-%dT%H:%M:%S%z' è il formato di analisi
-			# '%Y' sta per anno, '%m' per mese, '%d' per giorno, '%H' per ore, '%M' per minuti, '%S' per secondi, '%z' per il fuso orario
+
+			# Swap month and day in data_ora_originale
+			day = data_ora_originale[8:10]
+			month = data_ora_originale[5:7]
+			year = data_ora_originale[0:4]
+			data_ora_swapped = year + "-" + month + "-" + day
+
 			try:
 				data_ora_obj = datetime.datetime.strptime(data_ora_originale, '%Y-%m-%dT%H:%M:%S%z')
 				# Formattare l'oggetto datetime nel nuovo formato
@@ -90,21 +94,34 @@ def search_orfeus(my_bar):
 			except ValueError as e:
 				print(f"Errore nella conversione della data: {e} nel file {file_name}")
 	
-			if file_name == "ECTD.20231106_232258_875.xml":
-				print("xml {0} e session {1} = {2}".format(uic_country_codes[0], st.session_state['box-62-paese-clean'], uic_country_codes[0] == st.session_state['box-62-paese-clean']))
-				print("xml {0} e session {1} = {2}".format(station_codes[0], st.session_state['box-62-stazione-clean'], station_codes[0] == st.session_state['box-62-stazione-clean']))
-				print("xml {0} e session {1} = {2}".format(carrier_codes[0], st.session_state['box-62-impresa-clean'], carrier_codes[0] == st.session_state['box-62-impresa-clean']))
-				print("xml {0} e session {1} = {2}".format(consignment_numbers[0], st.session_state['box-62-spedizione-clean'], consignment_numbers[0].startswith(st.session_state['box-62-spedizione-clean'])))
-				print("xml {0} e session {1} = {2}".format(data_ora_formattata, st.session_state['box-62-data-clean'], data_ora_formattata == st.session_state['box-62-data-clean']))
-
 			# Confronto
 			if st.session_state['box-62-paese-clean'] == uic_country_codes[0] \
 				and st.session_state['box-62-stazione-clean'] == station_codes[0] \
 				and st.session_state['box-62-impresa-clean'] == carrier_codes[0] \
-			 	and consignment_numbers[0].startswith(st.session_state['box-62-spedizione-clean']) \
-				and st.session_state['box-62-data-clean'] == data_ora_formattata:
+			 	and st.session_state['box-62-spedizione-clean'].startswith(consignment_numbers[0]) \
+				and	(data_ora_originale.startswith(st.session_state['box-62-data-clean']) or data_ora_swapped.startswith(st.session_state['box-62-data-clean'])) :
 				file_found = file_name
+
 	return file_found
+
+def search_orfeus_from_cache(uicountrycode, stationcode, carriercode, consignmentnumber, acceptancedate):
+	# Carica il file Excel
+	df = pd.read_excel('orfeus-xmls.xlsx', engine='openpyxl')
+
+	# Filtra il dataframe in base ai criteri di ricerca specificati
+	risultati = df[
+		(df['UICountryCode'] == uicountrycode) &
+		(df['StationCode'] == stationcode) &
+		(df['CarrierCode'] == carriercode) &
+		(df['ConsignmentNumber'] == consignmentnumber) &
+		(df['AcceptanceDate'] == pd.to_datetime(acceptancedate))
+	]
+	
+	# Restituisce il valore della colonna "File" se esiste una corrispondenza, altrimenti restituisce None
+	if not risultati.empty:
+		return risultati['File'].iloc[0]
+	else:
+		return None
 
 def get_orfeus_data(file_name):
 	file_path = os.path.join('orpheus', file_name)
@@ -221,9 +238,16 @@ Nel caso esista **il file Orfeus XML corrispondente** alle informazioni di etich
 		st.text_input("Codice Spedizione", key="ident_spedizione_1", value=st.session_state["box-62-spedizione-clean"], disabled=True)
 		st.text_input("Luogo", key="ident_luogo_1", value=st.session_state["box-62-luogo-clean"], disabled=True)
 		st.text_input("Data", key="ident_data_1", value=st.session_state["box-62-data-clean"], disabled=True)
-  
+
 		my_bar = st.progress(0, text="Ricerca su dati Orfeus...")
-		file_found = search_orfeus(my_bar)
+
+		file_found = search_orfeus_from_cache(
+	  		uicountrycode=st.session_state['box-62-paese-clean'],
+	  		stationcode=st.session_state['box-62-stazione-clean'],	
+	 	  	carriercode=st.session_state['box-62-impresa-clean'],	
+		  	consignmentnumber=st.session_state['box-62-spedizione-clean'],
+			acceptancedate=st.session_state['box-62-data-clean'])
+
 		st.toast("File trovato: {}".format(file_found))
 
 		if file_found:
@@ -300,7 +324,7 @@ Nel caso esista **il file Orfeus XML corrispondente** alle informazioni di etich
 				st.text_area("(16) Origine (clean)", value=st.session_state["box-16-clean"], disabled=True, height=100, key="box16_1")
 			with colbox16_2:
 				st.text_area("(16) Origine (Orfeus)" + alert('16'), value=st.session_state["box-16-orfeus"], height=100, key="box16_2")
-	
+
 			colbox16_1_orario, colbox16_2_orario= st.columns([1,1])
 			with colbox16_1_orario:
 				st.text_area("(16) Origine Data (clean)", value=st.session_state["box-16-orario-clean"], disabled=True, height=100, key="box16_orario_1")

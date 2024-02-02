@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>8034617385476</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-08T03:46:15+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2182</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>CFLFMM_6168</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-08T03:43:17+01:00</ECNPreparationDatetime>
+      <DossierNumber>2182202311080023773</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>00408</Code>
+          <Name>BETTEMBOURG</Name>
+          <Country>
+            <UICCountryCode>82</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>301002</Code>
+          <Name>BETTEMBOURG CONTAINER TERMINAL</Name>
+          <Country>
+            <UICCountryCode>82</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>301002</Code>
+          <Name>BETTEMBOURG CONTAINER TERMINAL</Name>
+          <Country>
+            <UICCountryCode>82</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-07T23:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2182</CarrierCode>
+        <ConsignmentNumber>025999</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Code>38539</Code>
+          <Name>TRIESTE CAMPO MARZIO RIVE</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>034710</Code>
+          <Name>TRIESTE CAMPO MARZIO RIVE</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CE">
+          <CustomerCode>2182</CustomerCode>
+          <Name>CFL INTERMODAL SA</Name>
+          <VAT>LU16879450</VAT>
+          <Street>Eurohub Sud</Street>
+          <Country>LU</Country>
+          <ZIPCode>3434</ZIPCode>
+          <City>DUDELANGE</City>
+        </Customer>
+        <Customer Type="CR">
+          <CustomerCode>2183</CustomerCode>
+          <Name>TRIESTE TERMINAL CAMPO MARZIO RIVE</Name>
+          <VAT>IT00811010321</VAT>
+          <Street>Via Giulio Cesare, 1</Street>
+          <Country>IT</Country>
+          <ZIPCode>34122</ZIPCode>
+          <City>TRIESTE</City>
+        </Customer>
+      </Customers>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>EXW</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>10</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>964313</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>82800</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>80620</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2182</CarrierCode>
+          <CarrierName>CFL CARGO 2182</CarrierName>
+          <ZIPCode>3434</ZIPCode>
+          <City>DUDELANGE</City>
+          <CountryCode>LU</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>82</UICCountryCode>
+            <Station>
+              <StationCode>301002</StationCode>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>82</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>580</PointCode>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2182</CarrierCode>
+          <CarrierName>CFL CARGO 2182</CarrierName>
+          <ZIPCode>3434</ZIPCode>
+          <City>DUDELANGE</City>
+          <CountryCode>LU</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>580</PointCode>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>251421</StationCode>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>0</Status>
+          <CarrierCode>3308</CarrierCode>
+          <CarrierName>TX LOGISTIK AG</CarrierName>
+          <ZIPCode>53604</ZIPCode>
+          <City>BAD HONNEF</City>
+          <CountryCode>DE</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>251421</StationCode>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>203430</StationCode>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>0</Status>
+          <CarrierCode>3308</CarrierCode>
+          <CarrierName>TX LOGISTIK AG</CarrierName>
+          <ZIPCode>53604</ZIPCode>
+          <City>BAD HONNEF</City>
+          <CountryCode>DE</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>80</UICCountryCode>
+            <Station>
+              <StationCode>203430</StationCode>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>80</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>462</PointCode>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="5">
+          <Status>0</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR MERCITALIA   2183</CarrierName>
+          <ZIPCode>00161</ZIPCode>
+          <City>ROME</City>
+          <CountryCode>IT</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>462</PointCode>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>330</PointCode>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="6">
+          <Status>0</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR MERCITALIA   2183</CarrierName>
+          <ZIPCode>00161</ZIPCode>
+          <City>ROME</City>
+          <CountryCode>IT</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>330</PointCode>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>034710</StationCode>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2182</CarrierCode>
+        <CarrierName>CFL                                </CarrierName>
+        <ZIPCode>1616</ZIPCode>
+        <City>LUXEMBOURG</City>
+        <CountryCode>LU</CountryCode>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>BETTEMBOURG</Place>
+        <Date>2023-11-07</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>82</UICCountryCode>
+            <StationCode>301002</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>034710</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="338549923815">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>73679</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0010683" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <LongTextDescription>90, UN 3082, MATIÈRE DANGEREUSE DU POINT DE VUE DE L'ENVIRONNEMENT, LIQUIDE, N.S.A., (DODECANENITRILE), 9, III TRANSPORT SELON 1.1.4.4</LongTextDescription>
+                  <Weight>190</Weight>
+                  <HazardNumber>90</HazardNumber>
+                  <UNNumber>3082</UNNumber>
+                  <Class>9</Class>
+                  <ClassificationCode>M6</ClassificationCode>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>190</GrossMass>
+              </Good>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <LongTextDescription>90, UN 3082, MATIÈRE DANGEREUSE DU POINT DE VUE DE L'ENVIRONNEMENT, LIQUIDE, N.S.A., (ISOBUTYL), 9, III TRANSPORT SELON 1.1.4.4</LongTextDescription>
+                  <Weight>400</Weight>
+                  <HazardNumber>90</HazardNumber>
+                  <UNNumber>3082</UNNumber>
+                  <Class>9</Class>
+                  <ClassificationCode>M6</ClassificationCode>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>400</GrossMass>
+              </Good>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <LongTextDescription>90, UN 3082, MATIÈRE DANGEREUSE DU POINT DE VUE DE L'ENVIRONNEMENT, LIQUIDE, N.S.A., (HEXYL CINNAMAL), 9, III TRANSPORT SELON 1.1.4.4</LongTextDescription>
+                  <Weight>50</Weight>
+                  <HazardNumber>90</HazardNumber>
+                  <UNNumber>3082</UNNumber>
+                  <Class>9</Class>
+                  <ClassificationCode>M6</ClassificationCode>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>50</GrossMass>
+              </Good>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <LongTextDescription>33, UN 1987, ALCOOLS, N.S.A., (ETHANOL), 3, II DISPOSITION SPECIALE 640C TRANSPORT SELON 1.1.4.4 (MARCHANDISES DANGEREUSES EN QUANTITÉ LIMITÉE)</LongTextDescription>
+                  <Weight>100</Weight>
+                  <HazardNumber>33</HazardNumber>
+                  <UNNumber>1987</UNNumber>
+                  <Class>3</Class>
+                  <ClassificationCode>F1</ClassificationCode>
+                  <PackingGroup>II</PackingGroup>
+                </RID>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>100</GrossMass>
+              </Good>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <LongTextDescription>90, UN 3082, MATIÈRE DANGEREUSE DU POINT DE VUE DE L'ENVIRONNEMENT, LIQUIDE, N.S.A., (CEDRYL ACETATE), 9, III TRANSPORT SELON 1.1.4.4</LongTextDescription>
+                  <Weight>25</Weight>
+                  <HazardNumber>90</HazardNumber>
+                  <UNNumber>3082</UNNumber>
+                  <Class>9</Class>
+                  <ClassificationCode>M6</ClassificationCode>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>25</GrossMass>
+              </Good>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <LongTextDescription>90, UN 3082, MATIÈRE DANGEREUSE DU POINT DE VUE DE L'ENVIRONNEMENT, LIQUIDE, N.S.A., (BENZYLIDENOCTANAL), 9, III TRANSPORT SELON 1.1.4.4</LongTextDescription>
+                  <Weight>400</Weight>
+                  <HazardNumber>90</HazardNumber>
+                  <UNNumber>3082</UNNumber>
+                  <Class>9</Class>
+                  <ClassificationCode>M6</ClassificationCode>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>400</GrossMass>
+              </Good>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>7145</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0010894" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>6800</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>13569</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049561525">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>90140</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0029020" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>24150</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0028975" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>16990</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049561574">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>84735</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0016906" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7280</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>22895</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0017991" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>12560</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049561665">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>89727</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0016660" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7280</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>18857</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0011988" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7280</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>21310</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049561699">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>83370</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MRNA0000550" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>18260</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0000480" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>16110</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378049561715">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>80490</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0020911" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>22950</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0019700" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>8540</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378249920315">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>81961</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0031412" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>10891</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0033014" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>22770</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378249920364">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>76600</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0033837" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>19320</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0033879" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>8980</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378249921065">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>88675</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0006277" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>22800</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0008916" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>17875</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378249921248">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68284</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="100017" LoadingStatus="empty">
+              <Prefix>VAKL</Prefix>
+              <Checkdigit>6</Checkdigit>
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="3048" measure="mm" />
+              </Dimensions>
+              <TareWeight>4300</TareWeight>
+              <DeliveryReference>CFLINTCFL INTERMODAL SA</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993100</NHMCode>
+                <GrossMass>0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="01DPM83" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <LongTextDescription>90, UN 3082, MATIÈRE DANGEREUSE DU POINT DE VUE DE L'ENVIRONNEMENT, LIQUIDE, N.S.A., (SYNTHETIC POLYMERS), 9, III TRANSPORT SELON 1.1.4.4 DANGEREUX POUR L’ENVIRONNEMENT</LongTextDescription>
+                  <Weight>4977</Weight>
+                  <HazardNumber>90</HazardNumber>
+                  <UNNumber>3082</UNNumber>
+                  <Class>9</Class>
+                  <ClassificationCode>M6</ClassificationCode>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>4977</GrossMass>
+              </Good>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <LongTextDescription>80, UN 2735, AMINES LIQUIDES CORROSIVES, N.S.A., (trimethylcyclohexylamine)., 8, II TRANSPORT SELON 1.1.4.4</LongTextDescription>
+                  <Weight>1257</Weight>
+                  <HazardNumber>80</HazardNumber>
+                  <UNNumber>2735</UNNumber>
+                  <Class>8</Class>
+                  <ClassificationCode>C7</ClassificationCode>
+                  <PackingGroup>II</PackingGroup>
+                </RID>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>1257</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="01DPM17" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7280</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>4870</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="100012" LoadingStatus="empty">
+              <Prefix>VAKL</Prefix>
+              <Checkdigit>9</Checkdigit>
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="3048" measure="mm" />
+              </Dimensions>
+              <TareWeight>4300</TareWeight>
+              <DeliveryReference>CFLINTCFL INTERMODAL SA</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993100</NHMCode>
+                <GrossMass>0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378249921263">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>67070</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0001402" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>11230</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0034788" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>7540</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378249921271">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>68192</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0011102" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7500</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>11352</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0010723" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>8040</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378249922089">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>92365</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MKTA0000011" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7380</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>18390</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="cn" Number="100013" LoadingStatus="empty">
+              <Prefix>VAKL</Prefix>
+              <Checkdigit>4</Checkdigit>
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="3048" measure="mm" />
+              </Dimensions>
+              <TareWeight>4300</TareWeight>
+              <DeliveryReference>CFLINTCFL INTERMODAL SA</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>993100</NHMCode>
+                <GrossMass>0</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="IKRA0000046" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>20295</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378249922436">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>83103</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0026247" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>10673</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0022072" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>23430</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378449560879">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>81770</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0033760" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>8870</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0033420" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>23900</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+        <Wagon WagonNumber="378449560887">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>80564</TotalMass>
+          </WagonDetails>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0029570" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <RID>
+                  <Law>2023</Law>
+                  <LongTextDescription>90, UN 3082, MATIÈRE DANGEREUSE DU POINT DE VUE DE L'ENVIRONNEMENT, LIQUIDE, N.S.A., (ARYL PHOSPITE), 9, III TRANSPORT SELON 1.1.4.4 DANGEREUX POUR L’ENVIRONNEMENT</LongTextDescription>
+                  <Weight>1680</Weight>
+                  <HazardNumber>90</HazardNumber>
+                  <UNNumber>3082</UNNumber>
+                  <Class>9</Class>
+                  <ClassificationCode>M6</ClassificationCode>
+                  <PackingGroup>III</PackingGroup>
+                </RID>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>1680</GrossMass>
+              </Good>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>10876</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+          <UTI>
+            <UTIDetails UTIType="te" Number="MARE0030890" LoadingStatus="loaded">
+              <Dimensions>
+                <LengthCode>99</LengthCode>
+                <Length value="13600" measure="mm" />
+              </Dimensions>
+              <TareWeight>7000</TareWeight>
+              <DeliveryReference>PRITROPRIME RAIL GMBH</DeliveryReference>
+            </UTIDetails>
+            <Goods>
+              <Good>
+                <NHMCode>994300</NHMCode>
+                <GrossMass>19008</GrossMass>
+              </Good>
+            </Goods>
+          </UTI>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

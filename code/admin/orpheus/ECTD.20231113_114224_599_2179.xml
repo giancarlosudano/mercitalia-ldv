@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230010599</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-13T11:42:24+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110131479</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-13T11:41:11+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202311130131479</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Sid</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>165167</Code>
+          <Name>Sid</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>165167</Code>
+          <Name>Sid</Name>
+          <Country>
+            <UICCountryCode>72</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-10T15:00:00+01:00</AcceptanceDate>
+        <CarrierCode>3212</CarrierCode>
+        <ConsignmentNumber>247601</ConsignmentNumber>
+        <ForwardingTrainNumber>47590</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Ravenna</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>058115</Code>
+          <Name>Ravenna</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>058115</Code>
+          <Name>Ravenna</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>KONZUL D.O.O.</Name>
+          <Street>STEVANA MiSICA 1</Street>
+          <Country>RS</Country>
+          <ZIPCode>21000</ZIPCode>
+          <City>NOVI SAD</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>Ameropa Italia srl</Name>
+          <Street>Via Classicana 99</Street>
+          <Country>IT</Country>
+          <ZIPCode>48122</ZIPCode>
+          <City>Ravenna</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>10</Code>
+          <Text>ENSIGNE OBREZJE</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: FEREST RAIL</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>PSENICA</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>970</Type>
+          <DocumentTypeDescription>Obvestilo o vagonih</DocumentTypeDescription>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>434502 SZTP6015.00</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>DAF</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>12</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <BorderPoint>
+            <UICCountryCode>72</UICCountryCode>
+            <PointCode>501</PointCode>
+            <PointName>SID</PointName>
+          </BorderPoint>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>999999</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>72010</RouteCode>
+          <RouteText>SID/TOVARNIK</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>78540</RouteCode>
+          <RouteText>SAVSKI MAROF/DOBOVA</RouteText>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>true</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+        <CustomsEndorsements>23HR070327033205L5</CustomsEndorsements>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>3212</CarrierCode>
+          <CarrierName>KP</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>72</UICCountryCode>
+            <Station>
+              <StationCode>165167</StationCode>
+              <StationName>SID</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>72</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>501</PointCode>
+              <PointName>SID</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2178</CarrierCode>
+          <CarrierName>HZ Cargo</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>501</PointCode>
+              <PointName>TOVARNIK</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>78</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>SAVSKI MAROF</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>554</PointCode>
+              <PointName>DOBOVA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>058115</StationCode>
+              <StationName>Ravenna</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>3212</CarrierCode>
+        <CarrierName>KP</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Sid</Place>
+        <Date>2023-11-10</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>72</UICCountryCode>
+            <StationCode>165167</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>058115</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="378007642333">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>81764.0</TotalMass>
+            <LoadLimit>219</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59884.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007648934">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82219.0</TotalMass>
+            <LoadLimit>221</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60119.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007642457">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>81929.0</TotalMass>
+            <LoadLimit>219</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60069.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378093380772">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78167.0</TotalMass>
+            <LoadLimit>240</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>54117.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007642325">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>81866.0</TotalMass>
+            <LoadLimit>219</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59996.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793454582">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>76681.0</TotalMass>
+            <LoadLimit>206</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>56061.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007648199">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82322.0</TotalMass>
+            <LoadLimit>222</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60152.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007642663">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>81920.0</TotalMass>
+            <LoadLimit>219</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60050.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007648124">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82289.0</TotalMass>
+            <LoadLimit>222</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60119.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007642739">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>81875.0</TotalMass>
+            <LoadLimit>219</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60005.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378093322139">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>76280.0</TotalMass>
+            <LoadLimit>202</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>56080.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007643158">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82301.0</TotalMass>
+            <LoadLimit>222</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60121.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378093380871">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>78305.0</TotalMass>
+            <LoadLimit>222</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>56155.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338007640570">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>80894.0</TotalMass>
+            <LoadLimit>209</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59994.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338793440268">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>76163.0</TotalMass>
+            <LoadLimit>200</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>56143.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007643067">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82174.0</TotalMass>
+            <LoadLimit>222</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59994.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007648652">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82330.0</TotalMass>
+            <LoadLimit>221</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60200.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007648272">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82136.0</TotalMass>
+            <LoadLimit>221</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60006.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007642887">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>81939.0</TotalMass>
+            <LoadLimit>219</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60069.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007648090">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82147.0</TotalMass>
+            <LoadLimit>222</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59957.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="338007640422">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>80799.0</TotalMass>
+            <LoadLimit>209</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59899.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007643141">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82225.0</TotalMass>
+            <LoadLimit>222</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60045.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007642879">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82024.0</TotalMass>
+            <LoadLimit>219</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60164.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007648520">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82045.0</TotalMass>
+            <LoadLimit>221</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59915.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007642978">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82035.0</TotalMass>
+            <LoadLimit>219</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60175.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007642374">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>81867.0</TotalMass>
+            <LoadLimit>219</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>59987.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="378007642424">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>82137.0</TotalMass>
+            <LoadLimit>219</LoadLimit>
+            <ShuntingModalLabel>15</ShuntingModalLabel>
+            <ReferenceNumbers>
+              <MRN>
+                <MRNType>MRN-T</MRNType>
+                <MRNNumber>23HR070327033205L5</MRNNumber>
+              </MRN>
+            </ReferenceNumbers>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>100199</NHMCode>
+              <GoodDescription>Weizen und Mengkorn ausg. Samen zur Aussaat und Hartweizen</GoodDescription>
+              <AdditionalGoodInformation>P</AdditionalGoodInformation>
+              <GrossMass>60267.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

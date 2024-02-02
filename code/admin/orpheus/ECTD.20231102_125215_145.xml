@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>2125217361145</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-02T12:52:15+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2181</SendingCarrier>
+      <MessageReferenceNumber>1131119120</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-02T12:51:39+01:00</ECNPreparationDatetime>
+      <DossierNumber>2181202311021119120</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+      <PrintForm>WLT</PrintForm>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>62289</Code>
+          <Name>Fiat</Name>
+          <Country>
+            <UICCountryCode>51</UICCountryCode>
+            <Name>POLEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>622894</Code>
+          <Name>Tychy Fiat</Name>
+          <Country>
+            <UICCountryCode>51</UICCountryCode>
+            <Name>POLEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>622894</Code>
+          <Name>Tychy Fiat</Name>
+          <Country>
+            <UICCountryCode>51</UICCountryCode>
+            <Name>POLEN</Name>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-02T10:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2151</CarrierCode>
+        <ConsignmentNumber>540039</ConsignmentNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>FCA</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Point>
+        <Station>
+          <Code>067215</Code>
+          <Name>Livorno Calambrone</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>067215</Code>
+          <Name>Livorno Calambrone</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+            <Name>ITALIEN</Name>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <Name>PL FCA POLAND S.A.</Name>
+          <Street>GRAZYNSKIEGO 141</Street>
+          <Country>PL</Country>
+          <ZIPCode>43300</ZIPCode>
+          <City>BIELSKO-BIALA</City>
+          <Contacts>
+            <PhoneNumber>322179321</PhoneNumber>
+            <Email>bocznica@sistema.pl</Email>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <Name>FCA ITALY S.P.A.</Name>
+          <AdditionalInformation>c/o ARS -Service srl</AdditionalInformation>
+          <Street>C.SO AGNELLI 200</Street>
+          <Country>IT</Country>
+          <ZIPCode>10135</ZIPCode>
+          <City>Torino</City>
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>16 Nr.zgody: RCA 116/18 ,Mercitalia; MIR-2019. Uwaga: Przewóz po sieci kolei czeskich realizuje PKP CARGO S.A. Sonstige;16 Frachtzachler fur PKP / CD - 00005100 ,RCA / IT - IN 2830</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <InformationConsignee>Esenzione IVA (Art.8.co.1,DPR 633//72).DOPO LO SCARICO I VAGONI SONO A DISPOSIZIONE SITFA;Pociag LI 241 // 239 samna 19 wag</InformationConsignee>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>CIESZYN MARKLOWICE - CESKY TESIN; BRECLAV - BERNHARDSTHAL (HOHENAU); TARVISIO BOSCOVERDE</Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>PKP CARGO S.A. 54 1; RCA 81 1; MIR 83 1</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaymentCustomer>
+          <IncotermCode>EXW</IncotermCode>
+        </PrepaymentCustomer>
+        <PrepaidcodeCarrier>90</PrepaidcodeCarrier>
+      </PrepaymentInstructions>
+      <Tariff>
+        <TariffNumber>218110</TariffNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>51270</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="2">
+          <RouteCode>54130</RouteCode>
+        </RouteSection>
+        <RouteSection SequenceID="3">
+          <RouteCode>81300</RouteCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>0</STP>
+        <CustomsSurveillance>0</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2151</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>51</UICCountryCode>
+            <Station>
+              <StationCode>622894</StationCode>
+              <StationName>Tychy Fiat</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>51</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0827</PointCode>
+              <PointName>Cesky Tesin/Marklowice</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>0</Status>
+          <CarrierCode>2151</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0827</PointCode>
+              <PointName>Cesky Tesin/Marklowice</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>54</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0613</PointCode>
+              <PointName>Bernhardsthal Grenze/Beclav st.hr.</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="3">
+          <Status>1</Status>
+          <CarrierCode>2181</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0613</PointCode>
+              <PointName>Bernhardsthal Grenze/Beclav st.hr.</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>81</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="4">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>0330</PointCode>
+              <PointName>Tarvisio Boscoverde</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>067215</StationCode>
+              <StationName>Livorno Calambrone</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2151</CarrierCode>
+        <Signature>2023-11-02 12:51 1131119120</Signature>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Tychy Fiat</Place>
+        <Date>2023-11-02</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0613</PointCode>
+          </Start>
+          <End>
+            <UICCountryCode>81</UICCountryCode>
+            <PointCode>0330</PointCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+          <Tariff>
+            <NHMCode>870390</NHMCode>
+            <TariffNumber>218110</TariffNumber>
+            <ChargedMass value="299964" measure="kg" />
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="438342530484">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23500</WagonMass>
+              <AxleNumber>3</AxleNumber>
+              <WagonLength>262.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>38651</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15151</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343649105">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>270</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>44234</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>14734</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343648594">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>27800</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>270</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>43922</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>16122</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="438342544873">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25800</WagonMass>
+              <AxleNumber>3</AxleNumber>
+              <WagonLength>262.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>40901</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15101</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343638652">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>37300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>310</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>56033</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>18733</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="438342544741">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25800</WagonMass>
+              <AxleNumber>3</AxleNumber>
+              <WagonLength>262.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>40615</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>14815</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343649543">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>270</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>44936</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15436</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="438342538503">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25800</WagonMass>
+              <AxleNumber>3</AxleNumber>
+              <WagonLength>262.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>40602</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>14802</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343637787">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>37300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>310</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>54662</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>17362</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238842590289">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>31600</WagonMass>
+              <AxleNumber>3</AxleNumber>
+              <WagonLength>270</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>46419</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>14819</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343637902">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>37300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>310</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>56325</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>19025</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="438342539972">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>25800</WagonMass>
+              <AxleNumber>3</AxleNumber>
+              <WagonLength>262.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>40951</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15151</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="438342533454">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23500</WagonMass>
+              <AxleNumber>3</AxleNumber>
+              <WagonLength>262.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>39996</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>16496</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343637761">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>37300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>310</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>56596</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>19296</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="438342535061">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23500</WagonMass>
+              <AxleNumber>3</AxleNumber>
+              <WagonLength>262.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>36755</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>13255</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="438342540830">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23500</WagonMass>
+              <AxleNumber>3</AxleNumber>
+              <WagonLength>262.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>38679</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>15179</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238842590578">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>29750</WagonMass>
+              <AxleNumber>3</AxleNumber>
+              <WagonLength>270</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>43689</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>13939</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="238343637753">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>37300</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>310</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>53814</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>16514</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="438342541804">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23500</WagonMass>
+              <AxleNumber>3</AxleNumber>
+              <WagonLength>262.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>37534</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>870390</NHMCode>
+              <GoodDescription>Personenkraftwagen, einschl. Kombinationskraftwagen und Rennwagen, und andere Kraftfahrzeuge, ihrer Beschaffenheit nach hauptsächlich zur Personenbeförderung bestimmt, mit anderem Motor als Hubkolbenverbrennungsmotor (ausg. Schnee- und andere Spezialfahrzeuge der Unterpos. 8703.10)</GoodDescription>
+              <GrossMass>14034</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

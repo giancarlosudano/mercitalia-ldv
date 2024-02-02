@@ -33,6 +33,25 @@ def get_override(folder, variable_name):
 				variabili[chiave] = valore
 	return variabili[variable_name]
 
+def search_orfeus_from_cache(uicountrycode, stationcode, carriercode, consignmentnumber, acceptancedate):
+	# Carica il file Excel
+	df = pd.read_excel('orfeus-xmls.xlsx', engine='openpyxl')
+
+	# Filtra il dataframe in base ai criteri di ricerca specificati
+	risultati = df[
+		(df['UICountryCode'] == uicountrycode) &
+		(df['StationCode'] == stationcode) &
+		(df['CarrierCode'] == carriercode) &
+		(df['ConsignmentNumber'] == consignmentnumber) &
+		(df['AcceptanceDate'] == pd.to_datetime(acceptancedate))
+	]
+	
+	# Restituisce il valore della colonna "File" se esiste una corrispondenza, altrimenti restituisce None
+	if not risultati.empty:
+		return risultati['File'].iloc[0]
+	else:
+		return None
+
 def prompt_for_etichetta(numero_casella: str, descrizione_estrazione: str, box: str, llm: AzureChatOpenAI):
 	prompt_base = """il testo delimitato da ### deriva da una scansione OCR di un modulo di trasporto ferroviario CIM internazionale. 
 
@@ -91,74 +110,74 @@ def read_field_from_cim(folder):
 
 	my_bar = exp.progress(0, text="Elaborazione dati con OCR e GPT")
 
-	my_bar.progress(int((1) / 30 * 100), text="Elaborazione Mittente")
-	st.session_state["box-01-clean"] = prompt_for_box("1", "Estrai dal testo solo la ragione sociale del mittente della CIM", st.session_state["box-01"], llm)
+	# my_bar.progress(int((1) / 30 * 100), text="Elaborazione Mittente")
+	# st.session_state["box-01-clean"] = prompt_for_box("1", "Estrai dal testo solo la ragione sociale del mittente della CIM", st.session_state["box-01"], llm)
 
-	my_bar.progress(int((2) / 30 * 100), text="Elaborazione Mittente Codice 1")
-	st.session_state["box-02-clean"] = prompt_for_box("2", "Estrai dal testo un codice numerico che rappresenta il codice mittente della CIM", st.session_state["box-02"], llm)
+	# my_bar.progress(int((2) / 30 * 100), text="Elaborazione Mittente Codice 1")
+	# st.session_state["box-02-clean"] = prompt_for_box("2", "Estrai dal testo un codice numerico che rappresenta il codice mittente della CIM", st.session_state["box-02"], llm)
 
-	my_bar.progress(int((3) / 30 * 100), text="Elaborazione Mittente Codice 2")
-	st.session_state["box-03-clean"] = prompt_for_box("3", "Estrai dal testo un codice numerico che rappresenta il codice mittente della CIM", st.session_state["box-03"], llm)
+	# my_bar.progress(int((3) / 30 * 100), text="Elaborazione Mittente Codice 2")
+	# st.session_state["box-03-clean"] = prompt_for_box("3", "Estrai dal testo un codice numerico che rappresenta il codice mittente della CIM", st.session_state["box-03"], llm)
 
-	my_bar.progress(int((4) / 30 * 100), text="Elaborazione Destinatario")
-	st.session_state["box-04-clean"] = prompt_for_box("4", "Estrai dal testo solo la denominazione o ragione sociale", st.session_state["box-04"], llm)
+	# my_bar.progress(int((4) / 30 * 100), text="Elaborazione Destinatario")
+	# st.session_state["box-04-clean"] = prompt_for_box("4", "Estrai dal testo solo la denominazione o ragione sociale", st.session_state["box-04"], llm)
 
-	my_bar.progress(int((5) / 30 * 100), text="Elaborazione Destinatario Codice 1")
-	st.session_state["box-05-clean"] = prompt_for_box("5", "Estrai dal testo un codice numerico che rappresenta il codice destinatario della CIM", st.session_state["box-05"], llm)
+	# my_bar.progress(int((5) / 30 * 100), text="Elaborazione Destinatario Codice 1")
+	# st.session_state["box-05-clean"] = prompt_for_box("5", "Estrai dal testo un codice numerico che rappresenta il codice destinatario della CIM", st.session_state["box-05"], llm)
 
-	my_bar.progress(int((6) / 30 * 100), text="Elaborazione Destinatario Codice 1")
-	st.session_state["box-06-clean"] = prompt_for_box("6", "Estrai dal testo un codice numerico che rappresenta il codice destinatario della CIM", st.session_state["box-06"], llm)
+	# my_bar.progress(int((6) / 30 * 100), text="Elaborazione Destinatario Codice 1")
+	# st.session_state["box-06-clean"] = prompt_for_box("6", "Estrai dal testo un codice numerico che rappresenta il codice destinatario della CIM", st.session_state["box-06"], llm)
 
-	my_bar.progress(int((7) / 30 * 100), text="Elaborazione Luogo di consegna")
-	st.session_state["box-10-clean"] = prompt_for_box("10", "Estrai solo le informazioni di un luogo di consegna della CIM", st.session_state["box-10"], llm)
+	# my_bar.progress(int((7) / 30 * 100), text="Elaborazione Luogo di consegna")
+	# st.session_state["box-10-clean"] = prompt_for_box("10", "Estrai solo le informazioni di un luogo di consegna della CIM", st.session_state["box-10"], llm)
 
-	my_bar.progress(int((8) / 30 * 100), text="Elaborazione Luogo di consegna codice")
-	st.session_state["box-11-clean"] = prompt_for_box("11", "Estrai dal testo un codice alfanumerico che rappresenta il codice di una stazione di destinazione della CIM", st.session_state["box-11"], llm)
+	# my_bar.progress(int((8) / 30 * 100), text="Elaborazione Luogo di consegna codice")
+	# st.session_state["box-11-clean"] = prompt_for_box("11", "Estrai dal testo un codice alfanumerico che rappresenta il codice di una stazione di destinazione della CIM", st.session_state["box-11"], llm)
 
-	my_bar.progress(int((9) / 30 * 100), text="Elaborazione Destinazione")
-	st.session_state["box-12-clean"] = prompt_for_box("12", "Estrai dal testo un codice alfanumerico. Se il codice inizia con 2 cancella il 2. Se inizia con 12 cancella il 12.", st.session_state["box-12"], llm)
+	# my_bar.progress(int((9) / 30 * 100), text="Elaborazione Destinazione")
+	# st.session_state["box-12-clean"] = prompt_for_box("12", "Estrai dal testo un codice alfanumerico. Se il codice inizia con 2 cancella il 2. Se inizia con 12 cancella il 12.", st.session_state["box-12"], llm)
 
-	my_bar.progress(int((10) / 30 * 100), text="Elaborazione Destinazione Codice")
-	st.session_state["box-13-clean"] = prompt_for_box("13", "Estrai dal testo le informazioni più importanti", st.session_state["box-13"], llm)
+	# my_bar.progress(int((10) / 30 * 100), text="Elaborazione Destinazione Codice")
+	# st.session_state["box-13-clean"] = prompt_for_box("13", "Estrai dal testo le informazioni più importanti", st.session_state["box-13"], llm)
 
-	my_bar.progress(int((11) / 30 * 100), text="Elaborazione box 14")
-	st.session_state["box-14-clean"] = prompt_for_box("14", "Estrai dal testo un codice numerico che rappresenta un codice della CIM", st.session_state["box-14"], llm)
+	# my_bar.progress(int((11) / 30 * 100), text="Elaborazione box 14")
+	# st.session_state["box-14-clean"] = prompt_for_box("14", "Estrai dal testo un codice numerico che rappresenta un codice della CIM", st.session_state["box-14"], llm)
 
-	my_bar.progress(int((12) / 30 * 100), text="Elaborazione box 16")
-	st.session_state["box-16-clean"] = prompt_for_box("16", "Estrai le informazioni di un luogo di presa in carico della CIM", st.session_state["box-16"], llm)
+	# my_bar.progress(int((12) / 30 * 100), text="Elaborazione box 16")
+	# st.session_state["box-16-clean"] = prompt_for_box("16", "Estrai le informazioni di un luogo di presa in carico della CIM", st.session_state["box-16"], llm)
 
-	my_bar.progress(int((13) / 30 * 100), text="Elaborazione box 16 orario")
-	st.session_state["box-16-orario-clean"] = prompt_for_box("16", "Interpreta la stringa come una data di presa in carico della CIM, eventualmente anche data e orario", st.session_state["box-16-orario"], llm)
+	# my_bar.progress(int((13) / 30 * 100), text="Elaborazione box 16 orario")
+	# st.session_state["box-16-orario-clean"] = prompt_for_box("16", "Interpreta la stringa come una data di presa in carico della CIM, eventualmente anche data e orario", st.session_state["box-16-orario"], llm)
 
-	my_bar.progress(int((14) / 30 * 100), text="Elaborazione 17")
-	st.session_state["box-17-clean"] = prompt_for_box("17", "Interpreta la stringa come una data di presa in carico della CIM, eventualmente anche data e orario", st.session_state["box-17"], llm)		
+	# my_bar.progress(int((14) / 30 * 100), text="Elaborazione 17")
+	# st.session_state["box-17-clean"] = prompt_for_box("17", "Interpreta la stringa come una data di presa in carico della CIM, eventualmente anche data e orario", st.session_state["box-17"], llm)		
 
-	my_bar.progress(int((15) / 30 * 100), text="Elaborazione 18")
-	st.session_state["box-18-clean"] = prompt_for_box("18", "Estrai le informazioni dal testo", st.session_state["box-18"], llm)
+	# my_bar.progress(int((15) / 30 * 100), text="Elaborazione 18")
+	# st.session_state["box-18-clean"] = prompt_for_box("18", "Estrai le informazioni dal testo", st.session_state["box-18"], llm)
 
-	my_bar.progress(int((16) / 30 * 100), text="Elaborazione 19")
-	st.session_state["box-19-1-clean"] = prompt_for_box("19", "Estrai le informazioni dal testo", st.session_state["box-19-1"], llm)
+	# my_bar.progress(int((16) / 30 * 100), text="Elaborazione 19")
+	# st.session_state["box-19-1-clean"] = prompt_for_box("19", "Estrai le informazioni dal testo", st.session_state["box-19-1"], llm)
 
-	my_bar.progress(int((17) / 30 * 100), text="Elaborazione 19")
-	st.session_state["box-19-2-clean"] = prompt_for_box("19", "Estrai le informazioni dal testo", st.session_state["box-19-1"], llm)
+	# my_bar.progress(int((17) / 30 * 100), text="Elaborazione 19")
+	# st.session_state["box-19-2-clean"] = prompt_for_box("19", "Estrai le informazioni dal testo", st.session_state["box-19-1"], llm)
 
-	st.session_state["box-23"] = get_override(folder, "box-23")
-	st.session_state["box-23-clean"] = get_override(folder, "box-23")
+	# st.session_state["box-23"] = get_override(folder, "box-23")
+	# st.session_state["box-23-clean"] = get_override(folder, "box-23")
 
-	my_bar.progress(int((18) / 30 * 100), text="Elaborazione 24")
-	st.session_state["box-24-clean"] = prompt_for_box("24", "Estrai una sequenza di uno o più codici numerici. Se incontri il testo NHM non considerarlo.", st.session_state["box-24"], llm)
+	# my_bar.progress(int((18) / 30 * 100), text="Elaborazione 24")
+	# st.session_state["box-24-clean"] = prompt_for_box("24", "Estrai una sequenza di uno o più codici numerici. Se incontri il testo NHM non considerarlo.", st.session_state["box-24"], llm)
 
-	my_bar.progress(int((19) / 30 * 100), text="Elaborazione 25")
-	st.session_state["box-25-clean"] = prompt_for_box("25", "Interpreta le informazioni dal testo, che sono dei pesi di vagoni. Estrai se lo trovi il totale della massa.", st.session_state["box-25"], llm)
+	# my_bar.progress(int((19) / 30 * 100), text="Elaborazione 25")
+	# st.session_state["box-25-clean"] = prompt_for_box("25", "Interpreta le informazioni dal testo, che sono dei pesi di vagoni. Estrai se lo trovi il totale della massa.", st.session_state["box-25"], llm)
 
-	my_bar.progress(int((21) / 30 * 100), text="Elaborazione 29")
-	st.session_state["box-29-clean"] = prompt_for_box("29", "Interpreta le informazioni di luogo e data della CIM", st.session_state["box-29"], llm)
+	# my_bar.progress(int((21) / 30 * 100), text="Elaborazione 29")
+	# st.session_state["box-29-clean"] = prompt_for_box("29", "Interpreta le informazioni di luogo e data della CIM", st.session_state["box-29"], llm)
 
-	my_bar.progress(int((22) / 30 * 100), text="Elaborazione 49")
-	st.session_state["box-49-clean"] = prompt_for_box("49", "Estrai dal testo un codice numerico di due cifre. ", st.session_state["box-49"], llm)
+	# my_bar.progress(int((22) / 30 * 100), text="Elaborazione 49")
+	# st.session_state["box-49-clean"] = prompt_for_box("49", "Estrai dal testo un codice numerico di due cifre. ", st.session_state["box-49"], llm)
 
-	my_bar.progress(int((23) / 30 * 100), text="Elaborazione 57")
-	st.session_state["box-57-clean"] = prompt_for_box("57", "Nel testo ci sono informazioni di trasporti, con indirizzi e percorsi. Estrai tutte le informazioni che riesci a leggere in modo ordinato. ", st.session_state["box-57"], llm)
+	# my_bar.progress(int((23) / 30 * 100), text="Elaborazione 57")
+	# st.session_state["box-57-clean"] = prompt_for_box("57", "Nel testo ci sono informazioni di trasporti, con indirizzi e percorsi. Estrai tutte le informazioni che riesci a leggere in modo ordinato. ", st.session_state["box-57"], llm)
 
 	my_bar.progress(int((24) / 30 * 100), text="Elaborazione 62 1")
 	st.session_state["box-62-paese-clean"] = prompt_for_etichetta("62", "Estrai dal testo un codice numerico di due cifre", st.session_state["box-62-paese"], llm)
@@ -198,7 +217,6 @@ def read_field_from_cim(folder):
 			uic_country_codes = []
 			station_codes = []
 			carrier_codes = []
-			sending_carrier_codes = []
 			consignment_numbers = []
 			acceptance_dates = []
 			
@@ -213,12 +231,6 @@ def read_field_from_cim(folder):
 				station_code = ecn.find(".//AcceptancePoint/Station/Code")
 				if station_code is not None:
 					station_codes.append(station_code.text)
-
-			# #Iterate through the ECN nodes
-			# for ecn in root.findall(".//ECNs"):
-			# 	sending_carrier_code = ecn.find(".//ECNHeader/SendingCarrier")
-			# 	if sending_carrier_code is not None:
-			# 		sending_carrier_codes.append(sending_carrier_code.text)
 
 			# Iterate through the ECN nodes (impresa 4 cifre)
 			for ecn in root.findall(".//ECN"):
@@ -239,8 +251,6 @@ def read_field_from_cim(folder):
 					acceptance_dates.append(acceptance_date.text)
 			
 			data_ora_originale = acceptance_dates[0]
-			
-			# ...
 
 			# Swap month and day in data_ora_originale
 			day = data_ora_originale[8:10]
@@ -262,9 +272,9 @@ def read_field_from_cim(folder):
 			if st.session_state['box-62-stazione-clean'] == station_codes[0]:
 				similarita += 1
 				similarita_fields += "stazione | "
-			if st.session_state['box-62-impresa-clean'] == sending_carrier_codes[0]:
-				similarita += 1
-				similarita_fields += "impresa (sending_carrier_code) | "
+			# if st.session_state['box-62-impresa-clean'] == sending_carrier_codes[0]:
+			# 	similarita += 1
+			# 	similarita_fields += "impresa (sending_carrier_code) | "
 			if st.session_state['box-62-impresa-clean'] == carrier_codes[0]:
 				similarita += 1
 				similarita_fields += "impresa (carrier_code) | "
@@ -277,7 +287,7 @@ def read_field_from_cim(folder):
 
 			if similarita > 2:
 				similarita_text = "folder {0}, filename = {1}, similarità {2}, campi = {3}, data (orfeus) {4} e data session {5}".format(folder, file_name, similarita, similarita_fields, data_ora_originale, st.session_state['box-62-data-clean'])
-				exp.write(similarita_text)
+				# exp.write(similarita_text)
 				print(similarita_text)
 
 			# Confronto
@@ -286,7 +296,7 @@ def read_field_from_cim(folder):
 				and st.session_state['box-62-impresa-clean'] == carrier_codes[0] \
 			 	and st.session_state['box-62-spedizione-clean'].startswith(consignment_numbers[0]) \
 				and	(data_ora_originale.startswith(st.session_state['box-62-data-clean']) or data_ora_swapped.startswith(st.session_state['box-62-data-clean'])) :
-				exp.write("File trovato: {0}".format(file_path))
+				exp.success("File trovato: {0}".format(file_path))
 
 				tree = ET.parse(file_path)
 				root = tree.getroot()
@@ -394,7 +404,8 @@ def read_field_from_cim(folder):
 	
 	# Crea il DataFrame
 	df = pd.DataFrame(dati, columns=['Box', 'Estrazione OCR', 'Analisi GPT4', 'Orfeus se esistente'])
-	exp.dataframe(df)
+	with exp:
+		AgGrid(df, width='100%')
 	return df
 
 def prompt_for_box(numero_casella: str, descrizione_estrazione: str, box: str, llm: AzureChatOpenAI):

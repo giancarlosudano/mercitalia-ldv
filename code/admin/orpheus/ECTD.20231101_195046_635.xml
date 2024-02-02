@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CIMECNMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ORFEUS-ECN Structure version 1.4.2.xsd">
+  <InterchangeHeader>
+    <InterchangeID>1195017357635</InterchangeID>
+    <SenderIdentification>0016</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-01T19:50:46+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2185</SendingCarrier>
+      <MessageReferenceNumber>459875833916510501</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>ECTD</MessageType>
+      <ECNPreparationDatetime>2023-11-01T19:44:21+01:00</ECNPreparationDatetime>
+      <DossierNumber>2185202311010106978</DossierNumber>
+      <ECNVersionNumber>0</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Code>00076</Code>
+          <Name>Rhenus Nord</Name>
+          <Country>
+            <UICCountryCode>85</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>000125</Code>
+          <Name>Basel Kleinhüningen Hafen</Name>
+          <Country>
+            <UICCountryCode>85</UICCountryCode>
+          </Country>
+        </Station>
+        <AcceptanceDate>2023-11-02T08:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2185</CarrierCode>
+        <ConsignmentNumber>701136</ConsignmentNumber>
+        <ForwardingTrainNumber>44083</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Not given</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>027060</Code>
+          <Name>CONEGLIANO</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>19743401</CustomerCode>
+          <Name>Rhenus Port Logistics AG</Name>
+          <AdditionalInformation>CHF-Konto</AdditionalInformation>
+          <Street>Wiesendamm 4</Street>
+          <Country>CH</Country>
+          <ZIPCode>4057</ZIPCode>
+          <City>Basel</City>
+          <Contacts>
+            <PhoneNumber>+41616393434</PhoneNumber>
+            <Email>info@ch.rhenus.com</Email>
+          </Contacts>
+        </Customer>
+        <Customer Type="CE">
+          <Name>Veneta Nastri SpA</Name>
+          <Street>Via G. Bradolini 9</Street>
+          <Country>IT</Country>
+          <ZIPCode>31020</ZIPCode>
+          <City>San Fior</City>
+          <Contacts />
+        </Customer>
+        <Customer Type="FPCR">
+          <CustomerCode>19743401</CustomerCode>
+          <Name>Rhenus Port Logistics AG</Name>
+          <AdditionalInformation>CHF-Konto</AdditionalInformation>
+          <Street>Wiesendamm 4</Street>
+          <Country>CH</Country>
+          <ZIPCode>4057</ZIPCode>
+          <City>Basel</City>
+          <Contacts>
+            <PhoneNumber>+41616393434</PhoneNumber>
+            <Email>info@ch.rhenus.com</Email>
+          </Contacts>
+        </Customer>
+      </Customers>
+      <AdditionalInformation>
+        <ConsignorReference>MS Deo Gratias / Insulinde / Skyfal</ConsignorReference>
+        <InformationConsignee>MS Deo Gratias / Insulinde / Skyfall / Vesper</InformationConsignee>
+      </AdditionalInformation>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>1</Code>
+          <Text>via Chiasso 2112.52; Mercitalia IN630556 </Text>
+        </CommercialSpecification>
+        <CommercialSpecification>
+          <Code>3</Code>
+          <Text>ab Chiasso  Mercitalia IN630556</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>15</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <Station>
+            <UICCountryCode>85</UICCountryCode>
+            <StationCode>053090</StationCode>
+            <StationName>Chiasso Smistamento</StationName>
+          </Station>
+        </PaidUpTo>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>211252</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>85210</RouteCode>
+          <RouteText>Chiasso transito</RouteText>
+          <BorderpointCode>321</BorderpointCode>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>true</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>1</Status>
+          <CarrierCode>2185</CarrierCode>
+          <CarrierName>SBB Cargo AG</CarrierName>
+          <Street>Bahnhofstr. 12</Street>
+          <ZIPCode>4600</ZIPCode>
+          <City>Olten</City>
+          <CountryCode>CH</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>000125</StationCode>
+              <StationName>Basel Kleinhüningen Hafen</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>053090</StationCode>
+              <StationName>Chiasso Smistamento</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>Mercitalia Rail S.r.l.</CarrierName>
+          <Street>Piazza della Croce Rossa 1</Street>
+          <ZIPCode>00161</ZIPCode>
+          <City>Roma</City>
+          <CountryCode>IT</CountryCode>
+          <SectionFrom>
+            <UICCountryCode>85</UICCountryCode>
+            <Station>
+              <StationCode>053090</StationCode>
+              <StationName>Chiasso Smistamento</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>027060</StationCode>
+              <StationName>CONEGLIANO</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2185</CarrierCode>
+        <CarrierName>SBB Cargo AG</CarrierName>
+        <Street>Bahnhofstr. 12</Street>
+        <ZIPCode>4600</ZIPCode>
+        <City>Olten</City>
+        <CountryCode>CH</CountryCode>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Basel Kleinhüningen Hafen</Place>
+        <Date>2023-11-02</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>85</UICCountryCode>
+            <StationCode>000125</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>027060</StationCode>
+          </End>
+          <CurrencyCode>CHF</CurrencyCode>
+          <Tariff>
+            <NHMCode>721049</NHMCode>
+            <TariffNumber>211252</TariffNumber>
+          </Tariff>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="318547770681">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120.4</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>75770</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>52770</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547775813">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>79670</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>56670</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547775425">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>78250</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>55250</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547775151">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89440</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>66440</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547774287">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89970</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>66970</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547775896">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89970</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>66970</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547776118">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89980</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>66980</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547775805">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89880</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>66880</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547774733">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89240</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>66240</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547775771">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88019</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>65019</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547770525">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>22500</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89170</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>66670</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547770673">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>86440</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>63440</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547770632">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>88910</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>65910</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547776043">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>89870</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>66870</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547775599">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>81920</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>58920</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+        <Wagon WagonNumber="318547774519">
+          <WagonDetails LoadingStatus="loaded">
+            <WagonTypeDetails>
+              <WagonMass>23000</WagonMass>
+              <AxleNumber>4</AxleNumber>
+              <WagonLength>120</WagonLength>
+            </WagonTypeDetails>
+            <TotalMass>77160</TotalMass>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <NHMCode>721049</NHMCode>
+              <GoodDescription>Flacherzeugnisse aus Eisen oder nichtlegiertem Stahl, mit einer Breite von &gt;= 600 mm, warm- oder kaltgewalzt, nicht gewellt, verzinkt (ausg. elktrolytisch verzinkt)</GoodDescription>
+              <GrossMass>54160</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+      <ChangeLogs>
+        <ChangeLog CarrierCode="2185" DateTime="2023-11-01T19:44:21+01:00" NumberOfModifiedVersion="0" />
+      </ChangeLogs>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>

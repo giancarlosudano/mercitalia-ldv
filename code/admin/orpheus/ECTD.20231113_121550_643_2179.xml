@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CIMECNMessages>
+  <InterchangeHeader>
+    <InterchangeID>2179230010643</InterchangeID>
+    <SenderIdentification>2179</SenderIdentification>
+    <ReceiverIdentification>2183</ReceiverIdentification>
+    <MsgPreparationDatetime>2023-11-13T12:15:50+01:00</MsgPreparationDatetime>
+    <xsdVersion>1.42</xsdVersion>
+  </InterchangeHeader>
+  <ECNs>
+    <ECNHeader>
+      <SendingCarrier>2179</SendingCarrier>
+      <ReceivingCarrier>2183</ReceivingCarrier>
+      <MessageReferenceNumber>1110131497</MessageReferenceNumber>
+      <ShipmentType>CIM</ShipmentType>
+      <MessageType>EUTD</MessageType>
+      <ECNPreparationDatetime>2023-11-13T12:14:31+01:00</ECNPreparationDatetime>
+      <DossierNumber>2179202311130131497</DossierNumber>
+      <ECNVersionNumber>1</ECNVersionNumber>
+    </ECNHeader>
+    <ECN>
+      <AcceptancePoint>
+        <Point>
+          <Name>Celje tovorna-Dinos d.d.</Name>
+          <Country>
+            <UICCountryCode>79</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>431031</Code>
+          <Name>Celje tovorna</Name>
+          <Country>
+            <UICCountryCode>79</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>431031</Code>
+          <Name>Celje tovorna</Name>
+          <Country>
+            <UICCountryCode>79</UICCountryCode>
+          </Country>
+        </ProductionStation>
+        <AcceptanceDate>2023-11-09T14:00:00+01:00</AcceptanceDate>
+        <CarrierCode>2179</CarrierCode>
+        <ConsignmentNumber>164459</ConsignmentNumber>
+        <ForwardingTrainNumber>52101</ForwardingTrainNumber>
+      </AcceptancePoint>
+      <DeliveryPoint>
+        <Point>
+          <Name>Cava Tigozzi</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Point>
+        <Station>
+          <Code>019141</Code>
+          <Name>Cava Tigozzi</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </Station>
+        <ProductionStation>
+          <Code>019141</Code>
+          <Name>Cava Tigozzi</Name>
+          <Country>
+            <UICCountryCode>83</UICCountryCode>
+          </Country>
+        </ProductionStation>
+      </DeliveryPoint>
+      <Customers>
+        <Customer Type="CR">
+          <CustomerCode>7949512</CustomerCode>
+          <Name>DINOS, DRUZBA ZA PRIPRAVO</Name>
+          <VAT>SI44905793</VAT>
+          <Street>SLANDROVA ULICA 6</Street>
+          <Country>SI</Country>
+          <ZIPCode>1000</ZIPCode>
+          <City>LJUBLJANA</City>
+          <Signature>SZTP i. A. d. Abs.</Signature>
+          <Contacts />
+        </Customer>
+        <Customer Type="CE">
+          <Name>ACCIAIERIA ARVEDI S.P.A</Name>
+          <Street>VIA ACQUAVIVA 18</Street>
+          <Country>IT</Country>
+          <ZIPCode>26100</ZIPCode>
+          <City>CREMONA</City>
+          <Contacts />
+        </Customer>
+      </Customers>
+      <ConsignorDeclarations>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: DIE BEFORDERUNG AUFDERSTREKE VILLA OPICINA - CREMONA ERFOLGT DURCH DAS EVU MERITALIA RAIL SRL ( EVU CODE 2183)</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: IZJAVLJAM, DA MASA BLAGA NE PRESEGA</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: ZAHTEVAM URADNO TEHTANJE</Text>
+        </ConsignorDeclaration>
+        <ConsignorDeclaration>
+          <Code>16</Code>
+          <Text>Andere Erklaerungen: ZAHTEVAM ZBIRANJE VAGONOV LJUBLJANA-ZALOG, PREDAJA KV VILLA OPICINA</Text>
+        </ConsignorDeclaration>
+      </ConsignorDeclarations>
+      <AdditionalInformation>
+        <WagonGroupInfo>E1 1 VAGON STARO ZELE</WagonGroupInfo>
+      </AdditionalInformation>
+      <AttachedDocuments>
+        <AttachedDocument>
+          <Type>978</Type>
+          <DocumentTypeDescription>Odobritev cezmejne posiljke odpadko</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>979</Type>
+          <DocumentTypeDescription>Dokument za cezmejni prevoz posiljk</DocumentTypeDescription>
+        </AttachedDocument>
+        <AttachedDocument>
+          <Type>999</Type>
+        </AttachedDocument>
+      </AttachedDocuments>
+      <CommercialSpecifications>
+        <CommercialSpecification>
+          <Code>5</Code>
+          <Text>SZTP6401.65</Text>
+        </CommercialSpecification>
+      </CommercialSpecifications>
+      <PrepaymentInstructions>
+        <PrepaidcodeCarrier>11</PrepaidcodeCarrier>
+        <PaidUpTo>
+          <Station>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>019141</StationCode>
+            <StationName>Cava Tigozzi</StationName>
+          </Station>
+        </PaidUpTo>
+        <AdditionalCharges>
+          <AdditionalCharge>
+            <Code>34</Code>
+          </AdditionalCharge>
+          <AdditionalCharge>
+            <Code>36</Code>
+          </AdditionalCharge>
+        </AdditionalCharges>
+      </PrepaymentInstructions>
+      <Tariff>
+        <ContractNumber>640165</ContractNumber>
+      </Tariff>
+      <Routing>
+        <RouteSection SequenceID="1">
+          <RouteCode>79100</RouteCode>
+          <RouteText>SEZANA/VILLA OPICINA</RouteText>
+        </RouteSection>
+      </Routing>
+      <CustomsData>
+        <STP>false</STP>
+        <CustomsSurveillance>false</CustomsSurveillance>
+      </CustomsData>
+      <Carriers>
+        <Carrier sequenceID="1">
+          <Status>0</Status>
+          <CarrierCode>2179</CarrierCode>
+          <CarrierName>SZ - TP, d.o.o.</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>79</UICCountryCode>
+            <Station>
+              <StationCode>431031</StationCode>
+              <StationName>Celje tovorna</StationName>
+            </Station>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>79</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>SEZANA</PointName>
+            </BordercrossingPoint>
+          </SectionTo>
+        </Carrier>
+        <Carrier sequenceID="2">
+          <Status>1</Status>
+          <CarrierCode>2183</CarrierCode>
+          <CarrierName>MIR</CarrierName>
+          <SectionFrom>
+            <UICCountryCode>83</UICCountryCode>
+            <BordercrossingPoint>
+              <PointCode>310</PointCode>
+              <PointName>VILLA OPICINA</PointName>
+            </BordercrossingPoint>
+          </SectionFrom>
+          <SectionTo>
+            <UICCountryCode>83</UICCountryCode>
+            <Station>
+              <StationCode>019141</StationCode>
+              <StationName>Cava Tigozzi</StationName>
+            </Station>
+          </SectionTo>
+        </Carrier>
+      </Carriers>
+      <ContractualCarrier>
+        <CarrierCode>2179</CarrierCode>
+        <CarrierName>SZ - TP, d.o.o.</CarrierName>
+      </ContractualCarrier>
+      <MadeOut>
+        <Place>Celje tovorna</Place>
+        <Date>2023-11-09</Date>
+      </MadeOut>
+      <ChargingSections>
+        <ChargingSection>
+          <Start>
+            <UICCountryCode>79</UICCountryCode>
+            <StationCode>431031</StationCode>
+          </Start>
+          <End>
+            <UICCountryCode>83</UICCountryCode>
+            <StationCode>019141</StationCode>
+          </End>
+          <CurrencyCode>EUR</CurrencyCode>
+        </ChargingSection>
+      </ChargingSections>
+      <Wagons>
+        <Wagon WagonNumber="317953000377">
+          <WagonDetails LoadingStatus="loaded">
+            <TotalMass>65150.0</TotalMass>
+            <LoadLimit>216</LoadLimit>
+          </WagonDetails>
+          <Goods>
+            <Good>
+              <Packing>
+                <NumberOfPackages>1</NumberOfPackages>
+                <PackageIdentification>NE</PackageIdentification>
+              </Packing>
+              <NHMCode>720449</NHMCode>
+              <GoodDescription>Abfalle und Schrott aus Eisen oder Stahl ausg. Schlacken Zunder und andere Abfalle der Eisen und Stahlherstellung Abfalle und Schrott radioaktiv Bruchstucke von Masseln Blocken oder anderen Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus Rohformen aus Roh oder Spiegeleisen Abfalle und Schrott aus</GoodDescription>
+              <AdditionalGoodInformation>E</AdditionalGoodInformation>
+              <GrossMass>43570.0</GrossMass>
+            </Good>
+          </Goods>
+        </Wagon>
+      </Wagons>
+    </ECN>
+  </ECNs>
+</CIMECNMessages>
