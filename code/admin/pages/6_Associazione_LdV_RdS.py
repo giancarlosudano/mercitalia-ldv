@@ -327,8 +327,6 @@ Mostra il tuo ragionamento
 Risposta:
 """
 
-		container_stream = st.container()
-
 		llm = AzureChatOpenAI(
 			azure_endpoint=os.getenv("AZURE_OPENAI_BASE"), 
 			api_key=os.getenv("AZURE_OPENAI_KEY"),
@@ -348,7 +346,8 @@ Risposta:
 		output_parser = StrOutputParser()
 		chain = prompt | llm | output_parser
 		response = chain.invoke({"input": input})
-		container_stream.empty()
+
+		st.write(response)
 
 		if st.button("Conferma i valori"):
 			st.toast("Valori confermati. E' possibile procedere con la fase successiva")

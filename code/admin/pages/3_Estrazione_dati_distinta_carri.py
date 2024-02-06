@@ -47,7 +47,7 @@ def read_from_wagonlist():
 	document_analysis_client = DocumentAnalysisClient(
 		endpoint=endpoint, credential=AzureKeyCredential(key)
 	)
-
+ 
 	with open(os.path.join('ldv', st.session_state['ldv'], "distinta-00.pdf"), 'rb') as f:
 		poller = document_analysis_client.begin_analyze_document("prebuilt-layout", document=f)
 	result = poller.result()

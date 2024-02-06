@@ -19,7 +19,7 @@ import requests
 import sys
 import re
 
-def similarity(ragione_sociale:str, container_stream):
+def similarity(ragione_sociale:str):
 	input = f"""Cerca all'interno della tabella delimitata da ### le voci più simili per sintassi, assonanza e in ultima analisi profilo a questa ragione sociale:
 {ragione_sociale}
 
@@ -1117,7 +1117,7 @@ Risposta:
 		temperature=0,
 		deployment_name=os.getenv("AZURE_OPENAI_MODEL"),
 		model_name=os.getenv("AZURE_OPENAI_MODEL_NAME"),
-		streaming=True, callbacks=[StreamlitCallbackHandler(container_stream)]
+		streaming=False
 	)
 
 	output_parser = StrOutputParser()
@@ -1165,15 +1165,17 @@ In questa fase il sistema effettua un **controllo sui dati relativi ai campi "mi
 """)
 		
 		similarity(st.session_state['box-01-orfeus'])
-		st.text_input("Codice cliente Mittente", key="codice_mittente")
 		similarity(st.session_state['box-04-orfeus'])
-		st.text_input("Codice cliente Destinatario", key="codice_destinatario")
-		
-		if st.button("Conferma i valori"):
-			st.session_state["codice_mittente_override"] = st.session_state["codice_mittente"]
-			st.session_state["codice_destinatario_override"] = st.session_state["codice_destinatario"]
-			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
-  
+		with st.form("my_form"):
+			st.text_input("Codice cliente Mittente", key="codice_mittente")
+			st.text_input("Codice cliente Destinatario", key="codice_destinatario")
+
+			submitted = st.form_submit_button("Conferma valori")
+			if submitted:
+				st.session_state["codice_mittente_override"] = st.session_state["codice_mittente"]
+				st.session_state["codice_destinatario_override"] = st.session_state["codice_destinatario"]
+				st.toast("Valori confermati. E' possibile procedere con la fase successiva")
+	
 	elif st.session_state["authentication_status"] is False:
 		st.error('Username/password is incorrect')
 	elif st.session_state["authentication_status"] is None:

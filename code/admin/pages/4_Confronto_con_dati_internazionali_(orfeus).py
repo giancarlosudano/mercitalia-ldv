@@ -241,15 +241,17 @@ Nel caso esista **il file Orfeus XML corrispondente** alle informazioni di etich
 
 		my_bar = st.progress(0, text="Ricerca su dati Orfeus...")
 
-		file_found = search_orfeus_from_cache(
-	  		uicountrycode=st.session_state['box-62-paese-clean'],
-	  		stationcode=st.session_state['box-62-stazione-clean'],	
-	 	  	carriercode=st.session_state['box-62-impresa-clean'],	
-		  	consignmentnumber=st.session_state['box-62-spedizione-clean'],
-			acceptancedate=st.session_state['box-62-data-clean'])
+		# file_found = search_orfeus_from_cache(
+	  	# 	uicountrycode=st.session_state['box-62-paese-clean'],
+	  	# 	stationcode=st.session_state['box-62-stazione-clean'],	
+	 	#   	carriercode=st.session_state['box-62-impresa-clean'],	
+		#   	consignmentnumber=st.session_state['box-62-spedizione-clean'],
+		# 	acceptancedate=st.session_state['box-62-data-clean'])
 
-		st.toast("File trovato: {}".format(file_found))
-
+		# st.toast("File trovato: {}".format(file_found))
+  
+		file_found = search_orfeus(my_bar)
+  
 		if file_found:
 			get_orfeus_data(file_found)
  
