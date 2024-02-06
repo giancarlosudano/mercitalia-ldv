@@ -21,7 +21,7 @@ import re
 
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LDV / RDS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
-	st.title("Scelta della RDS con 'inferenza logica' di GPT4")
+	st.title("Associazione Ldv e RdS")
 	st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
 	load_dotenv()
 
@@ -337,7 +337,7 @@ Risposta:
 			temperature=0,
 			deployment_name=os.getenv("AZURE_OPENAI_MODEL"),
 			model_name=os.getenv("AZURE_OPENAI_MODEL_NAME"),
-			streaming=True, callbacks=[StreamlitCallbackHandler(container_stream)]
+			streaming=False
 		)
 
 		prompt = ChatPromptTemplate.from_messages([

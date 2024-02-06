@@ -110,7 +110,7 @@ def read_from_wagonlist():
 
 try:
 	st.set_page_config(page_title="Mercitalia - Automazione LdV / RdS", page_icon=os.path.join('images','favicon.ico'), layout="wide", menu_items=None)
-	st.title("Estrazione dati da email e allegati")
+	st.title("Estrazione distinta carri da allegati")
 	st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
 	load_dotenv()
 

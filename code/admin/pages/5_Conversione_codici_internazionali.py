@@ -1128,8 +1128,9 @@ Risposta:
 	])
 	
 	chain = prompt | llm | output_parser
-	chain.invoke({"input": input})
-	
+	output = chain.invoke({"input": input})
+	st.write(output)
+
 	return
 
 try:
@@ -1162,62 +1163,15 @@ In questa fase il sistema effettua un **controllo sui dati relativi ai campi "mi
 - **Azure App Service**: Web Container che ospita una applicazione Python che organizza tutta la logica applicativa. La ricerca tra i file di Orfeus è effettuata mediante tradizionale ricerca XML di libreria
 - **Azure Blob Storage**: Servizio di storage per file/blob ad alta scalabilità per la lettura dei file di Orfeus e dei file di codifica Clienti Mercitalia
 """)
-		rag_soc_mittente_stream = st.container()
-		rag_soc_destinatario_stream = st.container()
-		similarity(st.session_state['box-01-orfeus'], rag_soc_mittente_stream)
-		similarity(st.session_state['box-04-orfeus'], rag_soc_destinatario_stream)
-		# import pandas as pd
-		# from fuzzywuzzy import process
-		# from dotenv import load_dotenv
-
-		# # Carica i dati da un file Excel
-		# excel_path = os.path.join('ldv', 'clienti.xlsx')
-		# df = pd.read_excel(excel_path)
-
-		# # Trova la corrispondenza più simile nel DataFrame
-		# corrispondenze1 = process.extract(st.session_state['box-01-orfeus'], df['ragione sociale'], limit=5)
-		# options1 = []
-
-		# # Stampa le corrispondenze trovate e i relativi codici
-		# for corrispondenza in corrispondenze1:
-		# 	match = corrispondenza[0]  # La ragione sociale corrispondente
-		# 	score = corrispondenza[1]  # Il punteggio di similarità
-
-		# 	# Trova l'indice (o gli indici) nel DataFrame dove c'è questa corrispondenza
-		# 	indici = df.index[df['ragione sociale'] == match].tolist()
-
-		# 	# Stampa i dettagli delle corrispondenze trovate
-
-		# 	for indice in indici:
-		# 		codice_corrispondente = df.loc[indice, 'codice']
-		# 		options1.append(f"{match} - Codice: {codice_corrispondente}, Similarità: {score}")
-
-		# st.write(f"Ricerca mittente: {st.session_state['box-01-orfeus']}")
-		# st.selectbox("Mittente (Ragioni sociali simili)", options1, placeholder="Seleziona la corrispondenza più simile", key="mittente_scelto")
-  
-		# # Trova la corrispondenza più simile nel DataFrame
-		# corrispondenze2 = process.extract(st.session_state['box-04-orfeus'], df['ragione sociale'], limit=5)
-		# options2 = []
-		# # Stampa le corrispondenze trovate e i relativi codici
-		# for corrispondenza in corrispondenze2:
-		# 	match = corrispondenza[0]  # La ragione sociale corrispondente
-		# 	score = corrispondenza[1]  # Il punteggio di similarità
-
-		# 	# Trova l'indice (o gli indici) nel DataFrame dove c'è questa corrispondenza
-		# 	indici = df.index[df['ragione sociale'] == match].tolist()
-
-		# 	# Stampa i dettagli delle corrispondenze trovate
-			
-		# 	for indice in indici:
-		# 		codice_corrispondente = df.loc[indice, 'codice']
-		# 		options2.append(f"{match} - Codice: {codice_corrispondente}, Similarità: {score}")
-    
-		# st.write(f"Ricerca mittente: {st.session_state['box-04-orfeus']}")
-		# st.selectbox("Destinatario (Ragioni sociali simili)", options2, placeholder="Seleziona la corrispondenza più simile", key="destinatario_scelto")
-
+		
+		similarity(st.session_state['box-01-orfeus'])
+		st.text_input("Codice cliente Mittente", key="codice_mittente")
+		similarity(st.session_state['box-04-orfeus'])
+		st.text_input("Codice cliente Destinatario", key="codice_destinatario")
+		
 		if st.button("Conferma i valori"):
-			# st.session_state['box-03-selected'] = st.session_state['mittente_scelto'].split(" - Codice: ")[1].split(", Similarità: ")[0]
-			# st.session_state['box-06-selected'] = st.session_state['mittente_scelto'].split(" - Codice: ")[1].split(", Similarità: ")[0]
+			st.session_state["codice_mittente_override"] = st.session_state["codice_mittente"]
+			st.session_state["codice_destinatario_override"] = st.session_state["codice_destinatario"]
 			st.toast("Valori confermati. E' possibile procedere con la fase successiva")
   
 	elif st.session_state["authentication_status"] is False:
