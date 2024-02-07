@@ -96,9 +96,9 @@ data la lista di servizi ferroviari in tabella
 
 scegli tutte le righe che rispettano questi requisiti:
 - la colonna "Rete Mittente" deve essere uguale a **80**
-- la colonna "Stazione Mittente" deve essere uguale a **024323**
+- la colonna "Stazione Mittente" deve essere uguale a **637702**
 - la colonna "Rete Destinataria" deve essere uguale a **83**
-- la colonna "Stazione Destinataria" deve essere uguale a **637702**
+- la colonna "Stazione Destinataria" deve essere uguale a **024323**
 - il contratto deve essere uguale a **IN903417**
 - la colonna "Data RDS" essere uguale a **07-11-2023** o successiva al massimo di 3 giorni, ignora l'orario
 
@@ -111,16 +111,15 @@ scegli tutte le righe che rispettano questi requisiti:
 | 1-111652340 | 07-11-2023 00:00:00 | IN283010  | 055845           | S.I.T.F.A. S.P.A.                                       | 83            | 002204            | TORINO ORBASSANO                                             | 00RF1             | FCA                                       | 51                | 622894                |
 | 1-112019179 | 07-11-2023 00:00:00 | IN519010  | 030468           | GEBRUDER WEISS RAIL CARGO G.M.B.H.                      | 81            | 999901            | AUSTRIA                                                      |                   |                                           | 83                | 046102                |
 | 1-112210131 | 07-11-2023 00:00:00 | IN903417  | 049832           | DB Cargo AG                                             | 80            | 637702            | Ludwigshafen (Rhein) BASF Ubf                                |                   |                                           | 83                | 024323                |
-| 1-112210191 | 07-11-2023 00:00:00 | IN903417  | 049832           | DB Cargo AG                                             | 83            | 024323            | VERONA QUADRANTE EUROPA                                      | 00TEI             | RFI-TERMINALI ITALIA                      | 80                | 637702                |
 | 1-114533267 | 07-11-2023 00:00:00 | 11661740  | 055845           | S.I.T.F.A. S.P.A.                                       | 83            | 117010            | S.FERDINANDO                                                 | 00MC1             | TERMINAL MCT                              | 83                | 113001                |
 | 1-114853727 | 07-11-2023 00:00:00 | IN902825  | 011827           | VIGLIENZONE ADRIATICA S.P.A.                            | 83            | 025312            | S.PIETRO IN GU'                                              | AGTRA             | AGRICOLA ITALIANA ALIMENTARE S.P.A.       | 00                | 310                   |
 | 1-116193946 | 07-11-2023 00:00:00 | 11662143  | 012885           | TRANSWAGGON  SPA                                        | 83            | 098210            | PONTECAGNANO                                                 | 000RA             | AUTOMAR SPA                               | 83                | 070185                |
 
 scegli le righe che rispettano questi requisiti in modo più preciso possibile:
-- la colonna "Rete Mittente" deve essere uguale a 83
-- la colonna "Stazione Mittente" deve essere uguale a 024323
-- la colonna "Rete Destinataria" deve essere uguale a 80
-- la colonna "Stazione Destinataria" deve essere uguale a 637702
+- la colonna "Rete Mittente" deve essere uguale a 80
+- la colonna "Stazione Mittente" deve essere uguale a 637702
+- la colonna "Rete Destinataria" deve essere uguale a 83
+- la colonna "Stazione Destinataria" deve essere uguale a 024323
 - la colonna "Contratto" deve essere uguale a IN903417
 - la colonna "Data RDS" deve essere uguale a **07-11-2023**, ignora l'orario
 
