@@ -32,15 +32,15 @@ try:
 	with open('config.yaml') as file:
 		config = yaml.load(file, Loader=SafeLoader)
 
-	authenticator = stauth.Authenticate(
-		config['credentials'],
-		config['cookie']['name'],
-		config['cookie']['key'],
-		config['cookie']['expiry_days'],
-		config['preauthorized']
-	)
+	# authenticator = stauth.Authenticate(
+	# 	config['credentials'],
+	# 	config['cookie']['name'],
+	# 	config['cookie']['key'],
+	# 	config['cookie']['expiry_days'],
+	# 	config['preauthorized']
+	# )
 
-	if st.session_state["authentication_status"]:		
+	if True:		
 		st.image(os.path.join('images','Slide6.JPG'), use_column_width=True)
 		st.write("""
 ### Descrizione

@@ -114,22 +114,22 @@ try:
 	st.sidebar.image(os.path.join('images','mercitalia.png'), use_column_width=True)
 	load_dotenv()
 
-	import streamlit_authenticator as stauth	
-	import yaml
-	from yaml.loader import SafeLoader
+	# import streamlit_authenticator as stauth	
+	# import yaml
+	# from yaml.loader import SafeLoader
 
-	with open('config.yaml') as file:
-		config = yaml.load(file, Loader=SafeLoader)
+	# with open('config.yaml') as file:
+	# 	config = yaml.load(file, Loader=SafeLoader)
 
-	authenticator = stauth.Authenticate(
-		config['credentials'],
-		config['cookie']['name'],
-		config['cookie']['key'],
-		config['cookie']['expiry_days'],
-		config['preauthorized']
-	)
+	# authenticator = stauth.Authenticate(
+	# 	config['credentials'],
+	# 	config['cookie']['name'],
+	# 	config['cookie']['key'],
+	# 	config['cookie']['expiry_days'],
+	# 	config['preauthorized']
+	# )
 
-	if st.session_state["authentication_status"]:		
+	if True:		
 		st.image(os.path.join('images','Slide2.JPG'), use_column_width=True)
   
 		read_from_wagonlist()

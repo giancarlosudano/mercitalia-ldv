@@ -23,7 +23,7 @@ mod_page_style = """
             """
 st.markdown(mod_page_style, unsafe_allow_html=True)
 
-container_stream = st.container()
+container_stream = st.session_state["answer_container"]
 
 llm = AzureChatOpenAI(
     azure_endpoint=os.getenv("AZURE_OPENAI_BASE"), 

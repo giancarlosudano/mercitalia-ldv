@@ -21,25 +21,25 @@ print('--------------------------------')
 print(os.getenv("AZURE_OPENAI_BASE")) 
 print(os.getenv("AZURE_OPENAI_KEY"))
 
-import yaml
-from yaml.loader import SafeLoader
+# import yaml
+# from yaml.loader import SafeLoader
 
-with open('config.yaml') as file:
-    config = yaml.load(file, Loader=SafeLoader)
+# with open('config.yaml') as file:
+#     config = yaml.load(file, Loader=SafeLoader)
 
-authenticator = stauth.Authenticate(
-    config['credentials'],
-    config['cookie']['name'],
-    config['cookie']['key'],
-    config['cookie']['expiry_days'],
-    config['preauthorized']
-)
+# authenticator = stauth.Authenticate(
+#     config['credentials'],
+#     config['cookie']['name'],
+#     config['cookie']['key'],
+#     config['cookie']['expiry_days'],
+#     config['preauthorized']
+# )
 
-name, authentication_status, username = authenticator.login(location='main')
+# name, authentication_status, username = authenticator.login(location='main')
 
-if username == 'smith@mercitalia.com':
-    st.session_state["authentication_status"] = True
-    st.session_state["name"] = "John Smith"
+# if username == 'smith@mercitalia.com':
+#     st.session_state["authentication_status"] = True
+#     st.session_state["name"] = "John Smith"
 
 # # # begin test
 # # from azure.core.credentials import AzureKeyCredential
@@ -61,17 +61,17 @@ if username == 'smith@mercitalia.com':
 #end test
 
 
-if username == '':
-    st.session_state["authentication_status"] = True
-    st.session_state["name"] = "John Smith"
+# if username == '':
+#     st.session_state["authentication_status"] = True
+#     st.session_state["name"] = "John Smith"
 
-if st.session_state["authentication_status"]:
-    st.write(f'Welcome *{st.session_state["name"]}*, you are an **admin**.')
+# if st.session_state["authentication_status"]:
+#     st.write(f'Welcome *{st.session_state["name"]}*, you are an **admin**.')
     
-    import lib.common as common
-    common.clean_session()
+#     import lib.common as common
+#     common.clean_session()
     
-elif st.session_state["authentication_status"] == False:
-    st.error('Username/password is incorrect')
-elif st.session_state["authentication_status"] == None:
-    st.warning('Please enter your username and password')
+# elif st.session_state["authentication_status"] == False:
+#     st.error('Username/password is incorrect')
+# elif st.session_state["authentication_status"] == None:
+#     st.warning('Please enter your username and password')
